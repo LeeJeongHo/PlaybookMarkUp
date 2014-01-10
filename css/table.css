@@ -3,10 +3,10 @@
 	border-right: 1px solid #dddddd;
 }
 .contentarea{
-	padding-left:94px;
+	padding-left:83px;
 }
 
-.g94{
+.g84{
 	margin-top: 10px;
 }
 .contentarea {
@@ -29,7 +29,18 @@
 }
 @media (min-width: 1665px){
     .contentarea{
-        padding-left: 94px;
+        padding-left: 83px;
         width: 100%;
     }
+}
+.table thead tr{
+    background: #ececec;
+}
+tr > td > a {
+    font-weight: bold;
+    font-size: 12px;
+    color:#5B96CB;
+}
+.panel-head{
+    border-radius: 0px 4px 4px 0px;
 }

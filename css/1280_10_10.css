@@ -20,7 +20,7 @@ Learn more ~ http://www.gridsystemgenerator.com/
 
 /* =Grid >> Global
 --------------------------------------------------------------------------------*/
-.g117,.g94, .g244, .g200, .g371, .g498, .g625, .g752, .g879, .g1006, .g1133, .g1260, .col371,.col371-2, .col200 {
+.g117,.g84, .g244, .g200, .g371, .g498, .g625, .g752, .g879, .g1006, .g1133, .g1260, .col371,.col371-2, .col200 {
 	display: inline;
 	float: left;
 	margin-left: 10px;
@@ -28,7 +28,7 @@ Learn more ~ http://www.gridsystemgenerator.com/
 
 /* =Grid >> 10 Columns
 --------------------------------------------------------------------------------*/
-.g94{width:94px;}
+.g84{width:84px;}
 .g117{width:117px;}
 .g200{width:200px;}
 .g244{width:244px;}
