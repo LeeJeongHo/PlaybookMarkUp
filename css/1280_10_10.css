@@ -26,12 +26,17 @@ Learn more ~ http://www.gridsystemgenerator.com/
 	margin-left: 10px;
 }
 
+.g244_label {
+	float: left;
+	margin-left: 10px;
+}
 /* =Grid >> 10 Columns
 --------------------------------------------------------------------------------*/
 .g84{width:84px;}
 .g117{width:117px;}
 .g200{width:200px;}
 .g244{width:244px;}
+.g244_label{width:244px;}
 .g371{width:371px;}
 .g498{width:498px;}
 .g625{width:625px;}
