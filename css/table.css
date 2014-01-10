@@ -3,7 +3,7 @@
 	border-right: 1px solid #dddddd;
 }
 .contentarea{
-	padding-left:104px;
+	padding-left:94px;
 }
 
 .g94{
@@ -20,4 +20,16 @@
     width: -webkit-calc(100% - 256px);
     width: -o-calc(100% - 256px);
     width: calc(100% - 256px);
+}
+@media (max-width: 767px){
+    .page-content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (min-width: 1665px){
+    .contentarea{
+        padding-left: 94px;
+        width: 100%;
+    }
 }
