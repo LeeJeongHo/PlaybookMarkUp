@@ -44,3 +44,14 @@ tr > td > a {
 .panel-head{
     border-radius: 0px 4px 4px 0px;
 }
+.table thead tr th{
+    font-size:14px;
+    color:#747474;
+}
+.table thead > tr > th, .table tbody > tr > th, .table tfoot > tr > th, .table thead > tr > td, .table tbody > tr > td, .table tfoot > tr > td{
+    font-size: 12px;
+}
+.m10_left_top{
+    margin-top: 10px;
+    margin-left: 10px;
+}
