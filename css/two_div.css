@@ -1,0 +1,45 @@
+/*
+  body 크기가 고정되었을 때의 div1의 너비
+*/
+.col-xs-8{
+	margin-left: 2px;
+	width: -moz-calc(100% - 256px);
+	width: -webkit-calc(100% - 256px);
+	width: -o-calc(100% - 256px);
+    width: calc(100% - 256px);
+}
+/* div2 의 클래스 */
+.g244{
+	margin-right: 0px;
+}
+
+/*
+	화면 줄였을 때의 contentarea 속성값 (margin)
+*/
+@media (max-width: 1665px){
+	.contentarea{
+		width: 891px;
+		margin-left: 371px;
+		padding-top:1px;
+	}
+}
+/*
+ 화면 늘렸을 때의 속성값
+*/
+@media (min-width: 1665px){
+	body{
+		width:78%;
+	}
+	.contentarea{
+		padding-left: 371px;
+		padding-top:1px;
+		width: 100%;
+	}
+	.col-xs-8{
+		width: -moz-calc(100% - 256px);
+	    width: -webkit-calc(100% - 256px);
+	    width: -o-calc(100% - 256px);
+	    width: calc(100% - 256px);
+	    margin-left: 2px;
+	}
+}

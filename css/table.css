@@ -1,0 +1,23 @@
+.tableborder{
+	border-top: none;
+	border-right: 1px solid #dddddd;
+}
+.contentarea{
+	padding-left:104px;
+}
+
+.g94{
+	margin-top: 10px;
+}
+.contentarea {
+    margin-left: 0px;
+    padding-top: 1px;
+    width: 1252px;
+}
+.input-group .form-control {
+    margin-bottom: 0;
+    width: -moz-calc(100% - 256px);
+    width: -webkit-calc(100% - 256px);
+    width: -o-calc(100% - 256px);
+    width: calc(100% - 256px);
+}

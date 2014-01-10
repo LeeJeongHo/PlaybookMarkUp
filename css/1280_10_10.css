@@ -1,0 +1,96 @@
+/*
+1280px grid system ~ Core CSS.
+10 columns ~ margin: 10px
+
+Based on the golden grid system - http://code.google.com/p/the-golden-grid/
+by Vladimir Carrer
+
+Created by the Grid System Generator - v1.00
+Learn more ~ http://www.gridsystemgenerator.com/
+*/
+
+/* =Containers
+--------------------------------------------------------------------------------*/
+.main
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1280px;
+}
+
+/* =Grid >> Global
+--------------------------------------------------------------------------------*/
+.g117,.g94, .g244, .g200, .g371, .g498, .g625, .g752, .g879, .g1006, .g1133, .g1260, .col371,.col371-2, .col200 {
+	display: inline;
+	float: left;
+	margin-left: 10px;
+}
+
+/* =Grid >> 10 Columns
+--------------------------------------------------------------------------------*/
+.g94{width:94px;}
+.g117{width:117px;}
+.g200{width:200px;}
+.g244{width:244px;}
+.g371{width:371px;}
+.g498{width:498px;}
+.g625{width:625px;}
+.g752{width:752px;}
+.g879{width:879px;}
+.g1006{width:1006px;}
+.g1133{width:1133px;}
+.g1260{width:1260px;}
+
+
+/* =Grid >> 10 Columns - no left margin
+--------------------------------------------------------------------------------*/
+.ml137{margin-left:137px;}
+.ml264{margin-left:264px;}
+.ml391{margin-left:391px;}
+.ml518{margin-left:518px;}
+.ml645{margin-left:645px;}
+.ml772{margin-left:772px;}
+.ml899{margin-left:899px;}
+.ml1026{margin-left:1026px;}
+.ml1153{margin-left:1153px;}
+.ml1280{margin-left:1280px;}
+
+
+.inside{margin-left:0;}
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack */
+
+.clearfix:after {
+	clear: both;
+	content:' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
