@@ -130,10 +130,10 @@ body{
     padding: 12px 20px;
 }
 .panel-default > .panel-heading {
-    background-color: #EDF5FA;
-    background-image: -moz-linear-gradient(center top , #FDFEFE, #EDF5FA);
+    background-color: #366EAB;
+    /*background-image: -moz-linear-gradient(center top , #FDFEFE, #EDF5FA);*/
     border-bottom: 1px solid #C3DDEC;
-    color: #3784B1;
+    color: #FFFFFF;
 }
 .pb_content_navi {
 	background-color: #EDF5FA;
