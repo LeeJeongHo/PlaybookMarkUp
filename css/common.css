@@ -2,39 +2,13 @@ body{
 	width:1260px;
 	margin:0 auto;
 	background-color: #ffffff;
-	/*background: url("../img/subtle_dots.png") repeat scroll 0 0 rgba(0, 0, 0, 0);*/
-	
+	font-family: Arial, Arial Black, Tahoma, Trebuchet MS, Verdana;
+}
+td{
+	word-wrap:break-word;
 }
 .navbar .navbar-default{
 	margin-bottom:10px;
-}
-.breadcrumbs{
-	border: 1px solid #C3DDEC; 
-	margin-top:10px; 
-	margin-left:10px;
-	background-color: #ffffff;
-	background-color: #EDF5FA;
-    background-image: -moz-linear-gradient(center top , #FDFEFE, #EDF5FA);
-    border-radius: 4px 4px 4px 4px;
-    height: 46px;
-    line-height: 50px;
-    margin-bottom: 0;
-    
-    vertical-align: middle;
-	
-}
-
-/*
-	sidebar 스타일
-*/
-.main-container >.g371 {
-	margin-left: 0px;
-	margin-top: 10px;
-	float: left;
-}
-.pb_sidebar{
-	width:100%;
-	height:786px;
 }
 .navbar{
 	background-color: #ffffff;
@@ -49,6 +23,36 @@ body{
 .navlink{
 	margin-right: 10px;
 }
+.breadcrumbs{
+	border: 1px solid #C3DDEC; 
+	margin-top:10px; 
+	margin-left:10px;
+	background-color: #ffffff;
+	background-color: #EDF5FA;
+    background-image: -moz-linear-gradient(center top , #FDFEFE, #EDF5FA);
+    border-radius: 4px 4px 4px 4px;
+    height: 46px;
+    line-height: 50px;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+.input100{
+	width:100%;
+}
+/*
+	sidebar 스타일
+*/
+.main-container >.g371 {
+	margin-left: 0px;
+	margin-top: 10px;
+	float: left;
+}
+.pb_sidebar{
+	width:100%;
+	height:786px;
+}
+
+
 .divider{
 	border-bottom: 1px solid #DDDDDD;
 	width: 90%;
@@ -58,18 +62,16 @@ body{
 	border-bottom: 1px solid #dddddd;
 	margin-left: 10px;
 	margin-right: 10px;
+}
 
-}
-.col-xs-12
-{
-	border: 1px solid #DDDDDD; 
-}
 .row{
 	margin-right: -20px;
 }
-/*
- * 추가 내용
- */
+ .col-xs-12
+{
+	border: 1px solid #DDDDDD; 
+}
+
 .col200 .g200{
 	background-color: #FFFFFF;
     border: 1px solid #C3DDEC;
@@ -85,17 +87,17 @@ body{
     margin-left: 0px;
     margin-right: 0px;
 }
-/*
-.row .col-xs-8{
-	margin-left: -2px;
-	margin-right: -2px;
-	border: none;
-}*/
 .row .g244{
 	background-color: #FFFFFF;
     border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
+.page-content > .row > .col-xs-8{
+	padding: 0px;
+}
+/*
+	table
+*/
 .pb_table{
 	width:100%;
 	height:776px;
@@ -113,6 +115,9 @@ body{
     border: 1px solid #C3DDEC;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
+/*
+panel
+*/
 .panel-heading .label {
     float: right;
     padding: 0.4em 0.6em;
@@ -145,35 +150,6 @@ body{
     padding: 0;
     vertical-align: middle;
 }
-/*
-	추가내용 2
-*/
-.boxborder{
-	border : 1px solid #C3DDEC;
-	background-color: #FFFFFF;
-    border-radius: 4px;
-    border: 1px solid #C3DDEC;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-}
-.page-content > .row > .col-xs-8{
-	padding: 0px;
-}
-/*
-1월 9일 추가사항
-*/
-.panel-head{
-	background-color: #5B96CB;
-	padding:10px 12px;
-	height:56px;
-	border-radius: 4px;
-}
-.pb_sidebar > .panel-head{
-	border-radius: 4px 4px 0 0;
-}
-.m10-navbar{
-	margin-left: 10px;
-	margin-top: 10px;
-}
 
 .panel_title
 {
@@ -193,8 +169,31 @@ body{
 .panel > .panel-content{
 	padding:10px 12px;
 }
-.btn{
-	border-radius:4px;
+.boxborder{
+	border : 1px solid #C3DDEC;
+	background-color: #FFFFFF;
+    border-radius: 4px;
+    border: 1px solid #C3DDEC;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+/*
+1월 9일 추가사항
+*/
+.panel-head{
+	background-color: #5B96CB;
+	padding:10px 12px;
+	height:56px;
+	border-radius: 4px;
+}
+.pb_sidebar > .panel-head{
+	border-radius: 4px 4px 0 0;
+}
+/*
+	margin,padding 관련
+*/
+.m10-navbar{
+	margin-left: 10px;
+	margin-top: 10px;
 }
 .m10-right{
 	margin-right: 10px;
@@ -202,9 +201,41 @@ body{
 .m10-left{
 	margin-left: 10px;
 }
+.m10-top{
+	margin-top: 10px;
+}
+.m10-bottom{
+	margin-bottom: 10px;
+}
 .m15-left-top{
 	margin-left: 15px;
 	margin-top: 10px;	
+}
+.p10-left{
+	padding-left: 10px;
+}
+.p10-right{
+	padding-right: 10px;
+}
+.p10-top{
+	padding-top: 10px;
+}
+.p10-bottom{
+	padding-bottom: 10px;
+}
+
+.btn{
+	border-radius:4px;
+}
+
+.btn-sm > [class*="icon-"] {
+    margin-right: 0;
+}
+.btn-sm {
+    border-width: 4px;
+    font-size: 13px;
+    line-height: 1.39;
+    padding: 4px 7px;
 }
 /*
 	화면 줄였을 때의 contentarea 속성값 (margin)
@@ -259,23 +290,11 @@ body{
 		width:100%;
 	}
 }
-
-.btn-primary,.btn-primary:hover {
-    background-color: #366eab !important;
-    border-color: #366eab;
-}
-
-.btn-primary:focus:hover{
-	background-color: #104681 !important;
-    border-color: #104681;
-}
-/*.btn, .btn-default, .btn:focus, .btn-default:focus {
-    background-color: #104681 !important;
-    border-color: #104681;
-}*/
 .add_menu{
 	font-weight: bold;
 	font-size: 16px;
 	color:#5B96CB;
-
+}
+.inline_b{
+	display:inline-block;
 }

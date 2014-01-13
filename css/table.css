@@ -42,7 +42,7 @@ tr > td > a {
     color:#5B96CB;
 }
 .panel-head{
-    border-radius: 0px 4px 4px 0px;
+    border-radius: 0px 4px 0px 0px;
 }
 .table thead tr th{
     font-size:14px;
