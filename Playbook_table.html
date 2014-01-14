@@ -1,56 +1,168 @@
 <html>
-<head>
-	<title>playbook</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/ace.min.css">
-	<link rel="stylesheet" type="text/css" href="css/common.css">
-	<link rel="stylesheet" type="text/css" href="css/1280_10_10.css">
-	<link rel="stylesheet" type="text/css" href="css/two_div.css">
-	<link rel="stylesheet" type="text/css" href="css/uncompressed/font-awesome.css">
-	<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
-	<script type="text/javascript" src="js/fuelux/fuelux.tree.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="assets/js/fuelux/data/fuelux.tree-sampledata.js"></script>
-	<script src="assets/js/ace.min.js"></script>
-	<script src="js/ace-elements.min.js"></script>
-</head>
-<body>
-	<div id="container" >
-		<!-- Start navbar -->
-		<DIV id="header" class="navbar navbar-default" >
-			<img src="img/logo.png" class="navlogo">
-			<span class="navinfo">
-				<a href="#" class="navlink">Menu1</a>
-				<a href="#" class="navlink">Menu2</a>
-				<a href="#" class="navlink">Menu2</a>
-			</span>
-		</DIV>
-		<!-- End navbar -->
+	<head>
+		<title>playbook</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/ace.min.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+		<link rel="stylesheet" type="text/css" href="css/1280_10_10.css">
+		<link rel="stylesheet" type="text/css" href="css/two_div.css">
+		<link rel="stylesheet" type="text/css" href="css/uncompressed/font-awesome.css">
+		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+		<script type="text/javascript" src="js/fuelux/fuelux.tree.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/fuelux/data/fuelux.tree-sampledata.js"></script>
+		<script src="js/ace.min.js"></script>
+		<script src="js/ace-elements.min.js"></script>
+	</head>
+	<body>
+		<div id="container" >
+			<!-- Start navbar -->
+			<DIV id="header" class="navbar navbar-default" >
+				<img src="img/logo.png" class="navlogo">
+				<span class="navinfo"> 
+					<a href="#" class="navlink">Menu1</a> 
+					<a href="#" class="navlink">Menu2</a> 
+					<a href="#" class="navlink">Menu2</a> 
+				</span>
+			</DIV>
+			<!-- End navbar -->
 
-		<!-- Start main container -->
-		<div id="main-container" class="main-container" >
-			<!--Start sidebar-->
+			<!-- Start main container -->
+			<div id="main-container" class="main-container" >
+				<!--Start sidebar-->
 				<div id="sidebar" class="g371" >
 					<div class="panel-default panel pb_sidebar">
 						<div class="panel-head clearfix">
-							<p class="panel_title" style="display:inline-block; margin-top:3px;">Playbook</p>
-							<a class="btn btn-primary" style="float:right;">create playbook</a>
+							<p class="panel_title" style="display:inline-block; margin-top:3px;">
+								<a class="accordion-toggle" href="#collapseOne" data-parent="#accordion" data-toggle="collapse" style="color:#ffffff;">
+								 Playbook 
+								</a>
+							</p>
+							<a class="btn btn-primary" style="float:right;">
+								create playbook
+							</a>
 						</div>
-						<div class="panel-content">
-							
+						<div class="panel-collapse in" style="height:auto;" id="collapseOne">
+							<div class="panel-body" style="height:auto;">
+								<div id="tree1" class="tree tree-selectable">
+									<!-- folder1 Start -->
+									<div class="tree-folder" style="display: block;">
+										<div class="tree-folder-header">
+											<i class="icon-minus"></i>
+											<div class="tree-folder-name">
+												PowerPharma -  Product X
+											</div>
+										</div>
+										<div class="tree-folder-content" style="display: block;">
+											<div class="tree-folder-header">
+												<i class="icon-minus"></i>
+												<div class="tree-folder-name">
+													AAA001.US
+												</div>
+											</div>
+											<div class="tree-folder-content" style="display: block;">
+												<div class="tree-item" style="display: block;">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														01.Marketing
+													</div>
+												</div>
+												<div class="tree-item" style="display: block;">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														02.Market Research
+													</div>
+												</div>
+												<div class="tree-item" style="display: block;">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														03.Sales
+													</div>
+												</div>
+												<div class="tree-item" style="display: block;">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														04.Clinical
+													</div>
+												</div>
+												<div class="tree-item" style="display: block;">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														05.Medical Affairs
+													</div>
+												</div>
+												<div class="tree-item" style="display: block;">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														06.Market Access
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+									<!-- folder1 end -->
+									<div class="tree-folder" style="display: block;">
+										<div class="tree-folder-header">
+											<i class="icon-minus"></i>
+											<div class="tree-folder-name">
+												Amgen - Denosumab
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel-default panel" style="border:none;">
+							<div class="panel-head clearfix" style="border-radius:0;">
+								<p class="panel_title" style="display:inline-block; margin-top:3px;">
+									<a class="accordion-toggle collapsed" href="#collapseTwo" data-parent="#accordion" data-toggle="collapse" style="color:#ffffff;">
+									 Report 
+									</a>
+								</p>
+							</div>
+							<div class="panel-collapse collapse" style="height:auto;" id="collapseTwo">
+								<div class="panel-body" style="height:auto;">
+									<ul>
+										<li style="list-style:none;"><a>-Flash Report</a></li>
+										<li style="list-style:none;"><a>-Activity</a></li>
+										<li style="list-style:none;"><a>-Dependency Report</a></li>
+										<li style="list-style:none;"><a>-Budget Report</a></li>
+									</ul>
+								</div>
+							</div>			
 						</div>
 					</div>
+
 				</div>
-			<!--End Sidebar-->
+				<!--End Sidebar-->
 
 				<div id="contents" class="contentarea">
-				
+
 					<div id="nav" class="panel-head m10-navbar" >
 						<h3 style="color:#ffffff;display:inline-block;margin-top:7px;">US-Vaccines</h3>
 						<div class="pull-right">
-							<button class="btn btn-sm btn-primary">
-								Action
-							</button>
+							<div class="btn-group">
+								<button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+									Action
+									<i class="icon-angle-down icon-on-right"></i>
+								</button>
+								<ul class="dropdown-menu pull-right">
+									<li>
+										<a href="#">Auto Move</a>
+									</li>
+									<li>
+										<a href="#">Find and Replace</a>
+									</li>
+									<li>
+										<a href="#">Reaasign User</a>
+									</li>
+									<li class="divider"></li>
+									<li>
+										<a href="#">Manage Version</a>
+									</li>
+								</ul>
+							</div>
 							<button class="btn btn-sm btn-primary">
 								Dashboard
 							</button>
@@ -83,30 +195,25 @@
 							<DIV class="col-xs-8">
 								<div class="pb_table_content panel-default">
 									<div class="panel-heading clearfix">
-										<span style="margin-top:10px; display:inline-block;">
-											<h3 class="panel-title">Table Edit Mode</h3>
-										</span>
+										<span style="margin-top:10px; display:inline-block;"> <h3 class="panel-title">Table Edit Mode</h3> </span>
 										<div id="formarea" class="pull-right m10-right">
 											<div style="width:140px;display:inline-block;'">
-												<div class="btn-group open">
+												<div class="btn-group">
 													<button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
-														Success large
+														Search Options
 														<i class="icon-angle-down icon-on-right"></i>
 													</button>
 													<ul class="dropdown-menu pull-right">
 														<li>
-															<a href="#">Action</a>
+															<a href="#">deliverables</a>
 														</li>
 														<li>
-															<a href="#">Another action</a>
+															<a href="#">responsibility</a>
 														</li>
 														<li>
-															<a href="#">Something else here</a>
+															<a href="#">registrant</a>
 														</li>
-														<li class="divider"></li>
-														<li>
-															<a href="#">Separated link</a>
-														</li>
+
 													</ul>
 												</div>
 											</div>
@@ -130,41 +237,54 @@
 									<div id="table-wraper" style="padding:12px 10px; width:100%;">
 
 										<div class="table-responsive">
-											<table class="table table-bordered table-hover datatable" style="font-size:12px;">
+											<table class="table table-bordered table-hover datatable" style="font-size:12px;table-layout:fixed;">
 												<thead>
 													<tr role="row">
-														<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1">Deliverables</th>
+														<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="2">Deliverables</th>
 														<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" >Start Date</th>
 														<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" >End Date</th>
+														<th role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1">Status</th>
 														<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" >Priority</th>
-														<th role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1">Responsibility</th>
+														<th role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="2">Responsibility</th>
 														<th role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1"></th>
 													</tr>
 												</thead>
 												<tbody>
-													<tr>
-														<td>CA Members</td>
-														<td>Campbell Alliance</td>
-														<td>aaa@aaa.aaa</td>
-														<td>ON</td>
-														<td>ACTIVE</td>
+													<tr class="tr">
+														<td colspan="2">01. Marketing</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td colspan="2"></td>
+														<td><a href="#"></a></td>
+													</tr>
+													<tr id="collapseme1" class="collapse tr2">
+														<td colspan="2">Marketing Core Deliverables</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td colspan="2"></td>
+														<td><a href="#"></a></td>
+													</tr>
+													<tr id="collapseme2" class="collapse">
+														<td colspan="2">Post-Launch Trade Show Graphics - US</td>
+														<td>06-MAY-2013</td>
+														<td>06-MAY-2013</td>
+														<td>Unfunded</td>
+														<td>HIGH</td>
+														<td colspan="2">Anne, MArry</td>
 														<td><a href="#">Edit</a></td>
 													</tr>
 													<tr>
-														<td>CA Members</td>
-														<td>Campbell Alliance</td>
-														<td>aaa@aaa.aaa</td>
-														<td>ON</td>
-														<td>ACTIVE</td>
-														<td><a href="#">Edit</a></td>
-													</tr>
-													<tr>
-														<td>CA Members</td>
-														<td>Campbell Alliance</td>
-														<td>aaa@aaa.aaa</td>
-														<td>ON</td>
-														<td>ACTIVE</td>
-														<td><a href="#">Edit</a></td>
+														<td colspan="2">02. Market Reaserch</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td colspan="2"></td>
+														<td></td>
 													</tr>
 												</tbody>
 											</table>
@@ -186,46 +306,64 @@
 										<div class="tree-folder" style="display: block;">
 											<div class="tree-folder-header">
 												<i class="icon-minus"></i>
-												<div class="tree-folder-name">Status</div>
+												<div class="tree-folder-name">
+													Status
+												</div>
 											</div>
 											<div class="tree-folder-content" style="display: block;">
 												<div class="tree-item" style="display: block;">
 													<i class="icon-remove"></i>
-													<div class="tree-item-name">Not Initiated</div>
+													<div class="tree-item-name">
+														Not Initiated
+													</div>
 												</div>
 												<div class="tree-item" style="display: block;">
 													<i class="icon-remove"></i>
-													<div class="tree-item-name">On Track</div>
+													<div class="tree-item-name">
+														On Track
+													</div>
 												</div>
 												<div class="tree-item" style="display: block;">
 													<i class="icon-remove"></i>
-													<div class="tree-item-name">Delayed</div>
+													<div class="tree-item-name">
+														Delayed
+													</div>
 												</div>
 												<div class="tree-item" style="display: block;">
 													<i class="icon-remove"></i>
-													<div class="tree-item-name">Completed</div>
+													<div class="tree-item-name">
+														Completed
+													</div>
 												</div>
 												<div class="tree-item" style="display: block;">
 													<i class="icon-remove"></i>
-													<div class="tree-item-name">Canceled</div>
+													<div class="tree-item-name">
+														Canceled
+													</div>
 												</div>
 												<div class="tree-item" style="display: block;">
 													<i class="icon-remove"></i>
-													<div class="tree-item-name">At Risk</div>
+													<div class="tree-item-name">
+														At Risk
+													</div>
 												</div>
 												<div class="tree-item" style="display: block;">
 													<i class="icon-remove"></i>
-													<div class="tree-item-name">Unfunded</div>
+													<div class="tree-item-name">
+														Unfunded
+													</div>
 												</div>
 
 											</div>
-												
+
 										</div>
 										<!-- folder1 end -->
 										<div class="tree-folder" style="display: block;">
 											<div class="tree-folder-header">
 												<i class="icon-minus"></i>
-												<div class="tree-folder-name">PRIORITY</div>
+												<div class="tree-folder-name">
+													PRIORITY
+												</div>
 											</div>
 										</div>
 									</div>
@@ -236,24 +374,30 @@
 					</div>
 					<!--컨텐츠 끝-->
 				</div>
+			</div>
+			<!--End Main-container-->
 		</div>
-		<!--End Main-container-->
-	</div>
-<script type="text/javascript">
+		<script type="text/javascript">
+			jQuery(function($) {
 
-	jQuery(function($){
-		$('#tree1').ace_tree({
-			dataSource: treeDataSource ,
-			multiSelect:true,
-			loadingHTML:'<div class="tree-loading"><i class="icon-refresh icon-spin blue"></i></div>',
-			'open-icon' : 'icon-minus',
-			'close-icon' : 'icon-plus',
-			'selectable' : true,
-			'selected-icon' : 'icon-ok',
-			'unselected-icon' : 'icon-remove'
-		});
-	}); 
-</script>
+				$(".tr").click(function() {
+					if ($("#collapseme1").hasClass("collapse")) {
+						$("#collapseme1").removeClass("collapse");
+					} else {
+						$("#collapseme1").addClass("collapse");
+						$("#collapseme2").addClass("collapse");
+					}
+				});
+				$(".tr2").click(function() {
+					if ($("#collapseme2").hasClass("collapse")) {
+						$("#collapseme2").removeClass("collapse");
+					} else {
+						$("#collapseme2").addClass("collapse");
+					}
+				});
+				
+			});
+		</script>
 
-</body>
+	</body>
 </html>
