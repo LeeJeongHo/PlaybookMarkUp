@@ -237,6 +237,25 @@ panel
     line-height: 1.39;
     padding: 4px 7px;
 }
+.top_menu{
+	display: inline-block;
+	float: right;
+	margin-top: 15px;
+}
+.top_menu:after{
+	clear: both;
+}
+.top_menu > li{
+	list-style: none;
+	display: inline;
+}
+.side_menu{
+	margin: 0px;
+}
+.side_menu > li{
+	list-style: none;
+	display:block;
+}
 /*
 	화면 줄였을 때의 contentarea 속성값 (margin)
 */
