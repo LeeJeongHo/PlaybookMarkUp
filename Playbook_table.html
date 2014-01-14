@@ -30,20 +30,20 @@
 			<!-- Start main container -->
 			<div id="main-container" class="main-container" >
 				<!--Start sidebar-->
-				<div id="sidebar" class="g371" >
-					<div class="panel-default panel pb_sidebar">
+				<div id="accordion" class="g371 panel-group pb_sidebar">
+					<div class="panel-default panel ">
 						<div class="panel-head clearfix">
 							<p class="panel_title" style="display:inline-block; margin-top:3px;">
 								<a class="accordion-toggle" href="#collapseOne" data-parent="#accordion" data-toggle="collapse" style="color:#ffffff;">
-								 Playbook 
+								 	Playbook 
 								</a>
 							</p>
 							<a class="btn btn-primary" style="float:right;">
 								create playbook
 							</a>
 						</div>
-						<div class="panel-collapse in" style="height:auto;" id="collapseOne">
-							<div class="panel-body" style="height:auto;">
+						<div class="panel-collapse collapse in" id="collapseOne">
+							<div class="panel-body" style="height:672px;">
 								<div id="tree1" class="tree tree-selectable">
 									<!-- folder1 Start -->
 									<div class="tree-folder" style="display: block;">
@@ -61,14 +61,14 @@
 												</div>
 											</div>
 											<div class="tree-folder-content" style="display: block;">
-												<div class="tree-item" style="display: block;">
-													<i class="icon-remove"></i>
+												<div class="tree-item tree-selected" style="display: block;">
+													<i class="icon-ok"></i>
 													<div class="tree-item-name">
 														01.Marketing
 													</div>
 												</div>
-												<div class="tree-item" style="display: block;">
-													<i class="icon-remove"></i>
+												<div class="tree-item tree-selected" style="display: block;">
+													<i class="icon-ok"></i>
 													<div class="tree-item-name">
 														02.Market Research
 													</div>
@@ -113,16 +113,17 @@
 								</div>
 							</div>
 						</div>
-						<div class="panel-default panel" style="border:none;">
+					</div>
+						<div class="panel-default panel">
 							<div class="panel-head clearfix" style="border-radius:0;">
 								<p class="panel_title" style="display:inline-block; margin-top:3px;">
 									<a class="accordion-toggle collapsed" href="#collapseTwo" data-parent="#accordion" data-toggle="collapse" style="color:#ffffff;">
-									 Report 
+									 	Report 
 									</a>
 								</p>
 							</div>
-							<div class="panel-collapse collapse" style="height:auto;" id="collapseTwo">
-								<div class="panel-body" style="height:auto;">
+							<div class="panel-collapse collapse" id="collapseTwo">
+								<div class="panel-body" style="height:666px;">
 									<ul>
 										<li style="list-style:none;"><a>-Flash Report</a></li>
 										<li style="list-style:none;"><a>-Activity</a></li>
@@ -133,9 +134,9 @@
 							</div>			
 						</div>
 					</div>
-
+				<!--End Sidebar-->	
 				</div>
-				<!--End Sidebar-->
+				
 
 				<div id="contents" class="contentarea">
 
@@ -237,11 +238,11 @@
 									<div id="table-wraper" style="padding:12px 10px; width:100%;">
 
 										<div class="table-responsive">
-											<table class="table table-bordered table-hover datatable" style="font-size:12px;table-layout:fixed;">
+											<table class="table table-hover datatable" style="font-size:12px;table-layout:fixed; border:1px solid #DDDDDD;">
 												<thead>
-													<tr role="row">
-														<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="2">Deliverables</th>
-														<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" >Start Date</th>
+													<tr role="row" style="border-top:none;">
+														<th class="sorting_desc" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="2">Deliverables</th>
+														<th class="sorting_asc" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" >Start Date</th>
 														<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" >End Date</th>
 														<th role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1">Status</th>
 														<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" >Priority</th>
@@ -317,8 +318,8 @@
 														Not Initiated
 													</div>
 												</div>
-												<div class="tree-item" style="display: block;">
-													<i class="icon-remove"></i>
+												<div class="tree-item tree-selected" style="display: block;">
+													<i class="icon-ok"></i>
 													<div class="tree-item-name">
 														On Track
 													</div>
@@ -383,16 +384,20 @@
 				$(".tr").click(function() {
 					if ($("#collapseme1").hasClass("collapse")) {
 						$("#collapseme1").removeClass("collapse");
+						$("#cpllapseme1").children().addClass("m3px");
 					} else {
 						$("#collapseme1").addClass("collapse");
 						$("#collapseme2").addClass("collapse");
+						$("#cpllapseme1").children().removeClass("m3px");
 					}
 				});
 				$(".tr2").click(function() {
 					if ($("#collapseme2").hasClass("collapse")) {
 						$("#collapseme2").removeClass("collapse");
+						$("#cpllapseme2").children().addClass("m6px");
 					} else {
 						$("#collapseme2").addClass("collapse");
+						$("#cpllapseme2").children().removeClass("m6px");
 					}
 				});
 				

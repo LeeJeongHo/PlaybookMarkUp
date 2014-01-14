@@ -186,7 +186,7 @@ panel
 	border-radius: 4px;
 }
 .pb_sidebar > .panel-head{
-	border-radius: 4px 4px 0 0;
+	border-radius: 0 0 0 0;
 }
 /*
 	margin,padding 관련
@@ -316,4 +316,12 @@ panel
 }
 .inline_b{
 	display:inline-block;
+}
+
+.table thead > tr > th, .table tbody > tr > th, .table tfoot > tr > th, .table thead > tr > td, .table tbody > tr > td, .table tfoot > tr > td {
+    border-top: none;
+    border-right: 1px solid #dddddd;
+    line-height: 1.42857;
+    padding: 8px;
+    vertical-align: top;
 }
