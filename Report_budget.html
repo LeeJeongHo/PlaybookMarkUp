@@ -46,7 +46,16 @@
 				<div id="contents" class="contentarea">
 				
 					<div id="nav" class="panel-head m10-navbar" >
-						<h3 style="color:#ffffff;display:inline-block;margin-top:7px;">Dependency Report</h3>
+						<h3 style="color:#ffffff;display:inline-block;margin-top:7px;">Budget Report</h3>
+						
+						<div class="pull-right">
+							<button class="btn btn-sm btn-primary">
+								Table
+							</button>
+							<button class="btn btn-sm btn-primary">
+								Graph
+							</button>
+						</div>
 					</div>
 					<!--여기까지 변하지 않을 영역-->
 
@@ -55,7 +64,7 @@
 						<div id="content" class="row">
 							<!--start div1-->
 							<DIV class="col-xs-8">
-								<div class="pb_table_content panel-default" id="table-scroll">
+								<div class="pb_table_content panel-default"  id="table-scroll">
 									<div id="table-wraper" style="width:100%; " >
 										<div class="panel-heading clearfix" style="padding: 5px;">
 											<div id="formarea" class="pull-right m10-right">
@@ -78,37 +87,41 @@
 													</h3>
 												</span>
 											</div>
+
 											<table class="table table-bordered table-hover datatable" style="font-size:12px; table-layout: fixed; margin-bottom: 20px;">
 												<thead>
 													<tr role="row">
-														<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1">
-															Type
-														</th>
-														<th class="sorting" role="columnheader" tabindex="1" aria-controls="sample-table-2" rowspan="1" colspan="2">
+														<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="2">
 															Deleverable Name
 														</th>
-														<th class="sorting" role="columnheader" tabindex="2" aria-controls="sample-table-2" rowspan="1" >
-															Responsibility
+														<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" >
+															Total Budget $
 														</th>
-														<th class="sorting" role="columnheader" tabindex="3" aria-controls="sample-table-2" rowspan="1" >
-															Start Date
+														<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" >
+															Funded %
 														</th>
-														<th class="sorting" role="columnheader" tabindex="4" aria-controls="sample-table-2" rowspan="1" >
-															End Date
+														<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" >
+															Unfunded %
+														</th>
+														<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" >
+															Committed %
+														</th>
+														<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" >
+															uncommitted %
 														</th>
 													</tr>
 												</thead>
 												
 												<tbody>
 													<tr>
-														<td colspan="6" class="table-header">
+														<td colspan="7" class="table-header">
 															<h3 class="panel-title" style="text-align: center;">
 																01. Marketing
 															</h3>
 														</td>
 													</tr>
 													<tr>
-														<td colspan="6" class="alert-info">
+														<td colspan="7" class="alert-info">
 															<h4 class="panel-title" style="text-align: center;">
 																<i class="icon-inbox"></i>
 																Now Approved - Soft Launch (3)
@@ -117,64 +130,46 @@
 													</tr>
 													
 													<tr>
-														<td></td>
 														<td colspan="2">
-															<b>Core Visual Aid Deployment</b>
+															<a href="#">
+																Early Experience Program-Welcome Letter
+															</a>
 														</td>
-														<td>Concentric</td>
-														<td>04-FEB-2013</td>
-														<td>18-APR-2013</td>
+														<td>$12,000</td>
+														<td>50%</td>
+														<td>50%</td>
+														<td>50%</td>
+														<td>50%</td>
 													</tr>
 													
 													<tr>
-														<td>Start To Start</td>
 														<td colspan="2">
-															<font color="#666666">Dependent On</font>
-															<br />
-															CRC Review of Promotional Materials
+															<a href="#">
+																Approval Splash Page
+															</a>
 														</td>
-														<td>Concentric</td>
-														<td>04-FEB-2013</td>
-														<td>18-APR-2013</td>
+														<td>$12,000</td>
+														<td>50%</td>
+														<td>50%</td>
+														<td>50%</td>
+														<td>50%</td>
 													</tr>
 													
 													<tr>
-														<td>Start To Start</td>
 														<td colspan="2">
-															<font color="#666666">Dependent On</font>
-															<br />
-															Develop Messaging
+															<a href="#">
+																Early Experience Program-Welcome Letter
+															</a>
 														</td>
-														<td>Concentric</td>
-														<td>04-FEB-2013</td>
-														<td>18-APR-2013</td>
-													</tr>
-													
-													
-													<tr>
-														<td></td>
-														<td colspan="2">
-															<b>Apremilast Branded Booth Deployment</b>
-														</td>
-														<td>Concentric</td>
-														<td>ON GOING</td>
-														<td>18-APR-2013</td>
+														<td>$12,000</td>
+														<td>50%</td>
+														<td>50%</td>
+														<td>50%</td>
+														<td>50%</td>
 													</tr>
 													
 													<tr>
-														<td>Start To Start</td>
-														<td colspan="2">
-															<font color="#666666">Dependent On</font>
-															<br />
-															CRC Review of Promotional Materials
-														</td>
-														<td>Concentric</td>
-														<td>ON GOING</td>
-														<td>18-APR-2013</td>
-													</tr>
-													
-													<tr>
-														<td colspan="6" class="alert-info">
+														<td colspan="7" class="alert-info">
 															<h4 class="panel-title" style="text-align: center;">
 																<i class="icon-inbox"></i>
 																Early Experience Program (1)
@@ -183,19 +178,20 @@
 													</tr>
 													
 													<tr>
-														<td>End To End</td>
 														<td colspan="2">
-															<font color="#666666">Dependent On</font>
-															<br />
-															Pharmacy Flashcard Deployment
+															<a href="#">
+																New Approve Ad
+															</a>
 														</td>
-														<td>Concentric</td>
-														<td>04-FEB-2013</td>
-														<td>18-APR-2013</td>
+														<td>$12,000</td>
+														<td>50%</td>
+														<td>50%</td>
+														<td>50%</td>
+														<td>50%</td>
 													</tr>
-													
 												</tbody>
 											</table>
+											
 											
 											<div class="panel-heading clearfix" style="padding-top: 0px;">
 												<span style="display:inline-block;">
@@ -204,37 +200,41 @@
 													</h3>
 												</span>
 											</div>
-											<table class="table table-bordered table-hover datatable" style="font-size:12px; table-layout: fixed;  margin-bottom: 20px;">
+
+											<table class="table table-bordered table-hover datatable" style="font-size:12px; table-layout: fixed; margin-bottom: 20px;">
 												<thead>
 													<tr role="row">
-														<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1">
-															Type
-														</th>
-														<th class="sorting" role="columnheader" tabindex="1" aria-controls="sample-table-2" rowspan="1" colspan="2">
+														<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="2">
 															Deleverable Name
 														</th>
-														<th class="sorting" role="columnheader" tabindex="2" aria-controls="sample-table-2" rowspan="1" >
-															Responsibility
+														<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" >
+															Total Budget $
 														</th>
-														<th class="sorting" role="columnheader" tabindex="3" aria-controls="sample-table-2" rowspan="1" >
-															Start Date
+														<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" >
+															Funded %
 														</th>
-														<th class="sorting" role="columnheader" tabindex="4" aria-controls="sample-table-2" rowspan="1" >
-															End Date
+														<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" >
+															Unfunded %
+														</th>
+														<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" >
+															Committed %
+														</th>
+														<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" >
+															uncommitted %
 														</th>
 													</tr>
 												</thead>
 												
 												<tbody>
 													<tr>
-														<td colspan="6" class="table-header">
+														<td colspan="7" class="table-header">
 															<h3 class="panel-title" style="text-align: center;">
 																01. Marketing
 															</h3>
 														</td>
 													</tr>
 													<tr>
-														<td colspan="6" class="alert-info">
+														<td colspan="7" class="alert-info">
 															<h4 class="panel-title" style="text-align: center;">
 																<i class="icon-inbox"></i>
 																Now Approved - Soft Launch (3)
@@ -243,64 +243,46 @@
 													</tr>
 													
 													<tr>
-														<td></td>
 														<td colspan="2">
-															<b>Core Visual Aid Deployment</b>
+															<a href="#">
+																Early Experience Program-Welcome Letter
+															</a>
 														</td>
-														<td>Concentric</td>
-														<td>04-FEB-2013</td>
-														<td>18-APR-2013</td>
+														<td>$12,000</td>
+														<td>50%</td>
+														<td>50%</td>
+														<td>50%</td>
+														<td>50%</td>
 													</tr>
 													
 													<tr>
-														<td>Start To Start</td>
 														<td colspan="2">
-															<font color="#666666">Dependent On</font>
-															<br />
-															CRC Review of Promotional Materials
+															<a href="#">
+																Approval Splash Page
+															</a>
 														</td>
-														<td>Concentric</td>
-														<td>04-FEB-2013</td>
-														<td>18-APR-2013</td>
+														<td>$12,000</td>
+														<td>50%</td>
+														<td>50%</td>
+														<td>50%</td>
+														<td>50%</td>
 													</tr>
 													
 													<tr>
-														<td>Start To Start</td>
 														<td colspan="2">
-															<font color="#666666">Dependent On</font>
-															<br />
-															Develop Messaging
+															<a href="#">
+																Early Experience Program-Welcome Letter
+															</a>
 														</td>
-														<td>Concentric</td>
-														<td>04-FEB-2013</td>
-														<td>18-APR-2013</td>
-													</tr>
-													
-													
-													<tr>
-														<td></td>
-														<td colspan="2">
-															<b>Apremilast Branded Booth Deployment</b>
-														</td>
-														<td>Concentric</td>
-														<td>ON GOING</td>
-														<td>18-APR-2013</td>
+														<td>$12,000</td>
+														<td>50%</td>
+														<td>50%</td>
+														<td>50%</td>
+														<td>50%</td>
 													</tr>
 													
 													<tr>
-														<td>Start To Start</td>
-														<td colspan="2">
-															<font color="#666666">Dependent On</font>
-															<br />
-															CRC Review of Promotional Materials
-														</td>
-														<td>Concentric</td>
-														<td>ON GOING</td>
-														<td>18-APR-2013</td>
-													</tr>
-													
-													<tr>
-														<td colspan="6" class="alert-info">
+														<td colspan="7" class="alert-info">
 															<h4 class="panel-title" style="text-align: center;">
 																<i class="icon-inbox"></i>
 																Early Experience Program (1)
@@ -309,17 +291,17 @@
 													</tr>
 													
 													<tr>
-														<td>End To End</td>
 														<td colspan="2">
-															<font color="#666666">Dependent On</font>
-															<br />
-															Pharmacy Flashcard Deployment
+															<a href="#">
+																New Approve Ad
+															</a>
 														</td>
-														<td>Concentric</td>
-														<td>04-FEB-2013</td>
-														<td>18-APR-2013</td>
+														<td>$12,000</td>
+														<td>50%</td>
+														<td>50%</td>
+														<td>50%</td>
+														<td>50%</td>
 													</tr>
-													
 												</tbody>
 											</table>
 										</div>
