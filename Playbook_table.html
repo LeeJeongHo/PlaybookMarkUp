@@ -143,49 +143,67 @@
 					<div id="nav" class="panel-head m10-navbar" >
 						<h3 style="color:#ffffff;display:inline-block;margin-top:7px;">US-Vaccines</h3>
 						<div class="pull-right">
-							<div class="btn-group">
-								<button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
-									Action
-									<i class="icon-angle-down icon-on-right"></i>
-								</button>
-								<ul class="dropdown-menu pull-right">
-									<li>
-										<a href="#">Auto Move</a>
-									</li>
-									<li>
-										<a href="#">Find and Replace</a>
-									</li>
-									<li>
-										<a href="#">Reaasign User</a>
-									</li>
-									<li class="divider"></li>
-									<li>
-										<a href="#">Manage Version</a>
-									</li>
-								</ul>
+							<ul class="line_ul">
+								<li>
+									<div class="btn-group">
+										<button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+											Action
+											<i class="icon-angle-down icon-on-right"></i>
+										</button>
+										<ul class="dropdown-menu pull-right">
+											<li>
+												<a href="#">Auto Move</a>
+											</li>
+											<li>
+												<a href="#">Find and Replace</a>
+											</li>
+											<li>
+												<a href="#">Reaasign User</a>
+											</li>
+											<li class="divider"></li>
+											<li>
+												<a href="#">Manage Version</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<button class="btn btn-sm btn-primary">
+										Dashboard
+									</button>
+								</li>
+								<li>
+									<button class="btn btn-sm btn-primary">
+										Timeline
+									</button>
+								</li>
+								<li>
+									<button class="btn btn-sm btn-primary active">
+										Table
+									</button>
+								</li>
+								<li>
+									<button class="btn btn-sm btn-primary">
+										Issues
+									</button>
+								</li>
+								<li>
+									<button class="btn btn-sm btn-primary">
+										Alert
+									</button>
+								</li>
+								<li>
+									<button class="btn btn-sm btn-primary">
+										Logs
+									</button>
+								</li>
+								<li>
+									<button class="btn btn-sm btn-primary">
+										Settings
+									</button>
+								</li>
 							</div>
-							<button class="btn btn-sm btn-primary">
-								Dashboard
-							</button>
-							<button class="btn btn-sm btn-primary">
-								Timeline
-							</button>
-							<button class="btn btn-sm btn-primary">
-								Table
-							</button>
-							<button class="btn btn-sm btn-primary">
-								Issues
-							</button>
-							<button class="btn btn-sm btn-primary">
-								Alert
-							</button>
-							<button class="btn btn-sm btn-primary">
-								Logs
-							</button>
-							<button class="btn btn-sm btn-primary">
-								Setting
-							</button>
-						</div>
+						</ul>
 					</div>
 					<!--여기까지 변하지 않을 영역-->
 
@@ -261,7 +279,7 @@
 														<td><a href="#"></a></td>
 													</tr>
 													<tr id="collapseme1" class="collapse tr2">
-														<td colspan="2">Marketing Core Deliverables</td>
+														<td colspan="2" style="padding-left:16px;">Marketing Core Deliverables</td>
 														<td></td>
 														<td></td>
 														<td></td>
@@ -270,7 +288,7 @@
 														<td><a href="#"></a></td>
 													</tr>
 													<tr id="collapseme2" class="collapse">
-														<td colspan="2">Post-Launch Trade Show Graphics - US</td>
+														<td colspan="2" style="padding-left:24px;">Post-Launch Trade Show Graphics - US</td>
 														<td>06-MAY-2013</td>
 														<td>06-MAY-2013</td>
 														<td>Unfunded</td>
@@ -384,20 +402,16 @@
 				$(".tr").click(function() {
 					if ($("#collapseme1").hasClass("collapse")) {
 						$("#collapseme1").removeClass("collapse");
-						$("#cpllapseme1").children().addClass("m3px");
 					} else {
 						$("#collapseme1").addClass("collapse");
 						$("#collapseme2").addClass("collapse");
-						$("#cpllapseme1").children().removeClass("m3px");
 					}
 				});
 				$(".tr2").click(function() {
 					if ($("#collapseme2").hasClass("collapse")) {
 						$("#collapseme2").removeClass("collapse");
-						$("#cpllapseme2").children().addClass("m6px");
 					} else {
 						$("#collapseme2").addClass("collapse");
-						$("#cpllapseme2").children().removeClass("m6px");
 					}
 				});
 				

@@ -249,6 +249,17 @@ panel
 	list-style: none;
 	display: inline;
 }
+.line_ul{
+	display: inline-block;
+	float: right;
+}
+.line_ul:after{
+	clear: both;
+}
+.line_ul > li{
+	list-style: none;
+	display: inline;
+}
 .side_menu{
 	margin: 0px;
 }
@@ -324,4 +335,11 @@ panel
     line-height: 1.42857;
     padding: 8px;
     vertical-align: top;
+}
+
+table > thead {
+	font-size: 12px;
+}
+tr{
+	font-size:12px;
 }
