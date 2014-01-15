@@ -46,6 +46,7 @@ tr > td > a {
 .tr1 td:first-child{
     padding-left: 24px;
 }
+
 @media (max-width: 767px){
     .page-content{
         padding-left: 20px;

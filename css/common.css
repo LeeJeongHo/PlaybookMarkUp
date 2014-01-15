@@ -376,3 +376,12 @@ tr{
 .pb_content_header{
 	color:#ffffff;display:inline-block;margin-top:7px;
 }
+.accordion_body{
+	height: 666px;
+}
+.table{
+    table-layout: fixed;
+}
+.table-wraper{
+    padding:12px 10px;
+}

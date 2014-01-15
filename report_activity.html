@@ -18,9 +18,9 @@
 	<body>
 		<div id="container" >
 			<!-- Start navbar -->
-			<div id="header" class="navbar navbar-default" >
+			<div id="header" class="navbar navbar-default">
 				<img src="img/logo.png" class="navlogo">
-				<ul class="top_menu" style="display: inline;">
+				<ul class="top_menu pb_inline">
 					<li>
 						<a href="#" class="navlink">Menu1</a>
 					</li>
@@ -40,13 +40,13 @@
 				<div id="accordion" class="g371 panel-group pb_sidebar">
 					<div class="panel-default panel ">
 						<div class="panel-head clearfix">
-							<p class="panel_title" style="display:inline-block; margin-top:3px;">
+							<p class="panel_title inline_b">
 								<a class="accordion-toggle" href="#collapseOne" data-parent="#accordion" data-toggle="collapse" style="color:#ffffff;"> Playbook </a>
 							</p>
-							<a class="btn btn-primary" style="float:right;"> create playbook </a>
+							<a class="btn btn-primary pull-right"> create playbook </a>
 						</div>
 						<div class="panel-collapse collapse in" id="collapseOne">
-							<div class="panel-body" style="height:666px;">
+							<div class="panel-body accordion_body">
 								<div id="tree1" class="tree tree-selectable">
 									<!-- folder1 Start -->
 									<div class="tree-folder" style="display: block;">
@@ -124,7 +124,7 @@
 							</p>
 						</div>
 						<div class="panel-collapse collapse" id="collapseTwo">
-							<div class="panel-body" style="height:666px;">
+							<div class="panel-body accordion_body">
 								<ul>
 									<li style="list-style:none;">
 										<a>-Flash Report</a>
@@ -145,21 +145,22 @@
 				</div>
 				<!--End Sidebar-->
 
+				<!-- Start contents -->
 				<div id="contents" class="contentarea">
 
 					<div id="nav" class="panel-head m10-navbar" >
-						<h3 style="color:#ffffff;display:inline-block;margin-top:7px;">
+						<h3 class="pb_content_header">
 							Activity Report
 						</h3>
 					</div>
 					
-					<!-- Start page-content -->
+					
 					<div class="page-content">
-						<div id="content" class="row">
+						<div class="row">
 							<!-- start content -->
 							<div class="col-xs-8">
 								<div class="pb_table_content panel-default" id="table-scroll">
-									<div id="table-wraper" style="width:100%; " >
+									<div id="table-wraper">
 										<!-- Start panel-heading -->
 										<div class="panel-heading clearfix" style="padding: 5px; border:none;">
 											<div id="formarea" class="pull-right m10-right">
@@ -176,9 +177,9 @@
 										<!-- Start Table1 -->
 										<div class="table-responsive">
 											<div class="panel-heading clearfix" style="padding-top: 0px; ">
-												<span style="display:inline-block;"> <h3 class="panel-title"> Product X - France - Vaccines </h3> </span>
+												<span class="inline_b"> <h3 class="panel-title"> Product X - France - Vaccines </h3> </span>
 											</div>
-											<table class="table table-bordered datatable" style="font-size:12px; table-layout: fixed; margin-bottom: 20px;">
+											<table class="table table-bordered datatable">
 												<thead>
 													<tr role="row">
 														<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1"> Deliverables </th>
@@ -416,7 +417,9 @@
 										</div>
 									</div>
 									<!-- End Tree Filter -->
-									<label class="m10-left m10-top" style="font-size:14px;"><b>Setting</b></label>
+									<label class="m10-left m10-top" style="font-size:14px;">
+										<b>Setting</b>
+									</label>
 									<!-- Start tree2 -->
 									<div id="tree2" class="tree tree-selectable">
 										<!-- folder1 Start -->
@@ -486,6 +489,7 @@
 					</div>
 					<!-- end contents area-->
 				</div>
+				<!-- End contents -->
 			</div>
 			<!--End Main-container-->
 		</div>

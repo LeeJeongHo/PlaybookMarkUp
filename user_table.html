@@ -20,7 +20,7 @@
 			<!-- Start navbar -->
 			<div id="header" class="navbar navbar-default" >
 				<img src="img/logo.png" class="navlogo">
-				<ul class="top_menu" style="display: inline;">
+				<ul class="top_menu pb_inline">
 					<li>
 						<a href="#" class="navlink">Menu1</a>
 					</li>
@@ -38,9 +38,17 @@
 			<div id="main-container" class="main-container" >
 				<!--Start sidebar-->
 				<div id="sidebar" class="g84">
-					<a href="#"><img src="img/btn_user.png"></a>
-					<a href="#"><img src="img/btn_company.png"></a>
-					<a href="#"><img src="img/btn_setting.png"></a>
+					<ul class="side_menu">
+						<li>
+							<a href="#"><img src="img/btn_user.png"></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/btn_company.png"></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/btn_setting.png"></a>
+						</li>
+					</ul>
 				</div>
 				<!--End Sidebar-->
 
@@ -48,21 +56,16 @@
 				<div id="contents" class="contentarea">
 					<!-- Start page-content -->
 					<div class="page-content">
-
 						<div id="content" class="row" style="margin-left:-9px;">
-							<!-- Start col-xs-12 boxborder panel-default -->
-							<div class="col-xs-12 boxborder panel-default" style="height:720px; padding:0px;">
+							<div class="col-xs-12 panel-default pb_main_contents_large">
 								<!-- pagecontent-header -->
 								<div id="nav" class="panel-head">
-									<div id="fullwidth" style="width:100%;">
-
-										<span class="panel_title inline_b" style="float:left;"> Total Records : 5372</span>
-
+									<div>
+										<h3 class="pb_content_header inline_b"> Total Records : 5372</h3>
 										<!-- right float button & search bar  start -->
 										<div id="formarea" class="pull-right m10-right ">
-
-											<div class="btn-group m10-right inline_b" style="margin-bottom:2px;">
-												<button class="btn btn-primary btn-sm dropdown-toggle no-border" data-toggle="dropdown" style="margin-top">
+											<div class="btn-group m10-right inline_b">
+												<button class="btn btn-primary btn-sm dropdown-toggle no-border" data-toggle="dropdown">
 													Success large
 													<i class="icon-angle-down icon-on-right"></i>
 												</button>
@@ -81,12 +84,11 @@
 													</li>
 												</ul>
 											</div>
-
 											<div class="input-icon input-icon-right inline_b m10-right">
 												<input id="form-field-icon-2" type="text" placeholder="Search..." size="25">
 												<i class="icon-globe "></i>
 											</div>
-											<div class="btn-group" style="margin-bottom:5px;">
+											<div class="btn-group">
 												<button class="btn btn-sm dropdown-toggle btn-primary no-border" data-toggle="dropdown">
 													<i class="icon-th-large" style="font-size:16px;"></i>
 												</button>
@@ -109,13 +111,10 @@
 														<a href="#">Print Veiw</a>
 													</li>
 												</ul>
-
 											</div>
-
 										</div>
 										<!-- right float button & search bar end -->
 									</div>
-
 								</div>
 								<!-- end pagecontent-header -->
 
@@ -129,15 +128,15 @@
 									</div>
 								</div>
 								<!-- Start Talbe -->
-								<div id="table-wraper" style="padding:12px; 10px;">
+								<div class="table-wraper">
 									<div class="table-responsive">
-										<table class="table table-bordered table-hover datatable" style="table-layout:fixed;">
+										<table class="table table-bordered table-hover datatable">
 											<thead>
 												<tr role="row">
 													<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1">User Type</th>
-													<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" >Company</th>
-													<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" >E-Mail</th>
-													<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" >Activation</th>
+													<th class="sorting_asc" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1">Company</th>
+													<th class="sorting_desc" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1">E-Mail</th>
+													<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1">Activation</th>
 													<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1">Status</th>
 													<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1">First Name</th>
 													<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1">Last Name</th>
@@ -147,7 +146,7 @@
 												</tr>
 											</thead>
 											<tbody>
-												<tr style="width:100%;">
+												<tr>
 													<td>CA Members</td>
 													<td>Campbell Alliance</td>
 													<td>aaa@aaa.aaasdfadsfadsasdgasgasdgaasdgasg</td>
@@ -220,13 +219,13 @@
 														<input type="text" class="input100">
 													</td>
 													<td>
-														<div style="padding-left:10%">
-															<p style="display:inline">
+														<div class="p10-left">
+															<p class="pb_inline">
 																<button class="btn btn-sm btn-success no-border">
 																	<i class="icon-ok"></i>
 																</button>
 															</p>
-															<p style="display:inline">
+															<p class="pb_inline">
 																<button class="btn btn-sm btn-danger no-border">
 																	<i class="icon-reply"></i>
 																</button>
@@ -240,7 +239,6 @@
 								</div>
 								<!-- End Table -->
 							</div>
-							<!--End col-xs-12 boxborder pannel-default-->
 						</div>
 					</div>
 					<!--End Page-content-->
