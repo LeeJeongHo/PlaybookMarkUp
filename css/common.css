@@ -201,8 +201,17 @@ panel
 .m10-right{
 	margin-right: 10px;
 }
+.m60-right{
+	margin-right: 60px;
+}
 .m10-left{
 	margin-left: 10px;
+}
+.m3-top{
+	margin-top: 3px;
+}
+.m5-top{
+	margin-top: 5px;
 }
 .m10-top{
 	margin-top: 10px;
@@ -214,6 +223,7 @@ panel
 	margin-left: 15px;
 	margin-top: 10px;	
 }
+
 .p10-left{
 	padding-left: 10px;
 }
@@ -226,7 +236,10 @@ panel
 .p10-bottom{
 	padding-bottom: 10px;
 }
-
+.p40-left-right{
+	padding-left: 40px; 
+	padding-right: 40px;
+}
 
 .btn{
 	border-radius:4px;
@@ -270,6 +283,11 @@ panel
 .side_menu > li{
 	list-style: none;
 	display:block;
+}
+
+.list_none{
+	list-style: none;
+	display: inline;
 }
 /*
 	화면 줄였을 때의 contentarea 속성값 (margin)

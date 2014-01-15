@@ -6,66 +6,77 @@
 		<link rel="stylesheet" type="text/css" href="css/ace.min.css">
 		<link rel="stylesheet" type="text/css" href="css/common.css">
 		<link rel="stylesheet" type="text/css" href="css/1280_10_10.css">
-		<link rel="stylesheet" type="text/css" href="css/one_div.css">
 		<link rel="stylesheet" type="text/css" href="css/uncompressed/font-awesome.css">
 		<link rel="stylesheet" type="text/css" href="css/table.css">
 	</head>
 	<body>
 		<div id="container" >
 			<!-- Start header -->
-			<div id="header" class="navbar navbar-default">
+			<div id="header" class="navbar navbar-default pb_inline" >
 				<img src="img/logo.png" class="navlogo">
-				<ul class="top_menu" style="display: inline;">
-					<li><a href="#" class="navlink">Menu1</a> 
-					<li><a href="#" class="navlink">Menu2</a></li>
-					<li><a href="#" class="navlink">Menu2</a></li> 
+				<ul class="top_menu">
+					<li>
+						<a href="#" class="navlink">Menu1</a>
+					</li>
+					<li>
+						<a href="#" class="navlink">Menu2</a>
+					</li>
+					<li>
+						<a href="#" class="navlink">Menu2</a>
+					</li>
 				</ul>
 			</div>
 			<!-- End header -->
 
 			<!-- Start main container -->
 			<div id="main-container" class="main-container" >
-				<!--Start sidebar-->
+				<!-- Start sidebar -->
 				<div id="sidebar" class="g84">
 					<ul class="side_menu">
-						<li><a href="#"><img src="img/btn_user.png"></a></li>
-						<li><a href="#"><img src="img/btn_company.png"></a></li>
-						<li><a href="#"><img src="img/btn_setting.png"></a></li>
+						<li>
+							<a href="#"><img src="img/btn_user.png"></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/btn_company.png"></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/btn_setting.png"></a>
+						</li>
 					</ul>
 				</div>
-				<!--End Sidebar-->
+				<!-- End Sidebar -->
 
-				<div id="contents" class="contentarea">
+				<!-- start contens area -->
+				<div id="#" class="contentarea">
+					<!-- start page-content -->
 					<div class="page-content">
-						<div id="content" class="row" style="margin-left:-9px;">
-							<!--start div1-->
-							<div class="col-xs-12 boxborder panel-default" style="height:750px; padding:0px;">
+						<div id="content" class="row m-9-left">
+							<div class="col-xs-12 panel-default pb_main_contents_large" >
 								<!-- navbar -->
 								<div id="nav" class="panel-head">
-									<div id="fullwidth" style="width:100%;">
-										<span class="panel_title" style="display:inline-block;float:left;"> 
+									<div class="col-xs-12 pb_none_border">
+										<span class="panel_title pb_inline_b_left">
 											Create User
 										</span>
-										<div id="formarea" class="pull-right">
-											<button class="btn btn-sm btn-primary" style="margin-bottom:5px; margin-left:9px;">
-												Save
-											</button>
-											
-											<button class="btn btn-sm btn-primary" style="margin-bottom:5px; margin-left:9px;">
-												Cancel
-											</button>
-										</div>
+										<ul class="row pull-right inline_b">
+											<li class="list_none">
+												<button id="btn_save" class="btn btn-sm btn-primary">
+													Save
+												</button>
+											</li>
+										
+											<li class="list_none">
+												<button id="btn_cancel" class="btn btn-sm btn-primary">
+													Cancel
+												</button>
+											</li>
+										</ul>
 									</div>
 
 								</div>
 								<!-- endnavbar -->
-
-								<!--never change-->
-
-								<!--start contents area-->
-					
 								<!-- start form area-->
-								<form class="form-horizontal" role="form" style="margin-top: 15px;">
+								<form class="form-horizontal m5-top" role="form">
 									<!-- start from-group user_type -->
 									<div class="form-group">
 										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">
@@ -135,7 +146,7 @@
 										<div class="col-sm-6">
 											<!-- start input e-mail -->
 											<input type="email" id="form-field-3" placeholder="E-Mail" class="col-xs-10 col-sm-6" />
-											<span class="middle" style="margin-left: 15px;">
+											<span class="middle m10-left">
 												*Invalid E-Mail
 											</span>
 											<!-- end input e-mail -->
@@ -412,19 +423,17 @@
 									</div>
 									<!-- end from-group account_activation -->
 								</form>
-								<!-- end form -->
+								<!-- end form -->								
 							</div>
-							<!--End contents-->
 						</div>
 					</div>
-					<!--end contents area-->
+					<!-- End page-content -->
 				</div>
+				<!-- end contents area -->
 			</div>
 			<!--End Main-container-->
 		</div>
-		
 	</body>
 </html>
 
-
-
+								
