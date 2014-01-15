@@ -115,6 +115,10 @@ td{
     border: 1px solid #C3DDEC;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
+
+.pb_text_center{
+	text-align: center;
+}
 /*
 panel
 */
@@ -219,11 +223,20 @@ panel
 .m10-bottom{
 	margin-bottom: 10px;
 }
+.m20-bottom{
+	margin-bottom: 20px;
+}
 .m15-left-top{
 	margin-left: 15px;
 	margin-top: 10px;	
 }
 
+.p0-top{
+	padding-top: 0px;
+}
+.p5-all{
+	padding: 5px;
+}
 .p10-left{
 	padding-left: 10px;
 }

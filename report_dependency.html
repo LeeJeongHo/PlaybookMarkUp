@@ -16,9 +16,9 @@
 	<body>
 		<div id="container" >
 			<!-- Start navbar -->
-			<div id="header" class="navbar navbar-default" >
+			<div id="header" class="navbar navbar-default pb_inline" >
 				<img src="img/logo.png" class="navlogo">
-				<ul class="top_menu" style="display: inline;">
+				<ul class="top_menu">
 					<li>
 						<a href="#" class="navlink">Menu1</a>
 					</li>
@@ -38,61 +38,65 @@
 				<div id="accordion" class="g371 panel-group pb_sidebar">
 					<div class="panel-default panel ">
 						<div class="panel-head clearfix">
-							<p class="panel_title" style="display:inline-block; margin-top:3px;">
-								<a class="accordion-toggle" href="#collapseOne" data-parent="#accordion" data-toggle="collapse" style="color:#ffffff;"> Playbook </a>
+							<p class="panel_title inline_b m3-top">
+								<a class="accordion-toggle" href="#collapseOne" data-parent="#accordion" data-toggle="collapse" style="color:#ffffff;">
+								 	Playbook 
+								</a>
 							</p>
-							<a class="btn btn-primary" style="float:right;"> create playbook </a>
+							<a class="btn btn-primary pull-right">
+								Create Playbook
+							</a>
 						</div>
 						<div class="panel-collapse collapse in" id="collapseOne">
 							<div class="panel-body accordion_body">
-								<div id="tree1" class="tree tree-selectable">
+								<div id="left_navi" class="tree tree-selectable">
 									<!-- folder1 Start -->
-									<div class="tree-folder" style="display: block;">
+									<div class="tree-folder inline_b">
 										<div class="tree-folder-header">
 											<i class="icon-minus"></i>
 											<div class="tree-folder-name">
 												PowerPharma -  Product X
 											</div>
 										</div>
-										<div class="tree-folder-content" style="display: block;">
+										<div class="tree-folder-content">
 											<div class="tree-folder-header">
 												<i class="icon-minus"></i>
 												<div class="tree-folder-name">
 													AAA001.US
 												</div>
 											</div>
-											<div class="tree-folder-content" style="display: block;">
-												<div class="tree-item" style="display: block;">
-													<i class="icon-remove"></i>
+											<div class="tree-folder-content">
+												<div class="tree-item tree-selected">
+													<i class="icon-ok"></i>
 													<div class="tree-item-name">
 														01.Marketing
 													</div>
 												</div>
-												<div class="tree-item" style="display: block;">
-													<i class="icon-remove"></i>
+												<div class="tree-item tree-selected">
+													<i class="icon-ok"></i>
 													<div class="tree-item-name">
 														02.Market Research
 													</div>
 												</div>
-												<div class="tree-item" style="display: block;">
+												<div class="tree-item">
 													<i class="icon-remove"></i>
 													<div class="tree-item-name">
 														03.Sales
 													</div>
 												</div>
-												<div class="tree-item" style="display: block;">
+												<div class="tree-item">
 													<i class="icon-remove"></i>
 													<div class="tree-item-name">
 														04.Clinical
 													</div>
 												</div>
-												<div class="tree-item" style="display: block;">
+												<div class="tree-item">
 													<i class="icon-remove"></i>
 													<div class="tree-item-name">
 														05.Medical Affairs
 													</div>
 												</div>
-												<div class="tree-item" style="display: block;">
+												<div class="tree-item">
 													<i class="icon-remove"></i>
 													<div class="tree-item-name">
 														06.Market Access
@@ -103,7 +107,7 @@
 										</div>
 									</div>
 									<!-- folder1 end -->
-									<div class="tree-folder" style="display: block;">
+									<div class="tree-folder">
 										<div class="tree-folder-header">
 											<i class="icon-minus"></i>
 											<div class="tree-folder-name">
@@ -116,29 +120,31 @@
 						</div>
 					</div>
 					<div class="panel-default panel">
-						<div class="panel-head clearfix" style="border-radius:0;">
-							<p class="panel_title" style="display:inline-block; margin-top:3px;">
-								<a class="accordion-toggle collapsed" href="#collapseTwo" data-parent="#accordion" data-toggle="collapse" style="color:#ffffff;"> Report </a>
+						<div class="panel-head clearfix">
+							<p class="panel_title inline_b m3-top">
+								<a class="accordion-toggle collapsed" href="#collapseTwo" data-parent="#accordion" data-toggle="collapse" style="color:#ffffff;">
+								 	Report 
+								</a>
 							</p>
 						</div>
 						<div class="panel-collapse collapse" id="collapseTwo">
 							<div class="panel-body accordion_body">
-								<ul>
-									<li style="list-style:none;">
-										<a>-Flash Report</a>
+								<ul class="list_none">
+									<li>
+										<a>- Flash Report</a>
 									</li>
-									<li style="list-style:none;">
-										<a>-Activity</a>
+									<li>
+										<a>- Activity</a>
 									</li>
-									<li style="list-style:none;">
-										<a>-Dependency Report</a>
+									<li>
+										<a>- Dependency Report</a>
 									</li>
-									<li style="list-style:none;">
-										<a>-Budget Report</a>
+									<li>
+										<a>- Budget Report</a>
 									</li>
 								</ul>
 							</div>
-						</div>
+						</div>			
 					</div>
 				</div>
 				<!--End Sidebar-->
@@ -146,7 +152,7 @@
 				<div id="contents" class="contentarea">
 
 					<div id="nav" class="panel-head m10-navbar" >
-						<h3 style="color:#ffffff;display:inline-block;margin-top:7px;">
+						<h3 class="pb_content_header">
 							Dependency Report
 						</h3>
 					</div>
@@ -157,42 +163,59 @@
 							<!-- start content -->
 							<div class="col-xs-8">
 								<div class="pb_table_content panel-default" id="table-scroll">
-									<div id="table-wraper" style="width:100%; " >
+									<div id="table-wraper" class="col-xs-12" >
 										<!-- Start panel-heading -->
-										<div class="panel-heading clearfix" style="padding: 5px; border:none;">
-											<div id="formarea" class="pull-right m10-right">
-												<button class="btn btn-sm btn-primary" data-toggle="button" type="button">
-													<i class="icon-th-large"></i>
-												</button>
-												<button class="btn btn-sm btn-primary">
-													<i class="icon-filter"></i>
-												</button>
-											</div>
+										<div class="panel-heading clearfix p5-all">
+											<ul id="formarea" class="pull-right m10-right list_none line_ul">
+												<li>
+													<button class="btn btn-sm btn-primary" data-toggle="button" type="button">
+														<i class="icon-th-large"></i>
+													</button>
+												</li>
+												<li>
+													<button class="btn btn-sm btn-primary">
+														<i class="icon-filter"></i>
+													</button>
+												</li>
+											</ul>
 										<!-- End panel-heading -->
 										</div>
 
 										<!-- Start Table1 -->
 										<div class="table-responsive">
-											<div class="panel-heading clearfix" style="padding-top: 0px; ">
-												<span style="display:inline-block;"> <h3 class="panel-title"> Product X - France - Vaccines </h3> </span>
+											<div class="panel-heading clearfix p0-top">
+												<span class="inline_b"> 
+													<h3 class="panel-title"> 
+														Product X - France - Vaccines 
+													</h3> 
+												</span>
 											</div>
-											<table class="table table-bordered datatable" style="font-size:12px; table-layout: fixed; margin-bottom: 20px;">
+											<table class="table table-bordered datatable m20-bottom">
 												<thead>
-													<tr role="row">
-														<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1"> Type </th>
-														<th class="sorting" role="columnheader" tabindex="1" aria-controls="sample-table-2" rowspan="1" colspan="2"> Deleverable Name </th>
-														<th class="sorting" role="columnheader" tabindex="2" aria-controls="sample-table-2" rowspan="1" > Responsibility </th>
-														<th class="sorting" role="columnheader" tabindex="3" aria-controls="sample-table-2" rowspan="1" > Start Date </th>
-														<th class="sorting" role="columnheader" tabindex="4" aria-controls="sample-table-2" rowspan="1" > End Date </th>
+													<tr>
+														<th> Type </th>
+														<th colspan="2"> Deleverable Name </th>
+														<th> Responsibility </th>
+														<th> Start Date </th>
+														<th> End Date </th>
 													</tr>
 												</thead>
 
 												<tbody>
 													<tr>
-														<td colspan="6" class="table-header"><h3 class="panel-title" style="text-align: center;"> 01. Marketing </h3></td>
+														<td colspan="6" class="table-header">
+															<h3 class="panel-title pb_text_center"> 
+																01. Marketing 
+															</h3>
+														</td>
 													</tr>
 													<tr>
-														<td colspan="6" class="alert-info"><h4 class="panel-title" style="text-align: center;"><i class="icon-inbox"></i> Now Approved - Soft Launch (3) </h4></td>
+														<td colspan="6" class="alert-info">
+															<h4 class="panel-title pb_text_center">
+																<i class="icon-inbox"></i> 
+																Now Approved - Soft Launch (3) 
+															</h4>
+														</td>
 													</tr>
 
 													<tr>
@@ -205,9 +228,11 @@
 
 													<tr>
 														<td>Start To Start</td>
-														<td colspan="2"><font color="#666666">Dependent On</font>
-														<br />
-														CRC Review of Promotional Materials </td>
+														<td colspan="2">
+															Dependent On
+															<br />
+															CRC Review of Promotional Materials 
+														</td>
 														<td>Concentric</td>
 														<td>04-FEB-2013</td>
 														<td>18-APR-2013</td>
@@ -215,9 +240,11 @@
 
 													<tr>
 														<td>Start To Start</td>
-														<td colspan="2"><font color="#666666">Dependent On</font>
-														<br />
-														Develop Messaging </td>
+														<td colspan="2">
+															Dependent On
+															<br />
+															Develop Messaging 
+														</td>
 														<td>Concentric</td>
 														<td>04-FEB-2013</td>
 														<td>18-APR-2013</td>
@@ -233,23 +260,32 @@
 
 													<tr>
 														<td>Start To Start</td>
-														<td colspan="2"><font color="#666666">Dependent On</font>
-														<br />
-														CRC Review of Promotional Materials </td>
+														<td colspan="2">
+															Dependent On
+															<br />
+															CRC Review of Promotional Materials 
+														</td>
 														<td>Concentric</td>
 														<td>ON GOING</td>
 														<td>18-APR-2013</td>
 													</tr>
 
 													<tr>
-														<td colspan="6" class="alert-info"><h4 class="panel-title" style="text-align: center;"><i class="icon-inbox"></i> Early Experience Program (1) </h4></td>
+														<td colspan="6" class="alert-info">
+															<h4 class="panel-title pb_text_center">
+																<i class="icon-inbox"></i> 
+																Early Experience Program (1) 
+															</h4>
+														</td>
 													</tr>
 
 													<tr>
 														<td>End To End</td>
-														<td colspan="2"><font color="#666666">Dependent On</font>
-														<br />
-														Pharmacy Flashcard Deployment </td>
+														<td colspan="2">
+															Dependent On
+															<br />
+															Pharmacy Flashcard Deployment 
+														</td>
 														<td>Concentric</td>
 														<td>04-FEB-2013</td>
 														<td>18-APR-2013</td>
@@ -259,28 +295,41 @@
 											</table>
 											<!-- End Table1 -->
 
-											<div class="panel-heading clearfix" style="padding-top: 0px;">
-												<span style="display:inline-block;"> <h3 class="panel-title"> Product X - US - Vaccines </h3> </span>
+											<div class="panel-heading clearfix p0-top">
+												<span class="inline_b"> 
+													<h3 class="panel-title"> 
+														Product X - US - Vaccines 
+													</h3> 
+												</span>
 											</div>
 											
 											<!-- Start Table2 -->
-											<table class="table table-bordered datatable" style="font-size:12px; table-layout: fixed;  margin-bottom: 20px;">
+											<table class="table table-bordered datatable m20-bottom">
 												<thead>
-													<tr role="row">
-														<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1"> Type </th>
-														<th class="sorting" role="columnheader" tabindex="1" aria-controls="sample-table-2" rowspan="1" colspan="2"> Deleverable Name </th>
-														<th class="sorting" role="columnheader" tabindex="2" aria-controls="sample-table-2" rowspan="1" > Responsibility </th>
-														<th class="sorting" role="columnheader" tabindex="3" aria-controls="sample-table-2" rowspan="1" > Start Date </th>
-														<th class="sorting" role="columnheader" tabindex="4" aria-controls="sample-table-2" rowspan="1" > End Date </th>
+													<tr>
+														<th> Type </th>
+														<th colspan="2"> Deleverable Name </th>
+														<th> Responsibility </th>
+														<th> Start Date </th>
+														<th> End Date </th>
 													</tr>
 												</thead>
 
 												<tbody>
 													<tr>
-														<td colspan="6" class="table-header"><h3 class="panel-title" style="text-align: center;"> 01. Marketing </h3></td>
+														<td colspan="6" class="table-header">
+															<h3 class="panel-title pb_text_center"> 
+																01. Marketing 
+															</h3>
+														</td>
 													</tr>
 													<tr>
-														<td colspan="6" class="alert-info"><h4 class="panel-title" style="text-align: center;"><i class="icon-inbox"></i> Now Approved - Soft Launch (3) </h4></td>
+														<td colspan="6" class="alert-info">
+															<h4 class="panel-title pb_text_center">
+																<i class="icon-inbox"></i> 
+																Now Approved - Soft Launch (3) 
+															</h4>
+														</td>
 													</tr>
 
 													<tr>
@@ -293,9 +342,11 @@
 
 													<tr>
 														<td>Start To Start</td>
-														<td colspan="2"><font color="#666666">Dependent On</font>
-														<br />
-														CRC Review of Promotional Materials </td>
+														<td colspan="2">
+															Dependent On
+															<br />
+															CRC Review of Promotional Materials 
+														</td>
 														<td>Concentric</td>
 														<td>04-FEB-2013</td>
 														<td>18-APR-2013</td>
@@ -303,9 +354,11 @@
 
 													<tr>
 														<td>Start To Start</td>
-														<td colspan="2"><font color="#666666">Dependent On</font>
-														<br />
-														Develop Messaging </td>
+														<td colspan="2">
+															Dependent On
+															<br />
+															Develop Messaging 
+														</td>
 														<td>Concentric</td>
 														<td>04-FEB-2013</td>
 														<td>18-APR-2013</td>
@@ -321,23 +374,32 @@
 
 													<tr>
 														<td>Start To Start</td>
-														<td colspan="2"><font color="#666666">Dependent On</font>
-														<br />
-														CRC Review of Promotional Materials </td>
+														<td colspan="2">
+															Dependent On
+															<br />
+															CRC Review of Promotional Materials 
+														</td>
 														<td>Concentric</td>
 														<td>ON GOING</td>
 														<td>18-APR-2013</td>
 													</tr>
 
 													<tr>
-														<td colspan="6" class="alert-info"><h4 class="panel-title" style="text-align: center;"><i class="icon-inbox"></i> Early Experience Program (1) </h4></td>
+														<td colspan="6" class="alert-info">
+															<h4 class="panel-title pb_text_center">
+																<i class="icon-inbox"></i> 
+																Early Experience Program (1) 
+																</h4>
+															</td>
 													</tr>
 
 													<tr>
 														<td>End To End</td>
-														<td colspan="2"><font color="#666666">Dependent On</font>
-														<br />
-														Pharmacy Flashcard Deployment </td>
+														<td colspan="2">
+															Dependent On
+															<br />
+															Pharmacy Flashcard Deployment 
+														</td>
 														<td>Concentric</td>
 														<td>04-FEB-2013</td>
 														<td>18-APR-2013</td>
@@ -359,11 +421,13 @@
 									<div class="panel-heading clearfix">
 										<h3 class="panel-title">Filters</h3>
 									</div>
-									<label class="m10-left m10-top" style="font-size:14px;"><b>Select Subteam</b></label>
+									<label class="m10-left m10-top">
+										<b>Select Subteam</b>
+									</label>
 									<!-- Start tree1 -->
-									<div id="tree1" class="tree tree-selectable">
+									<div id="filter" class="tree tree-selectable">
 										<!-- folder1 Start -->
-										<div class="tree-folder" style="display: block;">
+										<div class="tree-folder inline_b">
 											<div class="tree-folder-header">
 												<i class="icon-minus"></i>
 												<div class="tree-folder-name">
@@ -371,7 +435,7 @@
 												</div>
 											</div>
 											<!-- Start 1 depth -->
-											<div class="tree-folder-content" style="display: block;">
+											<div class="tree-folder-content inline_b">
 												<div class="tree-folder-header">
 													<i class="icon-minus"></i>
 													<div class="tree-folder-name">
@@ -379,27 +443,27 @@
 													</div>
 												</div>
 												<!-- Start 2 depth -->
-												<div class="tree-folder-content" style="display:block;">
-													<div class="tree-item" style="display: block;">
+												<div class="tree-folder-content">
+													<div class="tree-item">
 														<i class="icon-remove"></i>
 														<div class="tree-item-name">
 															01. Marketing
 														</div>
 													</div>
-													<div class="tree-item" style="display: block;">
+													<div class="tree-item">
 														<i class="icon-remove"></i>
 														<div class="tree-item-name">
 															02. Market Research
 														</div>
 													</div>
-													<div class="tree-item" style="display: block;">
+													<div class="tree-item">
 														<i class="icon-remove"></i>
 														<div class="tree-item-name">
 															03. Sales
 														</div>
 													</div>
 													
-													<div class="tree-item" style="display: block;">
+													<div class="tree-item">
 														<i class="icon-remove"></i>
 														<div class="tree-item-name">
 															06. Market Access
@@ -417,7 +481,7 @@
 											<!-- End 1 depth -->
 										</div>
 										<!-- folder1 end -->
-										<div class="tree-folder" style="display:block;">
+										<div class="tree-folder inline_b">
 											<div class="tree-folder-header">
 												<i class="icon-minus"></i>
 												<div class="tree-folder-name">
@@ -427,37 +491,39 @@
 										</div>
 									</div>
 									<!-- End Tree Filter -->
-									<label class="m10-left m10-top" style="font-size:14px;"><b>Setting</b></label>
+									<label class="m10-left m10-top">
+										<b>Setting</b>
+									</label>
 									<!-- Start tree2 -->
 									<div id="tree2" class="tree tree-selectable">
 										<!-- folder1 Start -->
-										<div class="tree-folder" style="display: block;">
+										<div class="tree-folder inline_b">
 											<div class="tree-folder-header">
 												<i class="icon-minus"></i>
 												<div class="tree-folder-name">
 													Type
 												</div>
 											</div>
-											<div class="tree-folder-content" style="display:block;">
-												<div class="tree-item" style="display: block;">
+											<div class="tree-folder-content">
+												<div class="tree-item">
 													<i class="icon-remove"></i>
 													<div class="tree-item-name">
 														Start to Start
 													</div>
 												</div>
-												<div class="tree-item" style="display: block;">
+												<div class="tree-item">
 													<i class="icon-remove"></i>
 													<div class="tree-item-name">
 														End to Start
 													</div>
 												</div>
-												<div class="tree-item" style="display: block;">
+												<div class="tree-item">
 													<i class="icon-remove"></i>
 													<div class="tree-item-name">
 														End to End
 													</div>
 												</div>
-												<div class="tree-item tree-selected" style="display: block;">
+												<div class="tree-item tree-selected">
 													<i class="icon-ok"></i>
 													<div class="tree-item-name">
 														All
@@ -466,33 +532,33 @@
 											</div>
 										</div>
 										<!-- folder1 end -->
-										<div class="tree-folder" style="display: block;">
+										<div class="tree-folder inline_b">
 											<div class="tree-folder-header">
 												<i class="icon-minus"></i>
 												<div class="tree-folder-name">
 													LAST MODIFICATION
 												</div>
 											</div>
-											<div class="tree-folder-content" style="display:block;">
-												<div class="tree-item" style="display: block;">
+											<div class="tree-folder-content">
+												<div class="tree-item">
 													<i class="icon-remove"></i>
 													<div class="tree-item-name">
 														Today
 													</div>
 												</div>
-												<div class="tree-item" style="display: block;">
+												<div class="tree-item">
 													<i class="icon-remove"></i>
 													<div class="tree-item-name">
 														Yesterday
 													</div>
 												</div>
-												<div class="tree-item" style="display: block;">
+												<div class="tree-item">
 													<i class="icon-remove"></i>
 													<div class="tree-item-name">
 														This Week
 													</div>
 												</div>
-												<div class="tree-item tree-selected" style="display: block;">
+												<div class="tree-item tree-selected">
 													<i class="icon-ok"></i>
 													<div class="tree-item-name">
 														This Month
@@ -516,7 +582,9 @@
 		<script src="js/jquery.slimscroll.min.js"></script>
 		<script type="text/javascript">
 			jQuery(function($) {
-				$('#tree1').ace_tree({
+/*
+				
+				$('#filter').ace_tree({
 					dataSource : treeDataSource,
 					multiSelect : true,
 					loadingHTML : '<div class="tree-loading"><i class="icon-refresh icon-spin blue"></i></div>',
@@ -526,6 +594,8 @@
 					'selected-icon' : 'icon-ok',
 					'unselected-icon' : 'icon-remove'
 				});
+
+*/
 
 				$('#table-scroll').slimScroll({
 					height : '720px',
