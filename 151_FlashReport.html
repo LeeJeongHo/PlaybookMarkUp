@@ -1,35 +1,41 @@
 <html>
-<head>
-	<title>playbook</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/ace.min.css">
-	<link rel="stylesheet" type="text/css" href="css/common.css">
-	<link rel="stylesheet" type="text/css" href="css/1280_10_10.css">
-	<link rel="stylesheet" type="text/css" href="css/two_div.css">
-	<link rel="stylesheet" type="text/css" href="css/uncompressed/font-awesome.css">
-	<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
-	<script type="text/javascript" src="js/fuelux/fuelux.tree.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/fuelux/data/fuelux.tree-sampledata.js"></script>
-	<script src="js/ace.min.js"></script>
-	<script src="js/ace-elements.min.js"></script>
-</head>
-<body>
-	<div id="container" >
-		<!-- Start navbar -->
-		<DIV id="header" class="navbar navbar-default" >
-			<img src="img/logo.png" class="navlogo">
-			<span class="navinfo">
-				<a href="#" class="navlink">Menu1</a>
-				<a href="#" class="navlink">Menu2</a>
-				<a href="#" class="navlink">Menu2</a>
-			</span>
-		</DIV>
-		<!-- End navbar -->
+	<head>
+		<title>playbook</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/ace.min.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+		<link rel="stylesheet" type="text/css" href="css/1280_10_10.css">
+		<link rel="stylesheet" type="text/css" href="css/two_div.css">
+		<link rel="stylesheet" type="text/css" href="css/uncompressed/font-awesome.css">
+		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+		<script type="text/javascript" src="js/fuelux/fuelux.tree.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/fuelux/data/fuelux.tree-sampledata.js"></script>
+		<script src="js/ace.min.js"></script>
+		<script src="js/ace-elements.min.js"></script>
+	</head>
+	<body>
+		<div id="container" >
+			<!-- Start navbar -->
+			<div id="header" class="navbar navbar-default" >
+				<img src="img/logo.png" class="navlogo">
+				<ul class="top_menu" style="display: inline;">
+					<li>
+						<a href="#" class="navlink">Menu1</a>
+					</li>
+					<li>
+						<a href="#" class="navlink">Menu2</a>
+					</li>
+					<li>
+						<a href="#" class="navlink">Menu2</a>
+					</li>
+				</ul>
+			</div>
+			<!-- End navbar -->
 
-		<!-- Start main container -->
-		<div id="main-container" class="main-container" >
-			<!--Start sidebar-->
+			<!-- Start main container -->
+			<div id="main-container" class="main-container" >
+				<!--Start sidebar-->
 				<div id="accordion" class="g371 panel-group pb_sidebar">
 					<div class="panel-default panel ">
 						<div class="panel-head clearfix">
@@ -136,10 +142,10 @@
 						</div>
 					</div>
 				</div>
-			<!--End Sidebar-->
+				<!--End Sidebar-->
 
 				<div id="contents" class="contentarea">
-				
+
 					<div id="nav" class="panel-head m10-navbar" >
 						<h3 style="color:#ffffff;display:inline-block;margin-top:7px;">Flash Report</h3>
 					</div>
@@ -161,73 +167,40 @@
 													<i class="icon-filter"></i>
 												</button>
 											</div>
-										<!-- panel-heading end -->
+											<!-- panel-heading end -->
 										</div>
 
-									<!-- table Start -->
+										<!-- table Start -->
 										<div class="table-responsive">
 											<div class="panel-heading clearfix" style="padding-top: 0px;">
-												<span style="display:inline-block;">
-													<h3 class="panel-title">
-														Product X - France - Vaccines
-													</h3>
-												</span>
+												<span style="display:inline-block;"> <h3 class="panel-title"> Product X - France - Vaccines </h3> </span>
 											</div>
 											<table class="table table-bordered datatable" style="font-size:12px; table-layout: fixed; margin-bottom: 20px;">
 												<thead>
 													<tr role="row">
-														<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1">
-															Deliverables
-														</th>
-														<th class="sorting" role="columnheader" tabindex="1" aria-controls="sample-table-2" rowspan="1">
-															Responsible Party
-														</th>
-														<th class="sorting" role="columnheader" tabindex="2" aria-controls="sample-table-2" rowspan="1" >
-															Start Date
-														</th>
-														<th class="sorting" role="columnheader" tabindex="3" aria-controls="sample-table-2" rowspan="1" >
-															End Date
-														</th>
-														<th class="sorting" role="columnheader" tabindex="4" aria-controls="sample-table-2" rowspan="1" >
-															Status
-														</th>
-														<th class="sorting" role="columnheader" tabindex="4" aria-controls="sample-table-2" rowspan="1" >
-															Priority
-														</th>
-														<th class="sorting" role="columnheader" tabindex="4" aria-controls="sample-table-2" rowspan="1" >
-															Completed Activity
-														</th>
-														<th class="sorting" role="columnheader" tabindex="4" aria-controls="sample-table-2" rowspan="1" >
-															In Progress Activity
-														</th>
-														<th class="sorting" role="columnheader" tabindex="4" aria-controls="sample-table-2" rowspan="1">
-															Comments
-														</th>
+														<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1"> Deliverables </th>
+														<th class="sorting" role="columnheader" tabindex="1" aria-controls="sample-table-2" rowspan="1"> Responsible Party </th>
+														<th class="sorting" role="columnheader" tabindex="2" aria-controls="sample-table-2" rowspan="1" > Start Date </th>
+														<th class="sorting" role="columnheader" tabindex="3" aria-controls="sample-table-2" rowspan="1" > End Date </th>
+														<th class="sorting" role="columnheader" tabindex="4" aria-controls="sample-table-2" rowspan="1" > Status </th>
+														<th class="sorting" role="columnheader" tabindex="4" aria-controls="sample-table-2" rowspan="1" > Priority </th>
+														<th class="sorting" role="columnheader" tabindex="4" aria-controls="sample-table-2" rowspan="1" > Completed Activity </th>
+														<th class="sorting" role="columnheader" tabindex="4" aria-controls="sample-table-2" rowspan="1" > In Progress Activity </th>
+														<th class="sorting" role="columnheader" tabindex="4" aria-controls="sample-table-2" rowspan="1"> Comments </th>
 													</tr>
 												</thead>
-												
+
 												<tbody>
 													<tr>
-														<td colspan="9" class="table-header">
-															<h3 class="panel-title" style="text-align: center;">
-																01. Marketing
-															</h3>
-														</td>
+														<td colspan="9" class="table-header"><h3 class="panel-title" style="text-align: center;"> 01. Marketing </h3></td>
 													</tr>
 													<tr>
-														<td colspan="9" class="alert-info">
-															<h4 class="panel-title" style="text-align: center;">
-																<i class="icon-inbox"></i>
-																Now Approved - Soft Launch (3)
-															</h4>
-														</td>
+														<td colspan="9" class="alert-info"><h4 class="panel-title" style="text-align: center;"><i class="icon-inbox"></i> Now Approved - Soft Launch (3) </h4></td>
 													</tr>
-													
+
 													<tr>
 														<td>Early Experience Program-Welcome Letter</td>
-														<td>
-															<b>Concentric</b>
-														</td>
+														<td><b>Concentric</b></td>
 														<td>ON GOING</td>
 														<td>18-APR-2013</td>
 														<td>On Track</td>
@@ -236,12 +209,10 @@
 														<td>1-Field Survey, 2-Topline Report, 3-Final Report</td>
 														<td>Dependent on Agency</td>
 													</tr>
-													
+
 													<tr>
 														<td>Approval Splash Page</td>
-														<td>
-															<b>Concentric</b>
-														</td>
+														<td><b>Concentric</b></td>
 														<td>04-FEB-2013</td>
 														<td>19-APR-2013</td>
 														<td>Completed</td>
@@ -250,12 +221,10 @@
 														<td>3-Layout Development</td>
 														<td></td>
 													</tr>
-													
+
 													<tr>
 														<td>Promo PI</td>
-														<td>
-															<b>Concentric</b>
-														</td>
+														<td><b>Concentric</b></td>
 														<td>04-FEB-2013</td>
 														<td>19-APR-2013</td>
 														<td>On Track</td>
@@ -264,21 +233,14 @@
 														<td></td>
 														<td></td>
 													</tr>
-													
+
 													<tr>
-														<td colspan="9" class="alert-info">
-															<h4 class="panel-title" style="text-align: center;">
-																<i class="icon-inbox"></i>
-																Early Experience Program (2)
-															</h4>
-														</td>
+														<td colspan="9" class="alert-info"><h4 class="panel-title" style="text-align: center;"><i class="icon-inbox"></i> Early Experience Program (2) </h4></td>
 													</tr>
-											
+
 													<tr>
 														<td>Now Approve Ad</td>
-														<td  >
-															<b>Core Visual Aid Deployment</b>
-														</td>
+														<td  ><b>Core Visual Aid Deployment</b></td>
 														<td>04-FEB-2013</td>
 														<td>19-APR-2013</td>
 														<td>On Track</td>
@@ -289,9 +251,7 @@
 													</tr>
 													<tr>
 														<td>Now Approve Ad</td>
-														<td  >
-															<b>Core Visual Aid Deployment</b>
-														</td>
+														<td  ><b>Core Visual Aid Deployment</b></td>
 														<td>04-FEB-2013</td>
 														<td>19-APR-2013</td>
 														<td>On Track</td>
@@ -301,31 +261,11 @@
 														<td  >Pending regulatory review to clarify on how to promote disease awareness</td>
 													</tr>
 													<tr>
-														<td colspan="9" class="alert-info">
-															<h4 class="panel-title" style="text-align: center;">
-																<i class="icon-inbox"></i>
-																Early Experience Program (6)
-															</h4>
-														</td>
+														<td colspan="9" class="alert-info"><h4 class="panel-title" style="text-align: center;"><i class="icon-inbox"></i> Early Experience Program (6) </h4></td>
 													</tr>
 													<tr>
 														<td>Now Approve Ad</td>
-														<td  >
-															<b>Core Visual Aid Deployment</b>
-														</td>
-														<td>04-FEB-2013</td>
-														<td>19-APR-2013</td>
-														<td>On Track</td>
-														<td>High</td>
-														<td>1-Kickoff</td>
-														<td>20Manuscript Development</td>
-														<td  >Pending regulatory review to clarify on how to promote disease awareness</td>
-													</tr>
-													<tr>
-														<td>Now Approve Ad</td>
-														<td  >
-															<b>Core Visual Aid Deployment</b>
-														</td>
+														<td  ><b>Core Visual Aid Deployment</b></td>
 														<td>04-FEB-2013</td>
 														<td>19-APR-2013</td>
 														<td>On Track</td>
@@ -336,9 +276,7 @@
 													</tr>
 													<tr>
 														<td>Now Approve Ad</td>
-														<td  >
-															<b>Core Visual Aid Deployment</b>
-														</td>
+														<td  ><b>Core Visual Aid Deployment</b></td>
 														<td>04-FEB-2013</td>
 														<td>19-APR-2013</td>
 														<td>On Track</td>
@@ -349,9 +287,7 @@
 													</tr>
 													<tr>
 														<td>Now Approve Ad</td>
-														<td  >
-															<b>Core Visual Aid Deployment</b>
-														</td>
+														<td  ><b>Core Visual Aid Deployment</b></td>
 														<td>04-FEB-2013</td>
 														<td>19-APR-2013</td>
 														<td>On Track</td>
@@ -362,9 +298,7 @@
 													</tr>
 													<tr>
 														<td>Now Approve Ad</td>
-														<td  >
-															<b>Core Visual Aid Deployment</b>
-														</td>
+														<td  ><b>Core Visual Aid Deployment</b></td>
 														<td>04-FEB-2013</td>
 														<td>19-APR-2013</td>
 														<td>On Track</td>
@@ -375,9 +309,18 @@
 													</tr>
 													<tr>
 														<td>Now Approve Ad</td>
-														<td  >
-															<b>Core Visual Aid Deployment</b>
-														</td>
+														<td  ><b>Core Visual Aid Deployment</b></td>
+														<td>04-FEB-2013</td>
+														<td>19-APR-2013</td>
+														<td>On Track</td>
+														<td>High</td>
+														<td>1-Kickoff</td>
+														<td>20Manuscript Development</td>
+														<td  >Pending regulatory review to clarify on how to promote disease awareness</td>
+													</tr>
+													<tr>
+														<td>Now Approve Ad</td>
+														<td  ><b>Core Visual Aid Deployment</b></td>
 														<td>04-FEB-2013</td>
 														<td>19-APR-2013</td>
 														<td>On Track</td>
@@ -389,7 +332,7 @@
 
 												</tbody>
 											</table>
-											
+
 										</div>
 									</div>
 								</div>
@@ -408,51 +351,71 @@
 										<div class="tree-folder" style="display: block;">
 											<div class="tree-folder-header">
 												<i class="icon-minus"></i>
-												<div class="tree-folder-name">Product X (PowerPharma)</div>
+												<div class="tree-folder-name">
+													Product X (PowerPharma)
+												</div>
 											</div>
 											<div class="tree-folder-content" style="display: block;">
 												<div class="tree-folder-header">
 													<i class="icon-minus"></i>
-													<div class="tree-folder-name">US - Vaccines</div>
+													<div class="tree-folder-name">
+														US - Vaccines
+													</div>
 												</div>
 												<div class="tree-folder-content" style="display:block;">
 													<div class="tree-item" style="display: block;">
 														<i class="icon-remove"></i>
-														<div class="tree-item-name">01. Marketing</div>
+														<div class="tree-item-name">
+															01. Marketing
+														</div>
 													</div>
 													<div class="tree-item" style="display: block;">
 														<i class="icon-remove"></i>
-														<div class="tree-item-name">02. Market Research</div>
+														<div class="tree-item-name">
+															02. Market Research
+														</div>
 													</div>
 													<div class="tree-item" style="display: block;">
 														<i class="icon-remove"></i>
-														<div class="tree-item-name">03. Sales</div>
+														<div class="tree-item-name">
+															03. Sales
+														</div>
 													</div>
 													<div class="tree-item tree-selected" style="display: block;">
 														<i class="icon-ok"></i>
-														<div class="tree-item-name">04.Clinical</div>
+														<div class="tree-item-name">
+															04.Clinical
+														</div>
 													</div>
 													<div class="tree-item" style="display: block;">
 														<i class="icon-remove"></i>
-														<div class="tree-item-name">05. Medical Affairs</div>
+														<div class="tree-item-name">
+															05. Medical Affairs
+														</div>
 													</div>
 													<div class="tree-item" style="display: block;">
 														<i class="icon-remove"></i>
-														<div class="tree-item-name">06. Market Access</div>
+														<div class="tree-item-name">
+															06. Market Access
+														</div>
 													</div>
 												</div>
-													<div class="tree-folder-header" style="display: block;">
-														<i class="icon-miuns"></i>
-														<div class="tree-folder-name">Unfunded</div>
+												<div class="tree-folder-header" style="display: block;">
+													<i class="icon-miuns"></i>
+													<div class="tree-folder-name">
+														Unfunded
 													</div>
+												</div>
 											</div>
-												
+
 										</div>
 										<!-- folder1 end -->
 										<div class="tree-folder" style="display: block;">
 											<div class="tree-folder-header">
 												<i class="icon-minus"></i>
-												<div class="tree-folder-name">PRIORITY</div>
+												<div class="tree-folder-name">
+													PRIORITY
+												</div>
 											</div>
 										</div>
 									</div>
@@ -466,27 +429,27 @@
 			</div>
 			<!--End Main-container-->
 		</div>
-	
+
 		<script src="js/jquery.slimscroll.min.js"></script>
 		<script type="text/javascript">
-			jQuery(function($){
+			jQuery(function($) {
 				$('#tree1').ace_tree({
-					dataSource: treeDataSource ,
-					multiSelect:true,
-					loadingHTML:'<div class="tree-loading"><i class="icon-refresh icon-spin blue"></i></div>',
-						'open-icon' : 'icon-minus',
-						'close-icon' : 'icon-plus',
-						'selectable' : true,
-						'selected-icon' : 'icon-ok',
-						'unselected-icon' : 'icon-remove'
+					dataSource : treeDataSource,
+					multiSelect : true,
+					loadingHTML : '<div class="tree-loading"><i class="icon-refresh icon-spin blue"></i></div>',
+					'open-icon' : 'icon-minus',
+					'close-icon' : 'icon-plus',
+					'selectable' : true,
+					'selected-icon' : 'icon-ok',
+					'unselected-icon' : 'icon-remove'
 				});
-		
+
 				$('#table-scroll').slimScroll({
-					height: '720px',
+					height : '720px',
 					alwaysVisible : true
 				});
-		
-			}); 
+
+			});
 		</script>
 
 	</body>
