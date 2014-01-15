@@ -11,19 +11,19 @@
 .g244{
 	margin-left: 3px;
 }
-#div1{
+.pb_info{
 	height: 720px;
 }
-#div2{
+.pb_msg{
 	height: 350px;
 	margin-bottom: 20px;
 	border : 1px solid #C3DDEC;
 }
-#div3{
+.pb_digest{
 	height: 210px;
 	margin-bottom: 10px;
 }
-#div5{
+.pb_progress{
 	
 	height: 500px;
 }

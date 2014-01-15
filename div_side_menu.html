@@ -5,7 +5,6 @@
 		<link rel="stylesheet" type="text/css" href="css/ace.min.css">
 		<link rel="stylesheet" type="text/css" href="css/common.css">
 		<link rel="stylesheet" type="text/css" href="css/1280_10_10.css">
-		<link rel="stylesheet" type="text/css" href="css/one_div.css">
 		<link rel="stylesheet" type="text/css" href="css/uncompressed/font-awesome.css">
 		<link rel="stylesheet" type="text/css" href="css/table.css">
 	</head>
@@ -14,7 +13,7 @@
 			<!-- Start header -->
 			<div id="header" class="navbar navbar-default" >
 				<img src="img/logo.png" class="navlogo">
-				<ul class="top_menu" style="display: inline;">
+				<ul class="top_menu pb_inline">
 					<li>
 						<a href="#" class="navlink">Menu1</a>
 					</li>
@@ -46,29 +45,43 @@
 				</div>
 				<!-- End Sidebar -->
 
-				<div id="contents" class="contentarea">
+				<!-- start contens area -->
+				<div id="#" class="contentarea">
+					<!-- start page-content -->
 					<div class="page-content">
-						<div id="content" class="row" style="margin-left:-9px;">
-							<!-- Start col-xs-12 boxborder panel-default -->
-							<div class="col-xs-12 boxborder panel-default" style="height:720px; padding:0px;">
+						<div id="content" class="row m-9-left">
+							<div class="col-xs-12 panel-default pb_main_contents_large" >
 								<!-- navbar -->
 								<div id="nav" class="panel-head">
-									<div id="fullwidth" style="width:100%;">
-										<span class="panel_title" style="display:inline-block;float:left;"> Total Records : 5372</span>
-										<div id="formarea" class="pull-right" style="width:450px; margin-left:50px;">
-											<div style="width:140px;display:inline-block;">
-												<select>
-													<option>Company name</option>
-													<option>E-Mail</option>
-												</select>
-
+									<div class="col-xs-12 pb_none_border">
+										<span class="panel_title pb_inline_b_left"> Total Records : 5372</span>
+										<div class="pull-right">
+											<div class="btn-group m10-right inline_b" style="margin-bottom:2px;">
+												<button class="btn btn-primary btn-sm dropdown-toggle no-border" data-toggle="dropdown" style="margin-top">
+													Success large
+													<i class="icon-angle-down icon-on-right"></i>
+												</button>
+												<ul class="dropdown-menu pull-right">
+													<li>
+														<a href="#">Company Name</a>
+													</li>
+													<li>
+														<a href="#">EMail</a>
+													</li>
+													<li>
+														<a href="#">First Name</a>
+													</li>
+													<li>
+														<a href="#">Last Name</a>
+													</li>
+												</ul>
 											</div>
 
-											<div class="input-icon input-icon-right" style="display:inline-block">
-												<input id="form-field-icon-2" type="text" placeholder="Search..." size="25">
+											<div class="input-icon input-icon-right inline_b">
+												<input id="search" type="text" placeholder="Search..." size="25">
 												<i class="icon-globe"></i>
 											</div>
-											<button class="btn btn-sm btn-primary" style="margin-bottom:5px; margin-left:9px;">
+											<button class="btn btn-sm btn-primary m10-left">
 												<i class="icon-th-large"></i>
 											</button>
 										</div>
@@ -76,16 +89,16 @@
 
 								</div>
 								<!-- endnavbar -->
-
-
-								<!-- Start Form Area -->
-								<!-- End Form Area -->
+								<!-- Start content or form Area -->
+								<div>
+								</div>								
+								<!-- End content or form Area -->
 							</div>
-							<!-- End col-xs-12 boxborder panel-default -->
 						</div>
 					</div>
 					<!-- End page-content -->
 				</div>
+				<!-- end contents area -->
 			</div>
 			<!--End Main-container-->
 		</div>

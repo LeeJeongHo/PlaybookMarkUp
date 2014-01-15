@@ -5,14 +5,14 @@
 		<link rel="stylesheet" type="text/css" href="css/ace.min.css">
 		<link rel="stylesheet" type="text/css" href="css/common.css">
 		<link rel="stylesheet" type="text/css" href="css/1280_10_10.css">
-		<link rel="stylesheet" type="text/css" href="css/three_div.css">
+		<link rel="stylesheet" type="text/css" href="css/pb_dashboard.css">
 	</head>
 	<body>
 		<div id="container" >
 			<!-- Start navbar -->
 			<div id="header" class="navbar navbar-default" >
 				<img src="img/logo.png" class="navlogo">
-				<ul class="top_menu" style="display: inline;">
+				<ul class="top_menu pb_inline">
 					<li>
 						<a href="#" class="navlink">Menu1</a>
 					</li>
@@ -35,7 +35,7 @@
 							<p class="panel_title">
 								Playbook
 							</p>
-							<a class="btn btn-primary" style="float:right;">create playbook</a>
+							<a class="btn btn-primary pull-right" href="#">Create Playbook</a>
 						</div>
 						<div class="panel-content">
 							side bar
@@ -47,35 +47,33 @@
 				<div id="contents" class="contentarea">
 
 					<div id="nav" class="panel-head m10-navbar">
-						<h3 style="padding-left:15px;margin-top:10px;">NavBar</h3>
+						<h3 class="pb_content_header">NavBar</h3>
 					</div>
 					
 					<!--Start page-content -->
 
 					<div class="page-content">
 						<div id="content" class="row">
-							<!-- Start g244 col -->
-							<div class="g244 col">
-								<div id="div1">
-									<div class="pb_table_content panel-default">
-										<div class="panel-heading clearfix">
-											<h3 class="panel-title">div1</h3>
-										</div>
+							<!-- Start pb_info -->
+							<div class="g244 col pb_info">
+								<div class="pb_table_content panel-default">
+									<div class="panel-heading clearfix">
+										<h3 class="panel-title">div1</h3>
 									</div>
 								</div>
 							</div>
-							<!-- End g244 col-->
+							<!-- End pb_info -->
 
-							<!-- Start col col371 -->
+							<!-- Start pb_msg -->
 							<div class="col col371">
-								<div class="col371-2 row" id="div2">
+								<div class="col371-2 row pb_msg">
 									<div class="panel-default">
 										<div class="panel-heading clearfix">
 											<h3 class="panel-title">div2</h3>
 										</div>
 									</div>
 								</div>
-								<div class="col371-2 row" id="div2">
+								<div class="col371-2 row pb_msg">
 									<div class="panel-default">
 										<div class="panel-heading clearfix">
 											<h3 class="panel-title">div3</h3>
@@ -83,10 +81,10 @@
 									</div>
 								</div>
 							</div>
-							<!-- End col col371 -->
-							<!-- Start col200 col -->
+							<!-- End pb_msg -->
+							<!-- Start pb_digest & progress -->
 							<div class="col200 col">
-								<div class="g200 row" id="div3">
+								<div class="g200 row pb_digest">
 									<div class="panel-default">
 										<div class="panel-heading clearfix">
 											<h3 class="panel-title">div4</h3>
@@ -94,7 +92,7 @@
 									</div>
 								</div>
 
-								<div class="g200 row" id="div5">
+								<div class="g200 row pb_progress">
 									<div class="panel-default">
 										<div class="panel-heading clearfix">
 											<h3 class="panel-title">div5</h3>
@@ -102,7 +100,7 @@
 									</div>
 								</div>
 							</div>
-							<!-- end col200 col -->
+							<!-- end pb_digest & progress -->
 						</div>
 					</div>
 					<!-- End page-content -->

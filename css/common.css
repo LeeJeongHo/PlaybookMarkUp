@@ -191,6 +191,9 @@ panel
 /*
 	margin,padding 관련
 */
+.m-9-left{
+	margin-left: -9px;
+}
 .m10-navbar{
 	margin-left: 10px;
 	margin-top: 10px;
@@ -223,6 +226,7 @@ panel
 .p10-bottom{
 	padding-bottom: 10px;
 }
+
 
 .btn{
 	border-radius:4px;
@@ -342,4 +346,33 @@ table > thead {
 }
 tr{
 	font-size:12px;
+}
+
+.g879{
+	border: 1px solid #DDDDDD;
+	height: 700px;
+	margin-left: 3px;
+}
+
+.pb_main_contents_large{
+	height:720px;
+	padding:0px;
+	border : 1px solid #C3DDEC;
+	background-color: #FFFFFF;
+    border-radius: 4px;
+    border: 1px solid #C3DDEC;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+.pb_none_border{
+	border:none;
+}
+.pb_inline_b_left{
+	display:inline-block;
+	float:left;
+}
+.pb_inline{
+	display: inline;
+}
+.pb_content_header{
+	color:#ffffff;display:inline-block;margin-top:7px;
 }
