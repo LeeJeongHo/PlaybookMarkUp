@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="css/1280_10_10.css">
 		<link rel="stylesheet" type="text/css" href="css/uncompressed/font-awesome.css">
 		<link rel="stylesheet" type="text/css" href="css/table.css">
+		<link rel="stylesheet" type="text/css" href="css/company.css">
 		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 	</head>
@@ -31,7 +32,7 @@
 			<!-- End header -->
 
 			<!-- Start main container -->
-			<div id="main-container" class="main-container" >
+			<div id="main-container" class="main-container">
 				<!-- Start sidebar -->
 				<div id="sidebar" class="g84">
 					<ul class="side_menu">
@@ -47,7 +48,6 @@
 					</ul>
 				</div>
 				<!-- End Sidebar -->
-
 				<!-- start contens area -->
 				<div id="#" class="contentarea">
 					<!-- start page-content -->
@@ -57,29 +57,8 @@
 								<!-- navbar -->
 								<div id="nav" class="panel-head">
 									<div class="col-xs-12 pb_none_border">
-										<h3 class="pb_content_header">Total Records : 5372</h3>
+										<h3 class="pb_content_header">Edit Company</h3>
 										<div class="pull-right">
-											<div class="btn-group m10-right inline_b" style="margin-bottom:2px;">
-												<button class="btn btn-primary btn-sm dropdown-toggle no-border" data-toggle="dropdown" style="margin-top">
-													Success large
-													<i class="icon-angle-down icon-on-right"></i>
-												</button>
-												<ul class="dropdown-menu pull-right">
-													<li>
-														<a href="#">Company Name</a>
-													</li>
-													<li>
-														<a href="#">EMail</a>
-													</li>
-													<li>
-														<a href="#">First Name</a>
-													</li>
-													<li>
-														<a href="#">Last Name</a>
-													</li>
-												</ul>
-											</div>
-
 											<div class="input-icon input-icon-right inline_b m10-right">
 												<input id="search" type="text" placeholder="Search..." size="25">
 												<i class="icon-globe"></i>
@@ -116,7 +95,52 @@
 								<!-- endnavbar -->
 								<!-- Start content or form Area -->
 								<div id="contentwraper">
-								</div>								
+									<form class="form-horizontal m5-top">
+										<div class="form-group">
+											<label class="col-sm-3 control-label no-padding-right"><b>Company Type *</b></label>
+											<div class="col-sm-6">
+												<span class="lbl"> Cambell Alliance</span>
+											</div> 
+										</div>
+										<div class="form-group">
+											<label class="col-sm-3 control-label no-padding-right"><b>Company Name *</b></label>
+											<div class="col-sm-6">
+												<input id="form-field-1" class="col-xs-10 col-sm-5" type="text" placeholder="Company Name..">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-3 control-label no-padding-right"><b>Product List *</b></label>
+											<div class="col-sm-6">
+												<table class="table table-bordered">
+													<thead>
+														<tr>
+															<th>Product Name</th>
+															<th>Description</th>
+															<th width="40"></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>X-A1</td>
+															<td>blah blah</td>
+															<td><a href="#">Edit</a></td>
+														</tr>
+														<tr>
+															<td>X-B2_lala</td>
+															<td>blah blah</td>
+															<td><a href="#">Edit</a></td>
+														</tr>
+														<tr>
+															<td class="depth1"><a href="#">Add New Product</a></td>
+															<td></td>
+															<td></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</form>
+								</div>							
 								<!-- End content or form Area -->
 							</div>
 						</div>

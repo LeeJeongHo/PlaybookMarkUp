@@ -32,10 +32,7 @@ tr > td > a {
 .panel-head{
     border-radius: 0px 4px 0px 0px;
 }
-.table thead tr th{
-    font-size:14px;
-    color:#747474;
-}
+
 .m10_left_top{
     margin-top: 10px;
     margin-left: 10px;
