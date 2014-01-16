@@ -1,17 +1,17 @@
 .g625{
-	width:615px;
+	width:625px;
 	height: 700px;
 }
 .g244{
-	margin-left: 3px;
+	margin-left: 2px;
 }
 
 @media (min-width: 1665px){
 	.g244{
-		width: -moz-calc(100% - 630px);
-	    width: -webkit-calc(100% - 630px);
-	    width: -o-calc(100% - 630px);
-	    width: calc(100% - 630px);
-	    margin-left: 3px;
+		width: -moz-calc(100% - 640px);
+	    width: -webkit-calc(100% - 640px);
+	    width: -o-calc(100% - 640px);
+	    width: calc(100% - 640px);
+	    margin-left: 2px;
 	}
 }

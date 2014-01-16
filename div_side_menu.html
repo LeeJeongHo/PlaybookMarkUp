@@ -2,13 +2,14 @@
 	<head>
 		<title>Playbook / div_side_menu</title>
 		<meta http-equiv="Content_type" content="text/html; charset=UTF-8" />
-		
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/ace.min.css">
 		<link rel="stylesheet" type="text/css" href="css/common.css">
 		<link rel="stylesheet" type="text/css" href="css/1280_10_10.css">
 		<link rel="stylesheet" type="text/css" href="css/uncompressed/font-awesome.css">
 		<link rel="stylesheet" type="text/css" href="css/table.css">
+		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 	</head>
 	<body>
 		<div id="container" >
@@ -56,7 +57,7 @@
 								<!-- navbar -->
 								<div id="nav" class="panel-head">
 									<div class="col-xs-12 pb_none_border">
-										<span class="panel_title pb_inline_b_left"> Total Records : 5372</span>
+										<h3 class="pb_content_header">Total Records : 5372</h3>
 										<div class="pull-right">
 											<div class="btn-group m10-right inline_b" style="margin-bottom:2px;">
 												<button class="btn btn-primary btn-sm dropdown-toggle no-border" data-toggle="dropdown" style="margin-top">
@@ -79,13 +80,35 @@
 												</ul>
 											</div>
 
-											<div class="input-icon input-icon-right inline_b">
+											<div class="input-icon input-icon-right inline_b m10-right">
 												<input id="search" type="text" placeholder="Search..." size="25">
 												<i class="icon-globe"></i>
 											</div>
-											<button class="btn btn-sm btn-primary m10-left">
-												<i class="icon-th-large"></i>
-											</button>
+											<div class="btn-group">
+												<button class="btn btn-sm dropdown-toggle btn-primary no-border" data-toggle="dropdown">
+													<i class="icon-th-large" style="font-size:16px;"></i>
+												</button>
+												<ul class="dropdown-menu pull-right">
+													<li>
+														<a href="#">Add User</a>
+													</li>
+													<li class="divider"></li>
+													<li>
+														<a href="#">Import Users</a>
+													</li>
+													<li>
+														<a href="#">Export Users</a>
+													</li>
+													<li>
+														<a href="#">Use a Template</a>
+													</li>
+													<li class="divider"></li>
+													<li>
+														<a href="#">Print Veiw</a>
+													</li>
+												</ul>
+											</div>
+
 										</div>
 									</div>
 
