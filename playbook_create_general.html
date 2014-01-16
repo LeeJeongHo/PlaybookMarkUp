@@ -1,0 +1,586 @@
+<html>
+	<head>
+		<title>Playbook / report_dependency</title>
+		<meta http-equiv="Content_type" content="text/html; charset=UTF-8" />
+		
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/ace.min.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+		<link rel="stylesheet" type="text/css" href="css/1280_10_10.css">
+		<link rel="stylesheet" type="text/css" href="css/two_div.css">
+		<link rel="stylesheet" type="text/css" href="css/uncompressed/font-awesome.css">
+		
+		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div id="container" >
+			<!-- Start navbar -->
+			<div id="header" class="navbar navbar-default pb_inline" >
+				<img src="img/logo.png" class="navlogo">
+				<ul class="top_menu">
+					<li>
+						<a href="#" class="navlink">Menu1</a>
+					</li>
+					<li>
+						<a href="#" class="navlink">Menu2</a>
+					</li>
+					<li>
+						<a href="#" class="navlink">Menu2</a>
+					</li>
+				</ul>
+			</div>
+			<!-- End navbar -->
+
+			<!-- Start main container -->
+			<div id="main-container" class="main-container" >
+				<!--Start sidebar-->
+				<div id="accordion" class="g371 panel-group pb_sidebar">
+					<div class="panel-default panel ">
+						<div class="panel-head clearfix">
+							<p class="panel_title inline_b m3-top">
+								<a class="accordion-toggle" href="#collapseOne"
+								 data-parent="#accordion" data-toggle="collapse" style="color:#ffffff;">
+								 	Playbook 
+								</a>
+							</p>
+							<a class="btn btn-primary pull-right">
+								Create Playbook
+							</a>
+						</div>
+						<div class="panel-collapse collapse in" id="collapseOne">
+							<div class="panel-body accordion_body">
+								<div id="left_navi" class="tree tree-selectable">
+									<!-- folder1 Start -->
+									<div class="tree-folder inline_b">
+										<div class="tree-folder-header">
+											<i class="icon-minus"></i>
+											<div class="tree-folder-name">
+												PowerPharma -  Product X
+											</div>
+										</div>
+										<div class="tree-folder-content">
+											<div class="tree-folder-header">
+												<i class="icon-minus"></i>
+												<div class="tree-folder-name">
+													AAA001.US
+												</div>
+											</div>
+											<div class="tree-folder-content">
+												<div class="tree-item tree-selected">
+													<i class="icon-ok"></i>
+													<div class="tree-item-name">
+														01.Marketing
+													</div>
+												</div>
+												<div class="tree-item tree-selected">
+													<i class="icon-ok"></i>
+													<div class="tree-item-name">
+														02.Market Research
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														03.Sales
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														04.Clinical
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														05.Medical Affairs
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														06.Market Access
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+									<!-- folder1 end -->
+									<div class="tree-folder">
+										<div class="tree-folder-header">
+											<i class="icon-minus"></i>
+											<div class="tree-folder-name">
+												Amgen - Denosumab
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel-default panel">
+						<div class="panel-head clearfix">
+							<p class="panel_title inline_b m3-top">
+								<a class="accordion-toggle collapsed" href="#collapseTwo"
+								 data-parent="#accordion" data-toggle="collapse" style="color:#ffffff;">
+								 	Report 
+								</a>
+							</p>
+						</div>
+						<div class="panel-collapse collapse" id="collapseTwo">
+							<div class="panel-body accordion_body">
+								<ul class="list_none">
+									<li>
+										<a>- Flash Report</a>
+									</li>
+									<li>
+										<a>- Activity</a>
+									</li>
+									<li>
+										<a>- Dependency Report</a>
+									</li>
+									<li>
+										<a>- Budget Report</a>
+									</li>
+								</ul>
+							</div>
+						</div>			
+					</div>
+				</div>
+				<!--End Sidebar-->
+				
+				
+				<div id="contents" class="contentarea">
+
+					<div id="nav" class="panel-head m10-navbar">
+						<h3 class="pb_content_header">Create New Playbook</h3>
+					</div>
+
+					<!-- Start page-content -->
+					<div class="page-content">
+						<div id="content" class="row m-10-left">
+							<!-- Start contents -->
+							<div id="content_body" class="col-xs-12 panel-default pb_main_contents_large">
+								<!-- start form area-->
+								<form class="form-horizontal m10-top">
+  					      			<div id="fuelux-wizard" class="row-fluid" data-target="#step-container">
+										<ul class="wizard-steps">
+											<li data-target="#step1" class="active">
+												<span class="step">1</span>
+												<span class="title">Step 1</span>
+											</li>
+
+											<li data-target="#step2">
+												<span class="step">2</span>
+												<span class="title">Step 2</span>
+											</li>
+
+											<li data-target="#step3">
+												<span class="step">3</span>
+												<span class="title">Step 3</span>
+											</li>
+							
+											<li data-target="#step4">
+												<span class="step">4</span>
+												<span class="title">Step 4</span>
+											</li>
+							
+											<li data-target="#step5">
+												<span class="step">5</span>
+												<span class="title">Step 5</span>
+											</li>
+							
+											<li data-target="#step6">
+												<span class="step">6</span>
+												<span class="title">Step 6</span>
+											</li>
+										</ul>
+									</div>
+        			
+        							<div class="row p40-left-right">
+        								<h4 class="header">
+				        					<font color="8eb9d4">
+	        									<b>Essential Information</b>
+				        					</font>
+        								</h4>
+				        			</div>
+        			
+        							<!-- start from-group playbook_code -->
+									<div class="form-group">
+										<label class="col-sm-2 control-label no-padding-right" for="form-field-1">
+											 <b>Playbook Code*</b> 
+										</label>
+
+										<div class="col-sm-3">
+											<input type="text" id="form-field-1" placeholder="Playbook Code" class="col-xs-12" />
+										</div>
+									</div>
+									<!-- end from-group playbook_code -->
+									
+									<div class="space-4"></div>
+									
+									<!-- start from-group company & product -->
+									<div class="form-group">
+										<label class="col-sm-2 control-label no-padding-right" for="form-field-2"> 
+											<b>Select Company*</b> 
+										</label>
+										
+										<div class="col-sm-3">
+											<select class="form-control" id="form-field-select-2">
+												<option value="">Company...</option>
+												<option value="Company1">Company 1</option>
+												<option value="Company2">Company 2</option>
+												<option value="Company3">Company 3</option>
+											</select>
+										</div>
+										
+										<label class="col-sm-2 control-label no-padding-right" for="form-field-3"> 
+											<b>Select Product*</b> 
+										</label>
+										<div class="col-sm-3">
+											<select class="form-control" id="form-field-select-3">
+												<option value="">Product...</option>
+												<option value="Product1">Product 1</option>
+												<option value="Product2">Product 2</option>
+												<option value="Product3">Product 3</option>
+											</select>
+										</div>
+									</div>
+									<!-- end from-group company & product -->
+									
+									<div class="space-4"></div>
+									
+									<!-- start from-group geography -->
+									<div class="form-group">
+										<label class="col-sm-2 control-label no-padding-right" for="form-field-4"> 
+											<b>Geography*</b> 
+										</label>
+										
+										<div class="col-sm-3">
+											<select class="form-control" id="form-field-select-4">
+												<option value="">Geography...</option>
+												<option value="Geography1">Geography 1</option>
+												<option value="Geography2">Geography 2</option>
+												<option value="Geography3">Geography 3</option>
+											</select>
+										</div>
+									</div>
+									<!-- end from-group geography -->
+									
+									<div class="space-4"></div>
+									
+									<!-- start from-group therapeutic_area & disease state -->
+									<div class="form-group">
+										<label class="col-sm-2 control-label no-padding-right" for="form-field-5"> 
+											<b>Therapeutic Area*</b> 
+										</label>
+										
+										<div class="col-sm-3">
+											<select class="form-control" id="form-field-select-5">
+												<option value="">Therapeutic Area...</option>
+												<option value="Therapeutic Area1">Therapeutic Area 1</option>
+												<option value="Therapeutic Area2">Therapeutic Area 2</option>
+												<option value="Therapeutic Area3">Therapeutic Area 3</option>
+											</select>
+										</div>
+										
+										<label class="col-sm-2 control-label no-padding-right" for="form-field-6"> 
+											<b>Disease State*</b> 
+										</label>
+										<div class="col-sm-3">
+											<select class="form-control" id="form-field-select-6">
+												<option value="">Disease State...</option>
+												<option value="Disease State1">Disease State 1</option>
+												<option value="Disease State2">Disease State 2</option>
+												<option value="Disease State3">Disease State 3</option>
+											</select>
+										</div>
+									</div>
+									<!-- end from-group therapeutic_area & disease state -->
+									
+									<div class="space-4"></div>
+									
+									<!-- start from-group indication_group & indication -->
+									<div class="form-group">
+										<label class="col-sm-2 control-label no-padding-right" for="form-field-7"> 
+											<b>Indication Group*</b> 
+										</label>
+										
+										<div class="col-sm-3">
+											<select class="form-control" id="form-field-select-7">
+												<option value="">Indication Group...</option>
+												<option value="Indication Group1">Indication Group 1</option>
+												<option value="Indication Group2">Indication Group 2</option>
+												<option value="Indication Group3">Indication Group 3</option>
+											</select>
+										</div>
+										
+										<label class="col-sm-2 control-label no-padding-right" for="form-field-8"> 
+											<b>Indication*</b> 
+										</label>
+										<div class="col-sm-3">
+											<input type="text" id="form-field-8" placeholder="Indication" class="col-xs-12" />
+										</div>
+									</div>
+									<!-- end from-group therapeutic_area & disease state -->
+								
+        			
+				        			<div class="row p40-left-right">
+				        				<h4 class="header">
+        									<font color="8eb9d4">
+	        									<b>General Information</b>
+        									</font>
+        								</h4>
+        							</div>
+        							
+        							<!-- start from-group playbook_status -->
+									<div class="form-group">
+										<label class="col-sm-2 control-label no-padding-right" for="form-field-9"> 
+											<b>Playbook Status*</b> 
+										</label>
+										
+										<div class="col-sm-3">
+											<select class="form-control" id="form-field-select-9">
+												<option value="">Status...</option>
+												<option value="Status1">Status 1</option>
+												<option value="Status2">Status 2</option>
+												<option value="Status3">Status 3</option>
+											</select>
+										</div>
+									</div>
+									<!-- end from-group playbook_status -->
+									
+									<div class="space-4"></div>
+									
+									<!-- start from-group start_date & end_date -->
+									<div class="form-group">
+										<label class="col-sm-2 control-label no-padding-right" for="form-field-10"> 
+											<b>Start - End Date*</b>  
+										</label>
+										
+										<div class="input-group col-sm-2">
+											<input class="form-control date-picker" id="id-date-picker-1" type="text" data-date-format="dd-mm-yyyy"/>
+											<span class="input-group-addon">
+												<i class="icon-calendar bigger-110"></i>
+											</span>
+										</div>
+										
+										<div class="col-sm-1" style="width: 5px;">
+											<label>	
+												<b> - </b>
+											</label>  
+										</div>
+										<div class="input-group col-sm-2">
+											<input class="form-control date-picker" id="id-date-picker-2" type="text" data-date-format="dd-mm-yyyy"/>
+											<span class="input-group-addon">
+												<i class="icon-calendar bigger-110"></i>
+											</span>
+										</div>
+										
+										<label class="col-sm-2 control-label no-padding-right" for="form-field-11"> 
+											<b>Expiration Date*</b>  
+										</label>
+										
+										<div class="input-group col-sm-2">
+											<input class="form-control date-picker" id="id-date-picker-3" type="text" data-date-format="dd-mm-yyyy"/>
+											<span class="input-group-addon">
+												<i class="icon-calendar bigger-110"></i>
+											</span>
+										</div>
+									</div>
+									<!-- end from-group start_date & end_date -->
+									
+									<div class="space-4"></div>
+									
+									<!-- start from-group description -->
+									<div class="form-group">
+										<label class="col-sm-2 control-label no-padding-right" for="form-field-12">
+											<b>Description</b> 
+										</label>
+
+										<div class="col-sm-8">
+											<textarea class="form-control" id="form-field-12" placeholder="Default Text">
+											</textarea>
+										</div>
+									</div>
+									<!-- end from-group description -->
+        							
+        							<div class="space-4"></div>
+									
+									<!-- start from-group objectives -->
+									<div class="form-group">
+										<label class="col-sm-2 control-label no-padding-right" for="form-field-13">
+											<b>Objectives</b> 
+										</label>
+
+										<div class="col-sm-8">
+											<textarea class="form-control" id="form-field-13" placeholder="Default Text">
+											</textarea>
+										</div>
+									</div>
+									<!-- end from-group description -->
+									
+									<div class="space-4"></div>
+									
+									<!-- start from-group display_budget -->
+									<div class="form-group">
+										<label class="col-sm-2 control-label no-padding-right" for="form-field-14"> 
+											<b>Display Budget?</b> 
+										</label>
+										
+										<div class="col-sm-1">
+											<label>
+												<input id="switch-field-14" name="switch-field-14" class="ace ace-switch ace-switch-6" type="checkbox"/>
+												<span class="lbl"></span>
+											</label>
+										</div>
+										
+										<!-- start currency & rate -->
+										<div id="currency_rate">
+											<label class="col-sm-2 control-label no-padding-right" for="form-field-15"> 
+												<b>Currency</b> 
+											</label>
+										
+											<div class="col-sm-2">
+												<select class="form-control" id="form-field-select-15">
+													<option value="">Currency...</option>
+													<option value="Currency1">Currency 1</option>
+													<option value="Currency2">Currency 2</option>
+													<option value="Currency3">Currency 3</option>
+												</select>
+											</div>
+										
+											<label class="col-sm-1 control-label no-padding-right" for="form-field-16"> 
+												<b>Rate</b> 
+											</label>
+											<div class="col-sm-2">
+												<input type="text" id="form-field-16" placeholder="Rate" class="col-xs-12" />
+											</div>
+										</div>
+										<!-- end currency & rate -->
+									</div>
+									<!-- end from-group display_budget -->
+									
+									<div class="space-4"></div>
+									
+									<!-- start from-group display_activities -->
+									<div class="form-group">
+										<label class="col-sm-2 control-label no-padding-right" for="form-field-17"> 
+											<b>Display Activities?</b> 
+										</label>
+										
+										<div class="col-sm-1">
+											<label>
+												<input id="switch-field-17" name="switch-field-17" class="ace ace-switch ace-switch-6" type="checkbox"/>
+												<span class="lbl"></span>
+											</label>
+										</div>
+									</div>
+									<!-- end from-group display_activities -->
+									
+        							<div class="row p40-left-right">
+        								<h4 class="header">
+        									<font color="8eb9d4">
+					        					<b>Advanced</b>
+        									</font>
+        								</h4>
+        							</div>
+        							
+        							<!-- start from-group legal_text -->
+									<div class="form-group">
+										<label class="col-sm-2 control-label no-padding-right" for="form-field-18">
+											<b>Legal Text*</b> 
+										</label>
+
+										<div class="col-sm-8">
+											<textarea class="form-control" id="form-field-18" placeholder="Default Text">
+											</textarea>
+										</div>
+									</div>
+									<!-- end from-group legal_text -->
+        							
+        							<div class="space-4"></div>
+        							
+        							<!-- start from-group legal_footer -->
+									<div class="form-group">
+										<label class="col-sm-2 control-label no-padding-right" for="form-field-19">
+											 <b>Legal Footer*</b> 
+										</label>
+
+										<div class="col-sm-8">
+											<input type="text" id="form-field-19" placeholder="Legal Footer" class="col-xs-12" />
+										</div>
+									</div>
+									<!-- end from-group legal_footer -->
+        							
+        							<div class="space-4"></div>
+        							
+        							<!-- start from-group client_legal_footer -->
+									<div class="form-group">
+										<label class="col-sm-2 control-label no-padding-right" for="form-field-20">
+											 <b>Client Legal Footer*</b> 
+										</label>
+
+										<div class="col-sm-8">
+											<input type="text" id="form-field-20" placeholder="Client Legal Footer" class="col-xs-12" />
+										</div>
+									</div>
+									<!-- end from-group client_legal_footer -->
+        							
+        							<div class="space-4"></div>
+        							
+        							<!-- start from-group logo -->
+									<div class="form-group">
+										<label class="col-sm-2 control-label no-padding-right" for="form-field-21">
+											<b>Logo*</b> 
+										</label>
+
+										<div class="col-xs-3">
+											<input multiple="" type="file" id="id-input-file-21"/>
+										</div>
+										
+										<div class="col-xs-3">
+											<input type="file" id="id-input-file-22"/>
+										</div>
+									</div>
+									
+									<div class="divider m10-bottom"></div>
+									
+									<div class="footer pull-right p40-left-right m20-bottom">
+        								<button type="button" id="btn_prev" class="btn btn-default">
+											<i class="icon-arrow-left icon-on-left"></i>
+											Prev
+										</button>
+				        				<button type="button" id="btn_next" class="btn btn-success">
+        									Next
+	        								<i class="icon-arrow-right icon-on-right"></i>
+				    	    			</button>
+      								</div>
+								</form>
+								<!-- end from-group hide_original_dates -->
+							</div>
+							<!-- End contents -->
+						</div>
+					</div>
+					<!-- End page-content -->
+				</div>
+			</div>
+			<!--End Main-container-->
+		</div>
+		
+		<script src="js/jquery.slimscroll.min.js"></script>
+		<script type="text/javascript">
+			jQuery(function($) {
+				$('#content_body').slimScroll({
+					height : '720px',
+					alwaysVisible : true
+				});
+
+			});
+		</script>
+	</body>
+</html>
+
+
