@@ -1,0 +1,4 @@
+.form-group > label[class*="col-"] {
+    margin-bottom: 4px;
+    padding-top: 0px;
+}

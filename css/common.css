@@ -426,3 +426,6 @@ tr{
 .table_depth2{
 	padding-left: 24px !important;
 }
+form{
+	font-size: 14px;
+}
