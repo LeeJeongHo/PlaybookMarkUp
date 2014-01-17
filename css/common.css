@@ -275,11 +275,24 @@ panel
 .f-14{
 	font-size: 14px;
 }
-
+.f-16{
+	font-size: 16px;
+}
+.f-20{
+	font-size: 20px;
+}
 .btn{
 	border-radius:4px;
 }
-
+.modal-body{
+	height: 750px;
+}
+.modal-body hr{
+	margin-bottom: 10px;
+}
+.modal-body h3{
+	margin-top: 0px;
+}
 .btn-sm > [class*="icon-"] {
     margin-right: 0;
 }
@@ -303,7 +316,6 @@ panel
 }
 .line_ul{
 	display: inline-block;
-	float: right;
 }
 .line_ul:after{
 	clear: both;

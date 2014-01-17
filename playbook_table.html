@@ -71,8 +71,8 @@
 														01.Marketing
 													</div>
 												</div>
-												<div class="tree-item tree-selected">
-													<i class="icon-ok"></i>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
 													<div class="tree-item-name">
 														02.Market Research
 													</div>
@@ -263,7 +263,15 @@
 										</div>
 									</div>
 									<!-- panel-heading end -->
-									
+									<div class="row">
+										<div class="col-xs-12 m10-top">
+											<ul class="line_ul">
+												<li><a href="#"><i class="icon-arrow-up f-20"></i><a></li>
+												<li><a href="#"><i class="icon-arrow-down f-20"></i></a></li>
+												<li><a href="#"><i class="icon-plus-sign f-20"></i></a></li>
+											</ul>
+										</div>
+									</div> 
 									<!-- table Start -->
 									<div class="table-wraper">
 
@@ -277,6 +285,7 @@
 														<th class="sorting" >Status</th>
 														<th class="sorting" >Priority</th>
 														<th class="sorting" colspan="2">Responsibility</th>
+														<th class="sorting">Strategy</th>
 														<th role="columnheader"></th>
 													</tr>
 												</thead>
@@ -303,6 +312,7 @@
 														<td></td>
 														<td></td>
 														<td colspan="2"></td>
+														<td></td>
 														<td><a href="#"></a></td>
 													</tr>
 													<tr id="collapseme2" class="collapse">
@@ -312,7 +322,8 @@
 														<td>Unfunded</td>
 														<td>HIGH</td>
 														<td colspan="2">Anne, MArry</td>
-														<td><a href="#">Edit</a></td>
+														<td></td>
+														<td><a href="#" data-toggle="modal" data-target="#myModal">Edit</a></td>
 													</tr>
 													<tr>
 														<td colspan="2">02. Market Reaserch</td>
@@ -321,6 +332,7 @@
 														<td></td>
 														<td></td>
 														<td colspan="2"></td>
+														<td></td>
 														<td></td>
 													</tr>
 												</tbody>
@@ -463,6 +475,186 @@
 					<!-- End Content Area -->
 			</div>
 			<!--End Main-container-->
+		</div>
+		<!-- myModal -->
+		<div class="modal fade" id="myModal" tabindex="-1" rold="dialog" aria=labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<a href="#"><h4 class="modal-title" id="myModalLabel"> Back to Table Edit Mode</h4></a>
+					</div>
+					<!-- Start Modal body -->
+					<div class="modal-body">
+						<div class="col-xs-12">
+							<div class="row">
+								<div class="col-xs-4">
+									Message Tesing<br>
+									Product X / US / 01.Marketing / Price, Eric
+								</div>
+								<div class="col-xs-4">
+									<div class="btn-group">
+										<button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+											Status
+											<i class="icon-angle-down icon-on-right"></i>
+										</button>
+										<ul class="dropdown-menu pull-right">
+											<li>
+												<a href="#">Not Initiated</a>
+											</li>
+											<li>
+												<a href="#">On Track</a>
+											</li>
+											<li>
+												<a href="#">Delayed</a>
+											</li>
+											<li>
+												<a href="#">Canceled</a>
+											</li>
+											<li>
+												<a href="#">At Risk</a>
+											</li>
+											<li>
+												<a href="#">Unfunded</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-xs-4">
+									<div class="btn-group">
+										<button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+											Priority
+											<i class="icon-angle-down icon-on-right"></i>
+										</button>
+										<ul class="dropdown-menu pull-right">
+											<li>
+												<a href="#">TBD</a>
+											</li>
+											<li>
+												<a href="#">LOW</a>
+											</li>
+											<li>
+												<a href="#">MEDIUM</a>
+											</li>
+											<li>
+												<a href="#">HIGH</a>
+											</li>
+											<li>
+												<a href="#">LAUNCH CRITICAL</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-xs-6">
+									<b><i class="icon-calendar"></i>09 Dec, 2013 - 23 Jan, 2014 (33d)</b>
+								</div>
+								<div class="col-xs-6">
+									Origin End Date<br>
+									<b>23 Jan, 2014</b>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-xs-12">
+									<b>Responsibility : </b> <a href="#"><i class="icon-plus-sign-alt f-20"></i></a>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="row">
+										<h3><b>Dependencies of the deliverable</b></h3>
+									</div>
+									<div class="row">
+										<div class="col-xs-6">
+											<label>Test</label><br>
+											<label>(US/Marketing)</label><br>
+											<label class="f-12">
+												24 Dec, 2012 
+												<a href="#">Finish To Finish <i class="icon-chevron-sign-down"></i></a>
+											</label>
+										</div>
+										<div class="col-xs-6">
+											<br>
+											<br>
+											<a href="#"><i class="icon-remove f-20"></i></a>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-6">
+											<label>Marketing Survey</label><br>
+											<label>(US/Marketing)</label><br>
+											<label class="f-12">
+												24 Dec, 2012 
+												<a href="#">Finish To Finish <i class="icon-chevron-sign-down"></i></a>
+											</label>
+										</div>
+										<div class="col-xs-6">
+											<br>
+											<br>
+											<a href="#"><i class="icon-remove f-20"></i></a>
+										</div>
+									</div>
+									<div class="row">
+										<div class="pull-right m10-right">
+											<button class="btn btn-primary" data-toggle="button">Add</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="row">
+										<h5><b>Critical Success Factor</b></h5>
+									</div>
+									<select>
+										<option value="">option1</option>
+										<option value="">option2</option>
+										<option value="">option3</option>
+									</select>
+								</div>
+								<div class="col-xs-6">
+									<div class="row">
+										<h5><b>External Approval of the deliverable</b></h5>
+									</div>
+									<input id="form-field-1" class="col-xs-10 col-sm-5" type="text">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="row">
+										<h5><b>Internal Approval of the deliverable</b></h5>
+									</div>
+									<input id="form-field-1" class="col-xs-10 col-sm-5" type="text">
+								</div>
+								<div class="col-xs-6">
+									<div class="row">
+										<h5><b>Comments</b></h5>
+									</div>
+									<textarea id="form-field-8" class="form-control" placeholder="Default Text"></textarea>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="row">
+										<h5><b>Definition</b></h5>
+									</div>
+									<textarea id="form-field-8" class="form-control" placeholder="Default Text"></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End Modal body -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
 		</div>
 		<script type="text/javascript">
 			jQuery(function($) {
