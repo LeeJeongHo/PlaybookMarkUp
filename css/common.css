@@ -238,7 +238,9 @@ panel
 	margin-left: 15px;
 	margin-right: 15px;	
 }
-
+.m800-top{
+	margin-top: 800px;
+}
 .p0-top{
 	padding-top: 0px;
 }
@@ -293,7 +295,7 @@ panel
 	border-radius:4px;
 }
 .modal-body{
-	height: 750px;
+	height: auto;
 }
 .modal-body hr{
 	margin-bottom: 10px;
