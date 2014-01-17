@@ -1,16 +1,16 @@
 <html>
 	<head>
-		<title>Playbook / div_deliverable</title>
+		<title>Playbook / div_dashboard_playbook</title>
 		<meta http-equiv="Content_type" content="text/html; charset=UTF-8" />
 		
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/ace.min.css">
 		<link rel="stylesheet" type="text/css" href="css/common.css">
 		<link rel="stylesheet" type="text/css" href="css/1280_10_10.css">
-		<link rel="stylesheet" type="text/css" href="css/deliverable_div.css">
+		<link rel="stylesheet" type="text/css" href="css/pb_dashboard.css">
 	</head>
 	<body>
-		<div id="container" class="row m10-top m15-left-right"><div id="container" >
+		<div id="container" class="row m10-top m15-left-right">
 			<!-- Start navbar -->
 			<div id="header" class="row" >
 				<img src="img/logo.png" class="navlogo">
@@ -27,7 +27,8 @@
 				</ul>
 			</div>
 			<!-- End navbar -->
-			<!-- start maincontainer -->
+
+			<!-- Start main container -->
 			<div id="main-container" class="row m10-top" >
 				<!--Start sidebar-->
 				<div id="sidebar" class="col-xs-3 p0-all">
@@ -44,40 +45,73 @@
 					</div>
 				</div>
 				<!--End Sidebar-->
+
 				<div id="contents" class="col-xs-9 p0-all">
+
 					<div id="nav" class="panel-head m10-left">
 						<h3 class="pb_content_header">NavBar</h3>
 					</div>
+					
+					<!--Start page-content -->
 
-					<!-- Start page-content -->
 					<div class="row p10-left m10-top">
 						<div id="content" class="row col-xs-12">
-							<!--start Deliverable list-->
+							<!-- Start pb_info -->
 							<div class="col-xs-3">
-								<div class="pb_table_content panel-default">
+								<div class="pb_dashboard_left panel-default">
 									<div class="panel-heading clearfix">
 										<h3 class="panel-title">div1</h3>
 									</div>
 								</div>
 							</div>
-							<!--End Deliverable list-->
+							<!-- End pb_info -->
 
-							<!--Start Deliverable Info-->
+							<!-- Start pb_msg -->
 							<div class="col-xs-9 p0-all">
-								<div class="pb_table_content panel-default">
-									<div class="panel-heading clearfix">
-										<h3 class="panel-title">div2</h3>
+								<div class="row pb_dashboard_right">
+									<div class="panel-default">
+										<div class="panel-heading clearfix">
+											<h3 class="panel-title">div2</h3>
+										</div>
+									</div>
+								</div>
+								<div class="row pb_dashboard_right">
+									<div class="panel-default">
+										<div class="panel-heading clearfix">
+											<h3 class="panel-title">div3</h3>
+										</div>
 									</div>
 								</div>
 							</div>
-							<!--End Deliverable Info-->
+							<!-- End pb_msg -->
+							
+<!--
+							<div class="col-xs-3 p0-all p10-left">
+								<div class="row pb_dashboard_right_top">
+									<div class="panel-default">
+										<div class="panel-heading clearfix">
+											<h3 class="panel-title">div4</h3>
+										</div>
+									</div>
+								</div>
+
+								<div class="row pb_dashboard_right_bottom">
+									<div class="panel-default">
+										<div class="panel-heading clearfix">
+											<h3 class="panel-title">div5</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+-->
+
 						</div>
 					</div>
-					<!--End page-content-->
+					<!-- End page-content -->
+				</div> 
 
-				</div>
 			</div>
-			<!--End Main-container-->
+			<!--End Main container-->
 		</div>
 	</body>
 </html>
