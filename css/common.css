@@ -46,7 +46,7 @@ td{
 .main-container >.g371 {
 	margin-left: 0px;
 	margin-top: 10px;
-	float: left;
+	float: center;
 }
 .pb_sidebar{
 	width:100%;
@@ -234,9 +234,16 @@ panel
 	margin-left: 15px;
 	margin-top: 10px;	
 }
+.m15-left-right{
+	margin-left: 15px;
+	margin-right: 15px;	
+}
 
 .p0-top{
 	padding-top: 0px;
+}
+.p0-all{
+	padding: 0px;
 }
 .p5-all{
 	padding: 5px;
@@ -257,6 +264,7 @@ panel
 	padding-left: 40px; 
 	padding-right: 40px;
 }
+
 
 .w-90{
 	width: 90px;
@@ -397,7 +405,9 @@ panel
 .inline_b{
 	display:inline-block;
 }
-
+.pb_display_b{
+	display: block;
+}
 .table thead > tr > th, .table tbody > tr > th, .table tfoot > tr > th, .table thead > tr > td, .table tbody > tr > td, .table tfoot > tr > td {
     border-top: none;
     border-right: 1px solid #dddddd;
