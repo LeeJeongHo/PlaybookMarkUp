@@ -13,6 +13,7 @@
 		
 		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.slimscroll.min.js"></script>
 	</head>
 	<body>
 		<div id="container">
@@ -273,71 +274,57 @@
 										</div>
 									</div> 
 									<!-- table Start -->
-									<div class="table-wraper">
-
-										<div class="table-responsive">
-											<table class="table datatable boxborder">
-												<thead>
-													<tr role="row">
-														<th class="sorting_desc" colspan="2">Deliverables</th>
-														<th class="sorting_asc">Start Date</th>
-														<th class="sorting" >End Date</th>
-														<th class="sorting" >Status</th>
-														<th class="sorting" >Priority</th>
-														<th class="sorting" colspan="2">Responsibility</th>
-														<th class="sorting">Strategy</th>
-														<th role="columnheader"></th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr class="tr">
-														<td colspan="2">
-															<i id="depth1" class="icon-plus"></i>
-															01. Marketing
-														</td>
-														<td></td>
-														<td></td>
-														<td></td>
-														<td></td>
-														<td colspan="2"></td>
-														<td><a href="#"></a></td>
-													</tr>
-													<tr id="collapseme1" class="collapse tr2">
-														<td colspan="2" class="table_depth1">
-															<i id="depth2" class="icon-plus"></i>
-															Marketing Core Deliverables
-														</td>
-														<td></td>
-														<td></td>
-														<td></td>
-														<td></td>
-														<td colspan="2"></td>
-														<td></td>
-														<td><a href="#"></a></td>
-													</tr>
-													<tr id="collapseme2" class="collapse">
-														<td colspan="2" class="table_depth2">Post-Launch Trade Show Graphics - US</td>
-														<td>06-MAY-2013</td>
-														<td>06-MAY-2013</td>
-														<td>Unfunded</td>
-														<td>HIGH</td>
-														<td colspan="2">Anne, MArry</td>
-														<td></td>
-														<td><a href="#" data-toggle="modal" data-target="#myModal">Edit</a></td>
-													</tr>
-													<tr>
-														<td colspan="2">02. Market Reaserch</td>
-														<td></td>
-														<td></td>
-														<td></td>
-														<td></td>
-														<td colspan="2"></td>
-														<td></td>
-														<td></td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
+									<div class="col-xs-12" id="table-scroll" >
+										<table class="table datatable boxborder">
+											<thead>
+												<tr role="row">
+													<th class="sorting_desc" colspan="2">Deliverables</th>
+													<th class="sorting_asc">Start Date</th>
+													<th class="sorting" >End Date</th>
+													<th class="sorting" >Status</th>
+													<th class="sorting" >Priority</th>
+													<th class="sorting" colspan="2">Responsibility</th>
+													<th class="sorting">Strategy</th>
+													<th role="columnheader"></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr class="tr">
+													<td colspan="2">
+														<i id="depth1" class="icon-minus"></i>
+														Marketing Core Deliverables
+													</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td colspan="2"></td>
+													<td><a href="#"></a></td>
+												</tr>
+												<tr id="collapseme1">
+													<td colspan="2" class="table_depth1">
+														Post-Launch Trade Show Graphics - US
+													</td>
+													<td>06-MAY-2013</td>
+													<td>06-MAY-2013</td>
+													<td>Unfunded</td>
+													<td>HIGH</td>
+													<td colspan="2">Anne, Marry</td>
+													<td></td>
+													<td><a href="#" data-toggle="modal" data-target="#myModal"><i class="icon-info-sign f-16"></i></a></td>
+												</tr>
+												<tr>
+													<td colspan="2">02. Market Reaserch</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td colspan="2"></td>
+													<td></td>
+													<td></td>
+												</tr>
+											</tbody>
+										</table>
 									</div>
 								</div>
 							</div>
@@ -667,22 +654,12 @@
 					} else {
 						$("#depth1").addClass("icon-plus");
 						$("#depth1").removeClass("icon-minus");
-						$("#depth2").addClass("icon-plus");
-						$("#depth2").removeClass("icon-minus");
 						$("#collapseme1").addClass("collapse");
-						$("#collapseme2").addClass("collapse");
 					}
 				});
-				$(".tr2").click(function() {
-					if ($("#collapseme2").hasClass("collapse")) {
-						$("#collapseme2").removeClass("collapse");
-						$("#depth2").removeClass("icon-plus");
-						$("#depth2").addClass("icon-minus");
-					} else {
-						$("#collapseme2").addClass("collapse");
-						$("#depth2").addClass("icon-plus");
-						$("#depth2").removeClass("icon-minus");
-					}
+				$("#table-scroll").slimScroll({
+					height : '615px',
+					alwaysVisible : true
 				});
 
 			});

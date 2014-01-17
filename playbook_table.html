@@ -13,6 +13,7 @@
 		
 		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.slimscroll.min.js"></script>
 	</head>
 	<body>
 		<div id="container">
@@ -274,8 +275,7 @@
 									</div> 
 									<!-- table Start -->
 									<div class="table-wraper">
-
-										<div class="table-responsive">
+										<div class="table-responsive" id="table-scroll">
 											<table class="table datatable boxborder">
 												<thead>
 													<tr role="row">
@@ -683,6 +683,10 @@
 						$("#depth2").addClass("icon-plus");
 						$("#depth2").removeClass("icon-minus");
 					}
+				});
+				$('#table-scroll').slimScroll({
+					height : '660px',
+					alwaysVisible : true
 				});
 
 			});
