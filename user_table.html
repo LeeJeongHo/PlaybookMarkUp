@@ -1,42 +1,40 @@
 <html>
 	<head>
-		<title>Playbook / user_table</title>
+		<title>Playbook / div_side_menu</title>
 		<meta http-equiv="Content_type" content="text/html; charset=UTF-8" />
-		
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/ace.min.css">
 		<link rel="stylesheet" type="text/css" href="css/common.css">
 		<link rel="stylesheet" type="text/css" href="css/1280_10_10.css">
 		<link rel="stylesheet" type="text/css" href="css/uncompressed/font-awesome.css">
 		<link rel="stylesheet" type="text/css" href="css/table.css">
-		
 		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<div id="container" >
-			<!-- Start navbar -->
-			<div id="header" class="navbar navbar-default" >
+		<div id="container" class="row m10-top m15-left-right">
+			<!-- Start header -->
+			<div id="header" class="row" >
 				<img src="img/logo.png" class="navlogo">
-				<ul class="top_menu pb_inline">
+				<ul class="line_ul pull-right m15-top">
 					<li>
-						<a href="#" class="navlink">Menu1</a>
+						<a href="#">Menu1</a>
 					</li>
 					<li>
-						<a href="#" class="navlink">Menu2</a>
+						<a href="#">Menu2</a>
 					</li>
 					<li>
-						<a href="#" class="navlink">Menu2</a>
+						<a href="#">Menu2</a>
 					</li>
 				</ul>
 			</div>
-			<!-- End navbar -->
+			<!-- End header -->
 
 			<!-- Start main container -->
-			<div id="main-container" class="main-container" >
-				<!--Start sidebar-->
-				<div id="sidebar" class="g84">
-					<ul class="side_menu">
+			<div id="main-container" class="row m10-top">
+				<!-- Start sidebar -->
+				<div id="sidebar" class="col-sm-1 p0-all m-20-left">
+					<ul class="side_menu pull-right">
 						<li>
 							<a href="#"><img src="img/btn_user.png"></a>
 						</li>
@@ -48,15 +46,15 @@
 						</li>
 					</ul>
 				</div>
-				<!--End Sidebar-->
+				<!-- End Sidebar -->
 
-				<!-- Start Content Area -->
-				<div id="contents" class="contentarea">
-					<!-- Start page-content -->
-					<div class="page-content">
+				<!-- start contens area -->
+				<div id="contents" class="col-xs-11 p0-all">
+					<!-- start page-content -->
+					<div class="page-content p0-all">
 						<div id="content" class="row m-9-left">
-							<div class="col-xs-12 panel-default pb_main_contents_large" id="table-scroll">
-								<!-- pagecontent-header -->
+							<div class="col-xs-12 panel-default pb_main_contents_large" >
+								<!-- navbar -->
 								<div id="nav" class="panel-head">
 									<div class="col-xs-12 pb_none_border">
 										<h3 class="pb_content_header">Total Records : 5372</h3>
@@ -81,15 +79,14 @@
 													</li>
 												</ul>
 											</div>
+
 											<div class="input-icon input-icon-right inline_b m10-right">
-												<input id="form-field-icon-2" type="text" placeholder="Search..." size="25">
-												<i class="icon-globe "></i>
+												<input id="search" type="text" placeholder="Search..." size="25">
+												<i class="icon-globe"></i>
 											</div>
-
-
 											<div class="btn-group">
 												<button class="btn btn-sm dropdown-toggle btn-primary no-border" data-toggle="dropdown">
-													<i class="icon-th-large"></i>
+													<i class="icon-th-large" style="font-size:16px;"></i>
 												</button>
 												<ul class="dropdown-menu pull-right">
 													<li>
@@ -113,151 +110,144 @@
 											</div>
 
 										</div>
-										<!-- right float button & search bar end -->
 									</div>
-								</div>
-								<!-- end pagecontent-header -->
 
-								<!-- create new user -->
-								<div class="row">
-									<div class="col-xs-3 m15-left-top" >
-										<button class="btn btn-sm btn-primary no-border">
-											<i class="icon-edit"></i>
-											Add User
-										</button>
-									</div>
 								</div>
-								<!-- Start Talbe -->
-								<div class="table-wraper">
-									<div class="table-responsive">
-										<table class="table table-bordered table-hover datatable">
-											<thead>
-												<tr>
-													<th class="sorting w-110">User Type</th>
-													<th class="sorting_asc">Company</th>
-													<th class="sorting_desc">E-Mail</th>
-													<th class="sorting w-90">Activation</th>
-													<th class="sorting w-110">Status</th>
-													<th class="sorting">First Name</th>
-													<th class="sorting">Last Name</th>
-													<th class="sorting w-150">Office Phone</th>
-													<th class="sorting">Department</th>
-													<th class="w-90"></th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Client Members</td>
-													<td>Campbell Alliance</td>
-													<td>aaa@aaa.aaasdfadsfadsasdgasgasdgaasdgasg</td>
-													<td>ON</td>
-													<td>ACTIVE</td>
-													<td>Carlos</td>
-													<td>Altimari</td>
-													<td>000-000-0000</td>
-													<td>Department</td>
-													<td><a href="#">Edit</a></td>
-												</tr>
-												<tr>
-													<td>CA Members</td>
-													<td>Campbell Alliance</td>
-													<td>aaa@aaa.aaa</td>
-													<td>ON</td>
-													<td>ACTIVE</td>
-													<td>Carlos</td>
-													<td>Altimari</td>
-													<td>(+82)10-1234-5678</td>
-													<td>Department</td>
-													<td><a href="#">Edit</a></td>
-												</tr>
-												<tr>
-													<td>CA Members</td>
-													<td>Campbell Alliance</td>
-													<td>aaa@aaa.aaa</td>
-													<td>ON</td>
-													<td>ACTIVE</td>
-													<td>Carlos</td>
-													<td>Altimari</td>
-													<td>000-000-0000</td>
-													<td>Department</td>
-													<td><a href="#">Edit</a></td>
-												</tr>
-												<tr>
-													<td></td>
-													<td>
-														<select class="form-control">
-															<option>Option1</option>
-															<option>Option2</option>
-															<option>Option3</option>
-														</select>
-												    </td>
-													<td>
-														<input type="text" class="input100">
-													</td>
-													<td>
-														<select class="form-control">
-															<option>ON</option>
-															<option>OFF</option>
-														</select>
-													</td>
-													<td>
-														<select class="form-control">
-															<option>ACTIVE</option>
-															<option>INACTIVE</option>
-														</select>
-													</td>
-													<td>
-														<input type="text" class="input100">
-													</td>
-													<td>
-														<input type="text" class="input100">
-													</td>
-													<td>
-														<input type="text" class="input100">
-													</td>
-													<td>
-														<input type="text" class="input100">
-													</td>
-													<td>
-														<div>
-															<p class="pb_inline">
-																<button class="btn btn-sm btn-success no-border">
-																	<i class="icon-ok"></i>
-																</button>
-															</p>
-															<p class="pb_inline">
-																<button class="btn btn-sm btn-danger no-border">
-																	<i class="icon-reply"></i>
-																</button>
-															</p>
-														</div>
-													</td>
-												</tr>
-											</tbody>
-										</table>
+								<!-- endnavbar -->
+								<!-- Start content or form Area -->
+								<div id="contentwraper">
+									<div class="p10-left-right">
+										<!-- create new user -->
+										<div class="row">
+											<div class="col-xs-3 m15-left-top" >
+												<button class="btn btn-sm btn-primary no-border">
+													<i class="icon-edit"></i>
+													Add User
+												</button>
+											</div>
+										</div>
+										<!-- Start Talbe -->
+										<div class="table-wraper">
+											<div class="table-responsive">
+												<table class="table table-bordered table-hover datatable">
+													<thead>
+														<tr>
+															<th class="sorting w-110">User Type</th>
+															<th class="sorting_asc">Company</th>
+															<th class="sorting_desc">E-Mail</th>
+															<th class="sorting w-90">Activation</th>
+															<th class="sorting w-110">Status</th>
+															<th class="sorting">First Name</th>
+															<th class="sorting">Last Name</th>
+															<th class="sorting w-150">Office Phone</th>
+															<th class="sorting">Department</th>
+															<th class="w-90"></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Client Members</td>
+															<td>Campbell Alliance</td>
+															<td>aaa@aaa.aaasdfadsfadsasdgasgasdgaasdgasg</td>
+															<td>ON</td>
+															<td>ACTIVE</td>
+															<td>Carlos</td>
+															<td>Altimari</td>
+															<td>000-000-0000</td>
+															<td>Department</td>
+															<td><a href="#">Edit</a></td>
+														</tr>
+														<tr>
+															<td>CA Members</td>
+															<td>Campbell Alliance</td>
+															<td>aaa@aaa.aaa</td>
+															<td>ON</td>
+															<td>ACTIVE</td>
+															<td>Carlos</td>
+															<td>Altimari</td>
+															<td>(+82)10-1234-5678</td>
+															<td>Department</td>
+															<td><a href="#">Edit</a></td>
+														</tr>
+														<tr>
+															<td>CA Members</td>
+															<td>Campbell Alliance</td>
+															<td>aaa@aaa.aaa</td>
+															<td>ON</td>
+															<td>ACTIVE</td>
+															<td>Carlos</td>
+															<td>Altimari</td>
+															<td>000-000-0000</td>
+															<td>Department</td>
+															<td><a href="#">Edit</a></td>
+														</tr>
+														<tr>
+															<td></td>
+															<td>
+																<select class="form-control">
+																	<option>Option1</option>
+																	<option>Option2</option>
+																	<option>Option3</option>
+																</select>
+														    </td>
+															<td>
+																<input type="text" class="input100">
+															</td>
+															<td>
+																<select class="form-control">
+																	<option>ON</option>
+																	<option>OFF</option>
+																</select>
+															</td>
+															<td>
+																<select class="form-control">
+																	<option>ACTIVE</option>
+																	<option>INACTIVE</option>
+																</select>
+															</td>
+															<td>
+																<input type="text" class="input100">
+															</td>
+															<td>
+																<input type="text" class="input100">
+															</td>
+															<td>
+																<input type="text" class="input100">
+															</td>
+															<td>
+																<input type="text" class="input100">
+															</td>
+															<td>
+																<div>
+																	<p class="pb_inline">
+																		<button class="btn btn-sm btn-success no-border">
+																			<i class="icon-ok"></i>
+																		</button>
+																	</p>
+																	<p class="pb_inline">
+																		<button class="btn btn-sm btn-danger no-border">
+																			<i class="icon-reply"></i>
+																		</button>
+																	</p>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
 									</div>
-								</div>
-								<!-- End Table -->
+									<!-- End Table -->
+								</div>								
+								<!-- End content or form Area -->
 							</div>
 						</div>
 					</div>
-					<!--End Page-content-->
+					<!-- End page-content -->
 				</div>
+				<!-- end contents area -->
 			</div>
 			<!--End Main-container-->
 		</div>
-		
-		<script src="js/jquery.slimscroll.min.js"></script>
-		<script type="text/javascript">
-			jQuery(function($) {
-
-				$('#table-scroll').slimScroll({
-					height : '720px',
-					alwaysVisible : true
-				});
-
-			});
-		</script>
-
 	</body>
 </html>
