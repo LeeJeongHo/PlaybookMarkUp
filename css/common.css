@@ -1,9 +1,10 @@
 body{
-	width:1260px;
+	min-width:1260px;
 	margin:0 auto;
 	background-color: #ffffff;
 	font-family: Arial, Arial Black, Tahoma, Trebuchet MS, Verdana;
 }
+
 td{
 	word-wrap:break-word;
 }
