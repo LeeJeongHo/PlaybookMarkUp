@@ -221,6 +221,9 @@ panel
 .m10-top{
 	margin-top: 10px;
 }
+.m2-bottom{
+	margin-bottom: 2px;
+}
 .m10-bottom{
 	margin-bottom: 10px;
 }
@@ -253,6 +256,24 @@ panel
 .p40-left-right{
 	padding-left: 40px; 
 	padding-right: 40px;
+}
+
+.w-90{
+	width: 90px;
+}
+.w-110{
+	width: 110px;
+}
+.w-150{
+	width: 150px;
+}
+
+
+.f-12{
+	font-size: 12px;
+}
+.f-14{
+	font-size: 14px;
 }
 
 .btn{
@@ -379,7 +400,9 @@ table > thead {
 tr{
 	font-size:12px;
 }
-
+.form-control {
+	font-size:12px;
+}
 .g879{
 	border: 1px solid #DDDDDD;
 	height: 700px;
