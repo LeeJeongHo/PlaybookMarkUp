@@ -15,7 +15,7 @@
 		<script src="js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<div id="container" >
+		<div id="container" class="main-container">
 			<!-- Start navbar -->
 			<div id="header" class="navbar navbar-default pb_inline" >
 				<img src="img/logo.png" class="navlogo">
@@ -34,9 +34,9 @@
 			<!-- End navbar -->
 
 			<!-- Start main container -->
-			<div id="main-container" class="main-container" >
+			<div id="main-container" class="row col-xs-12 p0-all" >
 				<!--Start sidebar-->
-				<div id="accordion" class="g371 panel-group pb_sidebar">
+				<div id="accordion" class="panel-group col-xs-3 p0-all">
 					<div class="panel-default panel ">
 						<div class="panel-head clearfix">
 							<p class="panel_title">
@@ -50,9 +50,9 @@
 						</div>
 						<div class="panel-collapse collapse in" id="collapseOne">
 							<div class="panel-body accordion_body">
-								<div id="tree1" class="tree tree-selectable">
+								<div id="left_navi" class="tree tree-selectable">
 									<!-- folder1 Start -->
-									<div class="tree-folder inline_b">
+									<div class="tree-folder pb_display_b">
 										<div class="tree-folder-header">
 											<i class="icon-minus"></i>
 											<div class="tree-folder-name">
@@ -73,8 +73,8 @@
 														01.Marketing
 													</div>
 												</div>
-												<div class="tree-item tree-selected">
-													<i class="icon-ok"></i>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
 													<div class="tree-item-name">
 														02.Market Research
 													</div>
@@ -150,7 +150,7 @@
 				</div>
 				<!--End Sidebar-->
 
-				<div id="contents" class="contentarea">
+				<div id="contents" class="col-xs-9 p0-all">
 
 					<div id="nav" class="panel-head m10-navbar">
 						<h3 class="pb_content_header">NavBar</h3>
@@ -177,9 +177,9 @@
 									</div>
 									<!-- End Head -->
 									<!-- Start Tree Filter -->
-									<div id="tree1" class="tree tree-selectable">
+									<div id="filter" class="tree tree-selectable">
 										<!-- folder1 Start -->
-										<div class="tree-folder" style="display: block;">
+										<div class="tree-folder pb_display_b">
 											<div class="tree-folder-header">
 												<i class="icon-minus"></i>
 												<div class="tree-folder-name">
@@ -187,7 +187,7 @@
 												</div>
 											</div>
 											<!-- Start 1 depth -->
-											<div class="tree-folder-content" style="display: block;">
+											<div class="tree-folder-content">
 												<div class="tree-folder-header">
 													<i class="icon-minus"></i>
 													<div class="tree-folder-name">
@@ -195,38 +195,38 @@
 													</div>
 												</div>
 												<!-- Start 2 depth -->
-												<div class="tree-folder-content" style="display:block;">
-													<div class="tree-item" style="display: block;">
+												<div class="tree-folder-content">
+													<div class="tree-item">
 														<i class="icon-remove"></i>
 														<div class="tree-item-name">
 															01. Marketing
 														</div>
 													</div>
-													<div class="tree-item" style="display: block;">
+													<div class="tree-item">
 														<i class="icon-remove"></i>
 														<div class="tree-item-name">
 															02. Market Research
 														</div>
 													</div>
-													<div class="tree-item" style="display: block;">
+													<div class="tree-item">
 														<i class="icon-remove"></i>
 														<div class="tree-item-name">
 															03. Sales
 														</div>
 													</div>
-													<div class="tree-item tree-selected" style="display: block;">
+													<div class="tree-item tree-selected">
 														<i class="icon-ok"></i>
 														<div class="tree-item-name">
 															04.Clinical
 														</div>
 													</div>
-													<div class="tree-item" style="display: block;">
+													<div class="tree-item">
 														<i class="icon-remove"></i>
 														<div class="tree-item-name">
 															05. Medical Affairs
 														</div>
 													</div>
-													<div class="tree-item" style="display: block;">
+													<div class="tree-item">
 														<i class="icon-remove"></i>
 														<div class="tree-item-name">
 															06. Market Access
@@ -244,7 +244,7 @@
 											<!-- End 1 depth -->
 										</div>
 										<!-- folder1 end -->
-										<div class="tree-folder" style="display:block;">
+										<div class="tree-folder pb_display_b">
 											<div class="tree-folder-header">
 												<i class="icon-minus"></i>
 												<div class="tree-folder-name">
@@ -254,49 +254,51 @@
 										</div>
 									</div>
 									<!-- End Tree Filter -->
-									<label class="m10-left m10-top" style="font-size:14px;"><b>Setting</b></label>
+									<label class="m10-left m10-top f-14">
+										<b>Setting</b>
+									</label>
 									<!-- Start tree2 -->
 									<div id="tree2" class="tree tree-selectable">
 										<!-- folder1 Start -->
-										<div class="tree-folder" style="display: block;">
+										<div class="tree-folder pb_display_b">
 											<div class="tree-folder-header">
 												<i class="icon-minus"></i>
 												<div class="tree-folder-name">
 													Status
 												</div>
 											</div>
-											<div class="tree-folder-content" style="display:block;">
-												<div class="tree-item" style="display: block;">
+											<div class="tree-folder-content">
+												<div class="tree-item">
 													<i class="icon-remove"></i>
 													<div class="tree-item-name">
 														Not Initiated
 													</div>
 												</div>
-												<div class="tree-item" style="display: block;">
+												<div class="tree-item">
 													<i class="icon-remove"></i>
 													<div class="tree-item-name">
 														On Track
 													</div>
 												</div>
-												<div class="tree-item" style="display: block;">
+												<div class="tree-item">
 													<i class="icon-remove"></i>
 													<div class="tree-item-name">
 														Delayed
 													</div>
 												</div>
-												<div class="tree-item tree-selected" style="display: block;">
+												<div class="tree-item tree-selected">
 													<i class="icon-ok"></i>
 													<div class="tree-item-name">
 														Completed
 													</div>
 												</div>
-												<div class="tree-item" style="display: block;">
+												<div class="tree-item">
 													<i class="icon-remove"></i>
 													<div class="tree-item-name">
 														Canceled
 													</div>
 												</div>
-												<div class="tree-item" style="display: block;">
+												<div class="tree-item">
 													<i class="icon-remove"></i>
 													<div class="tree-item-name">
 														At Risk
@@ -307,7 +309,7 @@
 
 										</div>
 										<!-- folder1 end -->
-										<div class="tree-folder" style="display: block;">
+										<div class="tree-folder pb_display_b">
 											<div class="tree-folder-header">
 												<i class="icon-minus"></i>
 												<div class="tree-folder-name">
