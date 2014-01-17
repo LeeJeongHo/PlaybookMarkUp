@@ -192,7 +192,9 @@ panel
 /*
 	margin,padding 관련
 */
-
+.m-20-left{
+	margin-left: -20px;
+}
 .m-10-left{
 	margin-left: -10px;
 }
