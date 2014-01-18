@@ -8,31 +8,33 @@
 		<link rel="stylesheet" type="text/css" href="css/1280_10_10.css">
 		<link rel="stylesheet" type="text/css" href="css/uncompressed/font-awesome.css">
 		<link rel="stylesheet" type="text/css" href="css/table.css">
+		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<div id="container" >
+		<div id="container" class="row m10-top m15-left-right">
 			<!-- Start header -->
-			<div id="header" class="navbar navbar-default pb_inline" >
+			<div id="header" class="row" >
 				<img src="img/logo.png" class="navlogo">
-				<ul class="top_menu">
+				<ul class="line_ul pull-right m15-top">
 					<li>
-						<a href="#" class="navlink">Menu1</a>
+						<a href="#">Menu1</a>
 					</li>
 					<li>
-						<a href="#" class="navlink">Menu2</a>
+						<a href="#">Menu2</a>
 					</li>
 					<li>
-						<a href="#" class="navlink">Menu2</a>
+						<a href="#">Menu2</a>
 					</li>
 				</ul>
 			</div>
 			<!-- End header -->
 
 			<!-- Start main container -->
-			<div id="main-container" class="main-container" >
+			<div id="main-container" class="row m10-top">
 				<!-- Start sidebar -->
-				<div id="sidebar" class="g84">
-					<ul class="side_menu">
+				<div id="sidebar" class="col-sm-1 p0-all m-20-left">
+					<ul class="side_menu pull-right">
 						<li>
 							<a href="#"><img src="img/btn_user.png"></a>
 						</li>
@@ -47,383 +49,333 @@
 				<!-- End Sidebar -->
 
 				<!-- start contens area -->
-				<div id="#" class="contentarea">
+				<div id="contents" class="col-xs-11 p0-all">
 					<!-- start page-content -->
-					<div class="page-content">
+					<div class="page-content p0-all">
 						<div id="content" class="row m-9-left">
 							<div class="col-xs-12 panel-default pb_main_contents_large" >
 								<!-- navbar -->
 								<div id="nav" class="panel-head">
 									<div class="col-xs-12 pb_none_border">
-										<span class="panel_title pb_inline_b_left">
-											Create User
-										</span>
-										<ul class="row pull-right inline_b">
-											<li class="list_none">
-												<button id="btn_save" class="btn btn-sm btn-primary">
-													Save
-												</button>
-											</li>
-										
-											<li class="list_none">
-												<button id="btn_cancel" class="btn btn-sm btn-primary">
-													Cancel
-												</button>
-											</li>
-										</ul>
+										<h3 class="pb_content_header">Create User</h3>
+										<div class="pull-right">
+											<ul class="row inline_b">
+												<li class="list_none">
+													<button id="btn_save" class="btn btn-sm btn-primary">
+														Save
+													</button>
+												</li>
+
+												<li class="list_none">
+													<button id="btn_cancel" class="btn btn-sm btn-primary">
+														Cancel
+													</button>
+												</li>
+											</ul>
+										</div>
 									</div>
 
 								</div>
 								<!-- endnavbar -->
-								<!-- start form area-->
-								<form class="form-horizontal m5-top" role="form">
-									<!-- start from-group user_type -->
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">
-									 		<b>User Type*</b> 
-										</label>
+								<!-- Start content or form Area -->
+								<div id="contentwraper">
+									<!-- start form area-->
+									<form class="form-horizontal m5-top" role="form">
+										<!-- start from-group user_type -->
+										<div class="form-group">
+											<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> <b>User Type*</b> </label>
 
-										<!-- start input area -->
-										<div class="col-sm-6">
-											<!-- start radio_group_user_type -->
-											<div id="form-field-1" class="control-group">
-												<div class="radio">
-													<label>
-														<input id="user_type_ca" name="radio_type" type="radio" class="ace" checked="checked" />
-														<span class="lbl"> 
-															CA Member
-														</span>
-													</label>
+											<!-- start input area -->
+											<div class="col-sm-6">
+												<!-- start radio_group_user_type -->
+												<div id="form-field-1" class="control-group">
+													<div class="radio">
+														<label>
+															<input id="user_type_ca" name="radio_type" type="radio" class="ace" checked="checked" />
+															<span class="lbl"> CA Member </span> </label>
+													</div>
+
+													<div class="radio">
+														<label>
+															<input id="user_type_client" name="radio_type" type="radio" class="ace" />
+															<span class="lbl"> Client Member </span> </label>
+													</div>
 												</div>
-										
-												<div class="radio">
-													<label>
-														<input id="user_type_client" name="radio_type" type="radio" class="ace" />
-														<span class="lbl"> 
-															Client Member
-														</span>
-													</label>
-												</div>
+												<!-- end radio_group_user_type -->
 											</div>
-											<!-- end radio_group_user_type -->
+											<!-- end input area -->
 										</div>
-										<!-- end input area -->
-									</div>
-									<!-- end from-group user_type -->
-							
-									<div class="space-4"></div>
-							
-									<!-- start from-group company -->
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-2">
-											 <b>Company*</b> 
-										</label>
+										<!-- end from-group user_type -->
 
-										<!-- start input area -->
-										<div class="col-sm-3">
-											<!-- start select company -->
-											<select class="form-control" id="form-field-2">
-												<option value="">Select Company...</option>
-												<option value="Company1">Company 1</option>
-												<option value="Company2">Company 2</option>
-												<option value="Company3">Company 3</option>
-											</select>
-											<!-- end select company -->
-										</div>
-										<!-- end input area -->
-									</div>
-									<!-- end from-group comapny -->
-							
-									<div class="space-4"></div>
-							
-									<!-- start from-group e-mail -->
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-3">
-											 <b>E-Mail*</b> 
-										</label>
+										<div class="space-4"></div>
 
-										<!-- start input area -->
-										<div class="col-sm-6">
-											<!-- start input e-mail -->
-											<input type="email" id="form-field-3" placeholder="E-Mail" class="col-xs-10 col-sm-6" />
-											<span class="middle m10-left">
-												*Invalid E-Mail
-											</span>
-											<!-- end input e-mail -->
-										</div>
-										<!-- end input area -->
-									</div>
-									<!-- end from-group e-mail -->
-							
-									<div class="space-4"></div>
-							
-									<!-- start from-group password -->
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-4">
-											 <b>Password*</b> 
-										</label>
+										<!-- start from-group company -->
+										<div class="form-group">
+											<label class="col-sm-3 control-label no-padding-right" for="form-field-2"> <b>Company*</b> </label>
 
-										<!-- start input area -->
-										<div class="col-sm-6">
-											<!-- start input password -->
-											<input type="password" id="form-field-4" placeholder="Password" class="col-xs-10 col-sm-6" value="1234"/>
-											<!-- end input password -->
-										</div>
-										<!-- end input area -->
-									</div>
-									<!-- end from-group password -->
-							
-									<div class="space-4"></div>
-							
-									<!-- start from-group first_name & last_name -->
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-5">
-											 <b>First Name*</b> 
-										</label>
-
-										<!-- start input area -->
-										<div class="col-sm-2">
-											<!-- start input fist_name -->
-											<input type="text" id="form-field-5" placeholder="First Name" class="col-xs-10" />
-											<!-- end input first_name -->
-										</div>
-										<!-- end input area -->
-								
-										<label class="col-sm-1 control-label no-padding-right" for="form-field-5">
-											 <b>Last Name*</b> 
-										</label>
-
-										<!-- start input area -->
-										<div class="col-sm-2">
-											<!-- start input last_name -->
-											<input type="text" id="form-field-6" placeholder="Last Name" class="col-xs-10" />
-											<!-- end input last_name -->
-										</div>
-										<!-- end input area -->
-									</div>
-									<!-- end from-group first_name & last_name -->
-							
-									<div class="space-4"></div>
-							
-									<!-- start from-group department & title -->
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-7">
-											 <b>Department</b> 
-										</label>
-
-										<!-- start input area -->
-										<div class="col-sm-2">
-											<!-- start input department -->
-											<input type="text" id="form-field-7" placeholder="Department" class="col-xs-10" />
-											<!-- end input department -->
-										</div>
-										<!-- end input area -->
-								
-										<label class="col-sm-1 control-label no-padding-right" for="form-field-8">
-											 <b>Title</b> 
-										</label>
-
-										<!-- start input area -->
-										<div class="col-sm-2">
-											<!-- start input title -->
-											<input type="text" id="form-field-8" placeholder="Title" class="col-xs-10" />
-											<!-- end input title -->
-										</div>
-										<!-- end input area -->
-									</div>
-									<!-- end from-group department & title -->
-							
-									<div class="space-4"></div>
-									
-									<!-- start from-group department & title -->
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-9">
-											 <b>Office Phone</b> 
-										</label>
-
-										<!-- start input area -->
-										<div class="col-sm-2">
-											<!-- start input department -->
-											<input type="text" id="form-field-9" placeholder="Office Phone" class="col-xs-10" />
-											<!-- end input department -->
-										</div>
-										<!-- end input area -->
-										
-										<label class="col-sm-1 control-label no-padding-right" for="form-field-10">
-											 <b>Cell Phone</b> 
-										</label>
-
-										<!-- start input area -->
-										<div class="col-sm-2">
-											<!-- start input title -->
-											<input type="text" id="form-field-10" placeholder="Cell Phone" class="col-xs-10" />
-											<!-- end input title -->
-										</div>
-										<!-- end input area -->
-									</div>
-									<!-- end from-group department & title -->
-									
-									<div class="space-4"></div>
-									
-									<!-- start from-group street_address -->
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-11">
-											 <b>Street Address</b> 
-										</label>
-
-										<!-- start input area -->
-										<div class="col-sm-6">
-											<!-- start input street_address -->
-											<input type="text" id="form-field-11" placeholder="Password" class="col-xs-10 col-sm-6"/>
-											<!-- end input street_address -->
-										</div>
-										<!-- end input area -->
-									</div>
-									<!-- end from-group street_address -->
-									
-									<div class="space-4"></div>
-									
-									<!-- start from-group city & state & zip -->
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-12">
-											 <b>City</b> 
-										</label>
-
-										<!-- start input area -->
-										<div class="col-sm-1">
-											<!-- start input city -->
-											<input type="text" id="form-field-12" placeholder="City" class="col-xs-10" />
-											<!-- end input city -->
-										</div>
-										<!-- end input area -->
-										
-										<label class="col-sm-1 control-label no-padding-right" for="form-field-13">
-											 <b>State</b> 
-										</label>
-
-										<!-- start input area -->
-										<div class="col-sm-1">
-											<!-- start input state -->
-											<select class="form-control" id="form-field-13">
-												<option value="">State...</option>
-												<option value="State1">State 1</option>
-												<option value="State2">State 2</option>
-												<option value="State3">State 3</option>
-											</select>
-											<!-- end input state -->
-										</div>
-										<!-- end input area -->
-										
-										<label class="col-sm-1 control-label no-padding-right" for="form-field-14">
-											 <b>Zip</b> 
-										</label>
-
-										<!-- start input area -->
-										<div class="col-sm-1">
-											<!-- start input zip -->
-											<input type="text" id="form-field-14" placeholder="Zip" class="col-xs-10" />
-											<!-- end input zip -->
-										</div>
-										<!-- end input area -->
-									</div>
-									<!-- end from-group city & state & zip -->
-									
-									<div class="space-4"></div>
-									
-									<!-- start from-group contry -->
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-15">
-											 <b>Country</b> 
-										</label>
-
-										<!-- start input area -->
-										<div class="col-sm-3">
-											<!-- start select company -->
-											<select class="form-control" id="form-field-15">
-												<option value="">Select Country...</option>
-												<option value="Country1">Country 1</option>
-												<option value="Country2">Country 2</option>
-												<option value="Country3">Country 3</option>
-											</select>
-											<!-- end select company -->
-										</div>
-										<!-- end input area -->
-									</div>
-									<!-- end from-group comapny -->
-									
-									<div class="space-4"></div>
-									
-									<!-- start from-group user_status -->
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-16">
-											 <b>User Status</b> 
-										</label>
-
-										<!-- start input area -->
-										<div class="col-sm-6">
-											<!-- start radio_group_user_status -->
-											<div id="form-field-16" class="control-group">
-												<div class="radio">
-													<label>
-														<input id="user_type_ca" name="radio_status" type="radio" class="ace" />
-														<span class="lbl"> 
-															ACTIVE
-														</span>
-													</label>
-												</div>
-										
-												<div class="radio">
-													<label>
-														<input id="user_type_client" name="radio_status" type="radio" class="ace" checked="checked"/>
-														<span class="lbl"> 
-															INACTIVE
-														</span>
-													</label>
-												</div>
+											<!-- start input area -->
+											<div class="col-sm-3">
+												<!-- start select company -->
+												<select class="form-control" id="form-field-2">
+													<option value="">Select Company...</option>
+													<option value="Company1">Company 1</option>
+													<option value="Company2">Company 2</option>
+													<option value="Company3">Company 3</option>
+												</select>
+												<!-- end select company -->
 											</div>
-											<!-- end radio_group_user_status -->
+											<!-- end input area -->
 										</div>
-										<!-- end input area -->
-									</div>
-									<!-- end from-group user_status -->
-									
-									<div class="space-4"></div>
-									
-									<!-- start from-group account_activation -->
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-17">
-											 <b>Account Activation</b> 
-										</label>
+										<!-- end from-group comapny -->
 
-										<!-- start input area -->
-										<div class="col-sm-6">
-											<!-- start radio_group_account_activation -->
-											<div id="form-field-17" class="control-group">
-												<div class="radio">
-													<label>
-														<input id="user_type_ca" name="radio_activation" type="radio" class="ace"/>
-														<span class="lbl"> 
-															ON
-														</span>
-													</label>
-												</div>
-										
-												<div class="radio">
-													<label>
-														<input id="user_type_client" name="radio_activation" type="radio" class="ace" checked="checked" />
-														<span class="lbl"> 
-															OFF
-														</span>
-													</label>
-												</div>
+										<div class="space-4"></div>
+
+										<!-- start from-group e-mail -->
+										<div class="form-group">
+											<label class="col-sm-3 control-label no-padding-right" for="form-field-3"> <b>E-Mail*</b> </label>
+
+											<!-- start input area -->
+											<div class="col-sm-6">
+												<!-- start input e-mail -->
+												<input type="email" id="form-field-3" placeholder="E-Mail" class="col-xs-10 col-sm-6" />
+												<span class="middle m10-left"> *Invalid E-Mail </span>
+												<!-- end input e-mail -->
 											</div>
-											<!-- end radio_group_account_activation -->
+											<!-- end input area -->
 										</div>
-										<!-- end input area -->
-									</div>
-									<!-- end from-group account_activation -->
-								</form>
-								<!-- end form -->								
+										<!-- end from-group e-mail -->
+
+										<div class="space-4"></div>
+
+										<!-- start from-group password -->
+										<div class="form-group">
+											<label class="col-sm-3 control-label no-padding-right" for="form-field-4"> <b>Password*</b> </label>
+
+											<!-- start input area -->
+											<div class="col-sm-6">
+												<!-- start input password -->
+												<input type="password" id="form-field-4" placeholder="Password" class="col-xs-10 col-sm-6" value="1234"/>
+												<!-- end input password -->
+											</div>
+											<!-- end input area -->
+										</div>
+										<!-- end from-group password -->
+
+										<div class="space-4"></div>
+
+										<!-- start from-group first_name & last_name -->
+										<div class="form-group">
+											<label class="col-sm-3 control-label no-padding-right" for="form-field-5"> <b>First Name*</b> </label>
+
+											<!-- start input area -->
+											<div class="col-sm-2">
+												<!-- start input fist_name -->
+												<input type="text" id="form-field-5" placeholder="First Name" class="col-xs-10" />
+												<!-- end input first_name -->
+											</div>
+											<!-- end input area -->
+
+											<label class="col-sm-1 control-label no-padding-right" for="form-field-5"> <b>Last Name*</b> </label>
+
+											<!-- start input area -->
+											<div class="col-sm-2">
+												<!-- start input last_name -->
+												<input type="text" id="form-field-6" placeholder="Last Name" class="col-xs-10" />
+												<!-- end input last_name -->
+											</div>
+											<!-- end input area -->
+										</div>
+										<!-- end from-group first_name & last_name -->
+
+										<div class="space-4"></div>
+
+										<!-- start from-group department & title -->
+										<div class="form-group">
+											<label class="col-sm-3 control-label no-padding-right" for="form-field-7"> <b>Department</b> </label>
+
+											<!-- start input area -->
+											<div class="col-sm-2">
+												<!-- start input department -->
+												<input type="text" id="form-field-7" placeholder="Department" class="col-xs-10" />
+												<!-- end input department -->
+											</div>
+											<!-- end input area -->
+
+											<label class="col-sm-1 control-label no-padding-right" for="form-field-8"> <b>Title</b> </label>
+
+											<!-- start input area -->
+											<div class="col-sm-2">
+												<!-- start input title -->
+												<input type="text" id="form-field-8" placeholder="Title" class="col-xs-10" />
+												<!-- end input title -->
+											</div>
+											<!-- end input area -->
+										</div>
+										<!-- end from-group department & title -->
+
+										<div class="space-4"></div>
+
+										<!-- start from-group department & title -->
+										<div class="form-group">
+											<label class="col-sm-3 control-label no-padding-right" for="form-field-9"> <b>Office Phone</b> </label>
+
+											<!-- start input area -->
+											<div class="col-sm-2">
+												<!-- start input department -->
+												<input type="text" id="form-field-9" placeholder="Office Phone" class="col-xs-10" />
+												<!-- end input department -->
+											</div>
+											<!-- end input area -->
+
+											<label class="col-sm-1 control-label no-padding-right" for="form-field-10"> <b>Cell Phone</b> </label>
+
+											<!-- start input area -->
+											<div class="col-sm-2">
+												<!-- start input title -->
+												<input type="text" id="form-field-10" placeholder="Cell Phone" class="col-xs-10" />
+												<!-- end input title -->
+											</div>
+											<!-- end input area -->
+										</div>
+										<!-- end from-group department & title -->
+
+										<div class="space-4"></div>
+
+										<!-- start from-group street_address -->
+										<div class="form-group">
+											<label class="col-sm-3 control-label no-padding-right" for="form-field-11"> <b>Street Address</b> </label>
+
+											<!-- start input area -->
+											<div class="col-sm-6">
+												<!-- start input street_address -->
+												<input type="text" id="form-field-11" placeholder="Password" class="col-xs-10 col-sm-6"/>
+												<!-- end input street_address -->
+											</div>
+											<!-- end input area -->
+										</div>
+										<!-- end from-group street_address -->
+
+										<div class="space-4"></div>
+
+										<!-- start from-group city & state & zip -->
+										<div class="form-group">
+											<label class="col-sm-3 control-label no-padding-right" for="form-field-12"> <b>City</b> </label>
+
+											<!-- start input area -->
+											<div class="col-sm-1">
+												<!-- start input city -->
+												<input type="text" id="form-field-12" placeholder="City" class="col-xs-10" />
+												<!-- end input city -->
+											</div>
+											<!-- end input area -->
+
+											<label class="col-sm-1 control-label no-padding-right" for="form-field-13"> <b>State</b> </label>
+
+											<!-- start input area -->
+											<div class="col-sm-1">
+												<!-- start input state -->
+												<select class="form-control" id="form-field-13">
+													<option value="">State...</option>
+													<option value="State1">State 1</option>
+													<option value="State2">State 2</option>
+													<option value="State3">State 3</option>
+												</select>
+												<!-- end input state -->
+											</div>
+											<!-- end input area -->
+
+											<label class="col-sm-1 control-label no-padding-right" for="form-field-14"> <b>Zip</b> </label>
+
+											<!-- start input area -->
+											<div class="col-sm-1">
+												<!-- start input zip -->
+												<input type="text" id="form-field-14" placeholder="Zip" class="col-xs-10" />
+												<!-- end input zip -->
+											</div>
+											<!-- end input area -->
+										</div>
+										<!-- end from-group city & state & zip -->
+
+										<div class="space-4"></div>
+
+										<!-- start from-group contry -->
+										<div class="form-group">
+											<label class="col-sm-3 control-label no-padding-right" for="form-field-15"> <b>Country</b> </label>
+
+											<!-- start input area -->
+											<div class="col-sm-3">
+												<!-- start select company -->
+												<select class="form-control" id="form-field-15">
+													<option value="">Select Country...</option>
+													<option value="Country1">Country 1</option>
+													<option value="Country2">Country 2</option>
+													<option value="Country3">Country 3</option>
+												</select>
+												<!-- end select company -->
+											</div>
+											<!-- end input area -->
+										</div>
+										<!-- end from-group comapny -->
+
+										<div class="space-4"></div>
+
+										<!-- start from-group user_status -->
+										<div class="form-group">
+											<label class="col-sm-3 control-label no-padding-right" for="form-field-16"> <b>User Status</b> </label>
+
+											<!-- start input area -->
+											<div class="col-sm-6">
+												<!-- start radio_group_user_status -->
+												<div id="form-field-16" class="control-group">
+													<div class="radio">
+														<label>
+															<input id="user_type_ca" name="radio_status" type="radio" class="ace" />
+															<span class="lbl"> ACTIVE </span> </label>
+													</div>
+
+													<div class="radio">
+														<label>
+															<input id="user_type_client" name="radio_status" type="radio" class="ace" checked="checked"/>
+															<span class="lbl"> INACTIVE </span> </label>
+													</div>
+												</div>
+												<!-- end radio_group_user_status -->
+											</div>
+											<!-- end input area -->
+										</div>
+										<!-- end from-group user_status -->
+
+										<div class="space-4"></div>
+
+										<!-- start from-group account_activation -->
+										<div class="form-group">
+											<label class="col-sm-3 control-label no-padding-right" for="form-field-17"> <b>Account Activation</b> </label>
+
+											<!-- start input area -->
+											<div class="col-sm-6">
+												<!-- start radio_group_account_activation -->
+												<div id="form-field-17" class="control-group">
+													<div class="radio">
+														<label>
+															<input id="user_type_ca" name="radio_activation" type="radio" class="ace"/>
+															<span class="lbl"> ON </span> </label>
+													</div>
+
+													<div class="radio">
+														<label>
+															<input id="user_type_client" name="radio_activation" type="radio" class="ace" checked="checked" />
+															<span class="lbl"> OFF </span> </label>
+													</div>
+												</div>
+												<!-- end radio_group_account_activation -->
+											</div>
+											<!-- end input area -->
+										</div>
+										<!-- end from-group account_activation -->
+									</form>
+									<!-- end form -->
+								</div>
+								<!-- End content or form Area -->
 							</div>
 						</div>
 					</div>
@@ -435,5 +387,3 @@
 		</div>
 	</body>
 </html>
-
-								

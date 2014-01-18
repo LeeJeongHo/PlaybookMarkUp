@@ -1,57 +1,55 @@
 <html>
 	<head>
-		<title>Playbook / subteam_create</title>
+		<title>Playbook / common_layout</title>
 		<meta http-equiv="Content_type" content="text/html; charset=UTF-8" />
-		
+
+		<!-- require font-awesome.css file and js/fuelux/fuelux.tree.min.js , jquery-2.0.3.min.js -->
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/ace.min.css">
 		<link rel="stylesheet" type="text/css" href="css/common.css">
 		<link rel="stylesheet" type="text/css" href="css/1280_10_10.css">
 		<link rel="stylesheet" type="text/css" href="css/two_div.css">
 		<link rel="stylesheet" type="text/css" href="css/uncompressed/font-awesome.css">
-		
+
 		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.slimscroll.min.js"></script>
 	</head>
 	<body>
-		<div id="container" >
+		<div id="container" class="row col-xs-12 p0-all">
 			<!-- Start navbar -->
-			<div id="header" class="navbar navbar-default pb_inline" >
+			<div id="header" class="row" >
 				<img src="img/logo.png" class="navlogo">
-				<ul class="top_menu">
+				<ul class="line_ul pull-right m15-top">
 					<li>
-						<a href="#" class="navlink">Menu1</a>
+						<a href="#">Menu1</a>
 					</li>
 					<li>
-						<a href="#" class="navlink">Menu2</a>
+						<a href="#">Menu2</a>
 					</li>
 					<li>
-						<a href="#" class="navlink">Menu2</a>
+						<a href="#">Menu2</a>
 					</li>
 				</ul>
 			</div>
 			<!-- End navbar -->
 
 			<!-- Start main container -->
-			<div id="main-container" class="main-container" >
+			<div id="main-container" class="row m10-top" >
 				<!--Start sidebar-->
-				<div id="accordion" class="g371 panel-group pb_sidebar">
-					<div class="panel-default panel ">
+				<div id="accordion" class="panel-group col-xs-3 p0-all">
+					<div class="panel-default panel">
 						<div class="panel-head clearfix">
 							<p class="panel_title">
-								<a class="accordion-toggle" href="#collapseOne" data-parent="#accordion" data-toggle="collapse" style="color:#ffffff;">
-								 	Playbook 
-								</a>
+								<a class="accordion-toggle" href="#collapseOne" data-parent="#accordion" data-toggle="collapse" style="color:#ffffff;"> Playbook </a>
 							</p>
-							<a class="btn btn-primary pull-right">
-								Create Playbook
-							</a>
+							<a class="btn btn-primary pull-right"> Create Playbook </a>
 						</div>
 						<div class="panel-collapse collapse in" id="collapseOne">
 							<div class="panel-body accordion_body">
-								<div id="tree1" class="tree tree-selectable">
+								<div id="left_navi" class="tree tree-selectable">
 									<!-- folder1 Start -->
-									<div class="tree-folder inline_b">
+									<div class="tree-folder pb_display_b">
 										<div class="tree-folder-header">
 											<i class="icon-minus"></i>
 											<div class="tree-folder-name">
@@ -72,8 +70,8 @@
 														01.Marketing
 													</div>
 												</div>
-												<div class="tree-item tree-selected">
-													<i class="icon-ok"></i>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
 													<div class="tree-item-name">
 														02.Market Research
 													</div>
@@ -122,9 +120,7 @@
 					<div class="panel-default panel">
 						<div class="panel-head clearfix">
 							<p class="panel_title">
-								<a class="accordion-toggle collapsed" href="#collapseTwo" data-parent="#accordion" data-toggle="collapse" style="color:#ffffff;">
-								 	Report 
-								</a>
+								<a class="accordion-toggle collapsed" href="#collapseTwo" data-parent="#accordion" data-toggle="collapse" style="color:#ffffff;"> Report </a>
 							</p>
 						</div>
 						<div class="panel-collapse collapse" id="collapseTwo">
@@ -144,18 +140,15 @@
 									</li>
 								</ul>
 							</div>
-						</div>			
+						</div>
 					</div>
 				</div>
-				<!--End Sidebar-->	
-				
+				<!--End Sidebar-->
 
-				<div id="contents" class="contentarea">
-					<div id="nav" class="panel-head m10-navbar" >
-						<h3 class="pb_content_header">
-							Create Subteam
-						</h3>
+				<div id="contents" class="col-xs-9 p0-all">
 
+					<div id="nav" class="panel-head m10-left">
+						<h3 class="pb_content_header">Create Subteam</h3>
 						<div class="pull-right">
 							<ul class="line_ul">
 								<li>
@@ -219,24 +212,20 @@
 							</ul>
 						</div>
 					</div>
-					<!--never change area-->
 
-					<!-- start contents area -->
-					<div class="page-content">
-						<div id="content" class="row">
-							<!-- start content -->
-							<div class="col-xs-12 panel-default pb_main_contents_large" style="height:830px;">
-								<div class="panel-heading clearfix">
-									<h3 class="panel-title">Subteam Information</h3>
-								</div>
-									
+					<!-- Start Contents area -->
+					<div id="content" class="col-xs-12 pb_content_layout">
+						<div class="col-xs-12 panel-default pb_main_contents_large">
+							<div class="panel-heading clearfix">
+								<h3 class="panel-title">Subteam Information</h3>
+							</div>
+							<!-- Start contents -->
+							<div class="col-xs-12" id="content_scroll">
 								<!-- start form area-->
 								<form class="form-horizontal m10-top">
 									<!-- start from-group subteam_name -->
 									<div class="form-group">
-										<label class="col-sm-2 control-label no-padding-right" for="form-field-1">
-											 <b>Subteam Name*</b> 
-										</label>
+										<label class="col-sm-2 control-label no-padding-right" for="form-field-1"> <b>Subteam Name*</b> </label>
 
 										<!-- start input area -->
 										<div class="col-sm-6">
@@ -247,14 +236,12 @@
 										<!-- end input area -->
 									</div>
 									<!-- end from-group subteam_name -->
-									
+
 									<div class="space-4"></div>
-									
+
 									<!-- start from-group abbreviation -->
 									<div class="form-group">
-										<label class="col-sm-2 control-label no-padding-right" for="form-field-2">
-											 <b>Abbreviation*</b> 
-										</label>
+										<label class="col-sm-2 control-label no-padding-right" for="form-field-2"> <b>Abbreviation*</b> </label>
 
 										<!-- start input area -->
 										<div class="col-sm-6">
@@ -265,15 +252,13 @@
 										<!-- end input area -->
 									</div>
 									<!-- end from-group abbreviation -->
-									
+
 									<div class="space-4"></div>
-									
+
 									<!-- start from-group subteam_lead -->
 									<div class="form-group">
 										<div class="row">
-											<label class="col-sm-2 control-label no-padding-right" for="form-field-3">
-												 <b>Subteam Lead*</b> 
-											</label>
+											<label class="col-sm-2 control-label no-padding-right" for="form-field-3"> <b>Subteam Lead*</b> </label>
 										</div>
 										<!-- start input area -->
 										<div id="form-field-3" class="p40-left-right">
@@ -281,86 +266,51 @@
 												<table class="table table-bordered table-hover datatable">
 													<thead>
 														<tr>
-															<th colspan="2">
-																<b>User Name</b>
-															</th>
-															
-															<th>
-																<label>
-																	<input id="email_all_lead" name="form-field-checkbox" type="checkbox" class="ace" />
-																	<span class="lbl"> 
-																		<b>E-Mail</b>
-																	</span>
-																</label>
-															</th>
-														
-															<th>
-																<label>
-																	<input id="create_all_lead" name="form-field-checkbox" type="checkbox" class="ace" />
-																	<span class="lbl"> 
-																		<b>Create</b>
-																	</span>
-																</label>
-															</th>
-														
-															<th>
-																<label>
-																	<input id="delete_all_lead" name="form-field-checkbox" type="checkbox" class="ace" />
-																	<span class="lbl"> 
-																		<b>Delete</b>
-																	</span>
-																</label>
-															</th>
-														
-															<th>
-																<label>
-																	<input id="modify_all_lead" name="form-field-checkbox" type="checkbox" class="ace" />
-																	<span class="lbl"> 
-																		<b>Modify</b>
-																	</span>
-																</label>
-															</th>
+															<th colspan="2"><b>User Name</b></th>
+
+															<th><label>
+																<input id="email_all_lead" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl"> <b>E-Mail</b> </span> </label></th>
+
+															<th><label>
+																<input id="create_all_lead" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl"> <b>Create</b> </span> </label></th>
+
+															<th><label>
+																<input id="delete_all_lead" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl"> <b>Delete</b> </span> </label></th>
+
+															<th><label>
+																<input id="modify_all_lead" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl"> <b>Modify</b> </span> </label></th>
 														</tr>
 													</thead>
-											
+
 													<tbody>
 														<tr>
 															<td colspan="2">
-																<select class="form-control" id="select_lead">
-																	<option value="">Select lead...</option>
-																	<option value="Lead1">Lead 1</option>
-																	<option value="Lead2">Lead 2</option>
-																	<option value="Lead3">Lead 3</option>
-																</select>
-															</td>
-														
-															<td>
-																<label>
-																	<input id="email_lead_31" name="form-field-checkbox" type="checkbox" class="ace" />
-																	<span class="lbl"> E-Mail</span>
-																</label>
-															</td>
-														
-															<td>
-																<label>
-																	<input id="create_lead_31" name="form-field-checkbox" type="checkbox" class="ace" />
-																	<span class="lbl"> Create</span>
-																</label>
-															</td>
-														
-															<td>
-																<label>
-																	<input id="delete_lead_31"name="form-field-checkbox" type="checkbox" class="ace" />
-																	<span class="lbl"> Delete</span>
-																</label>
-															</td>
-														
-															<td>
-																<label>
-																	<input id="modify_lead_31"name="form-field-checkbox" type="checkbox" class="ace" />
-																	<span class="lbl"> Modify</span>
-																</label>
-															</td>
+															<select class="form-control" id="select_lead">
+																<option value="">Select lead...</option>
+																<option value="Lead1">Lead 1</option>
+																<option value="Lead2">Lead 2</option>
+																<option value="Lead3">Lead 3</option>
+															</select></td>
+
+															<td><label>
+																<input id="email_lead_31" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl"> E-Mail</span> </label></td>
+
+															<td><label>
+																<input id="create_lead_31" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl"> Create</span> </label></td>
+
+															<td><label>
+																<input id="delete_lead_31"name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl"> Delete</span> </label></td>
+
+															<td><label>
+																<input id="modify_lead_31"name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl"> Modify</span> </label></td>
 														</tr>
 													</tbody>
 												</table>
@@ -369,16 +319,13 @@
 										<!-- end input area -->
 									</div>
 									<!-- end from-group subteam_lead -->
-									
+
 									<div class="space-4"></div>
-									
-									
+
 									<!-- start from-group subteam_co_lead -->
 									<div class="form-group">
 										<div class="row">
-											<label class="col-sm-2 control-label no-padding-right" for="form-field-4">
-												 <b>Subteam Co-Lead*</b> 
-											</label>
+											<label class="col-sm-2 control-label no-padding-right" for="form-field-4"> <b>Subteam Co-Lead*</b> </label>
 										</div>
 										<!-- start input area -->
 										<div id="form-field-4" class="p40-left-right">
@@ -386,92 +333,55 @@
 												<table class="table table-bordered table-hover datatable">
 													<thead>
 														<tr>
-															<th colspan="2">
-																<b>User Name</b>
-															</th>
-															
-															<th>
-																<label>
-																	<input id="email_all_co_lead" name="form-field-checkbox" type="checkbox" class="ace" />
-																	<span class="lbl"> 
-																		<b>E-Mail</b>
-																	</span>
-																</label>
-															</th>
-														
-															<th>
-																<label>
-																	<input id="create_all_co_lead" name="form-field-checkbox" type="checkbox" class="ace" />
-																	<span class="lbl"> 
-																		<b>Create</b>
-																	</span>
-																</label>
-															</th>
-														
-															<th>
-																<label>
-																	<input id="delete_all_co_lead" name="form-field-checkbox" type="checkbox" class="ace" />
-																	<span class="lbl"> 
-																		<b>Delete</b>
-																	</span>
-																</label>
-															</th>
-														
-															<th>
-																<label>
-																	<input id="modify_all_co_lead" name="form-field-checkbox" type="checkbox" class="ace" />
-																	<span class="lbl"> 
-																		<b>Modify</b>
-																	</span>
-																</label>
-															</th>
+															<th colspan="2"><b>User Name</b></th>
+
+															<th><label>
+																<input id="email_all_co_lead" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl"> <b>E-Mail</b> </span> </label></th>
+
+															<th><label>
+																<input id="create_all_co_lead" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl"> <b>Create</b> </span> </label></th>
+
+															<th><label>
+																<input id="delete_all_co_lead" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl"> <b>Delete</b> </span> </label></th>
+
+															<th><label>
+																<input id="modify_all_co_lead" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl"> <b>Modify</b> </span> </label></th>
 														</tr>
 													</thead>
-											
+
 													<tbody>
 														<tr>
 															<td colspan="2">
-																<select class="form-control" id="select_co_lead_41">
-																	<option value="">Select Co-Lead...</option>
-																	<option value="Co-Lead1">Co-Lead 1</option>
-																	<option value="Co-Lead2">Co-Lead 2</option>
-																	<option value="Co-Lead3">Co-Lead 3</option>
-																</select>
-															</td>
-														
-															<td>
-																<label>
-																	<input id="email_co_lead_41" name="form-field-checkbox" type="checkbox" class="ace" />
-																	<span class="lbl"> E-Mail</span>
-																</label>
-															</td>
-														
-															<td>
-																<label>
-																	<input id="create_co_lead_41" name="form-field-checkbox" type="checkbox" class="ace" />
-																	<span class="lbl"> Create</span>
-																</label>
-															</td>
-														
-															<td>
-																<label>
-																	<input id="delete_co_lead_41" name="form-field-checkbox" type="checkbox" class="ace" />
-																	<span class="lbl"> Delete</span>
-																</label>
-															</td>
-														
-															<td>
-																<label>
-																	<input id="modify_co_lead_41" name="form-field-checkbox" type="checkbox" class="ace" />
-																	<span class="lbl"> Modify</span>
-																</label>
-															</td>
+															<select class="form-control" id="select_co_lead_41">
+																<option value="">Select Co-Lead...</option>
+																<option value="Co-Lead1">Co-Lead 1</option>
+																<option value="Co-Lead2">Co-Lead 2</option>
+																<option value="Co-Lead3">Co-Lead 3</option>
+															</select></td>
+
+															<td><label>
+																<input id="email_co_lead_41" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl"> E-Mail</span> </label></td>
+
+															<td><label>
+																<input id="create_co_lead_41" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl"> Create</span> </label></td>
+
+															<td><label>
+																<input id="delete_co_lead_41" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl"> Delete</span> </label></td>
+
+															<td><label>
+																<input id="modify_co_lead_41" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl"> Modify</span> </label></td>
 														</tr>
-														
+
 														<tr>
-															<td colspan="6">
-																<a id="add_co_lead" href="#add"> +Add Subteam Co-Lead</a>
-															</td>
+															<td colspan="6"><a id="add_co_lead" href="#add"> +Add Subteam Co-Lead</a></td>
 														</tr>
 													</tbody>
 												</table>
@@ -480,16 +390,13 @@
 										<!-- end input area -->
 									</div>
 									<!-- end from-group subteam_co_lead -->
-									
+
 									<div class="space-4"></div>
-									
-									
+
 									<!-- start from-group subteam_member -->
 									<div class="form-group">
 										<div class="row">
-											<label class="col-sm-2 control-label no-padding-right" for="form-field-5">
-												 <b>Team Member*</b> 
-											</label>
+											<label class="col-sm-2 control-label no-padding-right" for="form-field-5"> <b>Team Member*</b> </label>
 										</div>
 										<!-- start input area -->
 										<div id="form-field-5" class="p40-left-right">
@@ -497,132 +404,81 @@
 												<table class="table table-bordered table-hover datatable">
 													<thead>
 														<tr>
-															<th colspan="2">
-																User Name
-															</th>
-															
-															<th>
-																<label>
-																	<input id="email_all_member" name="form-field-checkbox" type="checkbox" class="ace" />
-																	<span class="lbl"> 
-																		<b>E-Mail</b>
-																	</span>
-																</label>
-															</th>
-														
-															<th>
-																<label>
-																	<input id="create_all_member" name="form-field-checkbox" type="checkbox" class="ace" />
-																	<span class="lbl"> 
-																		<b>Create</b>
-																	</span>
-																</label>
-															</th>
-														
-															<th>
-																<label>
-																	<input id="delete_all_member" name="form-field-checkbox" type="checkbox" class="ace" />
-																	<span class="lbl"> 
-																		<b>Delete</b>
-																	</span>
-																</label>
-															</th>
-														
-															<th>
-																<label>
-																	<input id="modify_all_member" name="form-field-checkbox" type="checkbox" class="ace" />
-																	<span class="lbl"> 
-																		<b>Modify</b>
-																	</span>
-																</label>
-															</th>
+															<th colspan="2"> User Name </th>
+
+															<th><label>
+																<input id="email_all_member" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl"> <b>E-Mail</b> </span> </label></th>
+
+															<th><label>
+																<input id="create_all_member" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl"> <b>Create</b> </span> </label></th>
+
+															<th><label>
+																<input id="delete_all_member" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl"> <b>Delete</b> </span> </label></th>
+
+															<th><label>
+																<input id="modify_all_member" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl"> <b>Modify</b> </span> </label></th>
 														</tr>
 													</thead>
-											
+
 													<tbody>
 														<tr>
 															<td colspan="2">
-																<select class="form-control" id="select_member_51">
-																	<option value="">Select team member...</option>
-																	<option value="Member1">member 1</option>
-																	<option value="Member2">member 2</option>
-																	<option value="Member3">member 3</option>
-																</select>
-															</td>
-														
-															<td>
-																<label>
-																	<input id="email_all_member_51" name="form-field-checkbox" type="checkbox" class="ace" />
-																	<span class="lbl"> E-Mail</span>
-																</label>
-															</td>
-														
-															<td>
-																<label>
-																	<input id="create_member_51" name="form-field-checkbox" type="checkbox" class="ace" />
-																	<span class="lbl"> Create</span>
-																</label>
-															</td>
-														
-															<td>
-																<label>
-																	<input id="delete_member_51" name="form-field-checkbox" type="checkbox" class="ace" />
-																	<span class="lbl"> Delete</span>
-																</label>
-															</td>
-														
-															<td>
-																<label>
-																	<input id="modify_member_51" name="form-field-checkbox" type="checkbox" class="ace" />
-																	<span class="lbl"> Modify</span>
-																</label>
-															</td>
+															<select class="form-control" id="select_member_51">
+																<option value="">Select team member...</option>
+																<option value="Member1">member 1</option>
+																<option value="Member2">member 2</option>
+																<option value="Member3">member 3</option>
+															</select></td>
+
+															<td><label>
+																<input id="email_all_member_51" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl"> E-Mail</span> </label></td>
+
+															<td><label>
+																<input id="create_member_51" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl"> Create</span> </label></td>
+
+															<td><label>
+																<input id="delete_member_51" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl"> Delete</span> </label></td>
+
+															<td><label>
+																<input id="modify_member_51" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl"> Modify</span> </label></td>
 														</tr>
-														
+
 														<tr>
 															<td colspan="2">
-																<select class="form-control" id="select_member_52">
-																	<option value="">Select team member...</option>
-																	<option value="Member1">member 1</option>
-																	<option value="Member2">member 2</option>
-																	<option value="Member3">member 3</option>
-																</select>
-															</td>
-														
-															<td>
-																<label>
-																	<input id="email_all_member_52" name="form-field-checkbox" type="checkbox" class="ace" />
-																	<span class="lbl"> E-Mail</span>
-																</label>
-															</td>
-														
-															<td>
-																<label>
-																	<input id="create_member_52" name="form-field-checkbox" type="checkbox" class="ace" />
-																	<span class="lbl"> Create</span>
-																</label>
-															</td>
-														
-															<td>
-																<label>
-																	<input id="delete_member_52" name="form-field-checkbox" type="checkbox" class="ace" />
-																	<span class="lbl"> Delete</span>
-																</label>
-															</td>
-														
-															<td>
-																<label>
-																	<input id="modify_member_52" name="form-field-checkbox" type="checkbox" class="ace" />
-																	<span class="lbl"> Modify</span>
-																</label>
-															</td>
+															<select class="form-control" id="select_member_52">
+																<option value="">Select team member...</option>
+																<option value="Member1">member 1</option>
+																<option value="Member2">member 2</option>
+																<option value="Member3">member 3</option>
+															</select></td>
+
+															<td><label>
+																<input id="email_all_member_52" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl"> E-Mail</span> </label></td>
+
+															<td><label>
+																<input id="create_member_52" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl"> Create</span> </label></td>
+
+															<td><label>
+																<input id="delete_member_52" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl"> Delete</span> </label></td>
+
+															<td><label>
+																<input id="modify_member_52" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl"> Modify</span> </label></td>
 														</tr>
-														
-														
+
 														<tr>
-															<td colspan="6">
-																<a id="add_member" href="#add"> +Add Subteam Member</a>
-															</td>
+															<td colspan="6"><a id="add_member" href="#add"> +Add Subteam Member</a></td>
 														</tr>
 													</tbody>
 												</table>
@@ -631,48 +487,41 @@
 										<!-- end input area -->
 									</div>
 									<!-- end from-group subteam_member -->
-									
+
 									<div class="space-4"></div>
-									
+
 									<!-- start from-group lock_original_dates -->
 									<div class="form-group">
-										<label class="col-sm-2 control-label no-padding-right" for="form-field-6">
-											 <b>Lock Original Dates?</b> 
-										</label>
+										<label class="col-sm-2 control-label no-padding-right" for="form-field-6"> <b>Lock Original Dates?</b> </label>
 
 										<!-- start input area -->
 										<div class="col-sm-6">
 											<!-- start input lock_original_dates -->
 											<label class="m5-top">
 												<input id="lock_original_dates" name="form-field-checkbox" type="checkbox" class="ace" />
-												<span class="lbl"></span>
-											</label>
+												<span class="lbl"></span> </label>
 											<!-- end input lock_original_dates -->
 										</div>
 										<!-- end input area -->
 									</div>
 									<!-- end from-group lock_original_dates -->
-									
+
 									<!-- start from-group hide_original_dates -->
 									<div class="form-group">
-										<label class="col-sm-2 control-label no-padding-right" for="form-field-7">
-											 <b>Hide Original Dates?</b> 
-										</label>
+										<label class="col-sm-2 control-label no-padding-right" for="form-field-7"> <b>Hide Original Dates?</b> </label>
 
 										<!-- start input area -->
 										<div class="col-sm-6">
 											<!-- start input hide_original_dates -->
 											<label class="m5-top">
 												<input id="hide_original_dates" name="form-field-checkbox" type="checkbox" class="ace" />
-												<span class="lbl"></span>
-											</label>
+												<span class="lbl"></span> </label>
 											<!-- end input hide_original_dates -->
 										</div>
 										<!-- end input area -->
 									</div>
 									<!-- end from-group hide_original_dates -->
 								</form>
-
 
 								<div class="row pull-right m60-right">
 									<ul class="row inline_b">
@@ -681,7 +530,7 @@
 												Save
 											</button>
 										</li>
-										
+
 										<li class="list_none">
 											<button id="btn_cancel" class="btn btn-sm btn-primary">
 												Cancel
@@ -690,40 +539,25 @@
 									</ul>
 								</div>
 							</div>
-							<!-- end content -->
-							
+							<!-- End contents -->
+
 						</div>
 					</div>
-					<!-- end contents area-->
+					<!-- End Contents area -->
+
 				</div>
 			</div>
 			<!--End Main-container-->
 		</div>
+
 		<script type="text/javascript">
 			jQuery(function($) {
+				$("#content_scroll").slimScroll({
+					height : '670px',
+					alwaysVisible : false
+				});
 
-				$(".tr").click(function() {
-					if ($("#collapseme1").hasClass("collapse")) {
-						$("#collapseme1").removeClass("collapse");
-						$("#cpllapseme1").children().addClass("m3px");
-					} else {
-						$("#collapseme1").addClass("collapse");
-						$("#collapseme2").addClass("collapse");
-						$("#cpllapseme1").children().removeClass("m3px");
-					}
-				});
-				$(".tr2").click(function() {
-					if ($("#collapseme2").hasClass("collapse")) {
-						$("#collapseme2").removeClass("collapse");
-						$("#cpllapseme2").children().addClass("m6px");
-					} else {
-						$("#collapseme2").addClass("collapse");
-						$("#cpllapseme2").children().removeClass("m6px");
-					}
-				});
-				
 			});
 		</script>
-
 	</body>
 </html>
