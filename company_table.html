@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Playbook / company_table</title>
+		<title>Company / table</title>
 		<meta http-equiv="Content_type" content="text/html; charset=UTF-8" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/ace.min.css">
@@ -13,29 +13,29 @@
 		<script src="js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<div id="container" >
+		<div id="container" class="row m10-top m15-left-right">
 			<!-- Start header -->
-			<div id="header" class="navbar navbar-default pb_inline" >
+			<div id="header" class="row" >
 				<img src="img/logo.png" class="navlogo">
-				<ul class="top_menu">
+				<ul class="line_ul pull-right m15-top">
 					<li>
-						<a href="#" class="navlink">Menu1</a>
+						<a href="#">Menu1</a>
 					</li>
 					<li>
-						<a href="#" class="navlink">Menu2</a>
+						<a href="#">Menu2</a>
 					</li>
 					<li>
-						<a href="#" class="navlink">Menu2</a>
+						<a href="#">Menu2</a>
 					</li>
 				</ul>
 			</div>
 			<!-- End header -->
 
 			<!-- Start main container -->
-			<div id="main-container" class="main-container" >
+			<div id="main-container" class="row m10-top">
 				<!-- Start sidebar -->
-				<div id="sidebar" class="g84">
-					<ul class="side_menu">
+				<div id="sidebar" class="col-sm-1 p0-all m-20-left">
+					<ul class="side_menu pull-right">
 						<li>
 							<a href="#"><img src="img/btn_user.png"></a>
 						</li>
@@ -50,16 +50,37 @@
 				<!-- End Sidebar -->
 
 				<!-- start contens area -->
-				<div id="#" class="contentarea">
+				<div id="contents" class="col-xs-11 p0-all">
 					<!-- start page-content -->
-					<div class="page-content">
+					<div class="page-content p0-all">
 						<div id="content" class="row m-9-left">
 							<div class="col-xs-12 panel-default pb_main_contents_large" >
 								<!-- navbar -->
 								<div id="nav" class="panel-head">
 									<div class="col-xs-12 pb_none_border">
-										<h3 class="pb_content_header">Total Records : 172</h3>
+										<h3 class="pb_content_header">Total Records : 5372</h3>
 										<div class="pull-right">
+											<div class="btn-group m10-right inline_b m2-bottom">
+												<button class="btn btn-primary btn-sm dropdown-toggle no-border" data-toggle="dropdown">
+													Success large
+													<i class="icon-angle-down icon-on-right"></i>
+												</button>
+												<ul class="dropdown-menu pull-right">
+													<li>
+														<a href="#">Company Name</a>
+													</li>
+													<li>
+														<a href="#">EMail</a>
+													</li>
+													<li>
+														<a href="#">First Name</a>
+													</li>
+													<li>
+														<a href="#">Last Name</a>
+													</li>
+												</ul>
+											</div>
+
 											<div class="input-icon input-icon-right inline_b m10-right">
 												<input id="search" type="text" placeholder="Search..." size="25">
 												<i class="icon-globe"></i>
@@ -70,14 +91,14 @@
 												</button>
 												<ul class="dropdown-menu pull-right">
 													<li>
-														<a href="#">Add Company</a>
+														<a href="#">Add User</a>
 													</li>
 													<li class="divider"></li>
 													<li>
-														<a href="#">Import Company</a>
+														<a href="#">Import Users</a>
 													</li>
 													<li>
-														<a href="#">Export Company</a>
+														<a href="#">Export Users</a>
 													</li>
 													<li>
 														<a href="#">Use a Template</a>
@@ -193,7 +214,7 @@
 			</div>
 			<!--End Main-container-->
 		</div>
-		<script type="text/javascript">
+	<script type="text/javascript">
 		jQuery(function($) {
 			$("#tr1_i").parent().click(function() {
 				if ($("#collapseme1").hasClass("collapse")) {
@@ -206,8 +227,7 @@
 					$("#tr1_i").addClass("icon-plus");
 				}
 			});
-
 		});
-		</script>
-	</body>
+	</script>
+</body>
 </html>

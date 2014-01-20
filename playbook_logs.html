@@ -64,7 +64,7 @@
 											<div class="tree-folder-header">
 												<i class="icon-minus"></i>
 												<div class="tree-folder-name">
-													AAA001.US
+													AAA001.US <a href="#"><i class="icon-plus-sign f-16"></i></a>
 												</div>
 											</div>
 											<div class="tree-folder-content">
@@ -175,15 +175,11 @@
 												</button>
 												<ul class="dropdown-menu pull-right">
 													<li>
-														<a href="#">deliverables</a>
+														<a href="#">User name</a>
 													</li>
 													<li>
-														<a href="#">responsibility</a>
+														<a href="#">Target</a>
 													</li>
-													<li>
-														<a href="#">registrant</a>
-													</li>
-
 												</ul>
 											</div>
 										</div>
@@ -192,10 +188,16 @@
 											<input id="form-field-icon-2" type="text" placeholder="Search..." size="25">
 											<i class="icon-globe"></i>
 										</div>
-
-										<button class="btn btn-sm btn-primary" data-toggle="button" type="button">
-											<i class="icon-th-large"></i>
-										</button>
+										<div class="btn-group">
+											<button class="btn btn-sm btn-primary dropdown-toggle" data-toggle="dropdown">
+												<i class="icon-th-large"></i>
+											</button>
+											<ul class="dropdown-menu pull-right">
+												<li>
+													<a href="#">Print View</a>
+												</li>
+											</ul>
+										</div>
 										<button class="btn btn-sm btn-primary">
 											<i class="icon-filter"></i>
 										</button>
@@ -364,147 +366,82 @@
 								<!-- End Head -->
 								<!-- Start filter tree1 -->
 								<div id="filter" class="tree tree-selectable">
-									<!-- folder1 Start -->
-									<div class="tree-folder pb_display_b">
-										<div class="tree-folder-header">
-											<i class="icon-minus"></i>
-											<div class="tree-folder-name">
-												Product X (PowerPharma)
+									<div class="tree-folder-content">
+										<div class="tree-item">
+											<i class="icon-remove"></i>
+											<div class="tree-item-name">
+												Login
 											</div>
 										</div>
-										<!-- Start 1 depth -->
-										<div class="tree-folder-content">
-											<div class="tree-folder-header">
-												<i class="icon-minus"></i>
-												<div class="tree-folder-name">
-													US - Vaccines
-												</div>
-											</div>
-											<!-- Start 2 depth -->
-											<div class="tree-folder-content">
-												<div class="tree-item">
-													<i class="icon-remove"></i>
-													<div class="tree-item-name">
-														01. Marketing
-													</div>
-												</div>
-												<div class="tree-item">
-													<i class="icon-remove"></i>
-													<div class="tree-item-name">
-														02. Market Research
-													</div>
-												</div>
-												<div class="tree-item">
-													<i class="icon-remove"></i>
-													<div class="tree-item-name">
-														03. Sales
-													</div>
-												</div>
-												<div class="tree-item tree-selected">
-													<i class="icon-ok"></i>
-													<div class="tree-item-name">
-														04.Clinical
-													</div>
-												</div>
-												<div class="tree-item">
-													<i class="icon-remove"></i>
-													<div class="tree-item-name">
-														05. Medical Affairs
-													</div>
-												</div>
-												<div class="tree-item">
-													<i class="icon-remove"></i>
-													<div class="tree-item-name">
-														06. Market Access
-													</div>
-												</div>
-											</div>
-											<!-- End 2 depth -->
-											<div class="tree-folder-header">
-												<i class="icon-minus"></i>
-												<div class="tree-folder-name">
-													France - Vaccines
-												</div>
+										<div class="tree-item">
+											<i class="icon-remove"></i>
+											<div class="tree-item-name">
+												Logoff
 											</div>
 										</div>
-										<!-- End 1 depth -->
-									</div>
-									<!-- folder1 end -->
-									<div class="tree-folder pb_display_b">
-										<div class="tree-folder-header">
-											<i class="icon-minus"></i>
-											<div class="tree-folder-name">
-												Denosumab (Amgen)
+										<div class="tree-item">
+											<i class="icon-remove"></i>
+											<div class="tree-item-name">
+												Create
+											</div>
+										</div>
+										<div class="tree-item tree-selected">
+											<i class="icon-ok"></i>
+											<div class="tree-item-name">
+												Delete
+											</div>
+										</div>
+										<div class="tree-item">
+											<i class="icon-remove"></i>
+											<div class="tree-item-name">
+												Update
+											</div>
+										</div>
+										<div class="tree-item">
+											<i class="icon-remove"></i>
+											<div class="tree-item-name">
+												Export
+											</div>
+										</div>
+										<div class="tree-item">
+											<i class="icon-remove"></i>
+											<div class="tree-item-name">
+												Import
+											</div>
+										</div>
+										<div class="tree-item">
+											<i class="icon-remove"></i>
+											<div class="tree-item-name">
+												Auto move
+											</div>
+										</div>
+										<div class="tree-item">
+											<i class="icon-remove"></i>
+											<div class="tree-item-name">
+												Reaasign User
+											</div>
+										</div>
+										<div class="tree-item">
+											<i class="icon-remove"></i>
+											<div class="tree-item-name">
+												Save as Version
+											</div>
+										</div>
+										<div class="tree-item">
+											<i class="icon-remove"></i>
+											<div class="tree-item-name">
+												Revert to Version
+											</div>
+										</div>
+										<div class="tree-item">
+											<i class="icon-remove"></i>
+											<div class="tree-item-name">
+												Delete Version
 											</div>
 										</div>
 									</div>
 								</div>
 								<!-- End Filter tree1 -->
-								<label class="m10-left m10-top f-14">
-									<b>Setting</b>
-								</label>
-								<!-- Start filter tree2 -->
-								<div id="tree2" class="tree tree-selectable">
-									<!-- folder1 Start -->
-									<div class="tree-folder pb_display_b">
-										<div class="tree-folder-header">
-											<i class="icon-minus"></i>
-											<div class="tree-folder-name">
-												Status
-											</div>
-										</div>
-										<div class="tree-folder-content">
-											<div class="tree-item">
-												<i class="icon-remove"></i>
-												<div class="tree-item-name">
-													Not Initiated
-												</div>
-											</div>
-											<div class="tree-item">
-												<i class="icon-remove"></i>
-												<div class="tree-item-name">
-													On Track
-												</div>
-											</div>
-											<div class="tree-item">
-												<i class="icon-remove"></i>
-												<div class="tree-item-name">
-													Delayed
-												</div>
-											</div>
-											<div class="tree-item tree-selected">
-												<i class="icon-ok"></i>
-												<div class="tree-item-name">
-													Completed
-												</div>
-											</div>
-											<div class="tree-item">
-												<i class="icon-remove"></i>
-												<div class="tree-item-name">
-													Canceled
-												</div>
-											</div>
-											<div class="tree-item">
-												<i class="icon-remove"></i>
-												<div class="tree-item-name">
-													At Risk
-												</div>
-											</div>
-										</div>
-											
-
-									</div>
-									<!-- folder1 end -->
-									<div class="tree-folder pb_display_b">
-										<div class="tree-folder-header">
-											<i class="icon-minus"></i>
-											<div class="tree-folder-name">
-												PRIORITY
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- End filter tree2 -->
 							</div>
 						</div>
 						<!--End filter (right box area)-->
@@ -513,186 +450,6 @@
 				</div>
 			</div>
 			<!--End Main-container-->
-		</div>
-		<!-- Modal -->
-		<div class="modal fade" id="myModal" tabindex="-1" rold="dialog" aria=labelledby="myModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						<a href="#"><h4 class="modal-title" id="myModalLabel"> Back to Table Edit Mode</h4></a>
-					</div>
-					<!-- Start Modal body -->
-					<div class="modal-body">
-						<div class="col-xs-12">
-							<div class="row">
-								<div class="col-xs-4">
-									Message Tesing<br>
-									Product X / US / 01.Marketing / Price, Eric
-								</div>
-								<div class="col-xs-4">
-									<div class="btn-group">
-										<button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
-											Status
-											<i class="icon-angle-down icon-on-right"></i>
-										</button>
-										<ul class="dropdown-menu pull-right">
-											<li>
-												<a href="#">Not Initiated</a>
-											</li>
-											<li>
-												<a href="#">On Track</a>
-											</li>
-											<li>
-												<a href="#">Delayed</a>
-											</li>
-											<li>
-												<a href="#">Canceled</a>
-											</li>
-											<li>
-												<a href="#">At Risk</a>
-											</li>
-											<li>
-												<a href="#">Unfunded</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-xs-4">
-									<div class="btn-group">
-										<button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
-											Priority
-											<i class="icon-angle-down icon-on-right"></i>
-										</button>
-										<ul class="dropdown-menu pull-right">
-											<li>
-												<a href="#">TBD</a>
-											</li>
-											<li>
-												<a href="#">LOW</a>
-											</li>
-											<li>
-												<a href="#">MEDIUM</a>
-											</li>
-											<li>
-												<a href="#">HIGH</a>
-											</li>
-											<li>
-												<a href="#">LAUNCH CRITICAL</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<hr>
-							<div class="row">
-								<div class="col-xs-6">
-									<b><i class="icon-calendar"></i>09 Dec, 2013 - 23 Jan, 2014 (33d)</b>
-								</div>
-								<div class="col-xs-6">
-									Origin End Date<br>
-									<b>23 Jan, 2014</b>
-								</div>
-							</div>
-							<hr>
-							<div class="row">
-								<div class="col-xs-12">
-									<b>Responsibility : </b> <a href="#"><i class="icon-plus-sign-alt f-20"></i></a>
-								</div>
-							</div>
-							<hr>
-							<div class="row">
-								<div class="col-xs-12">
-									<div class="row">
-										<h3><b>Dependencies of the deliverable</b></h3>
-									</div>
-									<div class="row">
-										<div class="col-xs-6">
-											<label>Test</label><br>
-											<label>(US/Marketing)</label><br>
-											<label class="f-12">
-												24 Dec, 2012 
-												<a href="#">Finish To Finish <i class="icon-chevron-sign-down"></i></a>
-											</label>
-										</div>
-										<div class="col-xs-6">
-											<br>
-											<br>
-											<a href="#"><i class="icon-remove f-20"></i></a>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-xs-6">
-											<label>Marketing Survey</label><br>
-											<label>(US/Marketing)</label><br>
-											<label class="f-12">
-												24 Dec, 2012 
-												<a href="#">Finish To Finish <i class="icon-chevron-sign-down"></i></a>
-											</label>
-										</div>
-										<div class="col-xs-6">
-											<br>
-											<br>
-											<a href="#"><i class="icon-remove f-20"></i></a>
-										</div>
-									</div>
-									<div class="row">
-										<div class="pull-right m10-right">
-											<button class="btn btn-primary" data-toggle="button">Add</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<hr>
-							<div class="row">
-								<div class="col-xs-6">
-									<div class="row">
-										<h5><b>Critical Success Factor</b></h5>
-									</div>
-									<select>
-										<option value="">option1</option>
-										<option value="">option2</option>
-										<option value="">option3</option>
-									</select>
-								</div>
-								<div class="col-xs-6">
-									<div class="row">
-										<h5><b>External Approval of the deliverable</b></h5>
-									</div>
-									<input id="form-field-1" class="col-xs-10 col-sm-5" type="text">
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-6">
-									<div class="row">
-										<h5><b>Internal Approval of the deliverable</b></h5>
-									</div>
-									<input id="form-field-1" class="col-xs-10 col-sm-5" type="text">
-								</div>
-								<div class="col-xs-6">
-									<div class="row">
-										<h5><b>Comments</b></h5>
-									</div>
-									<textarea id="form-field-8" class="form-control" placeholder="Default Text"></textarea>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-6">
-									<div class="row">
-										<h5><b>Definition</b></h5>
-									</div>
-									<textarea id="form-field-8" class="form-control" placeholder="Default Text"></textarea>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- End Modal body -->
-					<div class="modal-footer m800-top">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-primary">Save changes</button>
-					</div>
-				</div><!-- /.modal-content -->
-			</div><!-- /.modal-dialog -->
 		</div>
 		<script type="text/javascript">
 			jQuery(function($) {

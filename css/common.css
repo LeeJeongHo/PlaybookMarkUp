@@ -88,7 +88,6 @@ panel
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
-    border-color: -moz-use-text-color;
     border-image: none;
     border-radius: 3px 3px 0 0;
     border-style: solid;
@@ -97,7 +96,6 @@ panel
 }
 .panel-default > .panel-heading {
     background-color: #366EAB;
-    /*background-image: -moz-linear-gradient(center top , #FDFEFE, #EDF5FA);*/
     border-bottom: 1px solid #C3DDEC;
     color: #FFFFFF;
 }

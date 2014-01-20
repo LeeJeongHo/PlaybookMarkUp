@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Playbook / div_side_menu</title>
+		<title>Company / Create</title>
 		<meta http-equiv="Content_type" content="text/html; charset=UTF-8" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/ace.min.css">
@@ -9,34 +9,33 @@
 		<link rel="stylesheet" type="text/css" href="css/1280_10_10.css">
 		<link rel="stylesheet" type="text/css" href="css/uncompressed/font-awesome.css">
 		<link rel="stylesheet" type="text/css" href="css/table.css">
-		<link rel="stylesheet" type="text/css" href="css/company.css">
 		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<div id="container" >
+		<div id="container" class="row m10-top m15-left-right">
 			<!-- Start header -->
-			<div id="header" class="navbar navbar-default pb_inline" >
+			<div id="header" class="row" >
 				<img src="img/logo.png" class="navlogo">
-				<ul class="top_menu">
+				<ul class="line_ul pull-right m15-top">
 					<li>
-						<a href="#" class="navlink">Menu1</a>
+						<a href="#">Menu1</a>
 					</li>
 					<li>
-						<a href="#" class="navlink">Menu2</a>
+						<a href="#">Menu2</a>
 					</li>
 					<li>
-						<a href="#" class="navlink">Menu2</a>
+						<a href="#">Menu2</a>
 					</li>
 				</ul>
 			</div>
 			<!-- End header -->
 
 			<!-- Start main container -->
-			<div id="main-container" class="main-container" >
+			<div id="main-container" class="row m10-top">
 				<!-- Start sidebar -->
-				<div id="sidebar" class="g84">
-					<ul class="side_menu">
+				<div id="sidebar" class="col-sm-1 p0-all m-20-left">
+					<ul class="side_menu pull-right">
 						<li>
 							<a href="#"><img src="img/btn_user.png"></a>
 						</li>
@@ -51,45 +50,26 @@
 				<!-- End Sidebar -->
 
 				<!-- start contens area -->
-				<div id="#" class="contentarea">
+				<div id="contents" class="col-xs-11 p0-all">
 					<!-- start page-content -->
-					<div class="page-content">
+					<div class="page-content p0-all">
 						<div id="content" class="row m-9-left">
 							<div class="col-xs-12 panel-default pb_main_contents_large" >
 								<!-- navbar -->
 								<div id="nav" class="panel-head">
 									<div class="col-xs-12 pb_none_border">
-										<h3 class="pb_content_header">Create Company</h3>
+										<h3 class="pb_content_header">Total Records : 5372</h3>
 										<div class="pull-right">
-											<div class="input-icon input-icon-right inline_b m10-right">
-												<input id="search" type="text" placeholder="Search..." size="25">
-												<i class="icon-globe"></i>
-											</div>
 											<div class="btn-group">
-												<button class="btn btn-sm dropdown-toggle btn-primary no-border" data-toggle="dropdown">
-													<i class="icon-th-large" style="font-size:16px;"></i>
-												</button>
-												<ul class="dropdown-menu pull-right">
+												<ul class="line_ul">
 													<li>
-														<a href="#">Add User</a>
-													</li>
-													<li class="divider"></li>
-													<li>
-														<a href="#">Import Users</a>
+														<button class="btn btn-primary">Save</button>
 													</li>
 													<li>
-														<a href="#">Export Users</a>
-													</li>
-													<li>
-														<a href="#">Use a Template</a>
-													</li>
-													<li class="divider"></li>
-													<li>
-														<a href="#">Print Veiw</a>
+														<button class="btn btn-primary">Cancel</button>
 													</li>
 												</ul>
 											</div>
-
 										</div>
 									</div>
 
@@ -141,7 +121,7 @@
 											</div>
 										</div>
 									</form>
-								</div>							
+								</div>								
 								<!-- End content or form Area -->
 							</div>
 						</div>
