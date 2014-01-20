@@ -9,6 +9,9 @@
 		<link rel="stylesheet" type="text/css" href="css/1280_10_10.css">
 		<link rel="stylesheet" type="text/css" href="css/uncompressed/font-awesome.css">
 		<link rel="stylesheet" type="text/css" href="css/table.css">
+
+		<link rel="stylesheet" type="text/css" href="css/chosen.css" />
+
 		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.slimscroll.min.js"></script>
@@ -105,7 +108,7 @@
 												<!-- start input area -->
 												<div class="col-sm-3">
 													<!-- start select company -->
-													<select class="form-control" id="form-field-2">
+													<select class="col-xs-12 chosen-select" id="form-field-2">
 														<option value="">Select Company...</option>
 														<option value="Company1">Company 1</option>
 														<option value="Company2">Company 2</option>
@@ -263,7 +266,7 @@
 												<!-- start input area -->
 												<div class="col-sm-1">
 													<!-- start input state -->
-													<select class="form-control" id="form-field-13">
+													<select class="col-xs-12 chosen-select" id="form-field-13">
 														<option value="">State...</option>
 														<option value="State1">State 1</option>
 														<option value="State2">State 2</option>
@@ -294,7 +297,7 @@
 												<!-- start input area -->
 												<div class="col-sm-3">
 													<!-- start select company -->
-													<select class="form-control" id="form-field-15">
+													<select class="col-xs-12 chosen-select" id="form-field-15">
 														<option value="">Select Country...</option>
 														<option value="Country1">Country 1</option>
 														<option value="Country2">Country 2</option>
@@ -384,13 +387,15 @@
 			</div>
 			<!--End Main-container-->
 		</div>
-
+		<script src="js/chosen.jquery.min.js"></script>
 		<script type="text/javascript">
 			jQuery(function($) {
 				$("#content_scroll").slimScroll({
 					height : '660px',
-					alwaysVisible : false
+					alwaysVisible : true
 				});
+
+				$(".chosen-select").chosen();
 
 			});
 		</script>

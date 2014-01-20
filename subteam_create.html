@@ -9,6 +9,9 @@
 		<link rel="stylesheet" type="text/css" href="css/common.css">
 		<link rel="stylesheet" type="text/css" href="css/1280_10_10.css">
 		<link rel="stylesheet" type="text/css" href="css/uncompressed/font-awesome.css">
+		
+		<link rel="stylesheet" type="text/css" href="css/chosen.css" />
+		
 		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.slimscroll.min.js"></script>
@@ -36,7 +39,7 @@
 			<!-- Start main container -->
 			<div id="main-container" class="row m10-top" >
 				<!--Start sidebar-->
-				<div id="accordion" class="panel-group col-xs-3 p0-all">
+				<div id="accordion" class="panel-group col-xs-2 p0-all">
 					<div class="panel-default panel">
 						<div class="panel-head clearfix">
 							<p class="panel_title">
@@ -144,7 +147,7 @@
 				</div>
 				<!--End Sidebar-->
 
-				<div id="contents" class="col-xs-9 p0-all">
+				<div id="contents" class="col-xs-10 p0-all">
 
 					<div id="nav" class="panel-head m10-left">
 						<h3 class="pb_content_header">Create Subteam</h3>
@@ -288,7 +291,7 @@
 													<tbody>
 														<tr>
 															<td colspan="2">
-															<select class="form-control" id="select_lead">
+															<select class="col-xs-2 chosen-select" id="select_lead">
 																<option value="">Select lead...</option>
 																<option value="Lead1">Lead 1</option>
 																<option value="Lead2">Lead 2</option>
@@ -355,7 +358,7 @@
 													<tbody>
 														<tr>
 															<td colspan="2">
-															<select class="form-control" id="select_co_lead_41">
+															<select class="col-xs-2 chosen-select" id="select_co_lead_41">
 																<option value="">Select Co-Lead...</option>
 																<option value="Co-Lead1">Co-Lead 1</option>
 																<option value="Co-Lead2">Co-Lead 2</option>
@@ -426,7 +429,7 @@
 													<tbody>
 														<tr>
 															<td colspan="2">
-															<select class="form-control" id="select_member_51">
+															<select class="col-xs-2 chosen-select" id="select_member_51">
 																<option value="">Select team member...</option>
 																<option value="Member1">member 1</option>
 																<option value="Member2">member 2</option>
@@ -452,7 +455,7 @@
 
 														<tr>
 															<td colspan="2">
-															<select class="form-control" id="select_member_52">
+															<select class="col-xs-2 chosen-select" id="select_member_52">
 																<option value="">Select team member...</option>
 																<option value="Member1">member 1</option>
 																<option value="Member2">member 2</option>
@@ -549,12 +552,16 @@
 			<!--End Main-container-->
 		</div>
 
+
+		<script src="js/chosen.jquery.min.js"></script>
 		<script type="text/javascript">
 			jQuery(function($) {
 				$("#content_scroll").slimScroll({
 					height : '670px',
 					alwaysVisible : false
 				});
+				
+				$(".chosen-select").chosen();
 
 			});
 		</script>

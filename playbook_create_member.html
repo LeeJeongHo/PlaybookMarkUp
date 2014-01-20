@@ -9,6 +9,9 @@
 		<link rel="stylesheet" type="text/css" href="css/common.css">
 		<link rel="stylesheet" type="text/css" href="css/1280_10_10.css">
 		<link rel="stylesheet" type="text/css" href="css/uncompressed/font-awesome.css">
+
+		<link rel="stylesheet" type="text/css" href="css/chosen.css" />
+
 		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.slimscroll.min.js"></script>
@@ -202,7 +205,7 @@
 													<thead>
 														<tr>
 															<th> Type </th>
-															
+
 															<th colspan="2"> User Name </th>
 
 															<th><label>
@@ -226,10 +229,9 @@
 													<tbody>
 														<tr>
 															<td><b>Playbook Leader*</b></td>
-															
+
 															<td colspan="2">
-																
-															<select class="form-control" id="select_ca_member_11">
+															<select class="col-xs-2 chosen-select" id="select_ca_member_11">
 																<option value="">Select leader...</option>
 																<option value="Member1">leader 1</option>
 																<option value="Member2">leader 2</option>
@@ -255,10 +257,9 @@
 
 														<tr>
 															<td><b>CA Team Members*</b></td>
-															
+
 															<td colspan="2">
-																
-															<select class="form-control" id="select_ca_member_12">
+															<select class="col-xs-2 chosen-select" id="select_ca_member_12">
 																<option value="">Select team member...</option>
 																<option value="Member1">member 1</option>
 																<option value="Member2">member 2</option>
@@ -281,13 +282,12 @@
 																<input id="modify_ca_member_12" name="form-field-checkbox" type="checkbox" class="ace" />
 																<span class="lbl f-12"> Modify</span> </label></td>
 														</tr>
-														
+
 														<tr>
 															<td></td>
-															
+
 															<td colspan="2">
-																
-															<select class="form-control" id="select_ca_member_13">
+															<select class="col-xs-2 chosen-select" id="select_ca_member_13">
 																<option value="">Select team member...</option>
 																<option value="Member1">member 1</option>
 																<option value="Member2">member 2</option>
@@ -321,7 +321,7 @@
 										<!-- end input area -->
 									</div>
 									<!-- end from-group ca_team_member -->
-									
+
 									<!-- start from-group client_member -->
 									<div class="form-group p40-left-right">
 										<div class="row">
@@ -334,7 +334,7 @@
 													<thead>
 														<tr>
 															<th> Type </th>
-															
+
 															<th colspan="2"> User Name </th>
 
 															<th><label>
@@ -358,10 +358,9 @@
 													<tbody>
 														<tr>
 															<td><b>Client Launch Lead*</b></td>
-															
+
 															<td colspan="2">
-																
-															<select class="form-control" id="select_client_member_11">
+															<select class="col-xs-2 chosen-select" id="select_client_member_11">
 																<option value="">Select leader...</option>
 																<option value="Member1">leader 1</option>
 																<option value="Member2">leader 2</option>
@@ -387,10 +386,9 @@
 
 														<tr>
 															<td><b>Client Launch Co-Lead*</b></td>
-															
+
 															<td colspan="2">
-																
-															<select class="form-control" id="select_client_member_12">
+															<select class="col-xs-2 chosen-select" id="select_client_member_12">
 																<option value="">Select team member...</option>
 																<option value="Member1">member 1</option>
 																<option value="Member2">member 2</option>
@@ -413,7 +411,7 @@
 																<input id="modify_client_member_12" name="form-field-checkbox" type="checkbox" class="ace" />
 																<span class="lbl f-12"> Modify</span> </label></td>
 														</tr>
-														
+
 														<tr>
 															<td colspan="7"><a id="add_client_member" href="#add_client_member"> +Add Client Launch Co-Lead</a></td>
 														</tr>
@@ -450,13 +448,14 @@
 			</div>
 			<!--End Main-container-->
 		</div>
-
+		<script src="js/chosen.jquery.min.js"></script>
 		<script type="text/javascript">
 			jQuery(function($) {
 				$("#content_scroll").slimScroll({
 					height : '720px',
 					alwaysVisible : false
 				});
+				$(".chosen-select").chosen();
 
 			});
 		</script>
