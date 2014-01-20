@@ -147,6 +147,21 @@
 
 					<div id="nav" class="panel-head m10-left">
 						<h3 class="pb_content_header">Dependency Report</h3>
+						
+						<div class="pull-right">
+							<ul class="line_ul">
+								<li>
+									<button id="btn_report_table" class="btn btn-sm btn-primary active">
+										Table
+									</button>
+								</li>
+								<li>
+									<button id="btn_report_graph" class="btn btn-sm btn-primary">
+										Graph
+									</button>
+								</li>
+							</ul>
+						</div>
 					</div>
 					<!-- Start page-content -->
 
@@ -445,58 +460,73 @@
 										<div class="tree-folder-header">
 											<i class="icon-minus"></i>
 											<div class="tree-folder-name">
-												Status
+												Type
 											</div>
 										</div>
 										<div class="tree-folder-content">
 											<div class="tree-item">
 												<i class="icon-remove"></i>
 												<div class="tree-item-name">
-													Not Initiated
+													Start to Start
 												</div>
 											</div>
 											<div class="tree-item">
 												<i class="icon-remove"></i>
 												<div class="tree-item-name">
-													On Track
+													End to Start
 												</div>
 											</div>
 											<div class="tree-item">
 												<i class="icon-remove"></i>
 												<div class="tree-item-name">
-													Delayed
+													End to End
 												</div>
 											</div>
 											<div class="tree-item tree-selected">
 												<i class="icon-ok"></i>
 												<div class="tree-item-name">
-													Completed
-												</div>
-											</div>
-											<div class="tree-item">
-												<i class="icon-remove"></i>
-												<div class="tree-item-name">
-													Canceled
-												</div>
-											</div>
-											<div class="tree-item">
-												<i class="icon-remove"></i>
-												<div class="tree-item-name">
-													At Risk
+													All
 												</div>
 											</div>
 										</div>
-
 									</div>
 									<!-- folder1 end -->
+									<!-- folder2 Start -->
 									<div class="tree-folder pb_display_b">
 										<div class="tree-folder-header">
 											<i class="icon-minus"></i>
 											<div class="tree-folder-name">
-												PRIORITY
+												Last Modification
+											</div>
+										</div>
+										<div class="tree-folder-content">
+											<div class="tree-item">
+												<i class="icon-remove"></i>
+												<div class="tree-item-name">
+													Today
+												</div>
+											</div>
+											<div class="tree-item">
+												<i class="icon-remove"></i>
+												<div class="tree-item-name">
+													Yesterday
+												</div>
+											</div>
+											<div class="tree-item">
+												<i class="icon-remove"></i>
+												<div class="tree-item-name">
+													This Week
+												</div>
+											</div>
+											<div class="tree-item tree-selected">
+												<i class="icon-ok"></i>
+												<div class="tree-item-name">
+													This Month
+												</div>
 											</div>
 										</div>
 									</div>
+									<!-- folder2 end -->
 								</div>
 								<!-- End filter tree2 -->
 							</div>
