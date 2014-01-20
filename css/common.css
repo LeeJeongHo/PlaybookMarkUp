@@ -84,15 +84,18 @@ panel
     padding: 0.4em 0.6em;
 }
 .panel-heading {
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
+    background: -webkit-linear-gradient(#2175b9, #0e61a5); /* For Safari */
+	background: -o-linear-gradient(#2175b9, #0e61a5); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#2175b9, #0e61a5); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#2175b9, #0e61a5); /* Standard syntax */
     border-image: none;
     border-radius: 3px 3px 0 0;
     border-style: solid;
     border-width: 0 0 1px;
     padding: 12px 20px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.04);
+
+
 }
 .panel-default > .panel-heading {
     background-color: #366EAB;
@@ -119,13 +122,21 @@ panel
 }
 
 .panel-head{
-	background-color: #5B96CB;
 	padding:10px 12px;
 	height:56px;
 	border-radius: 4px;
+	background: -webkit-linear-gradient(#5eb6ff, #249cff); /* For Safari */
+	background: -o-linear-gradient(#5eb6ff, #249cff); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#5eb6ff, #249cff); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#5eb6ff, #249cff); /* Standard syntax */
+	border:1px solid #0e61a5;
 }
-
-
+.col-xs-3 .panel-head{
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid #0e61a5;
+}
 .pb_content_navi {
 	background-color: #EDF5FA;
     background-image: -moz-linear-gradient(center top , #FDFEFE, #EDF5FA);
@@ -386,4 +397,17 @@ form{
 }
 body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom {
     margin: 0 auto;
+}
+.btn-primary{
+	background: -webkit-linear-gradient(#5eb6ff, #249cff) !important; /* For Safari */
+	background: -o-linear-gradient(#5eb6ff, #249cff) !important; /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#5eb6ff, #249cff) !important; /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#5eb6ff, #249cff) !important; /* Standard syntax */
+	border:none;
+}
+.btn-primary:hover{
+	background: #1b86de !important;
+}
+.btn-primary:active{
+	background: #0e61a5 !important;
 }
