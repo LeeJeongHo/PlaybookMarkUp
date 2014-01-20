@@ -12,6 +12,7 @@
 		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.slimscroll.min.js"></script>
+		<script src="js/html5shiv.js"></script>
 	</head>
 	<body>
 		<div id="container" class="row col-xs-12 p0-all">
@@ -69,7 +70,7 @@
 												<div class="tree-item tree-selected">
 													<i class="icon-ok"></i>
 													<div class="tree-item-name">
-														01.Marketing<a href="#"><i class="icon-plus-sign f-16"></i></a>
+														01.Marketing
 													</div>
 												</div>
 												<div class="tree-item">
@@ -191,9 +192,26 @@
 											<i class="icon-globe"></i>
 										</div>
 
-										<button class="btn btn-sm btn-primary" data-toggle="button" type="button">
-											<i class="icon-th-large"></i>
-										</button>
+										<div class="btn-group">
+											<button class="btn btn-sm btn-primary" data-toggle="dropdown">
+												<i class="icon-th-large"></i>
+											</button>
+											<ul class="dropdown-menu">
+												<li>
+													<a href="#">Import Deliverables</a>
+												</li>
+												<li>
+													<a href="#">Export Deliverables</a>
+												</li>
+												<li>
+													<a href="#">Use a Template</a>
+												</li>
+												<li class="divider"></li>
+												<li>
+													<a href="#">Print View</a>
+												</li>
+											</ul>
+										</div>
 										<button class="btn btn-sm btn-primary">
 											<i class="icon-filter"></i>
 										</button>
@@ -241,7 +259,23 @@
 															<td>HIGH</td>
 															<td colspan="2">Anne, Marry</td>
 															<td></td>
-															<td><a href="#" data-toggle="modal" data-target="#myModal"><i class="icon-info-sign f-16"></i></a></td>
+															<td><a href="#" data-toggle="modal" data-target="#myModal"><i class="icon-pencil f-16"></i></a>
+																<a href="#"><i class="icon-trash f-16"></i></a>
+																<a href="#"><i id="showactivity" class="icon-zoom-in f-16"></i></a>
+																<a href="#"><i id="showbudget" class="icon-money f-16"></i></a>
+															</td>
+														</tr>
+														<tr>
+															<td colspan="2" class="table_depth1">
+																<input id="form-field-1" class="input100" type="text" placeholder="">
+															</td>
+															<td><input id="form-field-2" class="input100" type="text" placeholder=""></td>
+															<td><input id="form-field-3" class="input100" type="text" placeholder=""></td>
+															<td><input id="form-field-4" class="input100" type="text" placeholder=""></td>
+															<td><input id="form-field-5" class="input100" type="text" placeholder=""></td>
+															<td colspan="2"><input id="form-field-6" class="input100" type="text" placeholder=""></td>
+															<td><input id="form-field-7" class="input100" type="text" placeholder=""></td>
+															<td><button class="btn btn-sm btn-primary">Save</button></td>
 														</tr>
 														<tr>
 															<td colspan="2">02. Market Reaserch</td>
@@ -256,6 +290,132 @@
 													</tbody>
 												</table>
 											</div>
+										</div>
+										<div id="activity" class="table-responsive collapse">
+											<h3>Activity <a href="#"><i class="icon-plus-sign"></i></a></h3> 
+											<table class="table datatable boxborder table-bordered">
+												<thead>
+													<tr>
+														<th class="sorting">Activity</th>
+														<th class="sorting">Start Date</th>
+														<th class="sorting">End Date</th>
+														<th class="sorting">Status</th>
+														<th class="sorting">FTE</th>
+														<th>Comments</th>
+														<th></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Creative Concepts (Phase 2)</td>
+														<td>06-MAY-2013</td>
+														<td>06-MAY-2013</td>
+														<td>Unfunded</td>
+														<td>Undefined</td>
+														<td></td>
+														<td><a href="#"><i class="icon-pencil f-16"></i></a>
+															<a href="#"><i class="icon-trash f-16"></i></a>
+														</td>
+													</tr>
+													<tr>
+														<td>Med Info Monthly Radars (Phase 2)</td>
+														<td>06-MAY-2013</td>
+														<td>06-MAY-2013</td>
+														<td>Completed</td>
+														<td>Undefined</td>
+														<td></td>
+														<td><a href="#"><i class="icon-pencil f-16"></i></a>
+															<a href="#"><i class="icon-trash f-16"></i></a>
+														</td>
+													</tr>
+													<tr>
+														<td>Publication Strategy</td>
+														<td>16-JUL-2013</td>
+														<td>16-JUL-2013</td>
+														<td>Delayed</td>
+														<td>Undefined</td>
+														<td></td>
+														<td><a href="#"><i class="icon-pencil f-16"></i></a>
+															<a href="#"><i class="icon-trash f-16"></i></a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div id="budget" class="table-responsive collapse">
+											<h3>Budget</h3>
+											<span class="pull-right m10-right m10-bottom"><a href="#">Edit</a></span>
+											<table class="table datatable table-bordered">
+												<thead>
+													<tr>
+														<th></th>
+														<th>Budget $</th>
+														<th>Funded %</th>
+														<th>Unfunded %</th>
+														<th>Committed %</th>
+														<th>Uncommitted %</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Q2 - 2012</td>
+														<td>5,000 $</td>
+														<td>100</td>
+														<td>0</td>
+														<td>100</td>
+														<td>0</td>
+													</tr>
+													<tr>
+														<td>Q3 - 2012</td>
+														<td>1,500 $</td>
+														<td>50</td>
+														<td>50</td>
+														<td>50</td>
+														<td>50</td>
+													</tr>
+													<tr>
+														<td>Q4 - 2012</td>
+														<td>5,000 $</td>
+														<td>50</td>
+														<td>50</td>
+														<td>50</td>
+														<td>50</td>
+													</tr>
+													<tr>
+														<td>Q1 - 2013</td>
+														<td>5,000 $</td>
+														<td>50</td>
+														<td>50</td>
+														<td>50</td>
+														<td>50</td>
+													</tr>
+													<tr>
+														<td>Q2 - 2013</td>
+														<td>5,000 $</td>
+														<td>50</td>
+														<td>50</td>
+														<td>50</td>
+														<td>50</td>
+													</tr>
+													<tr>
+														<td>Q3 - 2013</td>
+														<td>5,000 $</td>
+														<td>50</td>
+														<td>50</td>
+														<td>50</td>
+														<td>50</td>
+													</tr>
+													<tr>
+														<td>Q4 - 2013</td>
+														<td>5,000 $</td>
+														<td>50</td>
+														<td>50</td>
+														<td>50</td>
+														<td>50</td>
+													</tr>
+												</tbody>
+											</table>
+											<label>Total : </label> <label>36,500 $</label>
 										</div>
 									</div>
 								</div>
@@ -616,7 +776,22 @@
 						$("#depth2").addClass("icon-plus");
 						$("#depth2").removeClass("icon-minus");
 						$("#collapseme1").addClass("collapse");
-	
+					}
+				});
+				$("#showactivity").click(function(){
+					if ($("#activity").hasClass("collapse")){
+						$("#activity").removeClass("collapse");
+					}
+					else{
+						$("#activity").addClass("collapse");
+					}
+				});
+				$("#showbudget").click(function(){
+					if ($("#budget").hasClass("collapse")){
+						$("#budget").removeClass("collapse");
+					}
+					else{
+						$("#budget").addClass("collapse");
 					}
 				});
 				$("#content_scroll").slimScroll({
