@@ -1,0 +1,465 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Playbook / playbook_create_member</title>
+		<meta http-equiv="Content_type" content="text/html; charset=UTF-8" />
+		<!-- require font-awesome.css file and js/fuelux/fuelux.tree.min.js , jquery-2.0.3.min.js -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/ace.min.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+		<link rel="stylesheet" type="text/css" href="css/1280_10_10.css">
+		<link rel="stylesheet" type="text/css" href="css/uncompressed/font-awesome.css">
+		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.slimscroll.min.js"></script>
+	</head>
+	<body>
+		<div id="container" class="row col-xs-12 p0-all">
+			<!-- Start navbar -->
+			<div id="header" class="row" >
+				<img src="img/logo.png" class="navlogo">
+				<ul class="line_ul pull-right m15-top">
+					<li>
+						<a href="#">Menu1</a>
+					</li>
+					<li>
+						<a href="#">Menu2</a>
+					</li>
+					<li>
+						<a href="#">Menu2</a>
+					</li>
+				</ul>
+			</div>
+			<!-- End navbar -->
+
+			<!-- Start main container -->
+			<div id="main-container" class="row m10-top" >
+				<!--Start sidebar-->
+				<div id="accordion" class="panel-group col-xs-3 p0-all">
+					<div class="panel-default panel">
+						<div class="panel-head clearfix">
+							<p class="panel_title">
+								<a class="accordion-toggle" href="#collapseOne" data-parent="#accordion" data-toggle="collapse" style="color:#ffffff;"> Playbook </a>
+							</p>
+							<a class="btn btn-primary pull-right"> Create Playbook </a>
+						</div>
+						<div class="panel-collapse collapse in" id="collapseOne">
+							<div class="panel-body accordion_body">
+								<div id="left_navi" class="tree tree-selectable">
+									<!-- folder1 Start -->
+									<div class="tree-folder pb_display_b">
+										<div class="tree-folder-header">
+											<i class="icon-minus"></i>
+											<div class="tree-folder-name">
+												PowerPharma -  Product X
+											</div>
+										</div>
+										<div class="tree-folder-content">
+											<div class="tree-folder-header">
+												<i class="icon-minus"></i>
+												<div class="tree-folder-name">
+													AAA001.US <a href="#"><i class="icon-plus-sign f-16"></i></a>
+												</div>
+											</div>
+											<div class="tree-folder-content">
+												<div class="tree-item tree-selected">
+													<i class="icon-ok"></i>
+													<div class="tree-item-name">
+														01.Marketing
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														02.Market Research
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														03.Sales
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														04.Clinical
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														05.Medical Affairs
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														06.Market Access
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+									<!-- folder1 end -->
+									<div class="tree-folder">
+										<div class="tree-folder-header">
+											<i class="icon-minus"></i>
+											<div class="tree-folder-name">
+												Amgen - Denosumab
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel-default panel">
+						<div class="panel-head clearfix">
+							<p class="panel_title">
+								<a class="accordion-toggle collapsed" href="#collapseTwo" data-parent="#accordion" data-toggle="collapse" style="color:#ffffff;"> Report </a>
+							</p>
+						</div>
+						<div class="panel-collapse collapse" id="collapseTwo">
+							<div class="panel-body accordion_body">
+								<ul class="list_none">
+									<li>
+										<a>- Flash Report</a>
+									</li>
+									<li>
+										<a>- Activity</a>
+									</li>
+									<li>
+										<a>- Dependency Report</a>
+									</li>
+									<li>
+										<a>- Budget Report</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--End Sidebar-->
+
+				<div id="contents" class="col-xs-9 p0-all">
+
+					<div id="nav" class="panel-head m10-left">
+						<h3 class="pb_content_header">Create New Playbook</h3>
+					</div>
+
+					<!-- Start Contents area -->
+					<div id="content" class="col-xs-12 pb_content_layout">
+						<div class="col-xs-12 panel-default pb_main_contents_large">
+							<!-- Start contents -->
+							<div class="col-xs-12" id="content_scroll">
+								<!-- start form area-->
+								<form class="form-horizontal m10-top">
+									<div id="fuelux-wizard" class="row-fluid" data-target="#step-container">
+										<ul class="wizard-steps">
+											<li data-target="#step1" class="active">
+												<span class="step">1</span>
+												<span class="title">Step 1</span>
+											</li>
+
+											<li data-target="#step2" class="active">
+												<span class="step">2</span>
+												<span class="title">Step 2</span>
+											</li>
+
+											<li data-target="#step3">
+												<span class="step">3</span>
+												<span class="title">Step 3</span>
+											</li>
+
+											<li data-target="#step4">
+												<span class="step">4</span>
+												<span class="title">Step 4</span>
+											</li>
+
+											<li data-target="#step5">
+												<span class="step">5</span>
+												<span class="title">Step 5</span>
+											</li>
+
+											<li data-target="#step6">
+												<span class="step">6</span>
+												<span class="title">Step 6</span>
+											</li>
+										</ul>
+									</div>
+
+									<!-- start from-group ca_team_member -->
+									<div class="form-group p40-left-right">
+										<div class="row">
+											<h4 class="header"><font color="8eb9d4"> <b>CA Members</b> </font></h4>
+										</div>
+										<!-- start input area -->
+										<div id="form-field-1">
+											<div class="table-responsive">
+												<table class="table table-bordered table-hover datatable">
+													<thead>
+														<tr>
+															<th> Type </th>
+															
+															<th colspan="2"> User Name </th>
+
+															<th><label>
+																<input id="email_all_ca_member" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl f-12"> <b>E-Mail</b> </span> </label></th>
+
+															<th><label>
+																<input id="create_all_ca_member" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl f-12"> <b>Create</b> </span> </label></th>
+
+															<th><label>
+																<input id="delete_all_ca_member" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl f-12"> <b>Delete</b> </span> </label></th>
+
+															<th><label>
+																<input id="modify_all_ca_member" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl f-12"> <b>Modify</b> </span> </label></th>
+														</tr>
+													</thead>
+
+													<tbody>
+														<tr>
+															<td><b>Playbook Leader*</b></td>
+															
+															<td colspan="2">
+																
+															<select class="form-control" id="select_ca_member_11">
+																<option value="">Select leader...</option>
+																<option value="Member1">leader 1</option>
+																<option value="Member2">leader 2</option>
+																<option value="Member3">leader 3</option>
+															</select></td>
+
+															<td><label>
+																<input id="email_all_ca_member_11" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl f-12"> E-Mail</span> </label></td>
+
+															<td><label>
+																<input id="create_ca_member_11" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl f-12"> Create</span> </label></td>
+
+															<td><label>
+																<input id="delete_ca_member_11" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl f-12"> Delete</span> </label></td>
+
+															<td><label>
+																<input id="modify_ca_member_11" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl f-12"> Modify</span> </label></td>
+														</tr>
+
+														<tr>
+															<td><b>CA Team Members*</b></td>
+															
+															<td colspan="2">
+																
+															<select class="form-control" id="select_ca_member_12">
+																<option value="">Select team member...</option>
+																<option value="Member1">member 1</option>
+																<option value="Member2">member 2</option>
+																<option value="Member3">member 3</option>
+															</select></td>
+
+															<td><label>
+																<input id="email_all_ca_member_12" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl f-12"> E-Mail</span> </label></td>
+
+															<td><label>
+																<input id="create_ca_member_12" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl f-12"> Create</span> </label></td>
+
+															<td><label>
+																<input id="delete_ca_member_12" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl f-12"> Delete</span> </label></td>
+
+															<td><label>
+																<input id="modify_ca_member_12" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl f-12"> Modify</span> </label></td>
+														</tr>
+														
+														<tr>
+															<td></td>
+															
+															<td colspan="2">
+																
+															<select class="form-control" id="select_ca_member_13">
+																<option value="">Select team member...</option>
+																<option value="Member1">member 1</option>
+																<option value="Member2">member 2</option>
+																<option value="Member3">member 3</option>
+															</select></td>
+
+															<td><label>
+																<input id="email_all_ca_member_13" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl f-12"> E-Mail</span> </label></td>
+
+															<td><label>
+																<input id="create_ca_member_13" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl f-12"> Create</span> </label></td>
+
+															<td><label>
+																<input id="delete_ca_member_13" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl f-12"> Delete</span> </label></td>
+
+															<td><label>
+																<input id="modify_ca_member_13" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl f-12"> Modify</span> </label></td>
+														</tr>
+
+														<tr>
+															<td colspan="7"><a id="add_member" href="#add_ca_member"> +Add CA Team Member</a></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<!-- end input area -->
+									</div>
+									<!-- end from-group ca_team_member -->
+									
+									<!-- start from-group client_member -->
+									<div class="form-group p40-left-right">
+										<div class="row">
+											<h4 class="header"><font color="8eb9d4"> <b>Client Members</b> </font></h4>
+										</div>
+										<!-- start input area -->
+										<div id="form-field-2">
+											<div class="table-responsive">
+												<table class="table table-bordered table-hover datatable">
+													<thead>
+														<tr>
+															<th> Type </th>
+															
+															<th colspan="2"> User Name </th>
+
+															<th><label>
+																<input id="email_all_client_member" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl f-12"> <b>E-Mail</b> </span> </label></th>
+
+															<th><label>
+																<input id="create_all_client_member" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl f-12"> <b>Create</b> </span> </label></th>
+
+															<th><label>
+																<input id="delete_all_client_member" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl f-12"> <b>Delete</b> </span> </label></th>
+
+															<th><label>
+																<input id="modify_all_client_member" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl f-12"> <b>Modify</b> </span> </label></th>
+														</tr>
+													</thead>
+
+													<tbody>
+														<tr>
+															<td><b>Client Launch Lead*</b></td>
+															
+															<td colspan="2">
+																
+															<select class="form-control" id="select_client_member_11">
+																<option value="">Select leader...</option>
+																<option value="Member1">leader 1</option>
+																<option value="Member2">leader 2</option>
+																<option value="Member3">leader 3</option>
+															</select></td>
+
+															<td><label>
+																<input id="email_all_client_member_11" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl f-12"> E-Mail</span> </label></td>
+
+															<td><label>
+																<input id="create_client_member_11" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl f-12"> Create</span> </label></td>
+
+															<td><label>
+																<input id="delete_client_member_11" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl f-12"> Delete</span> </label></td>
+
+															<td><label>
+																<input id="modify_client_member_11" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl f-12"> Modify</span> </label></td>
+														</tr>
+
+														<tr>
+															<td><b>Client Launch Co-Lead*</b></td>
+															
+															<td colspan="2">
+																
+															<select class="form-control" id="select_client_member_12">
+																<option value="">Select team member...</option>
+																<option value="Member1">member 1</option>
+																<option value="Member2">member 2</option>
+																<option value="Member3">member 3</option>
+															</select></td>
+
+															<td><label>
+																<input id="email_all_client_member_12" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl f-12"> E-Mail</span> </label></td>
+
+															<td><label>
+																<input id="create_client_member_12" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl f-12"> Create</span> </label></td>
+
+															<td><label>
+																<input id="delete_client_member_12" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl f-12"> Delete</span> </label></td>
+
+															<td><label>
+																<input id="modify_client_member_12" name="form-field-checkbox" type="checkbox" class="ace" />
+																<span class="lbl f-12"> Modify</span> </label></td>
+														</tr>
+														
+														<tr>
+															<td colspan="7"><a id="add_client_member" href="#add_client_member"> +Add Client Launch Co-Lead</a></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<!-- end input area -->
+									</div>
+									<!-- end from-group client_member -->
+
+									<div class="divider m10-bottom"></div>
+
+									<div class="footer pull-right p40-left-right m20-bottom">
+										<button type="button" id="btn_prev" class="btn btn-default">
+											<i class="icon-arrow-left icon-on-left"></i>
+											Prev
+										</button>
+										<button type="button" id="btn_next" class="btn btn-success">
+											Next
+											<i class="icon-arrow-right icon-on-right"></i>
+										</button>
+									</div>
+								</form>
+								<!-- end from-group hide_original_dates -->
+							</div>
+							<!-- End contents -->
+
+						</div>
+					</div>
+					<!-- End Contents area -->
+
+				</div>
+			</div>
+			<!--End Main-container-->
+		</div>
+
+		<script type="text/javascript">
+			jQuery(function($) {
+				$("#content_scroll").slimScroll({
+					height : '720px',
+					alwaysVisible : false
+				});
+
+			});
+		</script>
+	</body>
+</html>
+

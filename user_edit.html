@@ -89,21 +89,9 @@
 
 											<!-- start input area -->
 											<div class="col-sm-6">
-												<!-- start radio_group_user_type -->
-												<div id="form-field-1" class="control-group">
-													<div class="radio">
-														<label>
-															<input id="user_type_ca" name="radio_type" type="radio" class="ace" checked="checked" />
-															<span class="lbl"> CA Member </span> </label>
-													</div>
-
-													<div class="radio">
-														<label>
-															<input id="user_type_client" name="radio_type" type="radio" class="ace" />
-															<span class="lbl"> Client Member </span> </label>
-													</div>
-												</div>
-												<!-- end radio_group_user_type -->
+												<!-- start user_type -->
+												<label id="user_type_text" class="m3-top">CA Member</label>
+												<!-- end user_type -->
 											</div>
 											<!-- end input area -->
 										</div>
@@ -118,12 +106,7 @@
 											<!-- start input area -->
 											<div class="col-sm-3">
 												<!-- start select company -->
-												<select class="form-control" id="form-field-2">
-													<option value="">Select Company...</option>
-													<option value="Company1">Company 1</option>
-													<option value="Company2">Company 2</option>
-													<option value="Company3">Company 3</option>
-												</select>
+												<label id="company_name_text" class="m3-top">Abro</label>
 												<!-- end select company -->
 											</div>
 											<!-- end input area -->
@@ -140,7 +123,6 @@
 											<div class="col-sm-6">
 												<!-- start input e-mail -->
 												<input type="email" id="form-field-3" placeholder="E-Mail" class="col-xs-10 col-sm-6" />
-												<span class="middle m10-left"> *Invalid E-Mail </span>
 												<!-- end input e-mail -->
 											</div>
 											<!-- end input area -->
@@ -157,6 +139,7 @@
 											<div class="col-sm-6">
 												<!-- start input password -->
 												<input type="password" id="form-field-4" placeholder="Password" class="col-xs-10 col-sm-6" value="1234"/>
+												<span class="middle m10-left"> <a href="#">Reset Password</a> </span>
 												<!-- end input password -->
 											</div>
 											<!-- end input area -->
@@ -332,13 +315,13 @@
 													<div class="radio">
 														<label>
 															<input id="user_type_ca" name="radio_status" type="radio" class="ace" />
-															<span class="lbl"> ACTIVE </span> </label>
+															<span class="lbl f-12"> ACTIVE </span> </label>
 													</div>
 
 													<div class="radio">
 														<label>
 															<input id="user_type_client" name="radio_status" type="radio" class="ace" checked="checked"/>
-															<span class="lbl"> INACTIVE </span> </label>
+															<span class="lbl f-12"> INACTIVE </span> </label>
 													</div>
 												</div>
 												<!-- end radio_group_user_status -->
@@ -360,13 +343,13 @@
 													<div class="radio">
 														<label>
 															<input id="user_type_ca" name="radio_activation" type="radio" class="ace"/>
-															<span class="lbl"> ON </span> </label>
+															<span class="lbl f-12"> ON </span> </label>
 													</div>
 
 													<div class="radio">
 														<label>
 															<input id="user_type_client" name="radio_activation" type="radio" class="ace" checked="checked" />
-															<span class="lbl"> OFF </span> </label>
+															<span class="lbl f-12"> OFF </span> </label>
 													</div>
 												</div>
 												<!-- end radio_group_account_activation -->

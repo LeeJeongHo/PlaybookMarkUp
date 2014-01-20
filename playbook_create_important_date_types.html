@@ -1,0 +1,301 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Playbook / playbook_create_important_date_types</title>
+		<meta http-equiv="Content_type" content="text/html; charset=UTF-8" />
+		<!-- require font-awesome.css file and js/fuelux/fuelux.tree.min.js , jquery-2.0.3.min.js -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/ace.min.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+		<link rel="stylesheet" type="text/css" href="css/1280_10_10.css">
+		<link rel="stylesheet" type="text/css" href="css/uncompressed/font-awesome.css">
+		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.slimscroll.min.js"></script>
+	</head>
+	<body>
+		<div id="container" class="row col-xs-12 p0-all">
+			<!-- Start navbar -->
+			<div id="header" class="row" >
+				<img src="img/logo.png" class="navlogo">
+				<ul class="line_ul pull-right m15-top">
+					<li>
+						<a href="#">Menu1</a>
+					</li>
+					<li>
+						<a href="#">Menu2</a>
+					</li>
+					<li>
+						<a href="#">Menu2</a>
+					</li>
+				</ul>
+			</div>
+			<!-- End navbar -->
+
+			<!-- Start main container -->
+			<div id="main-container" class="row m10-top" >
+				<!--Start sidebar-->
+				<div id="accordion" class="panel-group col-xs-3 p0-all">
+					<div class="panel-default panel">
+						<div class="panel-head clearfix">
+							<p class="panel_title">
+								<a class="accordion-toggle" href="#collapseOne" data-parent="#accordion" data-toggle="collapse" style="color:#ffffff;"> Playbook </a>
+							</p>
+							<a class="btn btn-primary pull-right"> Create Playbook </a>
+						</div>
+						<div class="panel-collapse collapse in" id="collapseOne">
+							<div class="panel-body accordion_body">
+								<div id="left_navi" class="tree tree-selectable">
+									<!-- folder1 Start -->
+									<div class="tree-folder pb_display_b">
+										<div class="tree-folder-header">
+											<i class="icon-minus"></i>
+											<div class="tree-folder-name">
+												PowerPharma -  Product X
+											</div>
+										</div>
+										<div class="tree-folder-content">
+											<div class="tree-folder-header">
+												<i class="icon-minus"></i>
+												<div class="tree-folder-name">
+													AAA001.US <a href="#"><i class="icon-plus-sign f-16"></i></a>
+												</div>
+											</div>
+											<div class="tree-folder-content">
+												<div class="tree-item tree-selected">
+													<i class="icon-ok"></i>
+													<div class="tree-item-name">
+														01.Marketing
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														02.Market Research
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														03.Sales
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														04.Clinical
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														05.Medical Affairs
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														06.Market Access
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+									<!-- folder1 end -->
+									<div class="tree-folder">
+										<div class="tree-folder-header">
+											<i class="icon-minus"></i>
+											<div class="tree-folder-name">
+												Amgen - Denosumab
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel-default panel">
+						<div class="panel-head clearfix">
+							<p class="panel_title">
+								<a class="accordion-toggle collapsed" href="#collapseTwo" data-parent="#accordion" data-toggle="collapse" style="color:#ffffff;"> Report </a>
+							</p>
+						</div>
+						<div class="panel-collapse collapse" id="collapseTwo">
+							<div class="panel-body accordion_body">
+								<ul class="list_none">
+									<li>
+										<a>- Flash Report</a>
+									</li>
+									<li>
+										<a>- Activity</a>
+									</li>
+									<li>
+										<a>- Dependency Report</a>
+									</li>
+									<li>
+										<a>- Budget Report</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--End Sidebar-->
+
+				<div id="contents" class="col-xs-9 p0-all">
+
+					<div id="nav" class="panel-head m10-left">
+						<h3 class="pb_content_header">Create New Playbook</h3>
+					</div>
+
+					<!-- Start Contents area -->
+					<div id="content" class="col-xs-12 pb_content_layout">
+						<div class="col-xs-12 panel-default pb_main_contents_large">
+							<!-- Start contents -->
+							<div class="col-xs-12" id="content_scroll">
+								<!-- start form area-->
+								<form class="form-horizontal m10-top">
+									<div id="fuelux-wizard" class="row-fluid" data-target="#step-container">
+										<ul class="wizard-steps">
+											<li data-target="#step1" class="active">
+												<span class="step">1</span>
+												<span class="title">Step 1</span>
+											</li>
+
+											<li data-target="#step2" class="active">
+												<span class="step">2</span>
+												<span class="title">Step 2</span>
+											</li>
+
+											<li data-target="#step3" class="active">
+												<span class="step">3</span>
+												<span class="title">Step 3</span>
+											</li>
+
+											<li data-target="#step4">
+												<span class="step">4</span>
+												<span class="title">Step 4</span>
+											</li>
+
+											<li data-target="#step5">
+												<span class="step">5</span>
+												<span class="title">Step 5</span>
+											</li>
+
+											<li data-target="#step6">
+												<span class="step">6</span>
+												<span class="title">Step 6</span>
+											</li>
+										</ul>
+									</div>
+
+									<!-- start from-group important_date_types -->
+									<div class="form-group p40-left-right">
+										<div class="row">
+											<h4 class="header"><font color="8eb9d4"> <b>Important date types</b> </font></h4>
+										</div>
+										<!-- start input area -->
+										<div id="form-field-1">
+											<div class="table-responsive">
+												<table class="table table-bordered table-hover datatable">
+													<thead>
+														<tr>
+															<th> Name </th>
+
+															<th colspan="2"> Description </th>
+
+															<th class="w-45"></th>
+														</tr>
+													</thead>
+
+													<tbody >
+														<tr>
+															<td class="f-12" style="background: #23d532;"><font style="color: blue;"><b>Congresses, Conferences &amp; Customer Mtgs</b></font></td>
+
+															<td class="f-12" colspan="2"><label>Promotional events, market research, advocacy conferences and seminars.</label></td>
+
+															<td><a href="#"><i class="icon-trash f-16"></i> </a></td>
+														</tr>
+
+														<tr>
+															<td class="f-12" style="background: #d52332;"><font style="color: white;"><b>Important Internal Deadline</b></font></td>
+
+															<td class="f-12" colspan="2"><label>A deadline established within the organization, such as a launch meeting, promotions deadline, or trainin session.</label></td>
+
+															<td><a href="#"><i class="icon-trash f-16"></i> </a></td>
+														</tr>
+														
+														<tr>
+															<td class="f-12" style="background: purple;"><font style="color: white;"><b>Manufacturing Critical Path</b></font></td>
+
+															<td class="f-12" colspan="2"><label>The date of an event that is necessary for initial production at launch, and for meeting near-term inventory needs.</label></td>
+
+															<td><a href="#"><i class="icon-trash f-16"></i> </a></td>
+														</tr>
+														
+														<tr>
+															<td class="f-12" style="background: #ffff00;"><font style="color: red;"><b>Regulatory Critical Path</b></font></td>
+
+															<td class="f-12" colspan="2"><label>The date of an event that is related to maintaining compliance with regulatory bodies, both internal (i.e., compliance processes within the organization) or external (i.e., FDA)</label></td>
+
+															<td><a href="#"><i class="icon-trash f-16"></i> </a></td>
+														</tr>
+														
+														<tr>
+															<td class="f-12" style="background: #0000ff;"><font style="color: white;"><b>Reimbuersement Critical Path</b></font></td>
+
+															<td class="f-12" colspan="2"><label>The date of an event that is necessary for gainining and maintaining proper coverage for treatment from public and private payers.</label></td>
+
+															<td><a href="#"><i class="icon-trash f-16"></i> </a></td>
+														</tr>
+
+														<tr>
+															<td colspan="4"><a id="add_member" href="#add_ca_member"> +Add Important Date Types</a></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<!-- end input area -->
+									</div>
+									<!-- end from-group important_date_types -->
+
+									<div class="divider m10-bottom"></div>
+
+									<div class="footer pull-right p40-left-right m20-bottom">
+										<button type="button" id="btn_prev" class="btn btn-default">
+											<i class="icon-arrow-left icon-on-left"></i>
+											Prev
+										</button>
+										<button type="button" id="btn_next" class="btn btn-success">
+											Next
+											<i class="icon-arrow-right icon-on-right"></i>
+										</button>
+									</div>
+								</form>
+								<!-- end from-group hide_original_dates -->
+							</div>
+							<!-- End contents -->
+
+						</div>
+					</div>
+					<!-- End Contents area -->
+
+				</div>
+			</div>
+			<!--End Main-container-->
+		</div>
+
+		<script type="text/javascript">
+			jQuery(function($) {
+				$("#content_scroll").slimScroll({
+					height : '720px',
+					alwaysVisible : false
+				});
+
+			});
+		</script>
+	</body>
+</html>
+
