@@ -36,13 +36,13 @@
 			<!-- Start main container -->
 			<div id="main-container" class="row m10-top" >
 				<!--Start sidebar-->
-				<div id="accordion" class="panel-group col-xs-3 p0-all">
+				<div id="accordion" class="panel-group col-xs-2 p0-all">
 					<div class="panel-default panel">
 						<div class="panel-head clearfix">
 							<p class="panel_title">
 								<a class="accordion-toggle" href="#collapseOne" data-parent="#accordion" data-toggle="collapse" style="color:#ffffff;"> Playbook </a>
 							</p>
-							<a class="btn btn-primary pull-right"> Create Playbook </a>
+							<button class="btn btn-primary pull-right f-12"><i class="icon-plus-sign"></i> Playbook</button>
 						</div>
 						<div class="panel-collapse collapse in" id="collapseOne">
 							<div class="panel-body accordion_body">
@@ -71,7 +71,7 @@
 												</div>
 												<div class="tree-item">
 													<i class="icon-remove"></i>
-													<div class="tree-item-name">
+													<div class="tree-item-name" style="overf">
 														02.Market Research
 													</div>
 												</div>
@@ -144,10 +144,24 @@
 				</div>
 				<!--End Sidebar-->
 
-				<div id="contents" class="col-xs-9 p0-all">
+				<div id="contents" class="col-xs-10 p0-all">
 
 					<div id="nav" class="panel-head m10-left">
 						<h3 class="pb_content_header">Activity Report</h3>
+						<div class="pull-right">
+							<ul class="line_ul">
+								<li>
+									<button id="btn_report_table" class="btn btn-sm btn-primary active">
+										Table
+									</button>
+								</li>
+								<li>
+									<button id="btn_report_graph" class="btn btn-sm btn-primary">
+										Graph
+									</button>
+								</li>
+							</ul>
+						</div>
 					</div>
 					<!-- Start page-content -->
 
@@ -160,7 +174,7 @@
 									<div class=" col-xs-12">
 										<!-- Start panel-heading -->
 										<div class="clearfix p5-all">
-											<div id="formarea" class="pull-right m10-right">
+											<div id="formarea" class="pull-right">
 												<button class="btn btn-sm btn-primary">
 													<i class="icon-th-large"></i>
 												</button>
@@ -189,10 +203,10 @@
 
 												<tbody>
 													<tr>
-														<td colspan="6" class="table-header"><h3 class="panel-title pb_text_center"> 01. Marketing </h3></td>
+														<td colspan="6" class="table-header pb_text_center"> 01. Marketing </td>
 													</tr>
 													<tr>
-														<td colspan="6" class="alert-info"><h4 class="panel-title pb_text_center"><i class="icon-inbox"></i> Now Approved - Soft Launch (3) </h4></td>
+														<td colspan="6" class="alert-info pb_text_center"><i class="icon-inbox"></i> Now Approved - Soft Launch (3) </td>
 													</tr>
 
 													<tr>
@@ -223,7 +237,7 @@
 													</tr>
 
 													<tr>
-														<td colspan="6" class="alert-info"><h4 class="panel-title pb_text_center"><i class="icon-inbox"></i> Early Experience Program (7) </h4></td>
+														<td colspan="6" class="alert-info pb_text_center"><i class="icon-inbox"></i> Early Experience Program (7) </td>
 													</tr>
 
 													<tr>
@@ -283,7 +297,7 @@
 														<td>On Track</td>
 													</tr>
 													<tr>
-														<td colspan="6" class="alert-info"><h4 class="panel-title pb_text_center"><i class="icon-inbox"></i> Now Available -PI Launch(4) </h4></td>
+														<td colspan="6" class="alert-info pb_text_center"><i class="icon-inbox"></i> Now Available -PI Launch(4) </td>
 													</tr>
 													<tr>
 														<td><a href="#">Early Experience Program-Welcome Letter</a></td>

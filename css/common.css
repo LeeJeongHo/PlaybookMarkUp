@@ -326,8 +326,7 @@ panel
 	display: block;
 }
 .table thead > tr > th, .table tbody > tr > th, .table tfoot > tr > th, .table thead > tr > td, .table tbody > tr > td, .table tfoot > tr > td {
-    border-top: none;
-    border-right: 1px solid #dddddd;
+    border : 1px solid #dddddd;
     line-height: 1.42857;
     padding: 8px;
     vertical-align: top;
@@ -378,6 +377,7 @@ tr{
 }
 .table{
     table-layout: fixed;
+    margin-bottom: 0px;
 }
 .table-wraper{
     padding:12px 0;
@@ -398,6 +398,9 @@ form{
 body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom {
     margin: 0 auto;
 }
+.modal-dialog{
+	width:1000px;
+}
 .btn-primary{
 	background: -webkit-linear-gradient(#5eb6ff, #249cff) !important; /* For Safari */
 	background: -o-linear-gradient(#5eb6ff, #249cff) !important; /* For Opera 11.1 to 12.0 */
@@ -410,4 +413,18 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 }
 .btn-primary:active{
 	background: #0e61a5 !important;
+}
+
+/*
+	sidebar min-width
+*/
+.tree{
+	white-space: nowrap;
+}
+.tree-folder-header{
+	font-size: 14px;
+	font-weight: bold
+}
+.tree-item{
+	font-size: 12px;
 }
