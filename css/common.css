@@ -94,8 +94,7 @@ panel
     border-width: 0 0 1px;
     padding: 12px 20px;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.04);
-
-
+    height: 56px;
 }
 .panel-default > .panel-heading {
     background-color: #366EAB;
@@ -131,6 +130,7 @@ panel
 	background: linear-gradient(#5eb6ff, #249cff); /* Standard syntax */
 	border:1px solid #0e61a5;
 }
+.panel
 .col-xs-3 .panel-head{
 	border-top: none;
 	border-left: none;
@@ -213,7 +213,7 @@ panel
 	padding-top: 0px;
 }
 .p0-all{
-	padding: 0px;
+	padding: 0px !important;
 }
 .p5-all{
 	padding: 5px;
@@ -270,6 +270,9 @@ panel
 }
 .f-20{
 	font-size: 20px;
+}
+.f-24{
+	font-size: 24px;
 }
 .btn{
 	border-radius: 4px;
@@ -401,7 +404,10 @@ tr{
 	border:1px solid #dddddd;
 }
 form{
-	font-size: 14px;
+	font-size: 12px;
+}
+form label{
+	font-size:12px;
 }
 body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom {
     margin: 0 auto;
@@ -451,4 +457,8 @@ hr{
 
 .right-border{
 	border-right: 1px solid #DDDDDD;
+}
+
+.scroll_box{
+	max-height: 670px;
 }

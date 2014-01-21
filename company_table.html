@@ -9,6 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="css/1280_10_10.css">
 		<link rel="stylesheet" type="text/css" href="css/uncompressed/font-awesome.css">
 		<link rel="stylesheet" type="text/css" href="css/table.css">
+		<link rel="stylesheet" type="text/css" href="css/chosen.css"/>
 		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/html5shiv.js"></script>
@@ -61,27 +62,6 @@
 									<div class="col-xs-12 pb_none_border">
 										<h3 class="pb_content_header">Total Records : 5372</h3>
 										<div class="pull-right">
-											<div class="btn-group m10-right inline_b m2-bottom">
-												<button class="btn btn-primary btn-sm dropdown-toggle no-border" data-toggle="dropdown">
-													Success large
-													<i class="icon-angle-down icon-on-right"></i>
-												</button>
-												<ul class="dropdown-menu pull-right">
-													<li>
-														<a href="#">Company Name</a>
-													</li>
-													<li>
-														<a href="#">EMail</a>
-													</li>
-													<li>
-														<a href="#">First Name</a>
-													</li>
-													<li>
-														<a href="#">Last Name</a>
-													</li>
-												</ul>
-											</div>
-
 											<div class="input-icon input-icon-right inline_b m10-right">
 												<input id="search" type="text" placeholder="Search..." size="25">
 												<i class="icon-globe"></i>
@@ -92,14 +72,14 @@
 												</button>
 												<ul class="dropdown-menu pull-right">
 													<li>
-														<a href="#">Add User</a>
+														<a href="#">Add Company</a>
 													</li>
 													<li class="divider"></li>
 													<li>
-														<a href="#">Import Users</a>
+														<a href="#">Import Company</a>
 													</li>
 													<li>
-														<a href="#">Export Users</a>
+														<a href="#">Export Company</a>
 													</li>
 													<li>
 														<a href="#">Use a Template</a>
@@ -117,7 +97,7 @@
 								</div>
 								<!-- endnavbar -->
 								<!-- Start content or form Area -->
-								<div id="contentwraper">
+								<div class="scroll_box pb_vertical_scroll" id="contentwraper">
 									<!-- Start add company -->
 									<div class="row">
 										<div class="col-xs-3 m15-left-top" >
@@ -129,80 +109,95 @@
 									</div>
 									<!-- End add company -->
 									<div class="col-xs-12 p10-top">
-										<table class="table boxborder">
-											<thead>
-												<tr>
-													<th class="sorting">Company Name</th>
-													<th class="sorting">Company Type</th>
-													<th width="50"></th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr id="tr1">
-													<td><i id="tr1_i" class="icon-minus"></i>AbbVie</td>
-													<td>Cambell Alliance</td>
-													<td><a href="#">Edit</td>
-												</tr>
-												<!-- Start hidden table -->
-												<tr id="collapseme1">
-													<td colspan="2">
-														<table class="table table-bordered">
-															<thead>
-																<tr>
-																	<th>Product Name</th>
-																	<th>Description</th>
-																</tr>
-															</thead>
-															<tbody>
-																<tr>
-																	<td>X-A1</td>
-																	<td>blah blah</td>
-																</tr>
-																<tr>
-																	<td>X-B2_lala</td>
-																	<td>blah blah</td>
-																</tr>
-																<tr>
-																	<td colspan="2" class="depth1">Double click here to create new Product</td>
-																</tr>
-															</tbody>
-														</table>
-													</td>
-													<td></td>
-												</tr>
-												<!-- End hidden table -->
-												<tr id="tr2">
-													<td><i id="tr2_i" class="icon-plus"></i>AbbVie</td>
-													<td>Cambell Alliance</td>
-													<td><a href="#">Edit</td>
-												</tr>
-												<tr id="tr3">
-													<td><i id="tr3_i" class="icon-plus"></i>Amgen Canada</td>
-													<td>Cambell Alliance</td>
-													<td><a href="#">Edit</td>
-												</tr>
-												<tr id="tr4" >
-													<td ><i id="tr4_i" class="icon-plus"></i>Baxter</td>
-													<td>Cambell Alliance</td>
-													<td><a href="#">Edit</td>
-												</tr>
-												<tr id="tr5">
-													<td><i id="tr5_i" class="icon-plus"></i>Biogen Idec</td>
-													<td>Cambell Alliance</td>
-													<td><a href="#">Edit</td>
-												</tr>
-												<tr id="tr6">
-													<td><i id="tr6_i" class="icon-plus"></i>BiPar Sciences</td>
-													<td>Client</td>
-													<td><a href="#">Edit</td>
-												</tr>
-												<tr id="tr7">
-													<td><i id="tr7_i" class="icon-plus"></i>Boehringer Ingelheim</td>
-													<td>Client</td>
-													<td><a href="#">Edit</td>
-												</tr>
-											</tbody>
-										</table>
+										<form>
+											<table class="table table-bordered">
+												<thead>
+													<tr>
+														<th class="sorting">Company Name</th>
+														<th class="sorting">Company Type</th>
+														<th width="50"></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr id="tr1">
+														<td><i id="tr1_i" class="icon-minus"></i>AbbVie</td>
+														<td>Cambell Alliance</td>
+														<td><a href="#">Edit</td>
+													</tr>
+													<!-- Start hidden table -->
+													<tr id="collapseme1">
+														<td colspan="2">
+															<table class="table table-bordered">
+																<thead>
+																	<tr>
+																		<th>Product Name</th>
+																		<th>Description</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td>X-A1</td>
+																		<td>blah blah</td>
+																	</tr>
+																	<tr>
+																		<td>X-B2_lala</td>
+																		<td>blah blah</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<div class="col-sm-12" style="padding-left:0;">
+																				<select class="col-xs-12 chosen-select" id="form-field-select-1" data-placeholder="Choose company">
+																					<option value="">Product Name...</option>
+																					<option value="Product1">Product 1</option>
+																					<option value="Product2">Product 2</option>
+																					<option value="Product3">Product 3</option>
+																				</select>
+																			</div>
+																		</td>
+																		<td><input id="form-field-2" class="input100" type="text"></td>
+																	</tr>
+																	<tr>
+																		<td colspan="2" class="depth1">Double click here to create new Product</td>
+																	</tr>
+																</tbody>
+															</table>
+														</td>
+														<td></td>
+													</tr>
+													<!-- End hidden table -->
+													<tr id="tr2">
+														<td><i id="tr2_i" class="icon-plus"></i>AbbVie</td>
+														<td>Cambell Alliance</td>
+														<td><a href="#">Edit</td>
+													</tr>
+													<tr id="tr3">
+														<td><i id="tr3_i" class="icon-plus"></i>Amgen Canada</td>
+														<td>Cambell Alliance</td>
+														<td><a href="#">Edit</td>
+													</tr>
+													<tr id="tr4" >
+														<td ><i id="tr4_i" class="icon-plus"></i>Baxter</td>
+														<td>Cambell Alliance</td>
+														<td><a href="#">Edit</td>
+													</tr>
+													<tr id="tr5">
+														<td><i id="tr5_i" class="icon-plus"></i>Biogen Idec</td>
+														<td>Cambell Alliance</td>
+														<td><a href="#">Edit</td>
+													</tr>
+													<tr id="tr6">
+														<td><i id="tr6_i" class="icon-plus"></i>BiPar Sciences</td>
+														<td>Client</td>
+														<td><a href="#">Edit</td>
+													</tr>
+													<tr id="tr7">
+														<td><i id="tr7_i" class="icon-plus"></i>Boehringer Ingelheim</td>
+														<td>Client</td>
+														<td><a href="#">Edit</td>
+													</tr>
+												</tbody>
+											</table>
+										</form>
 									</div>
 								</div>								
 								<!-- End content or form Area -->
@@ -215,6 +210,7 @@
 			</div>
 			<!--End Main-container-->
 		</div>
+	<script src="js/chosen.jquery.min.js"></script>
 	<script type="text/javascript">
 		jQuery(function($) {
 			$("#tr1_i").parent().click(function() {
@@ -228,7 +224,10 @@
 					$("#tr1_i").addClass("icon-plus");
 				}
 			});
+			$(".chosen-select").chosen();
 		});
 	</script>
 </body>
 </html>
+
+		
