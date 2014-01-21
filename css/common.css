@@ -158,6 +158,9 @@ panel
 	margin,padding 관련
 */
 
+.m0-left{
+	margin-left: 0px;
+}
 .m-10-left{
 	margin-left: -10px;
 }

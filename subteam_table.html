@@ -11,7 +11,6 @@
 		<link rel="stylesheet" type="text/css" href="css/uncompressed/font-awesome.css">
 		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.slimscroll.min.js"></script>
 		<script src="js/html5shiv.js"></script>
 	</head>
 	<body>
@@ -282,10 +281,10 @@
 								</div>
 								
 								<!-- start content area -->
-								<div class="row col-xs-12" id="content_scroll">
+								<div class="row col-xs-12 pb_vertical_scroll m0-left" style="height: 665px;">
 									<div class=" col-xs-12">
 										<div class="table-wraper">
-											<div class="table-responsive pb_border" id="table-scroll">
+											<div class="table-responsive pb_border">
 												<table class="table datatable boxborder table-hover">
 													<thead>
 														<tr role="row">
@@ -518,7 +517,7 @@
 									<h3 class="panel-title">Filters</h3>
 								</div>
 								<!-- End Head -->
-								<div id="filter_scroll">
+								<div class="pb_vertical_scroll m0-left" style="height: 675px;">
 									<!-- Start filter tree1 -->
 									<div id="filter_status" class="tree tree-selectable">
 										<!-- folder1 Start -->
@@ -962,14 +961,7 @@
 						$("#budget").addClass("collapse");
 					}
 				});
-				$("#content_scroll").slimScroll({
-					height : '670px',
-					alwaysVisible : false
-				});
-				$("#filter_scroll").slimScroll({
-					height : '670px',
-					alwaysVisible : false
-				});
+				
 				$("#message1").tooltip();
 			});
 		</script>

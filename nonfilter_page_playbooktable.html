@@ -11,7 +11,6 @@
 		<link rel="stylesheet" type="text/css" href="css/uncompressed/font-awesome.css">		
 		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.slimscroll.min.js"></script>
 		<script src="js/html5shiv.js"></script>
 	</head>
 	<body>
@@ -281,10 +280,10 @@
 								</div>
 								
 								<!-- start content area -->
-								<div class="row col-xs-12" id="content_scroll">
+								<div class="row col-xs-12 pb_vertical_scroll" style="height: 665px;">
 									<div class=" col-xs-12">
 										<div class="table-wraper">
-											<div class="table-responsive pb_border" id="table-scroll">
+											<div class="table-responsive pb_border">
 												<table class="table datatable boxborder">
 													<thead>
 														<tr role="row">
@@ -616,14 +615,6 @@
 					}
 				});
 
-				$("#content_scroll").slimScroll({
-					height : '670px',
-					alwaysVisible : false
-				});
-				$("#filter_scroll").slimScroll({
-					height : '670px',
-					alwaysVisible : false
-				});
 				$("#message1").tooltip();
 
 			});

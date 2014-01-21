@@ -14,7 +14,6 @@
 		
 		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.slimscroll.min.js"></script>
 		<script src="js/html5shiv.js"></script>
 	</head>
 	<body>
@@ -225,7 +224,7 @@
 								<h3 class="panel-title">Subteam Information</h3>
 							</div>
 							<!-- Start contents -->
-							<div class="col-xs-12" id="content_scroll">
+							<div class="row col-xs-12 pb_vertical_scroll m0-left" style="height: 675px;">
 								<!-- start form area-->
 								<form class="form-horizontal m10-top">
 									<!-- start from-group subteam_name -->
@@ -558,11 +557,6 @@
 		<script src="js/chosen.jquery.min.js"></script>
 		<script type="text/javascript">
 			jQuery(function($) {
-				$("#content_scroll").slimScroll({
-					height : '670px',
-					alwaysVisible : false
-				});
-				
 				$(".chosen-select").chosen();
 
 			});
