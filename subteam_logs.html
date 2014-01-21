@@ -38,7 +38,7 @@
 			<!-- Start main container -->
 			<div id="main-container" class="row m10-top" >
 				<!--Start sidebar-->
-				<div id="accordion" class="panel-group col-xs-3 p0-all">
+				<div id="accordion" class="panel-group col-xs-2 p0-all">
 					<div class="panel-default panel">
 						<div class="panel-head clearfix">
 							<p class="panel_title">
@@ -46,9 +46,7 @@
 								 	Playbook 
 								</a>
 							</p>
-							<a class="btn btn-primary pull-right">
-								Create Playbook
-							</a>
+							<button class="btn btn-primary pull-right f-12"><i class="icon-plus-sign"></i> Playbook</button>
 						</div>
 						<div class="panel-collapse collapse in" id="collapseOne">
 							<div class="panel-body accordion_body">
@@ -152,10 +150,72 @@
 				</div>
 				<!--End Sidebar-->
 
-				<div id="contents" class="col-xs-9 p0-all">
+				<div id="contents" class="col-xs-10 p0-all">
 
 					<div id="nav" class="panel-head m10-left">
-						<h3 class="pb_content_header">NavBar</h3>
+						<h3 class="pb_content_header">US - Vaccines</h3>
+						<div class="pull-right">
+							<ul class="line_ul">
+								<li>
+									<div class="btn-group">
+										<button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+											Action
+											<i class="icon-angle-down icon-on-right"></i>
+										</button>
+										<ul class="dropdown-menu pull-right">
+											<li>
+												<a href="#">Auto Move</a>
+											</li>
+											<li>
+												<a href="#">Find and Replace</a>
+											</li>
+											<li>
+												<a href="#">Reaasign User</a>
+											</li>
+											<li class="divider"></li>
+											<li>
+												<a href="#">Manage Version</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<button class="btn btn-sm btn-primary">
+										Dashboard
+									</button>
+								</li>
+								<li>
+									<button class="btn btn-sm btn-primary">
+										Timeline
+									</button>
+								</li>
+								<li>
+									<button class="btn btn-sm btn-primary">
+										Table
+									</button>
+								</li>
+								<li>
+									<button class="btn btn-sm btn-primary">
+										Issues
+									</button>
+								</li>
+								<li>
+									<button class="btn btn-sm btn-primary">
+										Alert
+									</button>
+								</li>
+								<li>
+									<button class="btn btn-sm btn-primary active">
+										Logs
+									</button>
+								</li>
+								<li>
+									<button class="btn btn-sm btn-primary">
+										Settings
+									</button>
+								</li>
+							</ul>
+						</div>
 					</div>
 					<!-- Start page-content -->
 					
@@ -455,7 +515,7 @@
 		<script type="text/javascript">
 			jQuery(function($) {
 				$("#content_scroll").slimScroll({
-					height : '670px',
+					height : '660px',
 					alwaysVisible : false
 				});
 

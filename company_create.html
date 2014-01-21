@@ -78,50 +78,67 @@
 								<!-- endnavbar -->
 								<!-- Start content or form Area -->
 								<div id="contentwraper">
-									<form class="form-horizontal m5-top">
-										<div class="form-group">
-											<label class="col-sm-3 control-label no-padding-right"><b>Company Type *</b></label>
-											<div class="col-sm-6">
-												<input class="ace" type="radio" name="form-field-radio">
-												<span class="lbl"> Cambell Alliance</span>
-												<input class="ace" type="radio" name="form-field-radio">
-												<span class="lbl"> Client</span>
-											</div> 
-										</div>
-										<div class="form-group">
-											<label class="col-sm-3 control-label no-padding-right"><b>Company Name *</b></label>
-											<div class="col-sm-6">
-												<input id="form-field-1" class="col-xs-10 col-sm-5" type="text" placeholder="Company Name..">
+									<div style="width:1180px;">
+										<form class="form-horizontal m5-top">
+											<div class="form-group">
+												<label class="col-sm-2 control-label no-padding-right"><b>Company Type *</b></label>
+												<div class="col-sm-6">
+													<input class="ace" type="radio" name="form-field-radio">
+													<span class="lbl"> Cambell Alliance</span>
+													<input class="ace" type="radio" name="form-field-radio">
+													<span class="lbl"> Client</span>
+												</div> 
 											</div>
-										</div>
-										<div class="form-group">
-											<label class="col-sm-3 control-label no-padding-right"><b>Product List *</b></label>
-											<div class="col-sm-6">
-												<table class="table table-bordered">
-													<thead>
-														<tr>
-															<th>Product Name</th>
-															<th>Description</th>
-														</tr>
-													</thead>
-													<tbody>
-														<tr>
-															<td>X-A1</td>
-															<td>blah blah</td>
-														</tr>
-														<tr>
-															<td>X-B2_lala</td>
-															<td>blah blah</td>
-														</tr>
-														<tr>
-															<td class="depth1"><a href="#">Add New Product</a></td>
-															<td></td>
-														</tr>
-													</tbody>
-												</table>
+											<div class="form-group">
+												<label class="col-sm-2 control-label no-padding-right"><b>Company Name *</b></label>
+												<div class="col-sm-6">
+													<input id="form-field-1" class="col-xs-10 col-sm-5" type="text" placeholder="Company Name..">
+												</div>
 											</div>
-										</div>
-									</form>
+											<div class="form-group">
+												<label class="col-sm-2 control-label no-padding-right"><b>Product List *</b></label>
+												<div class="col-sm-6">
+													<table class="table table-bordered">
+														<thead>
+															<tr>
+																<th>Product Name</th>
+																<th>Description</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>X-A1</td>
+																<td>blah blah</td>
+															</tr>
+															<tr>
+																<td>X-B2_lala</td>
+																<td>blah blah</td>
+															</tr>
+															<tr>
+																<td>
+																	<div class="form-group">
+																		<div class="col-sm-3">
+																			<select class="col-xs-12 chosen-select" id="form-field-select-5">
+																				<option value="">Therapeutic Area...</option>
+																				<option value="Therapeutic Area1">Therapeutic Area 1</option>
+																				<option value="Therapeutic Area2">Therapeutic Area 2</option>
+																				<option value="Therapeutic Area3">Therapeutic Area 3</option>
+																			</select>
+																		</div>
+																	</div>
+																</td>
+																<td></td>
+															</tr>
+															<tr>
+																<td class="depth1"><a href="#">Add New Product</a></td>
+																<td></td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</form>
+									</div>
 								</div>								
 								<!-- End content or form Area -->
 							</div>
@@ -133,5 +150,11 @@
 			</div>
 			<!--End Main-container-->
 		</div>
+		<script src="js/chosen.jquery.min.js"></script>
+		<script type="text/javascript">
+			jQuery(function($) {
+				$(".chosen-select").chosen();
+			});
+		</script>
 	</body>
 </html>

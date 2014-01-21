@@ -36,7 +36,7 @@
 			<!-- Start main container -->
 			<div id="main-container" class="row m10-top" >
 				<!--Start sidebar-->
-				<div id="accordion" class="panel-group col-xs-3 p0-all">
+				<div id="accordion" class="panel-group col-xs-2 p0-all">
 					<div class="panel-default panel">
 						<div class="panel-head clearfix">
 							<p class="panel_title">
@@ -44,9 +44,7 @@
 								 	Playbook 
 								</a>
 							</p>
-							<a class="btn btn-primary pull-right">
-								Create Playbook
-							</a>
+							<button class="btn btn-primary pull-right f-12"><i class="icon-plus-sign"></i> Playbook</button>
 						</div>
 						<div class="panel-collapse collapse in" id="collapseOne">
 							<div class="panel-body accordion_body">
@@ -150,10 +148,72 @@
 				</div>
 				<!--End Sidebar-->
 
-				<div id="contents" class="col-xs-9 p0-all">
+				<div id="contents" class="col-xs-10 p0-all">
 
 					<div id="nav" class="panel-head m10-left">
-						<h3 class="pb_content_header">NavBar</h3>
+						<h3 class="pb_content_header">01. Markerting</h3>
+						<div class="pull-right">
+							<ul class="line_ul">
+								<li>
+									<div class="btn-group">
+										<button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+											Action
+											<i class="icon-angle-down icon-on-right"></i>
+										</button>
+										<ul class="dropdown-menu pull-right">
+											<li>
+												<a href="#">Auto Move</a>
+											</li>
+											<li>
+												<a href="#">Find and Replace</a>
+											</li>
+											<li>
+												<a href="#">Reaasign User</a>
+											</li>
+											<li class="divider"></li>
+											<li>
+												<a href="#">Manage Version</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<button class="btn btn-sm btn-primary">
+										Dashboard
+									</button>
+								</li>
+								<li>
+									<button class="btn btn-sm btn-primary">
+										Timeline
+									</button>
+								</li>
+								<li>
+									<button class="btn btn-sm btn-primary active">
+										Table
+									</button>
+								</li>
+								<li>
+									<button class="btn btn-sm btn-primary">
+										Issues
+									</button>
+								</li>
+								<li>
+									<button class="btn btn-sm btn-primary">
+										Alert
+									</button>
+								</li>
+								<li>
+									<button class="btn btn-sm btn-primary">
+										Logs
+									</button>
+								</li>
+								<li>
+									<button class="btn btn-sm btn-primary">
+										Settings
+									</button>
+								</li>
+							</ul>
+						</div>
 					</div>
 					<!-- Start page-content -->
 					
@@ -233,7 +293,10 @@
 															<th class="sorting" >Priority</th>
 															<th class="sorting" colspan="2">Responsibility</th>
 															<th class="sorting">Strategy</th>
-															<th role="columnheader"></th>
+															<th role="columnheader" width="30"></th>
+															<th role="columnheader" width="30"></th>
+															<th role="columnheader" width="30"></th>
+															<th role="columnheader" width="30"></th>
 														</tr>
 													</thead>
 													<tbody>
@@ -247,7 +310,10 @@
 															<td></td>
 															<td></td>
 															<td colspan="2"></td>
-															<td><a href="#"></a></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
 														</tr>
 														<tr id="collapseme1">
 															<td colspan="2" class="table_depth1">
@@ -259,9 +325,16 @@
 															<td>HIGH</td>
 															<td colspan="2">Anne, Marry</td>
 															<td></td>
-															<td><a href="#" data-toggle="modal" data-target="#myModal"><i class="icon-pencil f-16"></i></a>
+															<td>
+																<a href="#" data-toggle="modal" data-target="#myModal"><i class="icon-pencil f-16"></i></a>
+															</td>
+															<td>
 																<a href="#"><i class="icon-trash f-16"></i></a>
+															</td>
+															<td>
 																<a href="#"><i id="showactivity" class="icon-zoom-in f-16"></i></a>
+															</td>
+															<td>
 																<a href="#"><i id="showbudget" class="icon-money f-16"></i></a>
 															</td>
 														</tr>
@@ -275,7 +348,7 @@
 															<td><input id="form-field-5" class="input100" type="text" placeholder=""></td>
 															<td colspan="2"><input id="form-field-6" class="input100" type="text" placeholder=""></td>
 															<td><input id="form-field-7" class="input100" type="text" placeholder=""></td>
-															<td><button class="btn btn-sm btn-primary">Save</button></td>
+															<td colspan="4"><button class="btn btn-sm btn-primary">Save</button></td>
 														</tr>
 														<tr>
 															<td colspan="2">02. Market Reaserch</td>
@@ -284,6 +357,9 @@
 															<td></td>
 															<td></td>
 															<td colspan="2"></td>
+															<td></td>
+															<td></td>
+															<td></td>
 															<td></td>
 															<td></td>
 														</tr>
@@ -431,149 +507,229 @@
 									<h3 class="panel-title">Filters</h3>
 								</div>
 								<!-- End Head -->
-								<!-- Start filter tree1 -->
-								<div id="filter" class="tree tree-selectable">
-									<!-- folder1 Start -->
-									<div class="tree-folder pb_display_b">
-										<div class="tree-folder-header">
-											<i class="icon-minus"></i>
-											<div class="tree-folder-name">
-												Product X (PowerPharma)
-											</div>
-										</div>
-										<!-- Start 1 depth -->
-										<div class="tree-folder-content">
+								<div id="filter_scroll">
+									<!-- Start filter tree1 -->
+									<div id="filter_status" class="tree tree-selectable">
+										<!-- folder1 Start -->
+										<div class="tree-folder pb_display_b">
 											<div class="tree-folder-header">
 												<i class="icon-minus"></i>
 												<div class="tree-folder-name">
-													US - Vaccines
+													STATUS
 												</div>
 											</div>
-											<!-- Start 2 depth -->
 											<div class="tree-folder-content">
 												<div class="tree-item">
 													<i class="icon-remove"></i>
 													<div class="tree-item-name">
-														01. Marketing
+														Not Initiated
 													</div>
 												</div>
 												<div class="tree-item">
 													<i class="icon-remove"></i>
 													<div class="tree-item-name">
-														02. Market Research
+														On Track
 													</div>
 												</div>
 												<div class="tree-item">
 													<i class="icon-remove"></i>
 													<div class="tree-item-name">
-														03. Sales
+														Delayed
 													</div>
 												</div>
 												<div class="tree-item tree-selected">
 													<i class="icon-ok"></i>
 													<div class="tree-item-name">
-														04.Clinical
+														Completed
 													</div>
 												</div>
 												<div class="tree-item">
 													<i class="icon-remove"></i>
 													<div class="tree-item-name">
-														05. Medical Affairs
+														Canceled
 													</div>
 												</div>
 												<div class="tree-item">
 													<i class="icon-remove"></i>
 													<div class="tree-item-name">
-														06. Market Access
+														At Risk
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														Unfunded
 													</div>
 												</div>
 											</div>
-											<!-- End 2 depth -->
+										</div>
+										<!-- folder1 end -->
+										<div id="filter_priority" class="tree-folder pb_display_b">
 											<div class="tree-folder-header">
 												<i class="icon-minus"></i>
 												<div class="tree-folder-name">
-													France - Vaccines
+													PRIORITY
 												</div>
 											</div>
-										</div>
-										<!-- End 1 depth -->
-									</div>
-									<!-- folder1 end -->
-									<div class="tree-folder pb_display_b">
-										<div class="tree-folder-header">
-											<i class="icon-minus"></i>
-											<div class="tree-folder-name">
-												Denosumab (Amgen)
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- End Filter tree1 -->
-								<label class="m10-left m10-top f-14">
-									<b>Setting</b>
-								</label>
-								<!-- Start filter tree2 -->
-								<div id="tree2" class="tree tree-selectable">
-									<!-- folder1 Start -->
-									<div class="tree-folder pb_display_b">
-										<div class="tree-folder-header">
-											<i class="icon-minus"></i>
-											<div class="tree-folder-name">
-												Status
-											</div>
-										</div>
-										<div class="tree-folder-content">
-											<div class="tree-item">
-												<i class="icon-remove"></i>
-												<div class="tree-item-name">
-													Not Initiated
+											<div class="tree-folder-content">
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														TBD
+													</div>
 												</div>
-											</div>
-											<div class="tree-item">
-												<i class="icon-remove"></i>
-												<div class="tree-item-name">
-													On Track
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														LOW
+													</div>
 												</div>
-											</div>
-											<div class="tree-item">
-												<i class="icon-remove"></i>
-												<div class="tree-item-name">
-													Delayed
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														MEDIUM
+													</div>
 												</div>
-											</div>
-											<div class="tree-item tree-selected">
-												<i class="icon-ok"></i>
-												<div class="tree-item-name">
-													Completed
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														HIGH
+													</div>
 												</div>
-											</div>
-											<div class="tree-item">
-												<i class="icon-remove"></i>
-												<div class="tree-item-name">
-													Canceled
-												</div>
-											</div>
-											<div class="tree-item">
-												<i class="icon-remove"></i>
-												<div class="tree-item-name">
-													At Risk
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														LAUNCH CRITICAL
+													</div>
 												</div>
 											</div>
 										</div>
 											
-
-									</div>
-									<!-- folder1 end -->
-									<div class="tree-folder pb_display_b">
-										<div class="tree-folder-header">
-											<i class="icon-minus"></i>
-											<div class="tree-folder-name">
-												PRIORITY
+										<div id="due_date_filter" class="tree-folder pb_display_b">
+											<div class="tree-folder-header">
+												<i class="icon-minus"></i>
+												<div class="tree-folder-name">
+													DUE DATE
+												</div>
+											</div>
+											<div class="tree-folder-content">
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														Due today
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														Due this Week
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														Due this Month
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														Overdue
+													</div>
+												</div>
 											</div>
 										</div>
+
+										<div id="strategy" class="tree-folder pb_display_b">
+											<div class="tree-folder-header">
+												<i class="icon-minus"></i>
+												<div class="tree-folder-name">
+													STRATEGY
+												</div>
+											</div>
+											<div class="tree-folder-content">
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														dddd1
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														dddd2
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														dddd3
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														dddd4
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														dddd5
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														dddd6
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														dddd7
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div id="last_modification_filter" class="tree-folder pb_display_b">
+											<div class="tree-folder-header">
+												<i class="icon-minus"></i>
+												<div class="tree-folder-name">
+													LAST MODIFICATION
+												</div>
+											</div>
+											<div class="tree-folder-content">
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														Today
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														Yesterday
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														This Week
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														This Month
+													</div>
+												</div>
+											</div>
+										</div>
+
 									</div>
-								</div>
-								<!-- End filter tree2 -->
+								</div>	
 							</div>
 						</div>
 						<!--End filter (right box area)-->
@@ -763,6 +919,7 @@
 				</div><!-- /.modal-content -->
 			</div><!-- /.modal-dialog -->
 		</div>
+		<!-- End Modal -->
 		<script type="text/javascript">
 			jQuery(function($) {
 				$(".tr").click(function() {
@@ -795,6 +952,10 @@
 					}
 				});
 				$("#content_scroll").slimScroll({
+					height : '670px',
+					alwaysVisible : false
+				});
+				$("#filter_scroll").slimScroll({
 					height : '670px',
 					alwaysVisible : false
 				});
