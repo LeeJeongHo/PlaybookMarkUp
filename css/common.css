@@ -148,6 +148,10 @@ panel
     vertical-align: middle;
 }
 
+.pb_create_header{
+	color: #8eb9d4;
+}
+
 
 
 /*
@@ -273,6 +277,9 @@ panel
 }
 .f-20{
 	font-size: 20px;
+}
+.f-red{
+	color: #ff0000;
 }
 .btn{
 	border-radius: 4px;
