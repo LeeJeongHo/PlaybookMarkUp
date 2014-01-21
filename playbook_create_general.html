@@ -14,7 +14,6 @@
 
 		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.slimscroll.min.js"></script>
 		<script src="js/html5shiv.js"></script>
 	</head>
 	<body>
@@ -198,7 +197,7 @@
 								</div>
 
 								<div class="row p40-left-right">
-									<h4 class="header"><font color="8eb9d4"> <b>Essential Information</b> </font></h4>
+									<h4 class="header pb_create_header"> <b>Essential Information</b></h4>
 								</div>
 
 								<!-- start from-group playbook_code -->
@@ -207,6 +206,10 @@
 
 									<div class="col-sm-3">
 										<input type="text" id="form-field-1" placeholder="Playbook Code" class="col-xs-12" />
+									</div>
+
+									<div class="col-sm-2">
+										<span id="msg_code" class="middle m10-left f-red"> *Please input code </span>
 									</div>
 								</div>
 								<!-- end from-group playbook_code -->
@@ -226,6 +229,14 @@
 										</select>
 									</div>
 
+									<div class="col-sm-2">
+										<span id="msg_company" class="middle m10-left f-red"> *Please select company </span>
+									</div>
+								</div>
+
+								<div class="space-4"></div>
+
+								<div class="form-group">
 									<label class="col-sm-2 control-label no-padding-right" for="form-field-3"> <b>Select Product*</b> </label>
 									<div class="col-sm-3">
 										<select class="col-xs-12 chosen-select" id="form-field-select-3">
@@ -234,6 +245,10 @@
 											<option value="Product2">Product 2</option>
 											<option value="Product3">Product 3</option>
 										</select>
+									</div>
+
+									<div class="col-sm-2">
+										<span id="msg_product" class="middle m10-left f-red"> *Please select product </span>
 									</div>
 								</div>
 								<!-- end from-group company & product -->
@@ -251,6 +266,10 @@
 											<option value="Geography2">Geography 2</option>
 											<option value="Geography3">Geography 3</option>
 										</select>
+									</div>
+
+									<div class="col-sm-2">
+										<span id="msg_geography" class="middle m10-left f-red"> *Please select geography </span>
 									</div>
 								</div>
 								<!-- end from-group geography -->
@@ -270,6 +289,15 @@
 										</select>
 									</div>
 
+									<div class="col-sm-2">
+										<span id="msg_therapeutic_area" class="middle m10-left f-red"> *Please select therapeutic area </span>
+									</div>
+
+								</div>
+
+								<div class="space-4"></div>
+
+								<div class="form-group">
 									<label class="col-sm-2 control-label no-padding-right" for="form-field-6"> <b>Disease State*</b> </label>
 									<div class="col-sm-3">
 										<select class="col-xs-12 chosen-select" id="form-field-select-6">
@@ -278,6 +306,10 @@
 											<option value="Disease State2">Disease State 2</option>
 											<option value="Disease State3">Disease State 3</option>
 										</select>
+									</div>
+
+									<div class="col-sm-2">
+										<span id="msg_disease_statte" class="middle m10-left f-red"> *Please select disease state </span>
 									</div>
 								</div>
 								<!-- end from-group therapeutic_area & disease state -->
@@ -297,15 +329,28 @@
 										</select>
 									</div>
 
+									<div class="col-sm-2">
+										<span id="msg_indication_group" class="middle m10-left f-red"> *Please select indication group </span>
+									</div>
+
+								</div>
+
+								<div class="space-4"></div>
+
+								<div class="form-group">
 									<label class="col-sm-2 control-label no-padding-right" for="form-field-8"> <b>Indication*</b> </label>
 									<div class="col-sm-3">
 										<input type="text" id="form-field-8" placeholder="Indication" class="col-xs-12" />
+									</div>
+
+									<div class="col-sm-2">
+										<span id="msg_indication" class="middle m10-left f-red"> *Please input indication </span>
 									</div>
 								</div>
 								<!-- end from-group therapeutic_area & disease state -->
 
 								<div class="row p40-left-right">
-									<h4 class="header"><font color="8eb9d4"> <b>General Information</b> </font></h4>
+									<h4 class="header pb_create_header"> <b>General Information</b></h4>
 								</div>
 
 								<!-- start from-group playbook_status -->
@@ -319,6 +364,10 @@
 											<option value="Status2">Status 2</option>
 											<option value="Status3">Status 3</option>
 										</select>
+									</div>
+
+									<div class="col-sm-2">
+										<span id="msg_status" class="middle m10-left f-red"> *Please select status </span>
 									</div>
 								</div>
 								<!-- end from-group playbook_status -->
@@ -348,6 +397,18 @@
 										<input class="form-control date-picker" id="id-date-picker-3" type="text" data-date-format="dd-mm-yyyy"/>
 										<span class="input-group-addon"> <i class="icon-calendar bigger-110"></i> </span>
 									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-2"></div>
+									<div class="col-sm-2">
+										<span id="msg_start_end_date" class="middle m10-left f-red"> *Please input Start - End Date </span>
+									</div>
+									
+									<div class="col-sm-4"></div>
+									<div class="col-sm-2">
+										<span id="msg_start_end_date" class="middle m10-left f-red"> *Please input Expiration Date </span>
+									</div>
+									
 								</div>
 								<!-- end from-group start_date & end_date -->
 
@@ -443,7 +504,7 @@
 								<!-- end from-group display_activities -->
 
 								<div class="row p40-left-right">
-									<h4 class="header"><font color="8eb9d4"> <b>Advanced</b> </font></h4>
+									<h4 class="header pb_create_header"> <b>Advanced</b></h4>
 								</div>
 
 								<!-- start from-group legal_text -->
@@ -452,7 +513,11 @@
 
 									<div class="col-sm-8">
 										<textarea class="form-control" id="form-field-20" placeholder="Default Text">
-											</textarea>
+										</textarea>
+									</div>
+									
+									<div class="col-sm-2">
+										<span id="msg_legal_text" class="middle m10-left f-red"> *Please input legal text </span>
 									</div>
 								</div>
 								<!-- end from-group legal_text -->
@@ -466,6 +531,10 @@
 									<div class="col-sm-8">
 										<input type="text" id="form-field-21" placeholder="Legal Footer" class="col-xs-12" />
 									</div>
+									
+									<div class="col-sm-2">
+										<span id="msg_legal_footer" class="middle m10-left f-red"> *Please input legal footer </span>
+									</div>
 								</div>
 								<!-- end from-group legal_footer -->
 
@@ -478,6 +547,9 @@
 									<div class="col-sm-8">
 										<input type="text" id="form-field-22" placeholder="Client Legal Footer" class="col-xs-12" />
 									</div>
+									<div class="col-sm-2">
+										<span id="msg_legal_footer" class="middle m10-left f-red"> *Please input client legal footer </span>
+									</div>
 								</div>
 								<!-- end from-group client_legal_footer -->
 
@@ -487,8 +559,12 @@
 								<div class="form-group">
 									<label class="col-sm-2 control-label no-padding-right" for="form-field-23"> <b>Logo*</b> </label>
 
-									<div class="col-xs-3 f-12">
+									<div class="col-sm-8 f-12">
 										<input type="file" id="id-input-file-24"/>
+									</div>
+									
+									<div class="col-sm-2">
+										<span id="msg_legal_footer" class="middle m10-left f-red"> *Please upload logo image </span>
 									</div>
 								</div>
 
@@ -516,10 +592,6 @@
 		<script src="js/chosen.jquery.min.js"></script>
 		<script type="text/javascript">
 			jQuery(function($) {
-				$("#content_scroll").slimScroll({
-					height : '720px',
-					alwaysVisible : false
-				});
 
 				$(".chosen-select").chosen();
 

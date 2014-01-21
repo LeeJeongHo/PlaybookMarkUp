@@ -148,6 +148,10 @@ panel
     vertical-align: middle;
 }
 
+.pb_create_header{
+	color: #8eb9d4;
+}
+
 
 
 /*
@@ -158,6 +162,9 @@ panel
 	margin,padding 관련
 */
 
+.m0-left{
+	margin-left: 0px;
+}
 .m-10-left{
 	margin-left: -10px;
 }
@@ -271,8 +278,13 @@ panel
 .f-20{
 	font-size: 20px;
 }
+
 .f-24{
 	font-size: 24px;
+}
+.f-red{
+	color: #ff0000;
+
 }
 .btn{
 	border-radius: 4px;

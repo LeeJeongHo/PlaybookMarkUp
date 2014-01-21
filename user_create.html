@@ -14,7 +14,6 @@
 
 		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.slimscroll.min.js"></script>
 		<script src="js/html5shiv.js"></script>
 	</head>
 	<body>
@@ -69,7 +68,7 @@
 								</div>
 								<!-- endnavbar -->
 								<!-- Start content or form Area -->
-								<div id="content_scroll">
+								<div class="pb_vertical_scroll m0-left" style="height: 665px;">
 									<!-- start form area-->
 									<div style="width: 1180px;">
 										<form class="form-horizontal m5-top">
@@ -390,10 +389,6 @@
 		<script src="js/chosen.jquery.min.js"></script>
 		<script type="text/javascript">
 			jQuery(function($) {
-				$("#content_scroll").slimScroll({
-					height : '660px',
-					alwaysVisible : true
-				});
 
 				$(".chosen-select").chosen();
 
