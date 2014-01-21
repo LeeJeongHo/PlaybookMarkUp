@@ -14,7 +14,6 @@
 		
 		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.slimscroll.min.js"></script>
 		<script src="js/html5shiv.js"></script>
 	</head>
 	<body>
@@ -45,7 +44,10 @@
 							<p class="panel_title">
 								<a class="accordion-toggle" href="#collapseOne" data-parent="#accordion" data-toggle="collapse" style="color:#ffffff;"> Playbook </a>
 							</p>
-							<a class="btn btn-primary pull-right"> Create Playbook </a>
+							<button id="btn_create_playbook" class="btn btn-primary pull-right f-12">
+								<i class="icon-plus-sign"></i>
+								Playbook
+							</button>
 						</div>
 						<div class="panel-collapse collapse in" id="collapseOne">
 							<div class="panel-body accordion_body">
@@ -556,10 +558,6 @@
 		<script src="js/chosen.jquery.min.js"></script>
 		<script type="text/javascript">
 			jQuery(function($) {
-				$("#content_scroll").slimScroll({
-					height : '670px',
-					alwaysVisible : false
-				});
 				
 				$(".chosen-select").chosen();
 

@@ -41,7 +41,10 @@
 							<p class="panel_title">
 								<a class="accordion-toggle" href="#collapseOne" data-parent="#accordion" data-toggle="collapse" style="color:#ffffff;"> Playbook </a>
 							</p>
-							<a class="btn btn-primary pull-right"> Create Playbook </a>
+							<button id="btn_create_playbook" class="btn btn-primary pull-right f-12">
+								<i class="icon-plus-sign"></i>
+								Playbook
+							</button>
 						</div>
 						<div class="panel-collapse collapse in" id="collapseOne">
 							<div class="panel-body accordion_body">
@@ -206,6 +209,8 @@
 															<th colspan="2"> Description </th>
 
 															<th class="w-45"></th>
+
+															<th class="w-45"></th>
 														</tr>
 													</thead>
 
@@ -215,7 +220,7 @@
 
 															<td class="f-12" colspan="2"><label>Promotional events, market research, advocacy conferences and seminars.</label></td>
 
-															<td><a href="#"><i class="icon-trash f-16"></i> </a></td>
+															<td><a data-toggle="modal" data-target="#edit_important_date_type" href="#"><i class="icon-pencil f-16"></i></a><td><a href="#"><i class="icon-trash f-16"></i> </a></td>
 														</tr>
 
 														<tr>
@@ -223,35 +228,35 @@
 
 															<td class="f-12" colspan="2"><label>A deadline established within the organization, such as a launch meeting, promotions deadline, or trainin session.</label></td>
 
-															<td><a href="#"><i class="icon-trash f-16"></i> </a></td>
+															<td><a data-toggle="modal" data-target="#edit_important_date_type" href="#"><i class="icon-pencil f-16"></i></a><td><a href="#"><i class="icon-trash f-16"></i> </a></td>
 														</tr>
-														
+
 														<tr>
 															<td class="f-12" style="background: purple;"><font style="color: white;"><b>Manufacturing Critical Path</b></font></td>
 
 															<td class="f-12" colspan="2"><label>The date of an event that is necessary for initial production at launch, and for meeting near-term inventory needs.</label></td>
 
-															<td><a href="#"><i class="icon-trash f-16"></i> </a></td>
+															<td><a data-toggle="modal" data-target="#edit_important_date_type" href="#"><i class="icon-pencil f-16"></i></a><td><a href="#"><i class="icon-trash f-16"></i> </a></td>
 														</tr>
-														
+
 														<tr>
 															<td class="f-12" style="background: #ffff00;"><font style="color: red;"><b>Regulatory Critical Path</b></font></td>
 
 															<td class="f-12" colspan="2"><label>The date of an event that is related to maintaining compliance with regulatory bodies, both internal (i.e., compliance processes within the organization) or external (i.e., FDA)</label></td>
 
-															<td><a href="#"><i class="icon-trash f-16"></i> </a></td>
+															<td><a data-toggle="modal" data-target="#edit_important_date_type" href="#"><i class="icon-pencil f-16"></i></a><td><a href="#"><i class="icon-trash f-16"></i> </a></td>
 														</tr>
-														
+
 														<tr>
 															<td class="f-12" style="background: #0000ff;"><font style="color: white;"><b>Reimbuersement Critical Path</b></font></td>
 
 															<td class="f-12" colspan="2"><label>The date of an event that is necessary for gainining and maintaining proper coverage for treatment from public and private payers.</label></td>
 
-															<td><a href="#"><i class="icon-trash f-16"></i> </a></td>
+															<td><a data-toggle="modal" data-target="#edit_important_date_type" href="#"><i class="icon-pencil f-16"></i></a><td><a href="#"><i class="icon-trash f-16"></i> </a></td>
 														</tr>
 
 														<tr>
-															<td colspan="4"><a id="add_member" href="#add_ca_member"> +Add Important Date Types</a></td>
+															<td colspan="5"><a data-toggle="modal" data-target="#add_important_date_type" href="#"> +Add Important Date Types</a></td>
 														</tr>
 													</tbody>
 												</table>
@@ -285,6 +290,74 @@
 				</div>
 			</div>
 			<!--End Main-container-->
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="add_important_date_type" tabindex="-1" rold="dialog" aria=labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							&times;
+						</button>
+						<a href="#"><h4 class="modal-title" id="myModalLabel"> Add Important Date Types</h4></a>
+					</div>
+					<!-- Start Modal body -->
+					<div class="modal-body">
+						<div class="col-xs-12">
+							<form class="form-horizontal m5-top">
+								<!-- start from-group name -->
+								<div class="form-group">
+									<label class="col-sm-4 control-label no-padding-right" for="form-field-1"> <b>Name</b> </label>
+									<!-- start input area -->
+									<div class="col-sm-6">
+										<input type="text" id="form-field-1" placeholder="Name" class="col-xs-10" />
+										<!-- end radio_group_user_type -->
+									</div>
+									<!-- end input area -->
+								</div>
+								<!-- end from-group name -->
+								<div class="space-4"></div>
+
+								<!-- start from-group text_color -->
+								<div class="form-group">
+									<label class="col-sm-4 control-label no-padding-right" for="form-field-2"> <b>Text Color</b> </label>
+									<!-- start input area -->
+									<div class="col-sm-6">
+										<input type="text" id="form-field-2" placeholder="Text Color" class="col-xs-10" />
+										<!-- end radio_group_user_type -->
+									</div>
+									<!-- end input area -->
+								</div>
+								<!-- end from-group name -->
+								<div class="space-4"></div>
+
+								<!-- start from-group name -->
+								<div class="form-group">
+									<label class="col-sm-4 control-label no-padding-right" for="form-field-3"> <b>Background Color</b> </label>
+									<!-- start input area -->
+									<div class="col-sm-6">
+										<input type="text" id="form-field-3" placeholder="Backgound Color" class="col-xs-10" />
+										<!-- end radio_group_user_type -->
+									</div>
+									<!-- end input area -->
+								</div>
+								<!-- end from-group name -->
+								<div class="space-4"></div>
+							</form>
+						</div>
+					</div>
+					<!-- End Modal body -->
+					<div class="modal-footer" style="margin-top: 400px; background: white;">
+						<button type="button" class="btn btn-primary">
+							Save
+						</button>
+						<button type="button" class="btn btn-primary" data-dismiss="modal">
+							Cancel
+						</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
 		</div>
 
 		<script type="text/javascript">
