@@ -283,7 +283,7 @@
 									<div class=" col-xs-12">
 										<div class="table-wraper">
 											<div class="table-responsive pb_border" id="table-scroll">
-												<table class="table datatable boxborder">
+												<table class="table datatable boxborder table-hover">
 													<thead>
 														<tr role="row">
 															<th class="sorting_desc" colspan="2">Deliverables</th>
@@ -293,10 +293,11 @@
 															<th class="sorting" >Priority</th>
 															<th class="sorting" colspan="2">Responsibility</th>
 															<th class="sorting">Strategy</th>
-															<th role="columnheader" width="30"></th>
-															<th role="columnheader" width="30"></th>
-															<th role="columnheader" width="30"></th>
-															<th role="columnheader" width="30"></th>
+															<th role="columnheader" width="30"><i class="icon-comment"></i></th>
+															<th role="columnheader" width="30"><i class="icon-pencil f-16"></i></th>
+															<th role="columnheader" width="30"><i class="icon-trash f-16"></i></th>
+															<th role="columnheader" width="30"><i class="icon-zoom-in f-16"></i></th>
+															<th role="columnheader" width="30"><i class="icon-money f-16"></i></th>
 														</tr>
 													</thead>
 													<tbody>
@@ -314,6 +315,7 @@
 															<td></td>
 															<td></td>
 															<td></td>
+															<td></td>
 														</tr>
 														<tr id="collapseme1">
 															<td colspan="2" class="table_depth1">
@@ -325,6 +327,11 @@
 															<td>HIGH</td>
 															<td colspan="2">Anne, Marry</td>
 															<td></td>
+															<td>
+																<a id="message1" title="comments" href="#">
+																	<i class="icon-comment"></i>
+																</a>
+															</td>
 															<td>
 																<a href="#" data-toggle="modal" data-target="#myModal"><i class="icon-pencil f-16"></i></a>
 															</td>
@@ -348,7 +355,7 @@
 															<td><input id="form-field-5" class="input100" type="text" placeholder=""></td>
 															<td colspan="2"><input id="form-field-6" class="input100" type="text" placeholder=""></td>
 															<td><input id="form-field-7" class="input100" type="text" placeholder=""></td>
-															<td colspan="4"><button class="btn btn-sm btn-primary">Save</button></td>
+															<td colspan="5"><button class="btn btn-sm btn-primary">Save</button></td>
 														</tr>
 														<tr>
 															<td colspan="2">02. Market Reaserch</td>
@@ -362,6 +369,7 @@
 															<td></td>
 															<td></td>
 															<td></td>
+															<td></td>
 														</tr>
 													</tbody>
 												</table>
@@ -369,7 +377,7 @@
 										</div>
 										<div id="activity" class="table-responsive collapse">
 											<h3>Activity <a href="#"><i class="icon-plus-sign"></i></a></h3> 
-											<table class="table datatable boxborder table-bordered">
+											<table class="table datatable boxborder table-bordered table-hover">
 												<thead>
 													<tr>
 														<th class="sorting">Activity</th>
@@ -421,7 +429,7 @@
 										<div id="budget" class="table-responsive collapse">
 											<h3>Budget</h3>
 											<span class="pull-right m10-right m10-bottom"><a href="#">Edit</a></span>
-											<table class="table datatable table-bordered">
+											<table class="table datatable table-bordered table-hover">
 												<thead>
 													<tr>
 														<th></th>
@@ -959,7 +967,7 @@
 					height : '670px',
 					alwaysVisible : false
 				});
-
+				$("#message1").tooltip();
 			});
 		</script>
 	</body>
