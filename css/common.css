@@ -202,6 +202,9 @@ panel
 .m20-bottom{
 	margin-bottom: 20px;
 }
+.m20-top{
+	margin-top: 20px;
+}
 .m15-top{
 	margin-top: 15px;
 }
@@ -213,14 +216,18 @@ panel
 	margin-left: 15px;
 	margin-right: 15px;	
 }
-.m800-top{
-	margin-top: 800px;
+
+.m90per{
+	margin-top: 90%;
 }
 .p0-top{
 	padding-top: 0px;
 }
 .p0-right{
 	padding-right: 0px;
+}
+.p0-left{
+	padding-left: 0px;
 }
 .p0-all{
 	padding: 0px !important;
@@ -294,7 +301,9 @@ panel
 }
 .modal-body{
 	height: auto;
+	overflow-y : visible;
 	padding: 0;
+	z-index: 5000;
 }
 .modal-body hr{
 	margin-bottom: 10px;
@@ -480,4 +489,18 @@ hr{
 }
 .chosen-container{
 	width:100% !important;
+}
+.modal-footer {
+    background-color: #ffffff;
+    border-top-color: #ffffff;
+    box-shadow: none;
+    padding-bottom: 14px;
+    padding-top: 12px;
+    border-top: none;
+}
+.border-right{
+	border-right: 1px solid #dddddd;
+}
+.dependency_input{
+	
 }
