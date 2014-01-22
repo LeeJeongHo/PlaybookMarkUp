@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Playbook / common_layout</title>
+		<title>Playbook / subteam_create</title>
 		<meta http-equiv="Content_type" content="text/html; charset=UTF-8" />
 		<!-- require font-awesome.css file and js/fuelux/fuelux.tree.min.js , jquery-2.0.3.min.js -->
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -229,12 +229,13 @@
 								<form class="form-horizontal m10-top">
 									<!-- start from-group subteam_name -->
 									<div class="form-group">
-										<label class="col-sm-2 control-label no-padding-right" for="form-field-1"> <b>Subteam Name*</b> </label>
+										<label class="col-sm-2 p45-left" for="form-field-1"> <b>Subteam Name*</b> </label>
 
 										<!-- start input area -->
 										<div class="col-sm-6">
 											<!-- start input subteam_name -->
 											<input type="text" id="form-field-1" placeholder="Subteam Name" class="col-xs-10 col-sm-6" />
+											<span id="msg_subteam_name" class="middle m10-left f-red"> *Error text </span>
 											<!-- end input subteam_name -->
 										</div>
 										<!-- end input area -->
@@ -245,12 +246,13 @@
 
 									<!-- start from-group abbreviation -->
 									<div class="form-group">
-										<label class="col-sm-2 control-label no-padding-right" for="form-field-2"> <b>Abbreviation*</b> </label>
+										<label class="col-sm-2 p45-left" for="form-field-2"> <b>Abbreviation*</b> </label>
 
 										<!-- start input area -->
 										<div class="col-sm-6">
 											<!-- start input abbreviation -->
 											<input type="text" id="form-field-2" placeholder="Abbreviation" class="col-xs-10 col-sm-6" />
+											<span id="msg_abbreviation" class="middle m10-left f-red"> *Error text </span>
 											<!-- end input abbreviation -->
 										</div>
 										<!-- end input area -->
@@ -261,11 +263,14 @@
 
 									<!-- start from-group subteam_lead -->
 									<div class="form-group">
-										<div class="row">
-											<label class="col-sm-2 control-label no-padding-right" for="form-field-3"> <b>Subteam Lead*</b> </label>
+										<div class="row p10-left">
+											<label class="col-sm-2 p45-left" for="form-field-3"> <b>Subteam Lead*</b> </label>
 										</div>
 										<!-- start input area -->
 										<div id="form-field-3" class="p40-left-right">
+											<div id="msg_leader" class="f-red f-12">
+												*Please select leader.
+											</div>
 											<div class="table-responsive">
 												<table class="table table-bordered table-hover datatable">
 													<thead>
@@ -328,11 +333,14 @@
 
 									<!-- start from-group subteam_co_lead -->
 									<div class="form-group">
-										<div class="row">
-											<label class="col-sm-2 control-label no-padding-right" for="form-field-4"> <b>Subteam Co-Lead*</b> </label>
+										<div class="row p10-left">
+											<label class="col-sm-2 p45-left" for="form-field-4"> <b>Subteam Co-Lead*</b> </label>
 										</div>
 										<!-- start input area -->
 										<div id="form-field-4" class="p40-left-right">
+											<div id="msg_co_leader" class="f-red f-12">
+												*Please select co-leader.
+											</div>
 											<div class="table-responsive">
 												<table class="table table-bordered table-hover datatable">
 													<thead>
@@ -399,11 +407,14 @@
 
 									<!-- start from-group subteam_member -->
 									<div class="form-group">
-										<div class="row">
-											<label class="col-sm-2 control-label no-padding-right" for="form-field-5"> <b>Team Member*</b> </label>
+										<div class="row p10-left">
+											<label class="col-sm-2 p45-left" for="form-field-5"> <b>Team Member*</b> </label>
 										</div>
 										<!-- start input area -->
 										<div id="form-field-5" class="p40-left-right">
+											<div id="msg_leader" class="f-red f-12">
+												*Please select member.
+											</div>
 											<div class="table-responsive">
 												<table class="table table-bordered table-hover datatable">
 													<thead>
@@ -496,7 +507,7 @@
 
 									<!-- start from-group lock_original_dates -->
 									<div class="form-group">
-										<label class="col-sm-2 control-label no-padding-right" for="form-field-6"> <b>Lock Original Dates?</b> </label>
+										<label class="col-sm-2 p45-left" for="form-field-6"> <b>Lock Original Dates?</b> </label>
 
 										<!-- start input area -->
 										<div class="col-sm-6">
@@ -512,7 +523,7 @@
 
 									<!-- start from-group hide_original_dates -->
 									<div class="form-group">
-										<label class="col-sm-2 control-label no-padding-right" for="form-field-7"> <b>Hide Original Dates?</b> </label>
+										<label class="col-sm-2 p45-left" for="form-field-7"> <b>Hide Original Dates?</b> </label>
 
 										<!-- start input area -->
 										<div class="col-sm-6">
