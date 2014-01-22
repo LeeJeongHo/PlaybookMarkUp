@@ -280,20 +280,28 @@
 									</div>
 								</div>
 								
-								<!-- start content area -->
-								<div class="row col-xs-12 scroll_box pb_vertical_scrill" id="content_scroll">
-									<div class="col-xs-12">
+								<!-- start content area --> 
+								<div class="row col-xs-12 scroll_box pb_vertical_scrill p0-right">
+									<div class="row p10-top">
+										<ul class="line_ul">
+											<li><a href="#"><i class="icon-circle-arrow-up f-20"></i></a></li>
+											<li><a href="#"><i class="icon-circle-arrow-down f-20"></i></a></li>
+											<li><a href="#"><i class="icon-plus-sign f-20"></i></a></li>
+											<li><a href="#"><i class="icon-remove-sign f-20"></i></a></li>
+										</ul>
+									</div>
+									<div class="col-xs-12 p0-right">
 										<div class="table-wraper">
 											<div class="table-responsive pb_border">
 												<table class="table datatable boxborder table-hover">
 													<thead>
 														<tr role="row">
-															<th class="sorting_desc" colspan="3">Deliverables</th>
-															<th class="sorting_asc">Start Date</th>
-															<th class="sorting" >End Date</th>
+															<th class="sorting_desc" width="300">Deliverables</th>
+															<th class="sorting_asc" width="100">Start Date</th>
+															<th class="sorting" width="100">End Date</th>
 															<th class="sorting" >Status</th>
 															<th class="sorting">Priority</th>
-															<th class="sorting" colspan="2">Responsibility</th>
+															<th class="sorting" width="250">Responsibility</th>
 															<th class="sorting">Strategy</th>
 															<th role="columnheader" width="30"><i class="icon-comment"></i></th>
 															<th role="columnheader" width="30"><i class="icon-pencil f-16"></i></th>
@@ -302,7 +310,7 @@
 													</thead>
 													<tbody>
 														<tr class="tr">
-															<td colspan="3">
+															<td >
 																<i id="depth1" class="icon-plus"></i>
 																01. Marketing
 															</td>
@@ -310,14 +318,14 @@
 															<td></td>
 															<td></td>
 															<td></td>
-															<td colspan="2"></td>
+															<td></td>
 															<td></td>
 															<td></td>
 															<td></td>
 															<td></td>
 														</tr>
 														<tr id="collapseme1" class="collapse tr2">
-															<td colspan="3" class="table_depth1">
+															<td  class="table_depth1">
 																<i id="depth2" class="icon-plus"></i>
 																Marketing Core Deliverables
 															</td>
@@ -325,19 +333,19 @@
 															<td></td>
 															<td></td>
 															<td></td>
-															<td colspan="2"></td>
+															<td ></td>
 															<td></td>
 															<td></td>
 															<td></td>
 															<td></td>
 														</tr>
 														<tr id="collapseme2" class="collapse">
-															<td colspan="3" class="table_depth2">Post-Launch Trade Show Graphics - US</td>
+															<td  class="table_depth2">Post-Launch Trade Show Graphics - US</td>
 															<td>06-MAY-2013</td>
 															<td>06-MAY-2013</td>
 															<td>Unfunded</td>
 															<td>HIGH</td>
-															<td colspan="2">Anne, Marry</td>
+															<td >Anne, Marry</td>
 															<td></td>
 															<td>
 																<a id="message1" data-placement="left" title="commentscommentscommentscommentscommentscommentscommentscommentscommentscommentscommentscommentscommentscommentscommentscommentscommentscommentscommentscommentscommentscommentscommentscommentscommentscommentscommentscommentscommentscommentscommentscommentscomments" href="#">
@@ -350,12 +358,12 @@
 															<td><a href="#"><i class="icon-trash f-16"></i></a></td>
 														</tr>
 														<tr id="collapseme3" class="collapse">
-															<td colspan="3" class="table_depth2">Message Platform Development</td>
+															<td  class="table_depth2">Message Platform Development</td>
 															<td>06-MAY-2013</td>
 															<td>06-MAY-2013</td>
 															<td>Completed</td>
 															<td>Launch Critical</td>
-															<td colspan="2">Anne, Marry</td>
+															<td >Anne, Marry</td>
 															<td></td>
 															<td></td>
 															<td>
@@ -366,24 +374,26 @@
 															</td>
 														</tr>
 														<tr>
-															<td colspan="3">02. Market Reaserch</td>
+															<td >
+																<i id="depth1" class="icon-plus"></i>02. Market Reaserch
+															</td>
 															<td></td>
 															<td></td>
 															<td></td>
 															<td></td>
-															<td colspan="2"></td>
+															<td></td>
 															<td></td>
 															<td></td>
 															<td></td>
 															<td></td>
 														</tr>
 														<tr>
-															<td colspan="3"><input id="form-field-1" class="input100" type="text"></td>
+															<td><input id="form-field-1" class="input100" type="text"></td>
 															<td><input id="form-field-2" class="input100" type="text"></td>
 															<td><input id="form-field-3" class="input100" type="text"></td>
 															<td>
 																<select class="input100">
-																	<option value="">select Status</option>
+																	<option value="">Select Status</option>
 																	<option value="">Not Initiated</option>
 																	<option value="">On Track</option>
 																	<option value="">Delayed</option>
@@ -395,7 +405,7 @@
 															</td>
 															<td>
 																<select class="input100">
-																	<option value="">select Priority</option>
+																	<option value="">Select Priority</option>
 																	<option value="">TBD</option>
 																	<option value="">LOW</option>
 																	<option value="">MEDIUM</option>
@@ -403,9 +413,9 @@
 																	<option value="">LAUNCH CRITICAL</option>
 																</select>
 															</td>
-															<td colspan="2"><input id="form-field-6" class="input100" type="text"></td>
+															<td ><input id="form-field-6" class="input100" type="text"></td>
 															<td><input id="form-field-7" class="input100" type="text"></td>
-															<td colspan="3"><button class="btn btn-sm btn-primary">Save</button></td>
+															<td ><button class="btn btn-sm btn-primary">Save</button></td>
 														</tr>
 													</tbody>
 												</table>
@@ -803,7 +813,7 @@
 											<div class="row form-group">
 												<h5 class="col-sm-2 control-label no-padding-right" for="form-field-2"><b>Strategy</b></h5>
 												<div class="col-xs-12">
-													<select class="col-xs-12 chosen-select span7" id="form-field-select-2" style="width: 200px;">
+													<select class="chosen-select" id="form-field-select-2">
 														<option value="">Strategy...</option>
 														<option value="Strategy1">Strategy 1</option>
 														<option value="Strategy2">Strategy 2</option>

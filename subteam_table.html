@@ -9,6 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="css/common.css">
 		<link rel="stylesheet" type="text/css" href="css/1280_10_10.css">
 		<link rel="stylesheet" type="text/css" href="css/uncompressed/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="css/chosen.css"/>
 		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/html5shiv.js"></script>
@@ -281,8 +282,16 @@
 								</div>
 								
 								<!-- start content area -->
-								<div class="row col-xs-12 pb_vertical_scroll m0-left" style="height: 665px;">
-									<div class=" col-xs-12">
+								<div class="row col-xs-12 scroll_box pb_vertical_scroll p0-right">
+									<div class="row p10-top">
+										<ul class="line_ul">
+											<li><a href="#"><i class="icon-circle-arrow-up f-20"></i></a></li>
+											<li><a href="#"><i class="icon-circle-arrow-down f-20"></i></a></li>
+											<li><a href="#"><i class="icon-plus-sign f-20"></i></a></li>
+											<li><a href="#"><i class="icon-remove-sign f-20"></i></a></li>
+										</ul>
+									</div>
+									<div class="col-xs-12 p0-right">
 										<div class="table-wraper">
 											<div class="table-responsive pb_border">
 												<table class="table datatable boxborder table-hover">
@@ -355,6 +364,7 @@
 															<td><input id="form-field-3" class="input100" type="text" placeholder=""></td>
 															<td>
 																<select class="input100">
+																	<option value="">Select Status</option>
 																	<option value="">Not Initiated</option>
 																	<option value="">On Track</option>
 																	<option value="">Delayed</option>
@@ -366,6 +376,7 @@
 															</td>
 															<td>
 																<select class="input100">
+																	<option value="">Select Priority</option>
 																	<option value="">TBD</option>
 																	<option value="">LOW</option>
 																	<option value="">MEDIUM</option>
@@ -373,9 +384,20 @@
 																	<option value="">LAUNCH CRITICAL</option>
 																</select>
 															</td>
-															<td colspan="2"><input id="form-field-6" class="input100" type="text" placeholder=""></td>
+															<td colspan="2">
+																<div class="col-xs-12 p0-all">
+																	<select class="col-xs-12 chosen-select" id="form-field-select-2" data-placeholder="Choose Responsibility">
+																		<option value="">Responsibility 1</option>
+																		<option value="">Responsibility 2</option>
+																		<option value="">Responsibility 3</option>
+																	</select>
+																</div>
+															</td>
 															<td><input id="form-field-7" class="input100" type="text" placeholder=""></td>
-															<td colspan="5"><button class="btn btn-sm btn-primary">Save</button></td>
+															<td colspan="5">
+																<button class="btn btn-sm btn-primary">Save</button>
+																<button class="btn btn-sm btn-primary">cancel</button>
+															</td>
 														</tr>
 														<tr>
 															<td colspan="2">02. Market Reaserch</td>
@@ -397,54 +419,82 @@
 										</div>
 										<div id="activity" class="table-responsive collapse">
 											<h3>Activity <a href="#"><i class="icon-plus-sign"></i></a></h3> 
-											<table class="table datatable boxborder table-bordered table-hover">
-												<thead>
-													<tr>
-														<th class="sorting">Activity</th>
-														<th class="sorting">Start Date</th>
-														<th class="sorting">End Date</th>
-														<th class="sorting">Status</th>
-														<th class="sorting">FTE</th>
-														<th>Comments</th>
-														<th></th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Creative Concepts (Phase 2)</td>
-														<td>06-MAY-2013</td>
-														<td>06-MAY-2013</td>
-														<td>Unfunded</td>
-														<td>Undefined</td>
-														<td></td>
-														<td><a href="#"><i class="icon-pencil f-16"></i></a>
-															<a href="#"><i class="icon-trash f-16"></i></a>
-														</td>
-													</tr>
-													<tr>
-														<td>Med Info Monthly Radars (Phase 2)</td>
-														<td>06-MAY-2013</td>
-														<td>06-MAY-2013</td>
-														<td>Completed</td>
-														<td>Undefined</td>
-														<td></td>
-														<td><a href="#"><i class="icon-pencil f-16"></i></a>
-															<a href="#"><i class="icon-trash f-16"></i></a>
-														</td>
-													</tr>
-													<tr>
-														<td>Publication Strategy</td>
-														<td>16-JUL-2013</td>
-														<td>16-JUL-2013</td>
-														<td>Delayed</td>
-														<td>Undefined</td>
-														<td></td>
-														<td><a href="#"><i class="icon-pencil f-16"></i></a>
-															<a href="#"><i class="icon-trash f-16"></i></a>
-														</td>
-													</tr>
-												</tbody>
-											</table>
+											<form>
+												<table class="table datatable boxborder table-bordered table-hover">
+													<thead>
+														<tr>
+															<th class="sorting" width="250">Activity</th>
+															<th class="sorting" width="100">Start Date</th>
+															<th class="sorting" width="100">End Date</th>
+															<th class="sorting" width="100">Status</th>
+															<th class="sorting">FTE</th>
+															<th>Comments</th>
+															<th width="30"></th>
+															<th width="30"></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Creative Concepts (Phase 2)</td>
+															<td>06-MAY-2013</td>
+															<td>06-MAY-2013</td>
+															<td>Unfunded</td>
+															<td>Undefined</td>
+															<td></td>
+															<td><a href="#"><i class="icon-pencil f-16"></i></a></td>
+															<td><a href="#"><i class="icon-trash f-16"></i></a></td>
+														</tr>
+														<tr>
+															<td>Med Info Monthly Radars (Phase 2)</td>
+															<td>06-MAY-2013</td>
+															<td>06-MAY-2013</td>
+															<td>Completed</td>
+															<td>Undefined</td>
+															<td></td>
+															<td><a href="#"><i class="icon-pencil f-16"></i></a></td>
+															<td><a href="#"><i class="icon-trash f-16"></i></a></td>
+														</tr>
+														<tr>
+															<td>Publication Strategy</td>
+															<td>16-JUL-2013</td>
+															<td>16-JUL-2013</td>
+															<td>Delayed</td>
+															<td>Undefined</td>
+															<td></td>
+															<td><a href="#"><i class="icon-pencil f-16"></i></a></td>
+															<td><a href="#"><i class="icon-trash f-16"></i></a></td>
+														</tr>
+														<tr>
+															<td><input id="form-field-1" class="input100" type="text"></td>
+															<td><input id="form-field-2" class="input100" type="text"></td>
+															<td><input id="form-field-3" class="input100" type="text"></td>
+															<td>
+																<select class="input100">
+																	<option value="">Select Status</option>
+																	<option value="">Not Initiated</option>
+																	<option value="">On Track</option>
+																	<option value="">Delayed</option>
+																	<option value="">Completed</option>
+																	<option value="">Canceled</option>
+																	<option value="">At Risk</option>
+																	<option value="">Unfunded</option>
+																</select>
+															</td>
+															<td>
+																<div class="col-xs-12 p0-all">
+																	<select class="col-xs-12 chosen-select" id="form-field-select-2" data-placeholder="Choose FTE">
+																		<option value="">FTE 1</option>
+																		<option value="">FTE 2</option>
+																		<option value="">FTE 3</option>
+																	</select>
+																</div>
+															</td>
+															<td></td>
+															<td colspan="2"></td>
+														</tr>
+													</tbody>
+												</table>
+											</form>
 										</div>
 										<div id="budget" class="table-responsive collapse">
 											<h3>Budget</h3>
@@ -535,7 +585,7 @@
 									<h3 class="panel-title">Filters</h3>
 								</div>
 								<!-- End Head -->
-								<div class="pb_vertical_scroll m0-left" style="height: 675px;">
+								<div class="scroll_box pb_vertical_scroll m0-left">
 									<!-- Start filter tree1 -->
 									<div id="filter_status" class="tree tree-selectable">
 										<!-- folder1 Start -->
@@ -953,6 +1003,7 @@
 			</div><!-- /.modal-dialog -->
 		</div>
 		<!-- End Modal -->
+		<script src="js/chosen.jquery.min.js"></script>
 		<script type="text/javascript">
 			jQuery(function($) {
 				$(".tr").click(function() {
@@ -986,6 +1037,8 @@
 				});
 				
 				$("#message1").tooltip();
+				$(".chosen-select").chosen();
+				$(".chosen-select").chosen({ width: "100%" });
 			});
 		</script>
 	</body>
