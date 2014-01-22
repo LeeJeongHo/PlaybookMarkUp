@@ -1,0 +1,405 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Playbook / Risk/Issue</title>
+		<meta http-equiv="Content_type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/ace.min.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+		<link rel="stylesheet" type="text/css" href="css/1280_10_10.css">
+		<link rel="stylesheet" type="text/css" href="css/uncompressed/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="css/chosen.css"/>
+		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/html5shiv.js"></script>
+	</head>
+	<body>
+		<div id="container" class="row col-xs-12 p0-all">
+			<!-- Start navbar -->
+			<div id="header" class="row" >
+				<img src="img/logo.png" class="navlogo">
+				<ul class="line_ul pull-right m15-top">
+					<li>
+						<a href="#">Menu1</a>
+					</li>
+					<li>
+						<a href="#">Menu2</a>
+					</li>
+					<li>
+						<a href="#">Menu2</a>
+					</li>
+				</ul>
+			</div>
+			<!-- End navbar -->
+			<!-- Start main container -->
+			<div id="main-container" class="row m10-top" >
+				<!--Start sidebar-->
+				<div id="accordion" class="panel-group col-xs-2 p0-all">
+					<div class="panel-default panel">
+						<div class="panel-head clearfix">
+							<p class="panel_title">
+								<a class="accordion-toggle" href="#collapseOne" data-parent="#accordion" data-toggle="collapse" style="color:#ffffff;">
+								 	Playbook 
+								</a>
+							</p>
+							<button id="btn_create_playbook" class="btn btn-primary pull-right f-12">
+								<i class="icon-plus-sign"></i>
+								Playbook
+							</button>
+						</div>
+						<div class="panel-collapse collapse in" id="collapseOne">
+							<div class="panel-body accordion_body">
+								<div id="left_navi" class="tree tree-selectable">
+									<!-- folder1 Start -->
+									<div class="tree-folder pb_display_b">
+										<div class="tree-folder-header">
+											<i class="icon-minus"></i>
+											<div class="tree-folder-name">
+												PowerPharma -  Product X
+											</div>
+										</div>
+										<div class="tree-folder-content">
+											<div class="tree-folder-header">
+												<i class="icon-minus"></i>
+												<div class="tree-folder-name">
+													AAA001.US <a href="#"><i class="icon-plus-sign f-16"></i></a>
+												</div>
+											</div>
+											<div class="tree-folder-content">
+												<div class="tree-item tree-selected">
+													<i class="icon-ok"></i>
+													<div class="tree-item-name">
+														01.Marketing
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														02.Market Research
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														03.Sales
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														04.Clinical
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														05.Medical Affairs
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														06.Market Access
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+									<!-- folder1 end -->
+									<div class="tree-folder">
+										<div class="tree-folder-header">
+											<i class="icon-minus"></i>
+											<div class="tree-folder-name">
+												Amgen - Denosumab
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel-default panel">
+						<div class="panel-head clearfix">
+							<p class="panel_title">
+								<a class="accordion-toggle collapsed" href="#collapseTwo" data-parent="#accordion" data-toggle="collapse" style="color:#ffffff;">
+								 	Report 
+								</a>
+							</p>
+						</div>
+						<div class="panel-collapse collapse" id="collapseTwo">
+							<div class="panel-body accordion_body">
+								<ul class="list_none">
+									<li>
+										<a>- Flash Report</a>
+									</li>
+									<li>
+										<a>- Activity</a>
+									</li>
+									<li>
+										<a>- Dependency Report</a>
+									</li>
+									<li>
+										<a>- Budget Report</a>
+									</li>
+								</ul>
+							</div>
+						</div>			
+					</div>
+				</div>
+				<!--End Sidebar-->
+				<div id="contents" class="col-xs-10 p0-all">
+
+					<div id="nav" class="panel-head m10-left">
+						<h4 class="pb_content_header">US - Vaccines</h4>
+					</div>
+
+					<!-- Start Contents area -->
+					<div id="content" class="col-xs-12 pb_content_layout">
+						<div class="col-xs-12 panel-default pb_main_contents_large">
+							<div class="panel-heading clearfix">
+								<h3 class="panel-title col-xs-3">Risk / Issues</h3>
+								<div class="pull-right">
+									<button class="btn btn-sm btn-primary">Export Table</button>
+								</div>
+							</div>
+							<!-- Start contents -->
+							<div class="col-xs-12 p10-top scroll_box pb_vertical_scroll">
+								<form>
+									<div class="m10-bottom">
+										<label><b>01.Marketing</b></label>
+										<table class="table table-bordered table-hover">
+											<thead>
+												<tr>
+													<th width="100">Priority</th>
+													<th>Risk / Issue</th>
+													<th>Risk Mitigation Startegy</th>
+													<th>Owner</th>
+													<th width="50"><i class="icon-pencil f-14"></i></th>
+													<th width="50"><i class="icon-trash f-14"></i></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>High</td>
+													<td>Hiring and on boarding of RHEUM sales force</td>
+													<td>dddd1</td>
+													<td>Anne, Marry</td>
+													<td><a href="#"><i class="icon-pencil f-14"></i></a></td>
+													<td><a href="#"><i class="icon-trash f-14"></i></a></td>
+												</tr>
+												<tr>
+													<td>High</td>
+													<td>Hiring and on boarding of RHEUM sales force</td>
+													<td>dddd1</td>
+													<td>Anne, Marry</td>
+													<td><a href="#"><i class="icon-pencil f-14"></i></a></td>
+													<td><a href="#"><i class="icon-trash f-14"></i></a></td>
+												</tr>
+												<tr>
+													<td>High</td>
+													<td>Hiring and on boarding of RHEUM sales force</td>
+													<td>dddd1</td>
+													<td>Anne, Marry</td>
+													<td><a href="#"><i class="icon-pencil f-14"></i></a></td>
+													<td><a href="#"><i class="icon-trash f-14"></i></a></td>
+												</tr>
+												<tr>
+													<td>
+														<select class="input100">
+															<option value="">Select Priority</option>
+															<option value="">TBD</option>
+															<option value="">LOW</option>
+															<option value="">MEDIUM</option>
+															<option value="">HIGH</option>
+															<option value="">LAUNCH CRITICAL</option>
+														</select>
+													</td>
+													<td>
+														<input id="form-field-1" class="input100" type="text">
+													</td>
+													<td>
+														<input id="form-field-2" class="input100" type="text">
+													</td>
+													<td>
+														<select class="chosen-select" id="form-field-select-2" data-placeholder="Select to Owner">
+															<option value="">Owner...</option>
+															<option value="">Owner1</option>
+															<option value="">Owner2</option>
+															<option value="">Owner3</option>
+														</select>
+													</td>
+													<td colspan="2">
+														<button class="btn btn-sm btn-primary"><i class="icon-ok"></i></button>
+														<button class="btn btn-sm btn-danger"><i class="icon-reply"></i></button>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="m10-bottom">
+										<label><b>02.Market Research</b></label>
+										<table class="table table-bordered table-hover">
+											<thead>
+												<tr>
+													<th width="100">Priority</th>
+													<th>Risk / Issue</th>
+													<th>Risk Mitigation Startegy</th>
+													<th>Owner</th>
+													<th width="50"><i class="icon-pencil f-14"></i></th>
+													<th width="50"><i class="icon-trash f-14"></i></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>High</td>
+													<td>Hiring and on boarding of RHEUM sales force</td>
+													<td>dddd1</td>
+													<td>Anne, Marry</td>
+													<td><a href="#"><i class="icon-pencil f-14"></i></a></td>
+													<td><a href="#"><i class="icon-trash f-14"></i></a></td>
+												</tr>
+												<tr>
+													<td>High</td>
+													<td>Hiring and on boarding of RHEUM sales force</td>
+													<td>dddd1</td>
+													<td>Anne, Marry</td>
+													<td><a href="#"><i class="icon-pencil f-14"></i></a></td>
+													<td><a href="#"><i class="icon-trash f-14"></i></a></td>
+												</tr>
+												<tr>
+													<td>High</td>
+													<td>Hiring and on boarding of RHEUM sales force</td>
+													<td>dddd1</td>
+													<td>Anne, Marry</td>
+													<td><a href="#"><i class="icon-pencil f-14"></i></a></td>
+													<td><a href="#"><i class="icon-trash f-14"></i></a></td>
+												</tr>
+												<tr>
+													<td>High</td>
+													<td>Hiring and on boarding of RHEUM sales force</td>
+													<td>dddd1</td>
+													<td>Anne, Marry</td>
+													<td><a href="#"><i class="icon-pencil f-14"></i></a></td>
+													<td><a href="#"><i class="icon-trash f-14"></i></a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="m10-bottom">
+										<label><b>03.Sales</b></label>
+										<table class="table table-bordered table-hover">
+											<thead>
+												<tr>
+													<th width="100">Priority</th>
+													<th>Risk / Issue</th>
+													<th>Risk Mitigation Startegy</th>
+													<th>Owner</th>
+													<th width="50"><i class="icon-pencil f-14"></i></th>
+													<th width="50"><i class="icon-trash f-14"></i></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>High</td>
+													<td>Hiring and on boarding of RHEUM sales force</td>
+													<td>dddd1</td>
+													<td>Anne, Marry</td>
+													<td><a href="#"><i class="icon-pencil f-14"></i></a></td>
+													<td><a href="#"><i class="icon-trash f-14"></i></a></td>
+												</tr>
+												<tr>
+													<td>High</td>
+													<td>Hiring and on boarding of RHEUM sales force</td>
+													<td>dddd1</td>
+													<td>Anne, Marry</td>
+													<td><a href="#"><i class="icon-pencil f-14"></i></a></td>
+													<td><a href="#"><i class="icon-trash f-14"></i></a></td>
+												</tr>
+												<tr>
+													<td>High</td>
+													<td>Hiring and on boarding of RHEUM sales force</td>
+													<td>dddd1</td>
+													<td>Anne, Marry</td>
+													<td><a href="#"><i class="icon-pencil f-14"></i></a></td>
+													<td><a href="#"><i class="icon-trash f-14"></i></a></td>
+												</tr>
+												<tr>
+													<td>High</td>
+													<td>Hiring and on boarding of RHEUM sales force</td>
+													<td>dddd1</td>
+													<td>Anne, Marry</td>
+													<td><a href="#"><i class="icon-pencil f-14"></i></a></td>
+													<td><a href="#"><i class="icon-trash f-14"></i></a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="m10-bottom">
+										<label><b>04.Marketing</b></label>
+										<table class="table table-bordered table-hover">
+											<thead>
+												<tr>
+													<th width="100">Priority</th>
+													<th>Risk / Issue</th>
+													<th>Risk Mitigation Startegy</th>
+													<th>Owner</th>
+													<th width="50"><i class="icon-pencil f-14"></i></th>
+													<th width="50"><i class="icon-trash f-14"></i></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>High</td>
+													<td>Hiring and on boarding of RHEUM sales force</td>
+													<td>dddd1</td>
+													<td>Anne, Marry</td>
+													<td><a href="#"><i class="icon-pencil f-14"></i></a></td>
+													<td><a href="#"><i class="icon-trash f-14"></i></a></td>
+												</tr>
+												<tr>
+													<td>High</td>
+													<td>Hiring and on boarding of RHEUM sales force</td>
+													<td>dddd1</td>
+													<td>Anne, Marry</td>
+													<td><a href="#"><i class="icon-pencil f-14"></i></a></td>
+													<td><a href="#"><i class="icon-trash f-14"></i></a></td>
+												</tr>
+												<tr>
+													<td>High</td>
+													<td>Hiring and on boarding of RHEUM sales force</td>
+													<td>dddd1</td>
+													<td>Anne, Marry</td>
+													<td><a href="#"><i class="icon-pencil f-14"></i></a></td>
+													<td><a href="#"><i class="icon-trash f-14"></i></a></td>
+												</tr>
+												<tr>
+													<td>High</td>
+													<td>Hiring and on boarding of RHEUM sales force</td>
+													<td>dddd1</td>
+													<td>Anne, Marry</td>
+													<td><a href="#"><i class="icon-pencil f-14"></i></a></td>
+													<td><a href="#"><i class="icon-trash f-14"></i></a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</form>
+							</div>
+							<!-- End contents -->
+							
+						</div>
+					</div>
+					<!-- End Contents area -->
+				</div>
+			</div>
+			<!--End Main-container-->
+		</div>
+		<script src="js/chosen.jquery.min.js"></script>
+		<script type="text/javascript">
+			jQuery(function($) {
+				$(".chosen-select").chosen();
+			});
+		</script>
+	</body>
+</html>

@@ -232,6 +232,9 @@ panel
 .p0-all{
 	padding: 0px !important;
 }
+.p2-top{
+	padding-top: 2px;
+}
 .p5-all{
 	padding: 5px;
 }
@@ -434,7 +437,7 @@ form{
 	font-size: 12px;
 }
 form label{
-	font-size:12px;
+	font-size:14px;
 }
 body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom {
     margin: 0 auto;
@@ -447,6 +450,9 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 	background: -o-linear-gradient(#5eb6ff, #249cff) !important; /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient(#5eb6ff, #249cff) !important; /* For Firefox 3.6 to 15 */
 	background: linear-gradient(#5eb6ff, #249cff) !important; /* Standard syntax */
+	border:none;
+}
+.btn-danger{
 	border:none;
 }
 .btn-primary:hover{
@@ -506,4 +512,9 @@ hr{
 }
 .dependency_input{
 
+}
+.w-110 > .alert{
+	margin-bottom: 0px;
+	padding-top:5px;
+	padding-bottom: 5px;
 }
