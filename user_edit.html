@@ -9,7 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="css/1280_10_10.css">
 		<link rel="stylesheet" type="text/css" href="css/uncompressed/font-awesome.css">
 		<link rel="stylesheet" type="text/css" href="css/table.css">
-		
+
 		<link rel="stylesheet" type="text/css" href="css/chosen.css" />
 
 		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
@@ -38,10 +38,10 @@
 			<!-- Start main container -->
 			<div id="main-container" class="row m10-top">
 				<!-- Start sidebar -->
-				<div id="sidebar" class="col-sm-1 p0-all m-20-left">
+				<div id="sidebar" class="col-xs-1 w-85 p0-all">
 					<ul class="side_menu pull-right">
 						<li>
-							<a href="#"><img src="img/btn_user.png"></a>
+							<a href="#"><img src="img/btn_user_active.png"></a>
 						</li>
 						<li>
 							<a href="#"><img src="img/btn_company.png"></a>
@@ -54,7 +54,7 @@
 				<!-- End Sidebar -->
 
 				<!-- start contens area -->
-				<div id="contents" class="col-xs-11 p0-all">
+				<div id="contents" class="col-xs-11 w-sidetab-layout p0-all pull-right">
 					<!-- start page-content -->
 					<div class="page-content p0-all">
 						<div id="content" class="row m-9-left">
@@ -62,24 +62,24 @@
 								<!-- navbar -->
 								<div id="nav" class="panel-head">
 									<div class="col-xs-12 pb_none_border">
-										<h3 class="pb_content_header">Edit User</h3>
+										<h4 class="pb_content_header">Edit User</h4>
 									</div>
 
 								</div>
 								<!-- endnavbar -->
 								<!-- Start content or form Area -->
-								<div class="pb_vertical_scroll m0-left" style="height: 665px;">
+								<div class="scroll_box pb_vertical_scroll m0-left">
 									<!-- start form area-->
-									<div style="width: 1180px;">
-										<form class="form-horizontal m5-top" role="form">
+									<div style="width: 1180px;" class="m30-left">
+										<form class="form-horizontal m5-top">
 											<!-- start from-group user_type -->
 											<div class="form-group">
-												<label class="col-sm-2 control-label no-padding-right" for="form-field-1"> <b>User Type*</b> </label>
+												<label class="col-sm-2" for="form-field-1"> <b>User Type*</b> </label>
 
 												<!-- start input area -->
 												<div class="col-sm-6">
 													<!-- start user_type -->
-													<label id="user_type_text" class="m3-top">CA Member</label>
+													<label id="user_type_text" class="m0-all m5-top">CA Member</label>
 													<!-- end user_type -->
 												</div>
 												<!-- end input area -->
@@ -90,13 +90,13 @@
 
 											<!-- start from-group company -->
 											<div class="form-group">
-												<label class="col-sm-2 control-label no-padding-right" for="form-field-2"> <b>Company*</b> </label>
+												<label class="col-sm-2" for="form-field-2"> <b>Company*</b> </label>
 
 												<!-- start input area -->
-												<div class="col-sm-3">
-													<!-- start select company -->
-													<label id="company_name_text" class="m3-top">Abro</label>
-													<!-- end select company -->
+												<div class="col-sm-6">
+													<!-- start user_type -->
+													<label id="company_text" class="m0-all m5-top">Abro</label>
+													<!-- end user_type -->
 												</div>
 												<!-- end input area -->
 											</div>
@@ -106,12 +106,13 @@
 
 											<!-- start from-group e-mail -->
 											<div class="form-group">
-												<label class="col-sm-2 control-label no-padding-right" for="form-field-3"> <b>E-Mail*</b> </label>
+												<label class="col-sm-2" for="form-field-3"> <b>E-Mail*</b> </label>
 
 												<!-- start input area -->
 												<div class="col-sm-6">
 													<!-- start input e-mail -->
 													<input type="email" id="form-field-3" placeholder="E-Mail" class="col-xs-10 col-sm-6" />
+													<span id="msg_email" class="middle m10-left f-red"> *Error text </span>
 													<!-- end input e-mail -->
 												</div>
 												<!-- end input area -->
@@ -122,13 +123,13 @@
 
 											<!-- start from-group password -->
 											<div class="form-group">
-												<label class="col-sm-2 control-label no-padding-right" for="form-field-4"> <b>Password*</b> </label>
+												<label class="col-sm-2" for="form-field-4"> <b>Password*</b> </label>
 
 												<!-- start input area -->
 												<div class="col-sm-6">
 													<!-- start input password -->
 													<input type="password" id="form-field-4" placeholder="Password" class="col-xs-10 col-sm-6" value="1234"/>
-													<span class="middle m10-left"> <a href="#">Reset Password</a> </span>
+													<span id="msg_password" class="middle m10-left"> <a href="#">Reset password</a></span>
 													<!-- end input password -->
 												</div>
 												<!-- end input area -->
@@ -139,23 +140,14 @@
 
 											<!-- start from-group first_name & last_name -->
 											<div class="form-group">
-												<label class="col-sm-2 control-label no-padding-right" for="form-field-5"> <b>First Name*</b> </label>
+												<label class="col-sm-2" for="form-field-5"> <b>Name*</b> </label>
 
 												<!-- start input area -->
-												<div class="col-sm-2">
+												<div class="col-sm-6">
 													<!-- start input fist_name -->
-													<input type="text" id="form-field-5" placeholder="First Name" class="col-xs-10" />
+													<input type="text" id="form-field-5" placeholder="Name" class="col-xs-10 col-sm-6" />
+													<span id="msg_name" class="middle m10-left f-red"> *Error text </span>
 													<!-- end input first_name -->
-												</div>
-												<!-- end input area -->
-
-												<label class="col-sm-1 control-label no-padding-right" for="form-field-5"> <b>Last Name*</b> </label>
-
-												<!-- start input area -->
-												<div class="col-sm-2">
-													<!-- start input last_name -->
-													<input type="text" id="form-field-6" placeholder="Last Name" class="col-xs-10" />
-													<!-- end input last_name -->
 												</div>
 												<!-- end input area -->
 											</div>
@@ -165,64 +157,82 @@
 
 											<!-- start from-group department & title -->
 											<div class="form-group">
-												<label class="col-sm-2 control-label no-padding-right" for="form-field-7"> <b>Department</b> </label>
+												<label class="col-sm-2" for="form-field-6"> <b>Department</b> </label>
 
 												<!-- start input area -->
-												<div class="col-sm-2">
+												<div class="col-sm-6">
 													<!-- start input department -->
-													<input type="text" id="form-field-7" placeholder="Department" class="col-xs-10" />
+													<input type="text" id="form-field-6" placeholder="Department" class="col-xs-10 col-sm-6" />
+													<span id="msg_department" class="middle m10-left f-red"> *Error text </span>
 													<!-- end input department -->
 												</div>
 												<!-- end input area -->
-
-												<label class="col-sm-1 control-label no-padding-right" for="form-field-8"> <b>Title</b> </label>
-
-												<!-- start input area -->
-												<div class="col-sm-2">
-													<!-- start input title -->
-													<input type="text" id="form-field-8" placeholder="Title" class="col-xs-10" />
-													<!-- end input title -->
-												</div>
-												<!-- end input area -->
 											</div>
-											<!-- end from-group department & title -->
+											<!-- end from-group department -->
 
 											<div class="space-4"></div>
 
-											<!-- start from-group department & title -->
+											<!-- start from-group title -->
 											<div class="form-group">
-												<label class="col-sm-2 control-label no-padding-right" for="form-field-9"> <b>Office Phone</b> </label>
+												<label class="col-sm-2" for="form-field-7"> <b>Title</b> </label>
 
 												<!-- start input area -->
-												<div class="col-sm-2">
-													<!-- start input department -->
-													<input type="text" id="form-field-9" placeholder="Office Phone" class="col-xs-10" />
-													<!-- end input department -->
-												</div>
-												<!-- end input area -->
-
-												<label class="col-sm-1 control-label no-padding-right" for="form-field-10"> <b>Cell Phone</b> </label>
-
-												<!-- start input area -->
-												<div class="col-sm-2">
+												<div class="col-sm-6">
 													<!-- start input title -->
-													<input type="text" id="form-field-10" placeholder="Cell Phone" class="col-xs-10" />
+													<input type="text" id="form-field-7" placeholder="Title" class="col-xs-10 col-sm-6" />
+													<span id="msg_title" class="middle m10-left f-red"> *Error text </span>
 													<!-- end input title -->
 												</div>
 												<!-- end input area -->
 											</div>
-											<!-- end from-group department & title -->
+											<!-- end from-group title -->
+
+											<div class="space-4"></div>
+
+											<!-- start from-group office_phone -->
+											<div class="form-group">
+												<label class="col-sm-2" for="form-field-8"> <b>Office Phone</b> </label>
+
+												<!-- start input area -->
+												<div class="col-sm-6">
+													<!-- start input office_phone -->
+													<input type="text" id="form-field-8" placeholder="Office Phone" class="col-xs-10 col-sm-6" />
+													<span id="msg_office_phone" class="middle m10-left f-red"> *Error text </span>
+													<!-- end input office_phone -->
+												</div>
+												<!-- end input area -->
+											</div>
+											<!-- end from-group office_phone -->
+
+											<div class="space-4"></div>
+
+											<!-- start from-group cell_phone -->
+											<div class="form-group">
+
+												<label class="col-sm-2" for="form-field-10"> <b>Cell Phone</b> </label>
+
+												<!-- start input area -->
+												<div class="col-sm-6">
+													<!-- start input cell_phone -->
+													<input type="text" id="form-field-10" placeholder="Cell Phone" class="col-xs-10 col-sm-6" />
+													<span id="msg_cell_phone" class="middle m10-left f-red"> *Error text </span>
+													<!-- end input cell_phone -->
+												</div>
+												<!-- end input area -->
+											</div>
+											<!-- end from-group cell_phone -->
 
 											<div class="space-4"></div>
 
 											<!-- start from-group street_address -->
 											<div class="form-group">
-												<label class="col-sm-2 control-label no-padding-right" for="form-field-11"> <b>Street Address</b> </label>
+												<label class="col-sm-2" for="form-field-11"> <b>Street Address</b> </label>
 
 												<!-- start input area -->
 												<div class="col-sm-6">
 													<!-- start input street_address -->
-													<input type="text" id="form-field-11" placeholder="Password" class="col-xs-10 col-sm-6"/>
+													<input type="text" id="form-field-11" placeholder="Street Address" class="col-xs-10 col-sm-6"/>
+													<span id="msg_street_address" class="middle m10-left f-red"> *Error text </span>
 													<!-- end input street_address -->
 												</div>
 												<!-- end input area -->
@@ -231,22 +241,29 @@
 
 											<div class="space-4"></div>
 
-											<!-- start from-group city & state & zip -->
+											<!-- start from-group city -->
 											<div class="form-group">
-												<label class="col-sm-2 control-label no-padding-right" for="form-field-12"> <b>City</b> </label>
+												<label class="col-sm-2" for="form-field-12"> <b>City</b> </label>
 
 												<!-- start input area -->
-												<div class="col-sm-1">
+												<div class="col-sm-6">
 													<!-- start input city -->
-													<input type="text" id="form-field-12" placeholder="City" class="col-xs-10" />
+													<input type="text" id="form-field-12" placeholder="City" class="col-xs-10 col-sm-6" />
+													<span id="msg_city" class="middle m10-left f-red"> *Error text </span>
 													<!-- end input city -->
 												</div>
 												<!-- end input area -->
+											</div>
+											<!-- end from-group city -->
 
-												<label class="col-sm-1 control-label no-padding-right" for="form-field-13"> <b>State</b> </label>
+											<div class="space-4"></div>
+
+											<!-- start from-group state -->
+											<div class="form-group">
+												<label class="col-sm-2" for="form-field-13"> <b>State</b> </label>
 
 												<!-- start input area -->
-												<div class="col-sm-1">
+												<div class="col-sm-3">
 													<!-- start input state -->
 													<select class="col-xs-12 chosen-select" id="form-field-13">
 														<option value="">State...</option>
@@ -256,25 +273,34 @@
 													</select>
 													<!-- end input state -->
 												</div>
-												<!-- end input area -->
 
-												<label class="col-sm-1 control-label no-padding-right" for="form-field-14"> <b>Zip</b> </label>
+												<div class="col-sm-3 p0-left">
+													<span id="msg_state" class="middle m10-left f-red"> *Error text </span>
+												</div>
+												<!-- end input area -->
+											</div>
+											<!-- end from-group state -->
+
+											<!-- start from-group zip -->
+											<div class="form-group">
+												<label class="col-sm-2" for="form-field-14"> <b>Zip</b> </label>
 
 												<!-- start input area -->
-												<div class="col-sm-1">
+												<div class="col-sm-6">
 													<!-- start input zip -->
-													<input type="text" id="form-field-14" placeholder="Zip" class="col-xs-10" />
+													<input type="text" id="form-field-14" placeholder="Zip" class="col-xs-10 col-sm-6" />
+													<span id="msg_zip" class="middle m10-left f-red"> *Error text </span>
 													<!-- end input zip -->
 												</div>
 												<!-- end input area -->
 											</div>
-											<!-- end from-group city & state & zip -->
+											<!-- end from-group zip -->
 
 											<div class="space-4"></div>
 
 											<!-- start from-group contry -->
 											<div class="form-group">
-												<label class="col-sm-2 control-label no-padding-right" for="form-field-15"> <b>Country</b> </label>
+												<label class="col-sm-2" for="form-field-15"> <b>Country</b> </label>
 
 												<!-- start input area -->
 												<div class="col-sm-3">
@@ -287,6 +313,10 @@
 													</select>
 													<!-- end select company -->
 												</div>
+
+												<div class="col-sm-3 p0-left">
+													<span id="msg_country" class="middle m10-left f-red"> *Error text </span>
+												</div>
 												<!-- end input area -->
 											</div>
 											<!-- end from-group comapny -->
@@ -295,7 +325,7 @@
 
 											<!-- start from-group user_status -->
 											<div class="form-group">
-												<label class="col-sm-2 control-label no-padding-right" for="form-field-16"> <b>User Status</b> </label>
+												<label class="col-sm-2" for="form-field-16"> <b>User Status</b> </label>
 
 												<!-- start input area -->
 												<div class="col-sm-6">
@@ -323,7 +353,7 @@
 
 											<!-- start from-group account_activation -->
 											<div class="form-group">
-												<label class="col-sm-2 control-label no-padding-right" for="form-field-17"> <b>Account Activation</b> </label>
+												<label class="col-sm-2" for="form-field-17"> <b>Account Activation</b> </label>
 
 												<!-- start input area -->
 												<div class="col-sm-6">
@@ -369,7 +399,6 @@
 			</div>
 			<!--End Main-container-->
 		</div>
-		
 		<script src="js/chosen.jquery.min.js"></script>
 		<script type="text/javascript">
 			jQuery(function($) {
