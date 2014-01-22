@@ -219,6 +219,9 @@ panel
 .p0-top{
 	padding-top: 0px;
 }
+.p0-right{
+	padding-right: 0px;
+}
 .p0-all{
 	padding: 0px !important;
 }
@@ -226,7 +229,7 @@ panel
 	padding: 5px;
 }
 .p10-left{
-	padding-left: 10px;
+	padding-left: 10px !important;
 }
 .p10-right{
 	padding-right: 10px;
@@ -472,5 +475,9 @@ hr{
 }
 
 .scroll_box{
-	max-height: 670px;
+	height: 100%;
+	max-height: 660px;
+}
+.chosen-container{
+	width:100% !important;
 }
