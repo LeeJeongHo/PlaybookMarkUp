@@ -285,10 +285,10 @@
 								<div class="row col-xs-12 scroll_box pb_vertical_scroll p0-right">
 									<div class="row p10-top">
 										<ul class="line_ul">
-											<li><a href="#"><i class="icon-circle-arrow-up f-20"></i></a></li>
-											<li><a href="#"><i class="icon-circle-arrow-down f-20"></i></a></li>
-											<li><a href="#"><i class="icon-plus-sign f-20"></i></a></li>
-											<li><a href="#"><i class="icon-remove-sign f-20"></i></a></li>
+											<li><a href="#"><i class="icon-circle-arrow-up f-22"></i></a></li>
+											<li><a href="#"><i class="icon-circle-arrow-down f-22"></i></a></li>
+											<li><a href="#"><i class="icon-plus-sign f-22"></i></a></li>
+											<li><a href="#"><i class="icon-remove-sign f-22"></i></a></li>
 										</ul>
 									</div>
 									<div class="col-xs-12 p0-right">
@@ -315,7 +315,7 @@
 														<tbody>
 															<tr class="tr">
 																<td colspan="2">
-																	<i id="depth1" class="icon-minus"></i>
+																	<i id="depth1" class="icon-minus"></i> 
 																	Marketing Core Deliverables
 																	<span class="pull-right"><a href="#"><i class="icon-remove"></i></a></span>
 																</td>
@@ -402,7 +402,7 @@
 																</td>
 															</tr>
 															<tr>
-																<td colspan="2">02. Market Reaserch</td>
+																<td colspan="2"><i class="icon-minus"></i> 02. Market Reaserch</td>
 																<td></td>
 																<td></td>
 																<td></td>
@@ -947,7 +947,7 @@
 									<hr class="space-4">
 
 									<div class="row">
-										<div class="col-xs-6 border-right">
+										<div id="dependency_list" class="col-xs-6 border-right">
 											<div class="col-xs-12 p0-left">
 												<h5><b>Dependencies of the deliverable</b></h5>
 											</div>
@@ -976,11 +976,64 @@
 											</div>
 											<div class="row m10-top">
 												<div class="col-xs-12">
-													<button  id="message2" data-placement="left" title="이 툴팁은 사용되지 않으며,  이 버튼을 클릭하게되면 인풋 박스가 나오게 됨" class="btn btn-primary pull-right" data-toggle="button">Add</button>
+													<button  id="add_dependency" class="btn btn-primary pull-right" data-toggle="button">Add</button>
 												</div>
 												
 											</div>
 										</div>
+										
+										<div id="dependency_input" class="col-xs-6 border-right collapse">
+											<div class="col-xs-12 p0-left">
+												<h5><b>Add dependency</b></h5>
+											</div>
+											<div class="row">
+												<div class="col-xs-12">
+													<select>
+														<option>Select Dependency</option>
+														<option>start to start</option>
+														<option>start to end</option>
+														<option>end to start</option>
+														<option>end to end</option>
+													</select>
+												</div>
+											</div>
+											<div class="row m10-top">
+												<div class="col-xs-12">
+													<select class="chosen-select" id="form-field-select-4" data-placeholder="Select to Playbook">
+														<option value="">Playbook...</option>
+														<option value="">Playbook1</option>
+														<option value="">Playbook1</option>
+														<option value="">Playbook1</option>
+													</select>
+												</div>
+											</div>
+											<div class="row m10-top">
+												<div class="col-xs-12">
+													<select class="chosen-select" id="form-field-select-5" data-placeholder="Select to Subteam">
+														<option value="">Subteam...</option>
+														<option value="">Subteam1</option>
+														<option value="">Subteam2</option>
+														<option value="">Subteam3</option>
+													</select>
+												</div>
+											</div>
+											<div class="row m10-top">
+												<div class="col-xs-12">
+													<select class="chosen-select" id="form-field-select-6" data-placeholder="Select to Deliverable">
+														<option value="">Deliverable...</option>
+														<option value="">Deliverable1</option>
+														<option value="">Deliverable2</option>
+														<option value="">Deliverable3</option>
+													</select>
+												</div>
+											</div>
+											<div class="row m10-top">
+												<div class="col-xs-12">
+													<button  id="save_dependency" class="btn btn-primary pull-right" data-toggle="button">Save</button>
+												</div>
+											</div>
+										</div>
+									
 										<div class="col-xs-6">
 											<div class="row">
 												<h5 class="m10-left"><b>Internal Approval of the deliverable</b></h5>
@@ -1054,9 +1107,28 @@
 						$("#budget").addClass("collapse");
 					}
 				});
+				$("#add_dependency").click(function(){
+					if($("#dependency_list").hasClass("collapse")){
+						$("#dependency_list").removeClass("collapse");
+						$("#dependency_input").addClass("collapse");
+					}
+					else{
+						$("#dependency_list").addClass("collapse");
+						$("#dependency_input").removeClass("collapse");
+					}
+				});
+				$("#save_dependency").click(function(){
+					if($("#dependency_input").hasClass("collapse")){
+						$("#dependency_list").addClass("collapse");
+						$("#dependency_input").removeClass("collapse");
+					}
+					else{
+						$("#dependency_list").removeClass("collapse");
+						$("#dependency_input").addClass("collapse");
+					}
+				});
 				
 				$("#message1").tooltip();
-				$("#message2").tooltip();
 				$(".chosen-select").chosen();
 			});
 		</script>

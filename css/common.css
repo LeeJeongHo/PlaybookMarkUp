@@ -288,10 +288,13 @@ panel
 .f-20{
 	font-size: 20px;
 }
-
+.f-22{
+	font-size: 22px;
+}
 .f-24{
 	font-size: 24px;
 }
+
 .f-red{
 	color: #ff0000;
 
@@ -502,5 +505,5 @@ hr{
 	border-right: 1px solid #dddddd;
 }
 .dependency_input{
-	
+
 }
