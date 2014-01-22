@@ -157,7 +157,9 @@ td {
 /*
  margin,padding 관련
  */
-
+.m-3-top{
+	margin-top: -3px;
+}
 .m0-left {
 	margin-left: 0px;
 }
@@ -263,7 +265,7 @@ td {
 	padding-right: 40px;
 }
 .p10-left-right {
-	padding: 10px 10px;
+	padding: 0px 10px;
 }
 .pd10_20 {
 	padding: 10px 20px;
@@ -441,6 +443,10 @@ tr {
 .table_depth2 {
 	padding-left: 24px !important;
 }
+.inner_table{
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
 .pb_border {
 	border: 1px solid #dddddd;
 }
@@ -546,4 +552,13 @@ hr {
 	margin-top: 0;
 	vertical-align: middle;
 	line-height: 23px;
+}
+
+.middle {
+	vertical-align: middle;
+}
+
+.m10-right-middle {
+	margin-right: 10px;
+	vertical-align: middle;
 }
