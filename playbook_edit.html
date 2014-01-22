@@ -1,0 +1,1723 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Playbook / playbook_edit</title>
+		<meta http-equiv="Content_type" content="text/html; charset=UTF-8" />
+		<!-- require font-awesome.css file and js/fuelux/fuelux.tree.min.js , jquery-2.0.3.min.js -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/ace.min.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+		<link rel="stylesheet" type="text/css" href="css/1280_10_10.css">
+		<link rel="stylesheet" type="text/css" href="css/uncompressed/font-awesome.css">
+
+		<link rel="stylesheet" type="text/css" href="css/chosen.css" />
+
+		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/html5shiv.js"></script>
+	</head>
+	<body>
+		<div id="container" class="row col-xs-12 p0-all">
+			<!-- Start navbar -->
+			<div id="header" class="row" >
+				<img src="img/logo.png" class="navlogo">
+				<ul class="line_ul pull-right m15-top">
+					<li>
+						<a href="#">Menu1</a>
+					</li>
+					<li>
+						<a href="#">Menu2</a>
+					</li>
+					<li>
+						<a href="#">Menu2</a>
+					</li>
+				</ul>
+			</div>
+			<!-- End navbar -->
+
+			<!-- Start main container -->
+			<div id="main-container" class="row m10-top" >
+				<!--Start sidebar-->
+				<div id="accordion" class="panel-group col-xs-2 p0-all">
+					<div class="panel-default panel">
+						<div class="panel-head clearfix">
+
+							<p class="panel_title">
+								<a class="accordion-toggle" href="#collapseOne" data-parent="#accordion" data-toggle="collapse" style="color:#ffffff;"> Playbook </a>
+							</p>
+							<button id="btn_create_playbook" class="btn btn-primary pull-right f-12">
+								<i class="icon-plus-sign"></i>
+								Playbook
+							</button>
+						</div>
+						<div class="panel-collapse collapse in" id="collapseOne">
+							<div class="panel-body accordion_body">
+								<div id="left_navi" class="tree tree-selectable">
+									<!-- folder1 Start -->
+									<div class="tree-folder pb_display_b">
+										<div class="tree-folder-header">
+											<i class="icon-minus"></i>
+											<div class="tree-folder-name">
+												PowerPharma -  Product X
+											</div>
+										</div>
+										<div class="tree-folder-content">
+											<div class="tree-folder-header">
+												<i class="icon-minus"></i>
+												<div class="tree-folder-name">
+													AAA001.US <a href="#"><i class="icon-plus-sign f-16"></i></a>
+												</div>
+											</div>
+											<div class="tree-folder-content">
+												<div class="tree-item tree-selected">
+													<i class="icon-ok"></i>
+													<div class="tree-item-name">
+														01.Marketing
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														02.Market Research
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														03.Sales
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														04.Clinical
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														05.Medical Affairs
+													</div>
+												</div>
+												<div class="tree-item">
+													<i class="icon-remove"></i>
+													<div class="tree-item-name">
+														06.Market Access
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+									<!-- folder1 end -->
+									<div class="tree-folder">
+										<div class="tree-folder-header">
+											<i class="icon-minus"></i>
+											<div class="tree-folder-name">
+												Amgen - Denosumab
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel-default panel">
+						<div class="panel-head clearfix">
+							<p class="panel_title">
+								<a class="accordion-toggle collapsed" href="#collapseTwo" data-parent="#accordion" data-toggle="collapse" style="color:#ffffff;"> Report </a>
+							</p>
+						</div>
+						<div class="panel-collapse collapse" id="collapseTwo">
+							<div class="panel-body accordion_body">
+								<ul class="list_none">
+									<li>
+										<a>- Flash Report</a>
+									</li>
+									<li>
+										<a>- Activity</a>
+									</li>
+									<li>
+										<a>- Dependency Report</a>
+									</li>
+									<li>
+										<a>- Budget Report</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--End Sidebar-->
+
+				<div id="contents" class="col-xs-10 p0-all">
+
+					<div id="nav" class="panel-head m10-left">
+						<h3 class="pb_content_header">US - Vaccines</h3>
+						<div class="pull-right">
+							<ul class="line_ul">
+								<li>
+									<div class="btn-group">
+										<button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+											Action
+											<i class="icon-angle-down icon-on-right"></i>
+										</button>
+										<ul class="dropdown-menu pull-right">
+											<li>
+												<a href="#">Auto Move</a>
+											</li>
+											<li>
+												<a href="#">Find and Replace</a>
+											</li>
+											<li>
+												<a href="#">Reaasign User</a>
+											</li>
+											<li class="divider"></li>
+											<li>
+												<a href="#">Manage Version</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<button class="btn btn-sm btn-primary">
+										Dashboard
+									</button>
+								</li>
+								<li>
+									<button class="btn btn-sm btn-primary">
+										Timeline
+									</button>
+								</li>
+								<li>
+									<button class="btn btn-sm btn-primary">
+										Table
+									</button>
+								</li>
+								<li>
+									<button class="btn btn-sm btn-primary">
+										Issues
+									</button>
+								</li>
+								<li>
+									<button class="btn btn-sm btn-primary">
+										Alert
+									</button>
+								</li>
+								<li>
+									<button class="btn btn-sm btn-primary">
+										Logs
+									</button>
+								</li>
+								<li>
+									<button class="btn btn-sm btn-primary active">
+										Settings
+									</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Start Contents area -->
+					<div id="content" class="col-xs-12 pb_content_layout">
+						<!-- Start contents -->
+						<div class="col-xs-12 p0-all">
+							<div class="pb_table_content panel-default">
+								<div class="panel-heading clearfix">
+									<span class="m10-top inline_b"> <h3 class="panel-title">Edit Playbook</h3> </span>
+
+									<div class="pull-right">
+										<ul class="line_ul">
+											<li>
+												<button id="btn_save" class="btn btn-sm btn-primary">
+													Save
+												</button>
+											</li>
+											<li>
+												<button id="btn_cancel" class="btn btn-sm btn-primary">
+													Cancel
+												</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="row col-xs-12 p0-all m0-left">
+									<!-- start tab ui -->
+									<div class="tabbable">
+										<ul class="nav nav-tabs" id="myTab">
+											<li class="active">
+												<a data-toggle="tab" href="#tab_general"> General </a>
+											</li>
+
+											<li>
+												<a data-toggle="tab" href="#tab_member"> Member </a>
+											</li>
+
+											<li>
+												<a data-toggle="tab" href="#tab_important_date_type"> Important Date Type </a>
+											</li>
+											<li>
+												<a data-toggle="tab" href="#tab_important_dates"> Important Dates </a>
+											</li>
+											<li>
+												<a data-toggle="tab" href="#tab_custom_report"> Custom Report </a>
+											</li>
+											<li>
+												<a data-toggle="tab" href="#tab_stratege"> Stratege </a>
+											</li>
+										</ul>
+										<!-- start tab contents -->
+										<div class="tab-content p0-all pb_vertical_scroll" style="height: 628px;">
+											<!-- start tab general -->
+											<div id="tab_general" class="tab-pane in active">
+												<!-- start form area general-->
+												<form class="form-horizontal m10-top">
+													<div class="row p40-left-right">
+														<h4 class="header pb_create_header"><b>Essential Information</b></h4>
+													</div>
+
+													<!-- start form-group playbook_code -->
+													<div class="form-group">
+														<label class="col-sm-2 control-label no-padding-right" for="form-field-1"> <b>Playbook Code*</b> </label>
+
+														<div class="col-sm-3">
+															<input type="text" id="form-field-1" placeholder="Playbook Code" class="col-xs-12" />
+														</div>
+
+														<div class="col-sm-2">
+															<span id="msg_code" class="middle m10-left f-red"> *Please input code </span>
+														</div>
+													</div>
+													<!-- end form-group playbook_code -->
+
+													<div class="space-4"></div>
+
+													<!-- start form-group company & product -->
+													<div class="form-group">
+														<label class="col-sm-2 control-label no-padding-right" for="form-field-2"> <b>Select Company*</b> </label>
+
+														<div class="col-sm-3">
+															<select class="col-xs-12 chosen-select" id="form-field-select-2" data-placeholder="Choose company">
+																<option value="">Company...</option>
+																<option value="Company1">Company 1</option>
+																<option value="Company2">Company 2</option>
+																<option value="Company3">Company 3</option>
+															</select>
+														</div>
+
+														<div class="col-sm-2">
+															<span id="msg_company" class="middle m10-left f-red"> *Please select company </span>
+														</div>
+													</div>
+
+													<div class="space-4"></div>
+
+													<div class="form-group">
+														<label class="col-sm-2 control-label no-padding-right" for="form-field-3"> <b>Select Product*</b> </label>
+														<div class="col-sm-3">
+															<select class="col-xs-12 chosen-select" id="form-field-select-3">
+																<option value="">Product...</option>
+																<option value="Product1">Product 1</option>
+																<option value="Product2">Product 2</option>
+																<option value="Product3">Product 3</option>
+															</select>
+														</div>
+
+														<div class="col-sm-2">
+															<span id="msg_product" class="middle m10-left f-red"> *Please select product </span>
+														</div>
+													</div>
+													<!-- end form-group company & product -->
+
+													<div class="space-4"></div>
+
+													<!-- start form-group geography -->
+													<div class="form-group">
+														<label class="col-sm-2 control-label no-padding-right" for="form-field-4"> <b>Geography*</b> </label>
+
+														<div class="col-sm-3">
+															<select class="col-xs-12 chosen-select" id="form-field-select-4">
+																<option value="">Geography...</option>
+																<option value="Geography1">Geography 1</option>
+																<option value="Geography2">Geography 2</option>
+																<option value="Geography3">Geography 3</option>
+															</select>
+														</div>
+
+														<div class="col-sm-2">
+															<span id="msg_geography" class="middle m10-left f-red"> *Please select geography </span>
+														</div>
+													</div>
+													<!-- end form-group geography -->
+
+													<div class="space-4"></div>
+
+													<!-- start form-group therapeutic_area & disease state -->
+													<div class="form-group">
+														<label class="col-sm-2 control-label no-padding-right" for="form-field-5"> <b>Therapeutic Area*</b> </label>
+
+														<div class="col-sm-3">
+															<select class="col-xs-12 chosen-select" id="form-field-select-5">
+																<option value="">Therapeutic Area...</option>
+																<option value="Therapeutic Area1">Therapeutic Area 1</option>
+																<option value="Therapeutic Area2">Therapeutic Area 2</option>
+																<option value="Therapeutic Area3">Therapeutic Area 3</option>
+															</select>
+														</div>
+
+														<div class="col-sm-2">
+															<span id="msg_therapeutic_area" class="middle m10-left f-red"> *Please select therapeutic area </span>
+														</div>
+
+													</div>
+
+													<div class="space-4"></div>
+
+													<div class="form-group">
+														<label class="col-sm-2 control-label no-padding-right" for="form-field-6"> <b>Disease State*</b> </label>
+														<div class="col-sm-3">
+															<select class="col-xs-12 chosen-select" id="form-field-select-6">
+																<option value="">Disease State...</option>
+																<option value="Disease State1">Disease State 1</option>
+																<option value="Disease State2">Disease State 2</option>
+																<option value="Disease State3">Disease State 3</option>
+															</select>
+														</div>
+
+														<div class="col-sm-2">
+															<span id="msg_disease_statte" class="middle m10-left f-red"> *Please select disease state </span>
+														</div>
+													</div>
+													<!-- end form-group therapeutic_area & disease state -->
+
+													<div class="space-4"></div>
+
+													<!-- start form-group indication_group & indication -->
+													<div class="form-group">
+														<label class="col-sm-2 control-label no-padding-right" for="form-field-7"> <b>Indication Group*</b> </label>
+
+														<div class="col-sm-3">
+															<select class="col-xs-12 chosen-select" id="form-field-select-7">
+																<option value="">Indication Group...</option>
+																<option value="Indication Group1">Indication Group 1</option>
+																<option value="Indication Group2">Indication Group 2</option>
+																<option value="Indication Group3">Indication Group 3</option>
+															</select>
+														</div>
+
+														<div class="col-sm-2">
+															<span id="msg_indication_group" class="middle m10-left f-red"> *Please select indication group </span>
+														</div>
+
+													</div>
+
+													<div class="space-4"></div>
+
+													<div class="form-group">
+														<label class="col-sm-2 control-label no-padding-right" for="form-field-8"> <b>Indication*</b> </label>
+														<div class="col-sm-3">
+															<input type="text" id="form-field-8" placeholder="Indication" class="col-xs-12" />
+														</div>
+
+														<div class="col-sm-2">
+															<span id="msg_indication" class="middle m10-left f-red"> *Please input indication </span>
+														</div>
+													</div>
+													<!-- end form-group therapeutic_area & disease state -->
+
+													<div class="row p40-left-right">
+														<h4 class="header pb_create_header"><b>General Information</b></h4>
+													</div>
+
+													<!-- start form-group playbook_status -->
+													<div class="form-group">
+														<label class="col-sm-2 control-label no-padding-right" for="form-field-9"> <b>Playbook Status*</b> </label>
+
+														<div class="col-sm-3">
+															<select class="form-control" id="form-field-select-9">
+																<option value="">Status...</option>
+																<option value="Status1">Status 1</option>
+																<option value="Status2">Status 2</option>
+																<option value="Status3">Status 3</option>
+															</select>
+														</div>
+
+														<div class="col-sm-2">
+															<span id="msg_status" class="middle m10-left f-red"> *Please select status </span>
+														</div>
+													</div>
+													<!-- end form-group playbook_status -->
+
+													<div class="space-4"></div>
+
+													<!-- start form-group start_date & end_date -->
+													<div class="form-group">
+														<label class="col-sm-2 control-label no-padding-right" for="form-field-10"> <b>Start - End Date*</b> </label>
+
+														<div class="input-group col-sm-2">
+															<input class="form-control date-picker" id="id-date-picker-1" type="text" data-date-format="dd-mm-yyyy"/>
+															<span class="input-group-addon"> <i class="icon-calendar bigger-110"></i> </span>
+														</div>
+
+														<div class="col-sm-1" style="width: 5px;">
+															<label> <b> - </b> </label>
+														</div>
+														<div class="input-group col-sm-2">
+															<input class="form-control date-picker" id="id-date-picker-2" type="text" data-date-format="dd-mm-yyyy"/>
+															<span class="input-group-addon"> <i class="icon-calendar bigger-110"></i> </span>
+														</div>
+
+														<label class="col-sm-2 control-label no-padding-right" for="form-field-11"> <b>Expiration Date*</b> </label>
+
+														<div class="input-group col-sm-2">
+															<input class="form-control date-picker" id="id-date-picker-3" type="text" data-date-format="dd-mm-yyyy"/>
+															<span class="input-group-addon"> <i class="icon-calendar bigger-110"></i> </span>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-sm-2"></div>
+														<div class="col-sm-2">
+															<span id="msg_start_end_date" class="middle m10-left f-red"> *Please input Start - End Date </span>
+														</div>
+
+														<div class="col-sm-4"></div>
+														<div class="col-sm-2">
+															<span id="msg_start_end_date" class="middle m10-left f-red"> *Please input Expiration Date </span>
+														</div>
+
+													</div>
+													<!-- end form-group start_date & end_date -->
+
+													<div class="space-4"></div>
+
+													<!-- start form-group description -->
+													<div class="form-group">
+														<label class="col-sm-2 control-label no-padding-right" for="form-field-12"> <b>Description</b> </label>
+
+														<div class="col-sm-8">
+															<textarea class="form-control" id="form-field-12" placeholder="Default Text">
+											</textarea>
+														</div>
+													</div>
+													<!-- end form-group description -->
+
+													<div class="space-4"></div>
+
+													<!-- start form-group objectives -->
+													<div class="form-group">
+														<label class="col-sm-2 control-label no-padding-right" for="form-field-13"> <b>Objectives</b> </label>
+
+														<div class="col-sm-8">
+															<textarea class="form-control" id="form-field-13" placeholder="Default Text">
+											</textarea>
+														</div>
+													</div>
+													<!-- end form-group description -->
+
+													<div class="space-4"></div>
+
+													<!-- start form-group display_budget -->
+													<div class="form-group">
+														<label class="col-sm-2 control-label no-padding-right" for="form-field-14"> <b>Display Budget?</b> </label>
+
+														<div class="col-sm-1">
+															<label>
+																<input id="switch-field-14" name="switch-field-14" class="ace ace-switch ace-switch-6" type="checkbox"/>
+																<span class="lbl f-12"></span> </label>
+														</div>
+
+														<!-- start currency & rate -->
+														<div id="currency_rate">
+															<label class="col-sm-2 control-label no-padding-right" for="form-field-15"> <b>Currency</b> </label>
+
+															<div class="col-sm-2">
+																<select class="col-xs-12 chosen-select" id="form-field-select-15">
+																	<option value="">Currency...</option>
+																	<option value="Currency1">Currency 1</option>
+																	<option value="Currency2">Currency 2</option>
+																	<option value="Currency3">Currency 3</option>
+																</select>
+															</div>
+
+															<label class="col-sm-1 control-label no-padding-right" for="form-field-16"> <b>Rate</b> </label>
+															<div class="col-sm-2">
+																<input type="text" id="form-field-16" placeholder="Rate" class="col-xs-12" />
+															</div>
+														</div>
+														<!-- end currency & rate -->
+													</div>
+													<!-- end form-group display_budget -->
+
+													<div class="space-4"></div>
+
+													<!-- start form-group display_activities -->
+													<div class="form-group">
+														<label class="col-sm-2 control-label no-padding-right" for="form-field-17"> <b>Display Activities?</b> </label>
+
+														<div class="col-sm-1">
+															<label>
+																<input id="switch-field-17" name="switch-field-17" class="ace ace-switch ace-switch-6" type="checkbox"/>
+																<span class="lbl f-12"></span> </label>
+														</div>
+
+														<label class="col-sm-3 control-label no-padding-right" for="form-field-18"> <b>Access multiple responsibility?</b> </label>
+
+														<div class="col-sm-1">
+															<label>
+																<input id="switch-field-18" name="switch-field-17" class="ace ace-switch ace-switch-6" type="checkbox"/>
+																<span class="lbl f-12"></span> </label>
+														</div>
+
+														<label class="col-sm-2 control-label no-padding-right" for="form-field-19"> <b>Display Strategy?</b> </label>
+
+														<div class="col-sm-1">
+															<label>
+																<input id="switch-field-19" name="switch-field-17" class="ace ace-switch ace-switch-6" type="checkbox"/>
+																<span class="lbl f-12"></span> </label>
+														</div>
+
+													</div>
+													<!-- end form-group display_activities -->
+
+													<div class="row p40-left-right">
+														<h4 class="header pb_create_header"><b>Advanced</b></h4>
+													</div>
+
+													<!-- start form-group legal_text -->
+													<div class="form-group">
+														<label class="col-sm-2 control-label no-padding-right" for="form-field-20"> <b>Legal Text*</b> </label>
+
+														<div class="col-sm-8">
+															<textarea class="form-control" id="form-field-20" placeholder="Default Text">
+										</textarea>
+														</div>
+
+														<div class="col-sm-2">
+															<span id="msg_legal_text" class="middle m10-left f-red"> *Please input legal text </span>
+														</div>
+													</div>
+													<!-- end form-group legal_text -->
+
+													<div class="space-4"></div>
+
+													<!-- start form-group legal_footer -->
+													<div class="form-group">
+														<label class="col-sm-2 control-label no-padding-right" for="form-field-21"> <b>Legal Footer*</b> </label>
+
+														<div class="col-sm-8">
+															<input type="text" id="form-field-21" placeholder="Legal Footer" class="col-xs-12" />
+														</div>
+
+														<div class="col-sm-2">
+															<span id="msg_legal_footer" class="middle m10-left f-red"> *Please input legal footer </span>
+														</div>
+													</div>
+													<!-- end form-group legal_footer -->
+
+													<div class="space-4"></div>
+
+													<!-- start form-group client_legal_footer -->
+													<div class="form-group">
+														<label class="col-sm-2 control-label no-padding-right" for="form-field-22"> <b>Client Legal Footer*</b> </label>
+
+														<div class="col-sm-8">
+															<input type="text" id="form-field-22" placeholder="Client Legal Footer" class="col-xs-12" />
+														</div>
+														<div class="col-sm-2">
+															<span id="msg_legal_footer" class="middle m10-left f-red"> *Please input client legal footer </span>
+														</div>
+													</div>
+													<!-- end form-group client_legal_footer -->
+
+													<div class="space-4"></div>
+
+													<!-- start form-group logo -->
+													<div class="form-group">
+														<label class="col-sm-2 control-label no-padding-right" for="form-field-23"> <b>Logo*</b> </label>
+
+														<div class="col-sm-8 f-12">
+															<input type="file" id="id-input-file-24"/>
+														</div>
+
+														<div class="col-sm-2">
+															<span id="msg_legal_footer" class="middle m10-left f-red"> *Please upload logo image </span>
+														</div>
+													</div>
+												</form>
+												<!-- end form-group logo -->
+											</div>
+											<!-- end tab general -->
+
+											<!-- start tab member -->
+											<div id="tab_member" class="tab-pane">
+												<!-- start form area member -->
+												<form class="form-horizontal m10-top">
+													<!-- start form-group ca_team_member -->
+													<div class="form-group p40-left-right">
+														<div class="row">
+															<h4 class="header pb_create_header"><b>CA Members</b></h4>
+														</div>
+														<!-- start input area -->
+														<div id="form-field-1">
+															<div class="f-red f-12">
+																*Please select leader.
+															</div>
+															<div class="table-responsive">
+																<table class="table table-bordered table-hover datatable">
+																	<thead>
+																		<tr>
+																			<th> Type </th>
+
+																			<th colspan="2"> User Name </th>
+
+																			<th><label>
+																				<input id="email_all_ca_member" name="form-field-checkbox" type="checkbox" class="ace" />
+																				<span class="lbl f-12"> <b>E-Mail</b> </span> </label></th>
+
+																			<th><label>
+																				<input id="create_all_ca_member" name="form-field-checkbox" type="checkbox" class="ace" />
+																				<span class="lbl f-12"> <b>Create</b> </span> </label></th>
+
+																			<th><label>
+																				<input id="delete_all_ca_member" name="form-field-checkbox" type="checkbox" class="ace" />
+																				<span class="lbl f-12"> <b>Delete</b> </span> </label></th>
+
+																			<th><label>
+																				<input id="modify_all_ca_member" name="form-field-checkbox" type="checkbox" class="ace" />
+																				<span class="lbl f-12"> <b>Modify</b> </span> </label></th>
+																		</tr>
+																	</thead>
+
+																	<tbody>
+																		<tr>
+																			<td><b>Playbook Leader*</b></td>
+
+																			<td colspan="2">
+																			<select class="col-xs-2 chosen-select" id="select_ca_member_11">
+																				<option value="">Select leader...</option>
+																				<option value="Member1">leader 1</option>
+																				<option value="Member2">leader 2</option>
+																				<option value="Member3">leader 3</option>
+																			</select></td>
+
+																			<td><label>
+																				<input id="email_all_ca_member_11" name="form-field-checkbox" type="checkbox" class="ace" />
+																				<span class="lbl f-12"> E-Mail</span> </label></td>
+
+																			<td><label>
+																				<input id="create_ca_member_11" name="form-field-checkbox" type="checkbox" class="ace" />
+																				<span class="lbl f-12"> Create</span> </label></td>
+
+																			<td><label>
+																				<input id="delete_ca_member_11" name="form-field-checkbox" type="checkbox" class="ace" />
+																				<span class="lbl f-12"> Delete</span> </label></td>
+
+																			<td><label>
+																				<input id="modify_ca_member_11" name="form-field-checkbox" type="checkbox" class="ace" />
+																				<span class="lbl f-12"> Modify</span> </label></td>
+																		</tr>
+
+																		<tr>
+																			<td><b>CA Team Members*</b></td>
+
+																			<td colspan="2">
+																			<select class="col-xs-2 chosen-select" id="select_ca_member_12">
+																				<option value="">Select team member...</option>
+																				<option value="Member1">member 1</option>
+																				<option value="Member2">member 2</option>
+																				<option value="Member3">member 3</option>
+																			</select></td>
+
+																			<td><label>
+																				<input id="email_all_ca_member_12" name="form-field-checkbox" type="checkbox" class="ace" />
+																				<span class="lbl f-12"> E-Mail</span> </label></td>
+
+																			<td><label>
+																				<input id="create_ca_member_12" name="form-field-checkbox" type="checkbox" class="ace" />
+																				<span class="lbl f-12"> Create</span> </label></td>
+
+																			<td><label>
+																				<input id="delete_ca_member_12" name="form-field-checkbox" type="checkbox" class="ace" />
+																				<span class="lbl f-12"> Delete</span> </label></td>
+
+																			<td><label>
+																				<input id="modify_ca_member_12" name="form-field-checkbox" type="checkbox" class="ace" />
+																				<span class="lbl f-12"> Modify</span> </label></td>
+																		</tr>
+
+																		<tr>
+																			<td></td>
+
+																			<td colspan="2">
+																			<select class="col-xs-2 chosen-select" id="select_ca_member_13">
+																				<option value="">Select team member...</option>
+																				<option value="Member1">member 1</option>
+																				<option value="Member2">member 2</option>
+																				<option value="Member3">member 3</option>
+																			</select></td>
+
+																			<td><label>
+																				<input id="email_all_ca_member_13" name="form-field-checkbox" type="checkbox" class="ace" />
+																				<span class="lbl f-12"> E-Mail</span> </label></td>
+
+																			<td><label>
+																				<input id="create_ca_member_13" name="form-field-checkbox" type="checkbox" class="ace" />
+																				<span class="lbl f-12"> Create</span> </label></td>
+
+																			<td><label>
+																				<input id="delete_ca_member_13" name="form-field-checkbox" type="checkbox" class="ace" />
+																				<span class="lbl f-12"> Delete</span> </label></td>
+
+																			<td><label>
+																				<input id="modify_ca_member_13" name="form-field-checkbox" type="checkbox" class="ace" />
+																				<span class="lbl f-12"> Modify</span> </label></td>
+																		</tr>
+
+																		<tr>
+																			<td colspan="7"><a id="add_member" href="#add_ca_member"> +Add CA Team Member</a></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>
+														<!-- end input area -->
+													</div>
+													<!-- end form-group ca_team_member -->
+
+													<!-- start form-group client_member -->
+													<div class="form-group p40-left-right">
+														<div class="row">
+															<h4 class="header pb_create_header"><b>Client Members</b></h4>
+														</div>
+														<!-- start input area -->
+														<div id="form-field-2">
+															<div class="f-red f-12">
+																*Please select leader.
+															</div>
+															<div class="table-responsive">
+																<table class="table table-bordered table-hover datatable">
+																	<thead>
+																		<tr>
+																			<th> Type </th>
+
+																			<th colspan="2"> User Name </th>
+
+																			<th><label>
+																				<input id="email_all_client_member" name="form-field-checkbox" type="checkbox" class="ace" />
+																				<span class="lbl f-12"> <b>E-Mail</b> </span> </label></th>
+
+																			<th><label>
+																				<input id="create_all_client_member" name="form-field-checkbox" type="checkbox" class="ace" />
+																				<span class="lbl f-12"> <b>Create</b> </span> </label></th>
+
+																			<th><label>
+																				<input id="delete_all_client_member" name="form-field-checkbox" type="checkbox" class="ace" />
+																				<span class="lbl f-12"> <b>Delete</b> </span> </label></th>
+
+																			<th><label>
+																				<input id="modify_all_client_member" name="form-field-checkbox" type="checkbox" class="ace" />
+																				<span class="lbl f-12"> <b>Modify</b> </span> </label></th>
+																		</tr>
+																	</thead>
+
+																	<tbody>
+																		<tr>
+																			<td><b>Client Launch Leader*</b></td>
+
+																			<td colspan="2">
+																			<select class="col-xs-2 chosen-select" id="select_client_member_11">
+																				<option value="">Select leader...</option>
+																				<option value="Member1">leader 1</option>
+																				<option value="Member2">leader 2</option>
+																				<option value="Member3">leader 3</option>
+																			</select></td>
+
+																			<td><label>
+																				<input id="email_all_client_member_11" name="form-field-checkbox" type="checkbox" class="ace" />
+																				<span class="lbl f-12"> E-Mail</span> </label></td>
+
+																			<td><label>
+																				<input id="create_client_member_11" name="form-field-checkbox" type="checkbox" class="ace" />
+																				<span class="lbl f-12"> Create</span> </label></td>
+
+																			<td><label>
+																				<input id="delete_client_member_11" name="form-field-checkbox" type="checkbox" class="ace" />
+																				<span class="lbl f-12"> Delete</span> </label></td>
+
+																			<td><label>
+																				<input id="modify_client_member_11" name="form-field-checkbox" type="checkbox" class="ace" />
+																				<span class="lbl f-12"> Modify</span> </label></td>
+																		</tr>
+
+																		<tr>
+																			<td><b>Client Launch Co-Leader*</b></td>
+
+																			<td colspan="2">
+																			<select class="col-xs-2 chosen-select" id="select_client_member_12">
+																				<option value="">Select team member...</option>
+																				<option value="Member1">member 1</option>
+																				<option value="Member2">member 2</option>
+																				<option value="Member3">member 3</option>
+																			</select></td>
+
+																			<td><label>
+																				<input id="email_all_client_member_12" name="form-field-checkbox" type="checkbox" class="ace" />
+																				<span class="lbl f-12"> E-Mail</span> </label></td>
+
+																			<td><label>
+																				<input id="create_client_member_12" name="form-field-checkbox" type="checkbox" class="ace" />
+																				<span class="lbl f-12"> Create</span> </label></td>
+
+																			<td><label>
+																				<input id="delete_client_member_12" name="form-field-checkbox" type="checkbox" class="ace" />
+																				<span class="lbl f-12"> Delete</span> </label></td>
+
+																			<td><label>
+																				<input id="modify_client_member_12" name="form-field-checkbox" type="checkbox" class="ace" />
+																				<span class="lbl f-12"> Modify</span> </label></td>
+																		</tr>
+
+																		<tr>
+																			<td colspan="7"><a id="add_client_member" href="#add_client_member"> +Add Client Launch Co-Leader</a></td>
+																		</tr>
+
+																	</tbody>
+																</table>
+															</div>
+														</div>
+														<!-- end input area -->
+													</div>
+													<!-- end form-group client_member -->
+												</form>
+												<!-- end form area member -->
+											</div>
+											<!-- end tab member -->
+
+											<!-- start tab important_date_type -->
+											<div id="tab_important_date_type" class="tab-pane">
+												<!-- start form area-->
+												<form class="form-horizontal m10-top">
+													<!-- start form-group important_date_types -->
+													<div class="form-group p40-left-right">
+														<div class="row">
+															<h4 class="header pb_create_header"><b>Important date types</b></h4>
+														</div>
+														<!-- start input area -->
+														<div id="form-field-1">
+															<div class="table-responsive">
+																<table class="table table-bordered table-hover datatable">
+																	<thead>
+																		<tr>
+																			<th> Name </th>
+
+																			<th colspan="2"> Description </th>
+
+																			<th class="w-45"><i class="icon-pencil f-16"></i></th>
+
+																			<th class="w-45"><i class="icon-trash f-16"></i></th>
+																		</tr>
+																	</thead>
+
+																	<tbody >
+																		<tr>
+																			<td class="f-12" style="background: #23d532;"><font style="color: blue;"><b>Congresses, Conferences &amp; Customer Mtgs</b></font></td>
+
+																			<td class="f-12" colspan="2">romotional events, market research, advocacy conferences and seminars.</td>
+
+																			<td><a data-toggle="modal" data-target="#edit_important_date_type" href="#"><i class="icon-pencil f-16"></i></a></td>
+
+																			<td><a href="#"><i class="icon-trash f-16"></i> </a></td>
+																		</tr>
+
+																		<tr>
+																			<td class="f-12" style="background: #d52332;"><font style="color: white;"><b>Important Internal Deadline</b></font></td>
+
+																			<td class="f-12" colspan="2">A deadline established within the organization, such as a launch meeting, promotions deadline, or trainin session.</td>
+
+																			<td><a data-toggle="modal" data-target="#edit_important_date_type" href="#"><i class="icon-pencil f-16"></i></a></td>
+
+																			<td><a href="#"><i class="icon-trash f-16"></i> </a></td>
+																		</tr>
+
+																		<tr>
+																			<td class="f-12" style="background: purple;"><font style="color: white;"><b>Manufacturing Critical Path</b></font></td>
+
+																			<td class="f-12" colspan="2">The date of an event that is necessary for initial production at launch, and for meeting near-term inventory needs.</td>
+
+																			<td><a data-toggle="modal" data-target="#edit_important_date_type" href="#"><i class="icon-pencil f-16"></i></a></td>
+
+																			<td><a href="#"><i class="icon-trash f-16"></i> </a></td>
+																		</tr>
+
+																		<tr>
+																			<td class="f-12" style="background: #ffff00;"><font style="color: red;"><b>Regulatory Critical Path</b></font></td>
+
+																			<td class="f-12" colspan="2">The date of an event that is related to maintaining compliance with regulatory bodies, both internal (i.e., compliance processes within the organization) or external (i.e., FDA)</td>
+
+																			<td><a data-toggle="modal" data-target="#edit_important_date_type" href="#"><i class="icon-pencil f-16"></i></a></td>
+
+																			<td><a href="#"><i class="icon-trash f-16"></i> </a></td>
+																		</tr>
+
+																		<tr>
+																			<td class="f-12" style="background: #0000ff;"><font style="color: white;"><b>Reimbuersement Critical Path</b></font></td>
+
+																			<td class="f-12" colspan="2">The date of an event that is necessary for gainining and maintaining proper coverage for treatment form public and private payers.</td>
+
+																			<td><a data-toggle="modal" data-target="#edit_important_date_type" href="#"><i class="icon-pencil f-16"></i></a></td>
+
+																			<td><a href="#"><i class="icon-trash f-16"></i> </a></td>
+																		</tr>
+
+																		<tr>
+																			<td colspan="5"><a data-toggle="modal" data-target="#add_important_date_type" href="#"> +Add Important Date Types</a></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>
+														<!-- end input area -->
+													</div>
+													<!-- end form-group important_date_types -->
+
+												</form>
+												<!-- end form area  -->
+											</div>
+											<!-- end tab important_date_type -->
+
+											<!-- start tab important_dates -->
+											<div id="tab_important_dates" class="tab-pane">
+												<!-- start form area-->
+												<form class="form-horizontal m10-top">
+													<!-- start form-group important_date_types -->
+													<div class="form-group p40-left-right">
+														<div class="row">
+															<h4 class="header pb_create_header"><b>Important dates</b></font></h4>
+														</div>
+														<!-- start input area -->
+														<div id="form-field-1">
+															<div class="table-responsive">
+																<table class="table table-bordered table-hover datatable">
+																	<thead>
+																		<tr>
+																			<th> Type </th>
+
+																			<th> Name </th>
+
+																			<th class="w-110"> Start Date </th>
+
+																			<th class="w-110"> End Date </th>
+
+																			<th colspan="2"> Description </th>
+
+																			<th class="w-45"><i class="icon-pencil f-16"></i></th>
+
+																			<th class="w-45"><i class="icon-trash f-16"></i></th>
+																		</tr>
+																	</thead>
+
+																	<tbody >
+																		<tr>
+																			<td class="f-12">Congresses, Conferences &amp; Customer Mtgs</td>
+
+																			<td>Subteam Added This Date</td>
+
+																			<td>01-FEB-2008</td>
+
+																			<td>27-MAR-2009</td>
+
+																			<td class="f-12" colspan="2">New item for Authorization Testing.</td>
+
+																			<td><a data-toggle="modal" data-target="#edit_important_dates" href="#"><i class="icon-pencil f-16"></i></a></td>
+
+																			<td><a href="#"><i class="icon-trash f-16"></i> </a></td>
+																		</tr>
+
+																		<tr>
+																			<td colspan="8"><a data-toggle="modal" data-target="#add_important_dates" href="#"> +Add Important Dates</a></td>
+																		</tr>
+
+																		<tr>
+																			<td colspan="8" class="pb_text_center f-red">Please input a important data type.
+																			<br />
+																			(If not exist important date type. Viewing this cell only.) </td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>
+														<!-- end input area -->
+													</div>
+													<!-- end form-group important_date_types -->
+												</form>
+												<!-- end form area -->
+											</div>
+											<!-- end tab important_dates -->
+
+											<!-- start tab custom_report -->
+											<div id="tab_custom_report" class="tab-pane">
+												<!-- start form area-->
+												<form class="form-horizontal m10-top">
+													<div class="row p40-left-right">
+														<h4 class="header pb_create_header"><b>Customize Report</b></h4>
+													</div>
+
+													<!-- start input area -->
+													<div id="form-field-1">
+														<div class="table-responsive p40-left-right m20-bottom">
+															<table class="table table-bordered table-hover datatable">
+																<thead>
+																	<tr>
+																		<th class="w-45"><label>
+																			<input id="report_all" name="form-field-checkbox" type="checkbox" class="ace" />
+																			<span class="lbl f-12"></span> </label></th>
+
+																		<th class="w-150"> Name </th>
+
+																		<th> Description </th>
+																	</tr>
+																</thead>
+
+																<tbody>
+																	<tr>
+																		<td><label>
+																			<input id="report_flash" name="form-field-checkbox" type="checkbox" class="ace" />
+																			<span class="lbl f-12"></span> </label></td>
+
+																		<td>Flash Report</td>
+
+																		<td> Includes a listing of Project Start Date, Project End Date, and all other Important Dates. </td>
+																	</tr>
+
+																	<tr>
+																		<td><label>
+																			<input id="report_active" name="form-field-checkbox" type="checkbox" class="ace" />
+																			<span class="lbl f-12"></span> </label></td>
+
+																		<td>Active Report</td>
+
+																		<td> the FTE vs Budget Report compares the total budget allocations across subteams with the FTE allocations across subteams. </td>
+																	</tr>
+
+																	<tr>
+																		<td><label>
+																			<input id="report_dependency" name="form-field-checkbox" type="checkbox" class="ace" />
+																			<span class="lbl f-12"></span> </label></td>
+
+																		<td>Dependency Report</td>
+
+																		<td> Displays all dependencies within the project, and their status. </td>
+																	</tr>
+
+																	<tr>
+																		<td><label>
+																			<input id="report_budget" name="form-field-checkbox" type="checkbox" class="ace" />
+																			<span class="lbl f-12"></span> </label></td>
+
+																		<td>Budget Report</td>
+
+																		<td> The Flash Report displays the status of all deliverables, color-coded so that problem areas are immediately visible. </td>
+																	</tr>
+
+																</tbody>
+															</table>
+														</div>
+													</div>
+													<!-- end input area -->
+												</form>
+												<!-- end form area -->
+											</div>
+											<!-- end tab custom_report -->
+
+											<!-- start tab stratege -->
+											<div id="tab_stratege" class="tab-pane">
+												<!-- start form area-->
+												<form class="form-horizontal m10-top">
+													<!-- start form-group stratege -->
+													<div class="form-group p40-left-right">
+														<div class="row">
+															<h4 class="header pb_create_header"><b>Strategy</b></h4>
+														</div>
+														<!-- start input area -->
+														<div id="form-field-1">
+															<div class="table-responsive">
+																<table class="table table-bordered table-hover datatable">
+																	<thead>
+																		<tr>
+																			<th> Title </th>
+
+																			<th colspan="2"> Description </th>
+
+																			<th class="w-45"><i class="icon-pencil f-16"></i></th>
+
+																			<th class="w-45"><i class="icon-trash f-16"></i></th>
+																		</tr>
+																	</thead>
+
+																	<tbody >
+																		<tr>
+																			<td>DQWWQ</td>
+
+																			<td class="f-12" colspan="2">Project End Date</td>
+
+																			<td><a data-toggle="modal" data-target="#edit_stratege" href="#"><i class="icon-pencil f-16"></i></a></td>
+
+																			<td><a href="#"><i class="icon-trash f-16"></i> </a></td>
+																		</tr>
+
+																		<tr>
+																			<td>ST1</td>
+
+																			<td class="f-12" colspan="2">Check</td>
+
+																			<td><a data-toggle="modal" data-target="#edit_stratege" href="#"><i class="icon-pencil f-16"></i></a></td>
+
+																			<td><a href="#"><i class="icon-trash f-16"></i> </a></td>
+																		</tr>
+																		<tr>
+																			<td>ST2</td>
+
+																			<td class="f-12" colspan="2">Check</td>
+
+																			<td><a data-toggle="modal" data-target="#edit_stratege" href="#"><i class="icon-pencil f-16"></i></a></td>
+
+																			<td><a href="#"><i class="icon-trash f-16"></i> </a></td>
+																		</tr>
+																		<tr>
+																			<td>ST3</td>
+
+																			<td class="f-12" colspan="2">Check</td>
+
+																			<td><a data-toggle="modal" data-target="#edit_stratege" href="#"><i class="icon-pencil f-16"></i></a></td>
+
+																			<td><a href="#"><i class="icon-trash f-16"></i> </a></td>
+																		</tr>
+
+																		<tr>
+																			<td colspan="5"><a data-toggle="modal" data-target="#add_stratege" href="#"> +Add Stratege</a></td>
+																		</tr>
+
+																		<tr>
+																			<td colspan="5" class="pb_text_center f-red">do not use this option.
+																			<br />
+																			to change option, please go to "General" tab.
+																			<br />
+																			(If not check option. Viewing this cell only.) </td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>
+														<!-- end input area -->
+													</div>
+													<!-- end form-group stratege -->
+												</form>
+												<!-- end form area -->
+											</div>
+											<!-- end tab stratege -->
+										</div>
+										<!-- end tab contents -->
+									</div>
+									<!-- end tab ui -->
+								</div>
+							</div>
+						</div>
+						<!-- End contents -->
+					</div>
+					<!-- End Contents area -->
+				</div>
+			</div>
+			<!--End Main-container-->
+		</div>
+
+		<!-- start modal : add important_date_type -->
+		<div class="modal fade" id="add_important_date_type" tabindex="-1" rold="dialog" aria=labelledby="addModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content col-xs-6">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							&times;
+						</button>
+						<h4 class="modal-title" id="addModalLabel"><font color="8eb9d4"> <b>Add Important date types</b> </font></h4>
+					</div>
+					<!-- Start Modal body -->
+					<div class="modal-body">
+						<div class="row m10-left">
+							<form class="form-horizontal m5-top">
+								<!-- start form-group name -->
+								<div class="form-group">
+									<label class="col-sm-4 control-label no-padding-right" for="form-field-1"> <b>Name</b> </label>
+									<!-- start input area -->
+									<div class="col-sm-6">
+										<input type="text" id="form-field-1" placeholder="Name" class="col-xs-10" />
+									</div>
+									<!-- end input area -->
+								</div>
+								<!-- end form-group name -->
+								<div class="space-4"></div>
+
+								<!-- start form-group text_color -->
+								<div class="form-group">
+									<label class="col-sm-4 control-label no-padding-right" for="form-field-2"> <b>Text Color</b> </label>
+									<!-- start input area -->
+									<div class="col-sm-1">
+										<img id="text_color_img" style="background: #000000; width: 30px; height: 30px;" />
+									</div>
+									<div class="col-sm-2 p0-all">
+										<label id="text_color_label" class="col-xs-8 m5-top">#000000</label>
+									</div>
+									<!-- end input area -->
+								</div>
+								<!-- end form-group name -->
+								<div class="space-4"></div>
+
+								<!-- start form-group name -->
+								<div class="form-group">
+									<label class="col-sm-4 control-label no-padding-right" for="form-field-3"> <b>Background Color</b> </label>
+									<!-- start input area -->
+									<div class="col-sm-1">
+										<img id="background_color_img" style="background: #000000; width: 30px; height: 30px;" />
+									</div>
+									<div class="col-sm-2 p0-all">
+										<label id="background_color_label" class="col-xs-8 m5-top">#000000</label>
+									</div>
+									<!-- end input area -->
+								</div>
+								<!-- end form-group name -->
+								<div class="space-4"></div>
+
+								<!-- start form-group description -->
+								<div class="row m10-left">
+									<label class="col-sm-2 control-label no-padding-right" for="form-field-4"> <b>Description</b> </label>
+								</div>
+
+								<div class="form-group">
+									<div class="col-xs-11 m10-left">
+										<textarea class="form-control" id="form-field-4" placeholder="Default Text">
+											</textarea>
+									</div>
+								</div>
+								<!-- end form-group description -->
+							</form>
+						</div>
+					</div>
+					<!-- End Modal body -->
+					<div class="modal-footer" style="background: white;">
+						<button type="button" class="btn btn-primary">
+							Save
+						</button>
+						<button type="button" class="btn btn-primary" data-dismiss="modal">
+							Cancel
+						</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		<!-- end modal : add important_date_type -->
+
+		<!-- start modal : edit important_date_type -->
+		<div class="modal fade" id="edit_important_date_type" tabindex="-1" rold="dialog" aria=labelledby="editModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content col-xs-6">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							&times;
+						</button>
+						<h4 class="modal-title" id="editModalLabel"><font color="8eb9d4"> <b>Edit Important date types</b></font></h4>
+					</div>
+					<!-- Start Modal body -->
+					<div class="modal-body">
+						<div class="row m10-left">
+							<form class="form-horizontal m5-top">
+								<!-- start form-group name -->
+								<div class="form-group">
+									<label class="col-sm-4 control-label no-padding-right" for="form-field-5"> <b>Name</b> </label>
+									<!-- start input area -->
+									<div class="col-sm-6">
+										<input type="text" id="form-field-5" placeholder="Name" class="col-xs-10" />
+									</div>
+									<!-- end input area -->
+								</div>
+								<!-- end form-group name -->
+								<div class="space-4"></div>
+
+								<!-- start form-group text_color -->
+								<div class="form-group">
+									<label class="col-sm-4 control-label no-padding-right" for="form-field-6"> <b>Text Color</b> </label>
+									<!-- start input area -->
+									<div class="col-sm-1">
+										<img id="text_color_img" style="background: #000000; width: 30px; height: 30px;" />
+									</div>
+									<div class="col-sm-2 p0-all">
+										<label id="text_color_label" class="col-xs-8 m5-top">#000000</label>
+									</div>
+									<!-- end input area -->
+								</div>
+								<!-- end form-group name -->
+								<div class="space-4"></div>
+
+								<!-- start form-group name -->
+								<div class="form-group">
+									<label class="col-sm-4 control-label no-padding-right" for="form-field-7"> <b>Background Color</b> </label>
+									<!-- start input area -->
+									<div class="col-sm-1">
+										<img id="background_color_img" style="background: #000000; width: 30px; height: 30px;" />
+									</div>
+									<div class="col-sm-2 p0-all">
+										<label id="background_color_label" class="col-xs-8 m5-top">#000000</label>
+									</div>
+									<!-- end input area -->
+								</div>
+								<!-- end form-group name -->
+								<div class="space-4"></div>
+
+								<!-- start form-group description -->
+								<div class="row m10-left">
+									<label class="col-sm-2 control-label no-padding-right" for="form-field-8"> <b>Description</b> </label>
+								</div>
+
+								<div class="form-group">
+									<div class="col-xs-11 m10-left">
+										<textarea class="form-control" id="form-field-8" placeholder="Default Text">
+											</textarea>
+									</div>
+								</div>
+								<!-- end form-group description -->
+							</form>
+						</div>
+					</div>
+					<!-- End Modal body -->
+					<div class="modal-footer" style="background: white;">
+						<button type="button" class="btn btn-primary">
+							Save
+						</button>
+						<button type="button" class="btn btn-primary" data-dismiss="modal">
+							Cancel
+						</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		<!-- end modal : edit important_date_type -->
+		
+		<!-- start modal : add important_dates-->
+		<div class="modal fade" id="add_important_dates" tabindex="-1" rold="dialog" aria=labelledby="addModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content col-xs-6">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							&times;
+						</button>
+						<h4 class="modal-title" id="addModalLabel"><font color="8eb9d4"> <b>Add Important dates</b> </font></h4>
+					</div>
+					<!-- Start Modal body -->
+					<div class="modal-body">
+						<div class="row m10-left">
+							<form class="form-horizontal m5-top">
+								<!-- start form-group name -->
+								<div class="form-group">
+									<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> <b>Type</b> </label>
+									<!-- start input area -->
+									<div class="col-sm-7">
+										<select class="chosen-select" id="form-field-select-1">
+											<option value="">Choose type...</option>
+											<option value="Type1">Type 1</option>
+											<option value="Type2">Type 2</option>
+											<option value="Type3">Type 3</option>
+										</select>
+									</div>
+									<!-- end input area -->
+								</div>
+								<!-- end form-group name -->
+								<div class="space-4"></div>
+
+								<!-- start form-group name -->
+								<div class="form-group">
+									<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> <b>Name</b> </label>
+									<!-- start input area -->
+									<div class="col-sm-8">
+										<input type="text" id="form-field-1" placeholder="Name" class="col-xs-10" />
+									</div>
+									<!-- end input area -->
+								</div>
+								<!-- end form-group name -->
+								<div class="space-4"></div>
+
+								<!-- start form-group text_color -->
+								<div class="form-group">
+									<label class="col-sm-3 control-label no-padding-right" for="form-field-2"> <b>Start Date</b> </label>
+									<!-- start input area -->
+									<div class="input-group col-sm-6">
+										<input class="form-control date-picker" id="id-date-picker-1" type="text" data-date-format="dd-mm-yyyy"/>
+										<span class="input-group-addon"> <i class="icon-calendar bigger-110"></i> </span>
+									</div>
+									<!-- end input area -->
+								</div>
+								<!-- end form-group name -->
+								<div class="space-4"></div>
+
+								<!-- start form-group name -->
+								<div class="form-group">
+									<label class="col-sm-3 control-label no-padding-right" for="form-field-3"> <b>End Date</b> </label>
+									<!-- start input area -->
+									<div class="input-group col-sm-6">
+										<input class="form-control date-picker" id="id-date-picker-2" type="text" data-date-format="dd-mm-yyyy"/>
+										<span class="input-group-addon"> <i class="icon-calendar bigger-110"></i> </span>
+									</div>
+									<!-- end input area -->
+								</div>
+								<!-- end form-group name -->
+								<div class="space-4"></div>
+
+								<!-- start form-group description -->
+								<div class="row m10-left">
+									<label class="col-sm-2 control-label no-padding-right" for="form-field-12"> <b>Description</b> </label>
+								</div>
+
+								<div class="form-group">
+									<div class="col-xs-11 m10-left">
+										<textarea class="form-control" id="form-field-12" placeholder="Default Text">
+											</textarea>
+									</div>
+								</div>
+								<!-- end form-group description -->
+							</form>
+						</div>
+					</div>
+					<!-- End Modal body -->
+					<div class="modal-footer" style="background: white;">
+						<button type="button" class="btn btn-primary">
+							Save
+						</button>
+						<button type="button" class="btn btn-primary" data-dismiss="modal">
+							Cancel
+						</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		<!-- end modal : add important_dates-->
+
+		<!-- start modal : edit important_dates-->
+		<div class="modal fade" id="edit_important_dates" tabindex="-1" rold="dialog" aria=labelledby="editModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content col-xs-6">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							&times;
+						</button>
+						<h4 class="modal-title" id="editModalLabel"><font color="8eb9d4"> <b>Edit Important dates</b> </font></h4>
+					</div>
+					<!-- Start Modal body -->
+					<div class="modal-body">
+						<div class="row m10-left">
+							<form class="form-horizontal m5-top">
+								<!-- start form-group name -->
+								<div class="form-group">
+									<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> <b>Type</b> </label>
+									<!-- start input area -->
+									<div class="col-sm-8">
+										<select class="col-xs-12 chosen-select" id="form-field-select-1">
+											<option value="">Choose type...</option>
+											<option value="Type1">Type 1</option>
+											<option value="Type2">Type 2</option>
+											<option value="Type3">Type 3</option>
+										</select>
+									</div>
+									<!-- end input area -->
+								</div>
+								<!-- end form-group name -->
+								<div class="space-4"></div>
+
+								<!-- start form-group name -->
+								<div class="form-group">
+									<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> <b>Name</b> </label>
+									<!-- start input area -->
+									<div class="col-sm-8">
+										<input type="text" id="form-field-1" placeholder="Name" class="col-xs-10" />
+									</div>
+									<!-- end input area -->
+								</div>
+								<!-- end form-group name -->
+								<div class="space-4"></div>
+
+								<!-- start form-group text_color -->
+								<div class="form-group">
+									<label class="col-sm-3 control-label no-padding-right" for="form-field-2"> <b>Start Date</b> </label>
+									<!-- start input area -->
+									<div class="input-group col-sm-6">
+										<input class="form-control date-picker" id="id-date-picker-1" type="text" data-date-format="dd-mm-yyyy"/>
+										<span class="input-group-addon"> <i class="icon-calendar bigger-110"></i> </span>
+									</div>
+									<!-- end input area -->
+								</div>
+								<!-- end form-group name -->
+								<div class="space-4"></div>
+
+								<!-- start form-group name -->
+								<div class="form-group">
+									<label class="col-sm-3 control-label no-padding-right" for="form-field-3"> <b>End Date</b> </label>
+									<!-- start input area -->
+									<div class="input-group col-sm-6">
+										<input class="form-control date-picker" id="id-date-picker-2" type="text" data-date-format="dd-mm-yyyy"/>
+										<span class="input-group-addon"> <i class="icon-calendar bigger-110"></i> </span>
+									</div>
+									<!-- end input area -->
+								</div>
+								<!-- end form-group name -->
+								<div class="space-4"></div>
+
+								<!-- start form-group description -->
+								<div class="row m10-left">
+									<label class="col-sm-2 control-label no-padding-right" for="form-field-12"> <b>Description</b> </label>
+								</div>
+
+								<div class="form-group">
+									<div class="col-xs-11 m10-left">
+										<textarea class="form-control" id="form-field-12" placeholder="Default Text">
+											</textarea>
+									</div>
+								</div>
+								<!-- end form-group description -->
+							</form>
+						</div>
+					</div>
+					<!-- End Modal body -->
+					<div class="modal-footer" style="background: white;">
+						<button type="button" class="btn btn-primary">
+							Save
+						</button>
+						<button type="button" class="btn btn-primary" data-dismiss="modal">
+							Cancel
+						</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		<!-- end modal : edit important_dates-->
+		
+		<!-- start modal : add stratege -->
+		<div class="modal fade" id="add_stratege" tabindex="-1" rold="dialog" aria=labelledby="addModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content col-xs-6">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							&times;
+						</button>
+						<h4 class="modal-title" id="addModalLabel"><font color="8eb9d4"> <b>Add Stratege</b> </font></h4>
+					</div>
+					<!-- Start Modal body -->
+					<div class="modal-body">
+						<div class="row m10-left">
+							<form class="form-horizontal m5-top">
+								<!-- start form-group name -->
+								<div class="form-group">
+									<label class="col-sm-2 control-label no-padding-right" for="form-field-1"> <b>Title</b> </label>
+									<!-- start input area -->
+									<div class="col-sm-8">
+										<input type="text" id="form-field-1" placeholder="Name" class="col-xs-10" />
+									</div>
+									<!-- end input area -->
+								</div>
+								<!-- end form-group name -->
+								<div class="space-4"></div>
+
+								
+								<!-- start form-group description -->
+								<div class="row m10-left">
+									<label class="col-sm-2 control-label no-padding-right" for="form-field-4"> <b>Description</b> </label>
+								</div>
+
+								<div class="form-group">
+									<div class="col-xs-11 m10-left">
+										<textarea class="form-control" id="form-field-4" placeholder="Default Text">
+											</textarea>
+									</div>
+								</div>
+								<!-- end form-group description -->
+							</form>
+						</div>
+					</div>
+					<!-- End Modal body -->
+					<div class="modal-footer" style="background: white;">
+						<button type="button" class="btn btn-primary">
+							Save
+						</button>
+						<button type="button" class="btn btn-primary" data-dismiss="modal">
+							Cancel
+						</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		<!-- end modal : add stratege -->
+
+		<!-- start modal : edit stratege-->
+		<div class="modal fade" id="edit_stratege" tabindex="-1" rold="dialog" aria=labelledby="editModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content col-xs-6">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							&times;
+						</button>
+						<h4 class="modal-title" id="editModalLabel"><font color="8eb9d4"> <b>Edit Stratege</b> </font></h4>
+					</div>
+					<!-- Start Modal body -->
+					<div class="modal-body">
+						<div class="row m10-left">
+							<form class="form-horizontal m5-top">
+								<!-- start form-group name -->
+								<div class="form-group">
+									<label class="col-sm-2 control-label no-padding-right" for="form-field-1"> <b>Title</b> </label>
+									<!-- start input area -->
+									<div class="col-sm-8">
+										<input type="text" id="form-field-1" placeholder="Name" class="col-xs-10" />
+									</div>
+									<!-- end input area -->
+								</div>
+								<!-- end form-group name -->
+								<div class="space-4"></div>
+
+								
+								<!-- start form-group description -->
+								<div class="row m10-left">
+									<label class="col-sm-2 control-label no-padding-right" for="form-field-4"> <b>Description</b> </label>
+								</div>
+
+								<div class="form-group">
+									<div class="col-xs-11 m10-left">
+										<textarea class="form-control" id="form-field-4" placeholder="Default Text">
+											</textarea>
+									</div>
+								</div>
+								<!-- end form-group description -->
+							</form>
+							<!-- end form area -->
+						</div>
+					</div>
+					<!-- End Modal body -->
+					<div class="modal-footer" style="background: white;">
+						<button type="button" class="btn btn-primary">
+							Save
+						</button>
+						<button type="button" class="btn btn-primary" data-dismiss="modal">
+							Cancel
+						</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		<!-- end modal : edit stratege -->
+		
+		
+		<script src="js/chosen.jquery.min.js"></script>
+		<script type="text/javascript">
+			jQuery(function($) {
+
+				$(".chosen-select").chosen();
+
+			});
+		</script>
+	</body>
+</html>
+
