@@ -166,6 +166,9 @@ td {
 .m0-all {
 	margin: 0px;
 }
+.m0-bottom{
+	margin-bottom: 0px;
+}
 .m-10-left {
 	margin-left: -10px;
 }
@@ -193,6 +196,9 @@ td {
 }
 .m5-top {
 	margin-top: 5px;
+}
+.m5-right_ipt{
+	margin-right: 5px !important;
 }
 .m10-top {
 	margin-top: 10px;
@@ -492,7 +498,7 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 	white-space: nowrap;
 }
 .tree-folder-header {
-	font-size: 14px;
+	font-size: 13px;
 	font-weight: bold
 }
 .tree-item {
@@ -564,4 +570,8 @@ hr {
 .m10-right-middle {
 	margin-right: 10px;
 	vertical-align: middle;
+}
+select{
+	word-wrap: normal;
+	white-space: nowrap;
 }
