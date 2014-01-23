@@ -9,7 +9,7 @@
 	border: 0px;
 }
 .btn_user:hover {
-	background: url(../img/btn_user_hover.png) no-repeat;!important;
+	background: url(../img/btn_user_active.png) no-repeat;!important;
 }
 .btn_user:active {
 	background: url(../img/btn_user_active.png) no-repeat;!important;
@@ -29,7 +29,7 @@ button.btn_company {
 	border: 0px;
 }
 button.btn_company:hover {
-	background: url(../img/btn_company_hover.png) no-repeat;!important;
+	background: url(../img/btn_company_active.png) no-repeat;!important;
 }
 button.btn_company:active {
 	background: url(../img/btn_company_active.png) no-repeat;!important;
@@ -49,7 +49,7 @@ button.btn_setting {
 	border: 0px;
 }
 button.btn_setting:hover {
-	background: url(../img/btn_settings_hover.png) no-repeat;!important;
+	background: url(../img/btn_settings_active.png) no-repeat;!important;
 }
 button.btn_setting:active {
 	background: url(../img/btn_settings_active.png) no-repeat;!important;
