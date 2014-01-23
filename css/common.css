@@ -263,6 +263,9 @@ td {
 .p10-bottom {
 	padding-bottom: 10px;
 }
+.p10-all{
+	padding: 10px;
+}
 .p20-left {
 	padding-left: 20px;
 }
@@ -310,6 +313,9 @@ td {
 }
 .f-16 {
 	font-size: 16px;
+}
+.f-18 {
+	font-size: 18px;
 }
 .f-20 {
 	font-size: 20px;
