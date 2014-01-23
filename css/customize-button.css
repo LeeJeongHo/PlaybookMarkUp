@@ -1,0 +1,59 @@
+/** btn user **/
+.btn_user {
+	display: block;
+	width: 85px;
+	height: 72px;
+	background: url(../img/btn_user.png) no-repeat;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+.btn_user:hover {
+	background: url(../img/btn_user_hover.png) no-repeat;!important;
+}
+.btn_user:active {
+	background: url(../img/btn_user_active.png) no-repeat;!important;
+}
+.btn_user span {
+	display: none;
+}
+
+/** btn company **/
+button.btn_company {
+	display: block;
+	width: 85px;
+	height: 72px;
+	background: url(../img/btn_company.png) no-repeat;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+button.btn_company:hover {
+	background: url(../img/btn_company_hover.png) no-repeat;!important;
+}
+button.btn_company:active {
+	background: url(../img/btn_company_active.png) no-repeat;!important;
+}
+button.btn_company span {
+	display: none;
+}
+
+/** btn setting **/
+button.btn_setting {
+	display: block;
+	width: 85px;
+	height: 72px;
+	background: url(../img/btn_settings.png) no-repeat;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+button.btn_setting:hover {
+	background: url(../img/btn_settings_hover.png) no-repeat;!important;
+}
+button.btn_setting:active {
+	background: url(../img/btn_settings_active.png) no-repeat;!important;
+}
+button.btn_setting span {
+	display: none;
+}

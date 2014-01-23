@@ -9,6 +9,8 @@
 		<link rel="stylesheet" type="text/css" href="css/1280_10_10.css">
 		<link rel="stylesheet" type="text/css" href="css/uncompressed/font-awesome.css">
 		<link rel="stylesheet" type="text/css" href="css/table.css">
+		<link rel="stylesheet" type="text/css" href="css/customize-button.css" />
+
 		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/html5shiv.js"></script>
@@ -38,13 +40,14 @@
 				<div id="sidebar" class="col-xs-1 w-85 p0-all">
 					<ul class="side_menu pull-right">
 						<li>
-							<a href="#"><img src="img/btn_user_active.png"></a>
+							<button id="btn_user" class="btn_user"><img src="img/btn_user_active.png">
+							</button>
 						</li>
 						<li>
-							<a href="#"><img src="img/btn_company.png"></a>
+							<button id="btn_company" class="btn_company"></button>
 						</li>
 						<li>
-							<a href="#"><img src="img/btn_setting.png"></a>
+							<button id="btn_setting" class="btn_setting"></button>
 						</li>
 					</ul>
 				</div>
@@ -186,53 +189,49 @@
 														<tr>
 															<td></td>
 															<td>
-																<select class="form-control">
-																	<option>Option1</option>
-																	<option>Option2</option>
-																	<option>Option3</option>
-																</select>
-														    </td>
+															<select class="form-control">
+																<option>Option1</option>
+																<option>Option2</option>
+																<option>Option3</option>
+															</select></td>
 															<td>
-																<input type="text" class="input100">
+															<input type="text" class="input100">
 															</td>
 															<td>
-																<select class="form-control">
-																	<option>ON</option>
-																	<option>OFF</option>
-																</select>
+															<select class="form-control">
+																<option>ON</option>
+																<option>OFF</option>
+															</select></td>
+															<td>
+															<select class="form-control">
+																<option>ACTIVE</option>
+																<option>INACTIVE</option>
+															</select></td>
+															<td>
+															<input type="text" class="input100">
 															</td>
 															<td>
-																<select class="form-control">
-																	<option>ACTIVE</option>
-																	<option>INACTIVE</option>
-																</select>
+															<input type="text" class="input100">
 															</td>
 															<td>
-																<input type="text" class="input100">
+															<input type="text" class="input100">
 															</td>
 															<td>
-																<input type="text" class="input100">
+															<input type="text" class="input100">
 															</td>
 															<td>
-																<input type="text" class="input100">
-															</td>
-															<td>
-																<input type="text" class="input100">
-															</td>
-															<td>
-																<div>
-																	<p class="pb_inline">
-																		<button class="btn btn-sm btn-success no-border">
-																			<i class="icon-ok"></i>
-																		</button>
-																	</p>
-																	<p class="pb_inline">
-																		<button class="btn btn-sm btn-danger no-border">
-																			<i class="icon-reply"></i>
-																		</button>
-																	</p>
-																</div>
-															</td>
+															<div>
+																<p class="pb_inline">
+																	<button class="btn btn-sm btn-success no-border">
+																		<i class="icon-ok"></i>
+																	</button>
+																</p>
+																<p class="pb_inline">
+																	<button class="btn btn-sm btn-danger no-border">
+																		<i class="icon-reply"></i>
+																	</button>
+																</p>
+															</div></td>
 														</tr>
 													</tbody>
 												</table>
@@ -240,7 +239,7 @@
 										</div>
 									</div>
 									<!-- End Table -->
-								</div>								
+								</div>
 								<!-- End content or form Area -->
 							</div>
 						</div>
