@@ -188,8 +188,14 @@ td {
 .m10-left {
 	margin-left: 10px;
 }
+.m30-bottom{
+	margin-bottom: 30px;
+}
 .m30-left {
 	margin-left: 30px;
+}
+.m30-top{
+	margin-top: 30px;
 }
 .m3-top {
 	margin-top: 3px;
@@ -377,6 +383,9 @@ td {
 	list-style: none;
 	display: inline;
 }
+.list_none_block > li{
+	list-style: none;
+}
 
 .add_menu {
 	font-weight: bold;
@@ -539,6 +548,10 @@ hr {
 	height: 100%;
 	max-height: 672px;
 }
+.scroll_box_300{
+	height: 100%;
+	max-height: 300px;
+}
 .chosen-container{
 	width:100% !important;
 }
@@ -580,4 +593,8 @@ hr {
 select{
 	word-wrap: normal;
 	white-space: nowrap;
+}
+
+.underline{
+	text-decoration: underline;
 }
