@@ -613,6 +613,7 @@ select{
 	background-color: #366EAB;
 }
 #pb_nav_menu .active{
+	background-color: #366EAB;
 	font-weight: bold;
 }
 
