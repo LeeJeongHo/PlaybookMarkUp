@@ -598,3 +598,69 @@ select{
 .underline{
 	text-decoration: underline;
 }
+.ace-nav > li > .navmenu{
+	background: -webkit-linear-gradient(#5eb6ff, #249cff); /* For Safari */
+	background: -o-linear-gradient(#5eb6ff, #249cff); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#5eb6ff, #249cff); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#5eb6ff, #249cff); /* Standard syntax */ 
+	border-top: 1px solid #0E61A5;
+	border-bottom: 1px solid #0E61A5;
+}
+.main_navbar > li {
+	line-height: 56px;
+	height: 56px;
+	/*width:90px;*/
+	padding: 0 5px; 
+	text-align: center;
+	background-color:none;
+	margin-right: 1px;
+	font-size: 13px;
+}
+.main_navbar > li > a {
+	background-color:none;
+	color:white;
+}
+
+.main_navbar > li > .navmenu:hover{
+	background: -webkit-linear-gradient(#2175b9, #0e61a5); /* For Safari */
+	background: -o-linear-gradient(#2175b9, #0e61a5); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#2175b9, #0e61a5); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#2175b9, #0e61a5); /* Standard syntax */
+}
+#pb_nav_menu .active{
+	background: -webkit-linear-gradient(#2175b9, #0e61a5); /* For Safari */
+	background: -o-linear-gradient(#2175b9, #0e61a5); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#2175b9, #0e61a5); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#2175b9, #0e61a5); /* Standard syntax */
+	font-weight: bold;
+}
+
+.ace-nav > li > .sub_navmenu{
+	background: -webkit-linear-gradient(#2175b9, #0e61a5); /* For Safari */
+	background: -o-linear-gradient(#2175b9, #0e61a5); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#2175b9, #0e61a5); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#2175b9, #0e61a5); /* Standard syntax */
+	border-top: 1px solid #0E61A5;
+	border-bottom: 1px solid #0E61A5;
+}
+
+.sub_navbar > li{
+	line-height: 44px;
+	height: 44px;
+	padding:0 5px;
+	text-align: center;
+	background-color:none;
+	margin-right: 1px;
+	font-size: 13px;
+
+}
+.sub_navbar > li > a {
+	background-color:none;
+	color:white;
+}
+.sub_navbar > li > .sub_navmenu:hover{
+	background: -webkit-linear-gradient(#5eb6ff, #249cff); /* For Safari */
+	background: -o-linear-gradient(#5eb6ff, #249cff); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#5eb6ff, #249cff); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#5eb6ff, #249cff); /* Standard syntax */ 
+}

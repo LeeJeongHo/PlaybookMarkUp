@@ -152,71 +152,28 @@
 				<!--End Sidebar-->
 
 				<div id="contents" class="col-xs-10 p0-all">
-
+					<div id="pb_nav_menu" class="pull-right">
+						<ul class="nav ace-nav main_navbar">
+							<li>
+								<a href="#" class="navmenu" data-toggle="dropdown">Action <i class="icon-angle-down"></i></a>
+								<ul class="dropdown-menu p0-all">
+									<li><a href="#">Auto Move</a></li>
+									<li><a href="#">Find and Replace</a></li>
+									<li><a href="#">Reassign User</a></li>
+									<li><a href="#">Manage Version</a></li>
+								</ul>
+							</li>
+							<li><a href="#" class="navmenu">Dashboard</a></li>
+							<li><a href="#" class="navmenu">Timeline</a></li>
+							<li><a href="#" class="navmenu active">Table</a></li>
+							<li><a href="#" class="navmenu">Issues</a></li>
+							<li><a href="#" class="navmenu">Alerts</a></li>
+							<li><a href="#" class="navmenu">Logs</a></li>
+							<li><a href="#" class="navmenu">Setting</a></li>
+						</ul>
+					</div>
 					<div id="nav" class="panel-head m10-left">
 						<h3 class="pb_content_header">US - Vaccines</h3>
-						<div class="pull-right">
-							<ul class="line_ul">
-								<li>
-									<div class="btn-group">
-										<button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
-											Action
-											<i class="icon-angle-down icon-on-right"></i>
-										</button>
-										<ul class="dropdown-menu pull-right">
-											<li>
-												<a href="#">Auto Move</a>
-											</li>
-											<li>
-												<a href="#">Find and Replace</a>
-											</li>
-											<li>
-												<a href="#">Reaasign User</a>
-											</li>
-											<li class="divider"></li>
-											<li>
-												<a href="#">Manage Version</a>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<li>
-									<button class="btn btn-sm btn-primary">
-										Dashboard
-									</button>
-								</li>
-								<li>
-									<button class="btn btn-sm btn-primary">
-										Timeline
-									</button>
-								</li>
-								<li>
-									<button class="btn btn-sm btn-primary active">
-										Table
-									</button>
-								</li>
-								<li>
-									<button class="btn btn-sm btn-primary">
-										Issues
-									</button>
-								</li>
-								<li>
-									<button class="btn btn-sm btn-primary">
-										Alert
-									</button>
-								</li>
-								<li>
-									<button class="btn btn-sm btn-primary">
-										Logs
-									</button>
-								</li>
-								<li>
-									<button class="btn btn-sm btn-primary">
-										Settings
-									</button>
-								</li>
-							</ul>
-						</div>
 					</div>
 					<!-- Start page-content -->
 					
@@ -328,7 +285,6 @@
 															<td  class="table_depth1">
 																<i id="depth2" class="icon-plus"></i>
 																Marketing Core Deliverables
-																<span class="pull-right"><a href="#"><i class="icon-remove"></i></a></span>
 															</td>
 															<td></td>
 															<td></td>
@@ -341,7 +297,7 @@
 															<td></td>
 														</tr>
 														<tr id="collapseme2" class="collapse">
-															<td  class="table_depth2">Post-Launch Trade Show Graphics - US</td>
+															<td  style="padding-left:40px;">Post-Launch Trade Show Graphics - US</td>
 															<td>06-MAY-2013</td>
 															<td>06-MAY-2013</td>
 															<td>Unfunded</td>
@@ -359,7 +315,7 @@
 															<td><a href="#"><i class="icon-trash f-16"></i></a></td>
 														</tr>
 														<tr id="collapseme3" class="collapse">
-															<td  class="table_depth2">Message Platform Development</td>
+															<td  style="padding-left:40px;">Message Platform Development</td>
 															<td>06-MAY-2013</td>
 															<td>06-MAY-2013</td>
 															<td>Completed</td>
@@ -413,8 +369,24 @@
 																	<option value="">LAUNCH CRITICAL</option>
 																</select>
 															</td>
-															<td ><input id="form-field-4" class="input100" type="text"></td>
-															<td><input id="form-field-5" class="input100" type="text"></td>
+															<td>
+																<div class="col-xs-12 p0-all">
+																	<select class="col-xs-12 chosen-select" id="form-field-select-2" data-placeholder="Choose Responsibility">
+																		<option value="">Responsibility 1</option>
+																		<option value="">Responsibility 2</option>
+																		<option value="">Responsibility 3</option>
+																	</select>
+																</div>
+															</td>
+															<td>
+																<div class="col-xs-12 p0-all">
+																	<select class="col-xs-12 chosen-select" id="form-field-select-3" data-placeholder="Choose Strategy">
+																		<option value="">Strategy 1</option>
+																		<option value="">Strategy 2</option>
+																		<option value="">Strategy 3</option>
+																	</select>
+																</div>
+															</td>
 															<td colspan="3">
 																<button class="btn btn-minier btn-primary">Save</button>
 																<button class="btn btn-minier btn-primary">Cancel</button>
