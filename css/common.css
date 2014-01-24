@@ -83,10 +83,7 @@ td {
 	padding: 0.4em 0.6em;
 }
 .panel-heading {
-	background: -webkit-linear-gradient(#2175b9, #0e61a5); /* For Safari */
-	background: -o-linear-gradient(#2175b9, #0e61a5); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(#2175b9, #0e61a5); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#2175b9, #0e61a5); /* Standard syntax */
+	background-color: #0e61a5;
 	border-image: none;
 	border-radius: 3px 3px 0 0;
 	border-style: solid;
@@ -122,11 +119,7 @@ td {
 	padding: 10px 12px;
 	height: 56px;
 	border-radius: 4px;
-	background: -webkit-linear-gradient(#5eb6ff, #249cff); /* For Safari */
-	background: -o-linear-gradient(#5eb6ff, #249cff); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(#5eb6ff, #249cff); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#5eb6ff, #249cff); /* Standard syntax */
-	border: 1px solid #0e61a5;
+	background-color:#249cff;
 }
 .panel
 .col-xs-3 .panel-head {
@@ -599,12 +592,7 @@ select{
 	text-decoration: underline;
 }
 .ace-nav > li > .navmenu{
-	background: -webkit-linear-gradient(#5eb6ff, #249cff); /* For Safari */
-	background: -o-linear-gradient(#5eb6ff, #249cff); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(#5eb6ff, #249cff); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#5eb6ff, #249cff); /* Standard syntax */ 
-	border-top: 1px solid #0E61A5;
-	border-bottom: 1px solid #0E61A5;
+	background-color: #249CFF;
 }
 .main_navbar > li {
 	line-height: 56px;
@@ -622,26 +610,14 @@ select{
 }
 
 .main_navbar > li > .navmenu:hover{
-	background: -webkit-linear-gradient(#2175b9, #0e61a5); /* For Safari */
-	background: -o-linear-gradient(#2175b9, #0e61a5); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(#2175b9, #0e61a5); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#2175b9, #0e61a5); /* Standard syntax */
+	background-color: #366EAB;
 }
 #pb_nav_menu .active{
-	background: -webkit-linear-gradient(#2175b9, #0e61a5); /* For Safari */
-	background: -o-linear-gradient(#2175b9, #0e61a5); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(#2175b9, #0e61a5); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#2175b9, #0e61a5); /* Standard syntax */
 	font-weight: bold;
 }
 
 .ace-nav > li > .sub_navmenu{
-	background: -webkit-linear-gradient(#2175b9, #0e61a5); /* For Safari */
-	background: -o-linear-gradient(#2175b9, #0e61a5); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(#2175b9, #0e61a5); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#2175b9, #0e61a5); /* Standard syntax */
-	border-top: 1px solid #0E61A5;
-	border-bottom: 1px solid #0E61A5;
+	background-color: #366EAB;
 }
 
 .sub_navbar > li{
@@ -659,8 +635,5 @@ select{
 	color:white;
 }
 .sub_navbar > li > .sub_navmenu:hover{
-	background: -webkit-linear-gradient(#5eb6ff, #249cff); /* For Safari */
-	background: -o-linear-gradient(#5eb6ff, #249cff); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(#5eb6ff, #249cff); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#5eb6ff, #249cff); /* Standard syntax */ 
+	background-color:#249CFF;
 }
