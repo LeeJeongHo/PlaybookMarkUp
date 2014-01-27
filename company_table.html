@@ -4,12 +4,12 @@
 		<title>Company / table</title>
 		<meta http-equiv="Content_type" content="text/html; charset=UTF-8" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/chosen.css"/>
 		<link rel="stylesheet" type="text/css" href="css/ace.min.css">
 		<link rel="stylesheet" type="text/css" href="css/common.css">
-		<link rel="stylesheet" type="text/css" href="css/uncompressed/font-awesome.css">
-		<link rel="stylesheet" type="text/css" href="css/table.css">
-		<link rel="stylesheet" type="text/css" href="css/chosen.css"/>
 		<link rel="stylesheet" type="text/css" href="css/customize-button.css" />
+		<link rel="stylesheet" type="text/css" href="css/table.css">
+		<link rel="stylesheet" type="text/css" href="css/uncompressed/font-awesome.css">
 		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/html5shiv.js"></script>
@@ -42,7 +42,8 @@
 							<button id="btn_user" class="btn_user"></button>
 						</li>
 						<li>
-							<button id="btn_company" class="btn_company"><img src="img/btn_company_active.png"></button>
+							<button id="btn_company" class="btn_company"><img src="img/btn_company_active.png">
+							</button>
 						</li>
 						<li>
 							<button id="btn_setting" class="btn_setting"></button>
@@ -59,39 +60,37 @@
 							<div class="col-xs-12 panel-default pb_main_contents_large" >
 								<!-- navbar -->
 								<div id="nav" class="panel-head">
-									<div class="col-xs-12 pb_none_border">
-										<h3 class="pb_content_header">Total Records : 5372</h3>
-										<div class="pull-right">
-											<div class="input-icon input-icon-right inline_b m10-right">
-												<input id="search" type="text" placeholder="Search..." size="25">
-												<i class="icon-globe"></i>
-											</div>
-											<div class="btn-group">
-												<button class="btn btn-sm dropdown-toggle btn-primary no-border" data-toggle="dropdown">
-													<i class="icon-th-large" style="font-size:16px;"></i>
-												</button>
-												<ul class="dropdown-menu pull-right">
-													<li>
-														<a href="#">Add Company</a>
-													</li>
-													<li class="divider"></li>
-													<li>
-														<a href="#">Import Company</a>
-													</li>
-													<li>
-														<a href="#">Export Company</a>
-													</li>
-													<li>
-														<a href="#">Use a Template</a>
-													</li>
-													<li class="divider"></li>
-													<li>
-														<a href="#">Print Veiw</a>
-													</li>
-												</ul>
-											</div>
-
+									<h3 class="pb_content_header">Total Records : 5372</h3>
+									<div class="pull-right">
+										<div class="input-icon input-icon-right inline_b m10-right">
+											<input id="search" type="text" placeholder="Search..." size="25">
+											<i class="icon-globe"></i>
 										</div>
+										<div class="btn-group">
+											<button class="btn btn-sm dropdown-toggle btn-primary no-border" data-toggle="dropdown">
+												<i class="icon-th-large" style="font-size:16px;"></i>
+											</button>
+											<ul class="dropdown-menu pull-right">
+												<li>
+													<a href="#">Add Company</a>
+												</li>
+												<li class="divider"></li>
+												<li>
+													<a href="#">Import Company</a>
+												</li>
+												<li>
+													<a href="#">Export Company</a>
+												</li>
+												<li>
+													<a href="#">Use a Template</a>
+												</li>
+												<li class="divider"></li>
+												<li>
+													<a href="#">Print Veiw</a>
+												</li>
+											</ul>
+										</div>
+
 									</div>
 
 								</div>
@@ -127,41 +126,41 @@
 													<!-- Start hidden table -->
 													<tr id="collapseme1">
 														<td colspan="2" class="inner_table">
-															<table class="table table-bordered">
-																<thead>
-																	<tr>
-																		<th>Product Name</th>
-																		<th>Description</th>
-																	</tr>
-																</thead>
-																<tbody>
-																	<tr>
-																		<td>X-A1</td>
-																		<td>blah blah</td>
-																	</tr>
-																	<tr>
-																		<td>X-B2_lala</td>
-																		<td>blah blah</td>
-																	</tr>
-																	<tr>
-																		<td>
-																			<div class="col-sm-12" style="padding-left:0;">
-																				<select class="col-xs-12 chosen-select" id="form-field-select-1" data-placeholder="Choose company">
-																					<option value="">Product Name...</option>
-																					<option value="Product1">Product 1</option>
-																					<option value="Product2">Product 2</option>
-																					<option value="Product3">Product 3</option>
-																				</select>
-																			</div>
-																		</td>
-																		<td><input id="form-field-2" class="input100" type="text"></td>
-																	</tr>
-																	<tr>
-																		<td colspan="2" class="depth1">Double click here to create new Product</td>
-																	</tr>
-																</tbody>
-															</table>
-														</td>
+														<table class="table table-bordered">
+															<thead>
+																<tr>
+																	<th>Product Name</th>
+																	<th>Description</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>X-A1</td>
+																	<td>blah blah</td>
+																</tr>
+																<tr>
+																	<td>X-B2_lala</td>
+																	<td>blah blah</td>
+																</tr>
+																<tr>
+																	<td>
+																	<div class="col-sm-12" style="padding-left:0;">
+																		<select class="col-xs-12 chosen-select" id="form-field-select-1" data-placeholder="Choose company">
+																			<option value="">Product Name...</option>
+																			<option value="Product1">Product 1</option>
+																			<option value="Product2">Product 2</option>
+																			<option value="Product3">Product 3</option>
+																		</select>
+																	</div></td>
+																	<td>
+																	<input id="form-field-2" class="input100" type="text">
+																	</td>
+																</tr>
+																<tr>
+																	<td colspan="2" class="depth1">Double click here to create new Product</td>
+																</tr>
+															</tbody>
+														</table></td>
 														<td></td>
 													</tr>
 													<!-- End hidden table -->
@@ -199,7 +198,7 @@
 											</table>
 										</form>
 									</div>
-								</div>								
+								</div>
 								<!-- End content or form Area -->
 							</div>
 						</div>
@@ -210,24 +209,23 @@
 			</div>
 			<!--End Main-container-->
 		</div>
-	<script src="js/chosen.jquery.min.js"></script>
-	<script type="text/javascript">
-		jQuery(function($) {
-			$("#tr1_i").parent().click(function() {
-				if ($("#collapseme1").hasClass("collapse")) {
-					$("#collapseme1").removeClass("collapse");
-					$("#tr1_i").removeClass("icon-plus");
-					$("#tr1_i").addClass("icon-minus");
-				} else {
-					$("#collapseme1").addClass("collapse");
-					$("#tr1_i").removeClass("icon-minus");
-					$("#tr1_i").addClass("icon-plus");
-				}
+		<script src="js/chosen.jquery.min.js"></script>
+		<script type="text/javascript">
+			jQuery(function($) {
+				$("#tr1_i").parent().click(function() {
+					if ($("#collapseme1").hasClass("collapse")) {
+						$("#collapseme1").removeClass("collapse");
+						$("#tr1_i").removeClass("icon-plus");
+						$("#tr1_i").addClass("icon-minus");
+					} else {
+						$("#collapseme1").addClass("collapse");
+						$("#tr1_i").removeClass("icon-minus");
+						$("#tr1_i").addClass("icon-plus");
+					}
+				});
+				$(".chosen-select").chosen();
 			});
-			$(".chosen-select").chosen();
-		});
-	</script>
-</body>
+		</script>
+	</body>
 </html>
 
-		
