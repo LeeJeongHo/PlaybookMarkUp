@@ -240,7 +240,7 @@
 										</ul>
 									</div>
 									<div class="col-xs-12 p0-right">
-										<div id="pb_subteam_table" class="table-wraper pb_vertical_scroll" style="margin-bottom:40px;">
+										<div id="pb_subteam_table" class="table-wraper" style="margin-bottom:40px;">
 											<div class="table-responsive ">
 												<form>
 													<table class="table datatable table-hover table-bordered">
@@ -1062,17 +1062,21 @@
 									<div class="col-xs-4 right-border">
 										<div style="margin-top:4px;">
 											<div class="input-group">
-												<input id="id-date-picker-1" class="form-control date-picker" type="text" data-date-format="dd-mm-yyyy">
+												<input class="form-control" type="text" name="date-range-picker" id="id-date-range-picker-1" />
 												<span class="input-group-addon">
 													<i class="icon-calendar bigger-110"></i>
 												</span>
 											</div>
 										</div>
 									</div>
+									
 									<div class="col-xs-4 right-border">
+										<div class="col-xs-5 m10-top">
+											<label>Origin End Date</label>
+										</div>
 										<div style="margin-top:4px;">
-											<div class="input-group">
-												<input class="form-control" type="text" name="subteam_date-range-picker" />
+											<div class="input-group col-xs-7">
+												<input id="id-date-picker-1" class="form-control date-picker" type="text" data-date-format="dd/mm/yyyy">
 												<span class="input-group-addon">
 													<i class="icon-calendar bigger-110"></i>
 												</span>
@@ -1325,7 +1329,7 @@
 				$(".chosen-select").chosen();
 				$('#form-field-select-2').addClass('tag-input-style');
 
-				$('input[name=subteam_date-range-picker]').daterangepicker().prev().on(ace.click_event, function(){
+				$('input[name=date-range-picker]').daterangepicker().prev().on(ace.click_event, function(){
 					$(this).next().focus();
 				}); 
 				
