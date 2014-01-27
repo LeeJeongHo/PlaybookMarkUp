@@ -36,14 +36,15 @@
 				<!--Start sidebar-->
 				<div id="accordion" class="panel-group col-xs-2 p0-all">
 					<div class="panel-default panel">
+						<div class="pull-right">
+							<ul class="nav ace-nav main_navbar">
+								<li><a href="#" class="navmenu"><i class="icon-plus-sign"></i> Playbook</a></li>
+							</ul>
+						</div>
 						<div class="panel-head clearfix">
 							<p class="panel_title">
 								<a class="accordion-toggle" href="#collapseOne" data-parent="#accordion" data-toggle="collapse" style="color:#ffffff;"> Playbook </a>
 							</p>
-							<button id="btn_create_playbook" class="btn btn-primary pull-right f-12">
-								<i class="icon-plus-sign"></i>
-								Playbook
-							</button>
 						</div>
 						<div class="panel-collapse collapse in" id="collapseOne">
 							<div class="panel-body accordion_body">
@@ -146,23 +147,14 @@
 				<!--End Sidebar-->
 
 				<div id="contents" class="col-xs-10 p0-all">
-
+					<div id="pb_nav_menu" class="pull-right">
+						<ul class="nav ace-nav main_navbar">
+							<li><a href="#" class="navmenu active">Table</a></li>
+							<li><a href="#" class="navmenu">Graph</a></li>
+						</ul>
+					</div>
 					<div id="nav" class="panel-head m10-left">
 						<h3 class="pb_content_header">Activity Report</h3>
-						<div class="pull-right">
-							<ul class="line_ul">
-								<li>
-									<button id="btn_report_table" class="btn btn-sm btn-primary active">
-										Table
-									</button>
-								</li>
-								<li>
-									<button id="btn_report_graph" class="btn btn-sm btn-primary">
-										Graph
-									</button>
-								</li>
-							</ul>
-						</div>
 					</div>
 					<!-- Start page-content -->
 

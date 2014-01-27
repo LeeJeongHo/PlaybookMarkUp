@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Playbook / subteam_edit</title>
+		<title>Subteam / Edit</title>
 		<meta http-equiv="Content_type" content="text/html; charset=UTF-8" />
 		<!-- require font-awesome.css file and js/fuelux/fuelux.tree.min.js , jquery-2.0.3.min.js -->
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -34,17 +34,19 @@
 
 			<!-- Start main container -->
 			<div id="main-container" class="row m10-top" >
+				
 				<!--Start sidebar-->
 				<div id="accordion" class="panel-group col-xs-2 p0-all">
 					<div class="panel-default panel">
+						<div class="pull-right">
+							<ul class="nav ace-nav main_navbar">
+								<li><a href="#" class="navmenu"><i class="icon-plus-sign"></i> Playbook</a></li>
+							</ul>
+						</div>
 						<div class="panel-head clearfix">
 							<p class="panel_title">
 								<a class="accordion-toggle" href="#collapseOne" data-parent="#accordion" data-toggle="collapse" style="color:#ffffff;"> Playbook </a>
 							</p>
-							<button id="btn_create_playbook" class="btn btn-primary pull-right f-12">
-								<i class="icon-plus-sign"></i>
-								Playbook
-							</button>
 						</div>
 						<div class="panel-collapse collapse in" id="collapseOne">
 							<div class="panel-body accordion_body">
@@ -147,71 +149,19 @@
 				<!--End Sidebar-->
 
 				<div id="contents" class="col-xs-10 p0-all">
-
+					<div id="pb_nav_menu" class="pull-right">
+						<ul class="nav ace-nav main_navbar">
+							<li><a href="#" class="navmenu">Dashboard</a></li>
+							<li><a href="#" class="navmenu">Timeline</a></li>
+							<li><a href="#" class="navmenu active">Table</a></li>
+							<li><a href="#" class="navmenu">Risk/Issues</a></li>
+							<li><a href="#" class="navmenu">Alerts</a></li>
+							<li><a href="#" class="navmenu">Logs</a></li>
+							<li><a href="#" class="navmenu">Setting</a></li>
+						</ul>
+					</div>
 					<div id="nav" class="panel-head m10-left">
 						<h4 class="pb_content_header">Edit Subteam</h4>
-						<div class="pull-right">
-							<ul class="line_ul">
-								<li>
-									<div class="btn-group">
-										<button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
-											Action
-											<i class="icon-angle-down icon-on-right"></i>
-										</button>
-										<ul class="dropdown-menu pull-right">
-											<li>
-												<a href="#">Auto Move</a>
-											</li>
-											<li>
-												<a href="#">Find and Replace</a>
-											</li>
-											<li>
-												<a href="#">Reaasign User</a>
-											</li>
-											<li class="divider"></li>
-											<li>
-												<a href="#">Manage Version</a>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<li>
-									<button class="btn btn-sm btn-primary">
-										Dashboard
-									</button>
-								</li>
-								<li>
-									<button class="btn btn-sm btn-primary">
-										Timeline
-									</button>
-								</li>
-								<li>
-									<button class="btn btn-sm btn-primary">
-										Table
-									</button>
-								</li>
-								<li>
-									<button class="btn btn-sm btn-primary">
-										Risks / Issues
-									</button>
-								</li>
-								<li>
-									<button class="btn btn-sm btn-primary">
-										Alert
-									</button>
-								</li>
-								<li>
-									<button class="btn btn-sm btn-primary">
-										Logs
-									</button>
-								</li>
-								<li>
-									<button class="btn btn-sm btn-primary active">
-										Settings
-									</button>
-								</li>
-							</ul>
-						</div>
 					</div>
 
 					<!-- Start Contents area -->

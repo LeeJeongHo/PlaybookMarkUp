@@ -608,10 +608,18 @@ select{
 	background-color:none;
 	color:white;
 }
+.main_navbar > li > .navmenu:visited{
+	background-color: #249CFF;
+}
 
 .main_navbar > li > .navmenu:hover{
 	background-color: #366EAB;
 }
+
+.main_navbar > li > .navmenu:active{
+	background-color: #366EAB;
+}
+
 #pb_nav_menu .active{
 	background-color: #366EAB;
 	font-weight: bold;
