@@ -1095,7 +1095,7 @@
 												<h5 class="pb_inline"><b>Responsibility</b></h5>
 											</div>
 											<div class="m20-top">
-												<select multiple="" class="col-xs-12 chosen-select" id="form-field-select-2" data-placeholder="Choose Responsibility">
+												<select multiple="" class="col-xs-12 chosen-select" id="modal-form-field-select-2" data-placeholder="Choose Responsibility">
 													<option value="">Responsibility 1</option>
 													<option value="">Responsibility 2</option>
 													<option value="">Responsibility 3</option>
@@ -1328,7 +1328,9 @@
 				$("#message1").tooltip();
 				$(".chosen-select").chosen();
 				$('#form-field-select-2').addClass('tag-input-style');
+				$('#modal-form-field-select-2').addClass('tag-input-style');
 
+				
 				$('input[name=date-range-picker]').daterangepicker().prev().on(ace.click_event, function(){
 					$(this).next().focus();
 				}); 
