@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="css/common.css">
 		<link rel="stylesheet" type="text/css" href="css/uncompressed/font-awesome.css">
 		<link rel="stylesheet" type="text/css" href="css/table.css">
+		<link rel="stylesheet" type="text/css" href="css/chosen.css"/>
 		<link rel="stylesheet" type="text/css" href="css/customize-button.css" />
 
 		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
@@ -188,12 +189,12 @@
 														<tr>
 															<td></td>
 															<td>
-															<select class="form-control">
-																<option>Option1</option>
-																<option>Option2</option>
-																<option>Option3</option>
-															</select></td>
-															<td>
+															<select class="col-xs-12 chosen-select" id="form-field-2">
+																<option value="">Select Company...</option>
+																<option value="Company1">Company 1</option>
+																<option value="Company2">Company 2</option>
+																<option value="Company3">Company 3</option>
+															</select><td>
 															<input type="text" class="input100">
 															</td>
 															<td>
@@ -249,5 +250,13 @@
 			</div>
 			<!--End Main-container-->
 		</div>
+		<script src="js/chosen.jquery.min.js"></script>
+		<script type="text/javascript">
+			jQuery(function($) {
+
+				$(".chosen-select").chosen();
+				
+			});
+		</script>
 	</body>
 </html>
