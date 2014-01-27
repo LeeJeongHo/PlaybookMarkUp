@@ -298,10 +298,10 @@ td {
 	width: 150px;
 }
 .w-sidetab-layout {
-	width: -moz-calc(100% - 85px);
-	width: -webkit-calc(100% - 85px);
-	width: -o-calc(100% - 85px);
-	width: calc(100% - 85px);
+	width: -moz-calc(100% - 94px);
+	width: -webkit-calc(100% - 94px);
+	width: -o-calc(100% - 94px);
+	width: calc(100% - 94px);
 }
 
 .f-12 {
@@ -366,7 +366,8 @@ td {
 	margin-right: 10px;
 }
 .side_menu {
-	margin: 0px;
+	margin-top: 1px;
+	/*margin: 0px;*/
 }
 .side_menu > li {
 	list-style: none;
