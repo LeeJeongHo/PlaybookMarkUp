@@ -597,4 +597,62 @@ select{
 
 .underline{
 	text-decoration: underline;
+<<<<<<< HEAD
+=======
+}
+.ace-nav > li > .navmenu{
+	background-color: #249CFF;
+}
+.main_navbar > li {
+	line-height: 56px;
+	height: 56px;
+	/*width:90px;*/
+	padding: 0 5px; 
+	text-align: center;
+	background-color:none;
+	margin-right: 1px;
+	font-size: 13px;
+}
+.main_navbar > li > a {
+	background-color:none;
+	color:white;
+}
+.main_navbar > li > .navmenu:visited{
+	background-color: #249CFF;
+}
+
+.main_navbar > li > .navmenu:hover{
+	background-color: #366EAB;
+}
+
+.main_navbar > li > .navmenu:active{
+	background-color: #366EAB;
+}
+
+#pb_nav_menu .active{
+	background-color: #366EAB;
+	font-weight: bold;
+}
+
+.ace-nav > li > .sub_navmenu{
+	background-color: #366EAB;
+}
+
+.sub_navbar > li{
+	line-height: 44px;
+	height: 44px;
+	padding:0 5px;
+	text-align: center;
+	background-color:none;
+	margin-right: 1px;
+	font-size: 13px;
+
+}
+.sub_navbar > li > a {
+	background-color:none;
+	color:white;
+}
+.sub_navbar > li > .sub_navmenu:hover{
+	background-color:#249CFF;
+>>>>>>> e7a5546ab57fb31c30ba492b156ed56c3af380eb
 }
