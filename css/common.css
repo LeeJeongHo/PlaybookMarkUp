@@ -649,3 +649,10 @@ select{
 .sub_navbar > li > .sub_navmenu:hover{
 	background-color:#249CFF;
 }
+.dropdown-colorpicker > .dropdown-menu {
+    max-width: 110px;
+    min-width: 80px;
+}
+.clear{
+	clear:both;
+}
