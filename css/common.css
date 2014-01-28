@@ -267,6 +267,9 @@ td {
 .p10-all{
 	padding: 10px;
 }
+.p15-top{
+	padding-top:15px;
+}
 .p20-left {
 	padding-left: 20px;
 }
@@ -381,6 +384,16 @@ td {
 }
 .list_none_block > li{
 	list-style: none;
+}
+.filter_list{
+	margin: 0;
+}
+.filter_list > li{
+	list-style: none;
+	margin: 15px 0;
+}
+.filter_list > .m10-left{
+	margin-left: 10px !important;
 }
 
 .add_menu {
@@ -655,4 +668,23 @@ select{
 }
 .clear{
 	clear:both;
+}
+.pb_color_lable_td{
+	vertical-align:top;
+	padding-top:4px;
+}
+
+.pb_color_label{
+	border-radius:0;
+	display:inline-block;
+	height:20px;
+	width:20px;
+}
+.pb_risk_tracker{
+	min-height: 350px;
+	max-height: 350px;
+}
+.pb_risk_tracker_title{
+	display: block;
+	min-height: 50px;
 }
