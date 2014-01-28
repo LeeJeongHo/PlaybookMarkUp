@@ -688,3 +688,7 @@ select{
 	display: block;
 	min-height: 50px;
 }
+.icon_disabled{
+	cursor: default;
+	text-decoration: none !important;
+}
