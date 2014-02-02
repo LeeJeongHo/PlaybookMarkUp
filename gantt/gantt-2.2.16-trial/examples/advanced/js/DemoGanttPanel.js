@@ -27,7 +27,7 @@ Ext.define("MyApp.DemoGanttPanel", {
 
             // Define properties for the left 'locked' and scrollable tree grid
             lockedGridConfig : {
-                width       : 400//,
+                width       : 200//,
 //                collapsible : true
             },
 
@@ -51,12 +51,9 @@ Ext.define("MyApp.DemoGanttPanel", {
             },
 
             // Define what should be shown in the left label field, along with the type of editor
-            leftLabelField : {
-                dataIndex : 'Name',
-                editor    : { xtype : 'textfield' }
-            },
+              
 
-            // Add some extra functionality
+             // Add some extra functionality
             plugins        : [
                 Ext.create("MyApp.TaskContextMenu"),
                 Ext.create("Sch.plugin.Pan"),
@@ -154,4 +151,5 @@ Ext.define("MyApp.DemoGanttPanel", {
         this.callParent(arguments);
 
     }
+
 });
