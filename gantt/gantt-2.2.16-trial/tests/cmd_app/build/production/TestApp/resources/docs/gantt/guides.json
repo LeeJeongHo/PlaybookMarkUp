@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Ext Gantt 2.0 Guides",
+        "items": [
+            {
+                "name"          : "gantt_getting_started",
+                "title"         : "Getting Started with Ext Gantt 2",
+                "description"   : "This guide will allow you to get started with Ext Gantt 2."
+            },
+            {
+                "name"          : "gantt_styling_guide",
+                "title"         : "Styling and customizing Ext Gantt 2",
+                "description"   : "This guide will show you what parts of Gantt component can be customized and how."
+            },
+            {
+                "name"          : "gantt_ext_styling_guide",
+                "title"         : "Using Ext functionality for styling and customizing Ext Gantt 2",
+                "description"   : "This guide will show you how to utilize built-in ExtJs functionality for easier customization and better working experience with Ext Gantt."
+            },
+            {
+                "name"          : "gantt_data_integration",
+                "title"         : "Data integration guide",
+                "description"   : "This guide will show you how to set up a PHP/MySQL based Ext Gantt 2."
+            },
+            {
+                "name"          : "gantt_calendars",
+                "title"         : "Using calendars",
+                "description"   : "This guide describes all the features of Ext Gantt related to calendars."
+            },
+            {
+                "name"          : "gantt_scheduler_localization",
+                "title"         : "Localizing Scheduler and Gantt",
+                "description"   : "This guide describes how to localize Bryntum Scheduler and Gantt."
+            }
+        ]
+    },
+    {
+        "title": "Ext Scheduler 2.0 Guides",
+        "items": [
+            {
+                "name"          : "scheduler_getting_started",
+                "title"         : "Getting Started with Ext Scheduler 2",
+                "description"   : "This guide will allow you to get started with Ext Scheduler 2."
+            }
+        ]
+    }
+]

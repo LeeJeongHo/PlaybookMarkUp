@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Ext Scheduler 2.0 Guides",
+        "items": [
+            {
+                "name"          : "scheduler_getting_started",
+                "title"         : "Getting Started with Ext Scheduler 2",
+                "description"   : "This guide will allow you to get started with Ext Scheduler 2."
+            },
+            {
+                "name"          : "gantt_scheduler_localization",
+                "title"         : "Localizing Scheduler and Gantt",
+                "description"   : "This guide describes how to localize Bryntum Scheduler and Gantt."
+            }
+        ]
+    }
+]

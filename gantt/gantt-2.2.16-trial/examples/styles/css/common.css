@@ -1,0 +1,21 @@
+.theme
+{
+    background : url(../images/theme.png) no-repeat left center !important;
+}
+.sch-gantt-task-bar .sch-gantt-progress-bar,
+.other-progress-bar
+{
+    height : 50%;
+}
+.other-progress-bar
+{
+    background: #33ff33;
+}
+
+.sch-ganttpanel .x-tree-icon-parent {
+    background : url(../../images/puzzle.png) no-repeat left center;
+}
+
+.x-tree-icon-leaf {
+    background : url(../../images/cog.png) no-repeat left center;
+}

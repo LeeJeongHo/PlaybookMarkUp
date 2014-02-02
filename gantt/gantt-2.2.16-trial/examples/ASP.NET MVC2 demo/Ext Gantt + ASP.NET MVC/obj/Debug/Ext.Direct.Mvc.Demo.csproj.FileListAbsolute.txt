@@ -1,0 +1,9 @@
+C:\Users\matbry.AVENSIAAB\Desktop\Ext.Direct.Mvc-2.0.0\Source\Ext.Direct.Mvc.Demo\bin\Ext.Direct.Mvc.Demo.dll
+C:\Users\matbry.AVENSIAAB\Desktop\Ext.Direct.Mvc-2.0.0\Source\Ext.Direct.Mvc.Demo\bin\Ext.Direct.Mvc.Demo.pdb
+C:\Users\matbry.AVENSIAAB\Desktop\Ext.Direct.Mvc-2.0.0\Source\Ext.Direct.Mvc.Demo\bin\Newtonsoft.Json.dll
+C:\Users\matbry.AVENSIAAB\Desktop\Ext.Direct.Mvc-2.0.0\Source\Ext.Direct.Mvc.Demo\bin\System.Web.Mvc.dll
+C:\Users\matbry.AVENSIAAB\Desktop\Ext.Direct.Mvc-2.0.0\Source\Ext.Direct.Mvc.Demo\bin\System.Web.Mvc.xml
+C:\Users\matbry.AVENSIAAB\Desktop\Ext.Direct.Mvc-2.0.0\Source\Ext.Direct.Mvc.Demo\bin\Newtonsoft.Json.xml
+C:\Users\matbry.AVENSIAAB\Desktop\Ext.Direct.Mvc-2.0.0\Source\Ext.Direct.Mvc.Demo\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\matbry.AVENSIAAB\Desktop\Ext.Direct.Mvc-2.0.0\Source\Ext.Direct.Mvc.Demo\obj\Debug\Ext.Direct.Mvc.Demo.dll
+C:\Users\matbry.AVENSIAAB\Desktop\Ext.Direct.Mvc-2.0.0\Source\Ext.Direct.Mvc.Demo\obj\Debug\Ext.Direct.Mvc.Demo.pdb

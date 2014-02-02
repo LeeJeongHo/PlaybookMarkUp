@@ -1,0 +1,51 @@
+body
+{
+	padding:20px;
+}
+
+.updating .sch-gantt-progress-bar
+{
+    background: transparent url(../images/loading2.gif) repeat-x 0 0 !important;
+    width:100% !important;
+}
+
+.icon-zoomtofit
+{
+    background: url(../images/magnifier-zoom-fit.png) no-repeat center center !important;
+}
+
+.icon-collapseall
+{
+    background: url(../images/up.png) no-repeat left center !important;
+}
+
+.icon-expandall
+{
+    background: url(../images/down.png) no-repeat left center !important;
+}
+
+.icon-add
+{
+    background: url(../images/add.png) no-repeat left center !important;
+}
+
+.zoomfit
+{
+	background:url("../images/zoom-fit.png") no-repeat left center !important;
+}
+
+.cancelchanges
+{
+	background:url("../images/arrow_rotate_clockwise.png") no-repeat left center !important;
+}
+
+.save
+{
+	background:url("../images/disk.png") no-repeat left center !important;
+}
+
+.sch-dependency-line.updating
+{
+    background: transparent url(../images/loading2.gif) repeat left top !important;
+}
+
