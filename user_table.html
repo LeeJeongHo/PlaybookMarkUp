@@ -87,8 +87,9 @@
 											</div>
 
 											<div class="input-icon input-icon-right inline_b m10-right">
-												<input id="search" type="text" placeholder="Search..." size="25">
-												<i class="icon-globe" style="line-height:56px;"></i>
+												<form>
+													<input id="search" type="text" placeholder="Search..." size="25">
+												</form>
 											</div>
 											<div class="btn-group" style="margin-bottom:4px;">
 												<button class="btn btn-sm dropdown-toggle btn-primary no-border" data-toggle="dropdown">
@@ -132,8 +133,12 @@
 												</button>
 											</div>
 										</div>
+										
 										<!-- Start Talbe -->
 										<div class="table-wraper pb_vertical_scroll m0-left" style="height: 625px;">
+											<div id="msg_error" class="f-red f-12">
+												*Error text.
+											</div>
 											<div class="table-responsive">
 												<table class="table table-bordered table-hover datatable">
 													<thead>
@@ -191,7 +196,6 @@
 															<td></td>
 															<td>
 															<select class="col-xs-12 chosen-select" id="form-field-2">
-																<option value="">Select Company...</option>
 																<option value="Company1">Company 1</option>
 																<option value="Company2">Company 2</option>
 																<option value="Company3">Company 3</option>

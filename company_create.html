@@ -8,7 +8,6 @@
 		<link rel="stylesheet" type="text/css" href="css/ace.min.css">
 		<link rel="stylesheet" type="text/css" href="css/common.css">
 		<link rel="stylesheet" type="text/css" href="css/customize-button.css" />
-		<link rel="stylesheet" type="text/css" href="css/table.css">
 		<link rel="stylesheet" type="text/css" href="css/uncompressed/font-awesome.css">
 		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
@@ -73,14 +72,24 @@
 													<input class="ace" type="radio" name="form-field-radio">
 													<span class="lbl"> Cambell Alliance</span>
 													<input class="ace" type="radio" name="form-field-radio">
-													<span class="lbl"> Client</span>
+													<span class="lbl"> Client</span>												
 												</div>
+												<span class="col-sm-4 pull-right">
+													<label style="color:red;">
+														error message
+													</label>
+												</span>
+												<span class="clear"></span>
 											</div>
 											<div class="form-group">
 												<label class="col-sm-2 control-label no-padding-right"><b>Company Name *</b></label>
 												<div class="col-sm-6">
 													<input id="form-field-1" class="col-xs-10 col-sm-5" type="text" placeholder="Company Name..">
 												</div>
+												<div class="col-sm-4 pull-right">
+													<label style="color:red;">error message</label>
+												</div>
+												<div class="clear"></div>
 											</div>
 											<div class="form-group">
 												<label class="col-sm-2 control-label no-padding-right"><b>Product List *</b></label>
@@ -110,133 +119,15 @@
 																<td>blah blah</td>
 															</tr>
 															<tr>
-																<td>X-B2_lala</td>
-																<td>blah blah</td>
-															</tr>
-															<tr>
-																<td>X-B2_lala</td>
-																<td>blah blah</td>
-															</tr>
-															<tr>
-																<td>X-B2_lala</td>
-																<td>blah blah</td>
-															</tr>
-															<tr>
-																<td>X-B2_lala</td>
-																<td>blah blah</td>
-															</tr>
-															<tr>
-																<td>X-B2_lala</td>
-																<td>blah blah</td>
-															</tr>
-															<tr>
-																<td>X-B2_lala</td>
-																<td>blah blah</td>
-															</tr>
-															<tr>
-																<td>X-B2_lala</td>
-																<td>blah blah</td>
-															</tr>
-															<tr>
-																<td>X-B2_lala</td>
-																<td>blah blah</td>
-															</tr>
-															<tr>
-																<td>X-B2_lala</td>
-																<td>blah blah</td>
-															</tr>
-															<tr>
-																<td>X-B2_lala</td>
-																<td>blah blah</td>
-															</tr>
-															<tr>
-																<td>X-B2_lala</td>
-																<td>blah blah</td>
-															</tr>
-															<tr>
-																<td>X-B2_lala</td>
-																<td>blah blah</td>
-															</tr>
-															<tr>
-																<td>X-B2_lala</td>
-																<td>blah blah</td>
-															</tr>
-															<tr>
-																<td>X-B2_lala</td>
-																<td>blah blah</td>
-															</tr>
-															<tr>
-																<td>X-B2_lala</td>
-																<td>blah blah</td>
-															</tr>
-															<tr>
-																<td>X-B2_lala</td>
-																<td>blah blah</td>
-															</tr>
-															<tr>
-																<td>X-B2_lala</td>
-																<td>blah blah</td>
-															</tr>
-															<tr>
-																<td>X-B2_lala</td>
-																<td>blah blah</td>
-															</tr>
-															<tr>
-																<td>X-B2_lala</td>
-																<td>blah blah</td>
-															</tr>
-															<tr>
-																<td>X-B2_lala</td>
-																<td>blah blah</td>
-															</tr>
-															<tr>
-																<td>X-B2_lala</td>
-																<td>blah blah</td>
-															</tr>
-															<tr>
-																<td>X-B2_lala</td>
-																<td>blah blah</td>
-															</tr>
-															<tr>
-																<td>X-B2_lala</td>
-																<td>blah blah</td>
-															</tr>
-															<tr>
-																<td>X-B2_lala</td>
-																<td>blah blah</td>
-															</tr>
-															<tr>
-																<td>X-B2_lala</td>
-																<td>blah blah</td>
-															</tr>
-															<tr>
-																<td>X-B2_lala</td>
-																<td>blah blah</td>
-															</tr>
-															<tr>
-																<td>X-B2_lala</td>
-																<td>blah blah</td>
-															</tr>
-															<tr>
-																<td>X-B2_lala</td>
-																<td>blah blah</td>
-															</tr>
-															<tr>
-																<td>X-B2_lala</td>
-																<td>blah blah</td>
-															</tr>
-															<tr>
-																<td>
-																<div class="col-sm-12" style="padding-left:0;">
-																	<select class="col-xs-12 chosen-select" id="form-field-select-1" data-placeholder="Choose company">
-																		<option value="">Product Name...</option>
+																<td class="col-xs-12">
+																	<select class="col-xs-12 chosen-select" id="form-field-select-1">
 																		<option value="Product1">Product 1</option>
 																		<option value="Product2">Product 2</option>
 																		<option value="Product3">Product 3</option>
 																	</select>
-																</div></td>
+																</td>
 																<td>
-																<input id="form-field-2" class="input100" type="text">
+																	<input id="form-field-2" class="input100" type="text">
 																</td>
 															</tr>
 															<tr>
@@ -263,6 +154,9 @@
 															</div>
 														</div>
 													</div>
+												</div>
+												<div class="col-sm-4">
+													<label style="color:red;">error message</label>
 												</div>
 											</div>
 										</form>

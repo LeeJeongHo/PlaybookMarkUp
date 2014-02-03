@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Auto Move</title>
+		<title>Find and Replace</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/chosen.css"/>
@@ -164,7 +164,7 @@
 					<div id="pb_nav_menu" class="pull-right">
 						<ul class="nav ace-nav main_navbar">
 							<li>
-								<a class="active" href="#" class="navmenu" data-toggle="dropdown">Auto Move <i class="icon-angle-down"></i></a>
+								<a class="active" href="#" class="navmenu" data-toggle="dropdown">Find and Replace <i class="icon-angle-down"></i></a>
 								<ul class="dropdown-menu p0-all">
 									<li>
 										<a href="#">Auto Move</a>
@@ -214,96 +214,102 @@
 						<div class="col-xs-12 p0-all">
 							<div class="pb_table_content panel-default">
 								<div class="panel-heading clearfix">
-									<h3 class="panel_subtitle">Auto Move</h3>
+									<h3 class="panel_subtitle">Find and Replace</h3>
 								</div>
 								
 								<!-- start content area -->
 								<div class="page-content scroll-box pb_vertical_scroll">
-									<div>
-										<div class="inline_b" style="float:left;">
-											<label class="f-14 "><b>Choose Subteam </b></label>
-										</div>
-										<div class="col-xs-6" style="vertical-align:middle;">
-											<select class="col-xs-12 chosen-select" id="form-field-select-3">
-												<option value="">01. Clinical</option>
-												<option value="">02. Regulatory</option>
-												<option value="">03. Marketing</option>
-												<option value="">04. Market Research</option>
-											</select>
-										</div>
-									</div>
-									<div class="col-xs-12 m20-top">
-										<div class="pull-right">
-											<div class="m10-bottom">
-												<label class="m10-right"><b>Shift Deliverables</b></label>
-												<label>
-													<input class="ace" type="radio" name="form-field-radio">
-													<span class="lbl"> by Increment</span>
-												</label>
-												<label>
-													<input class="ace" type="radio" name="form-field-radio">
-													<span class="lbl"> to Date</span>
-												</label>
-												<span class="claer"></span>
-											</div>
-											<div class="pull-right">
-												<label>
-													<input type="text">
-												</label>
-												<label>
-													<select>
-														<option value="">days</option>
-														<option value="">weeks</option>
-														<option value="">monthly</option>
+									<div id="input_info">
+										<div class="row">
+											<div class="col-xs-6">
+												<label class="col-xs-4"><b>Subteam :</b></label>
+												<span class="col-xs-7">
+													<select class="col-xs-12 chosen-select">
+														<option>01.Marketing</option>
+														<option>02.Market Research</option>
+														<option>03.Clinical</option>
 													</select>
-												</label>
-												<label><button class="btn btn-primary btn-sm">Shift</button></label>
+												</span>
 											</div>
 										</div>
-										<div class="clear"></div>
-									</div>
-									<div class="clear"></div>
-									<div id="deliverable_list">
-										<label><b>Deliverables</b></label>
-										<div class="table-responsive">
-											<table class="table table-striped table-bordered table-hover dataTable">
-												<thead>
-													<tr>
-														<th width="5%" style="text-align:center;"><label><input class="ace" type="checkbox"><span class="lbl"></span></label></th>
-														<th class="sorting_asc">Deliverables</th>
-														<th class="sorting_desc" width="15%">Start Date</th>
-														<th class="sorting" width="15%">End Date</th>
-														<th class="sorting" width="10%">Duration</th>
-														<th class="sorting">Responsibility</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td style="text-align:center;"><label><input class="ace" type="checkbox"><span class="lbl"></span></label></td>
-														<td><a href="#">Deliverable Name</a></td>
-														<td>03.OCT.2013</td>
-														<td>03.OCT.2013</td>
-														<td>27 Days</td>
-														<td>User Name</td>
-													</tr>
-													<tr>
-														<td style="text-align:center;"><label><input class="ace" type="checkbox"><span class="lbl"></span></label></td>
-														<td><a href="#">Deliverable Name</a></td>
-														<td>03.OCT.2013</td>
-														<td>TBD</td>
-														<td></td>
-														<td>User Name</td>
-													</tr>
-													<tr>
-														<td style="text-align:center;"><label><input class="ace" type="checkbox"><span class="lbl"></span></label></td>
-														<td><a href="#">Deliverable Name</a></td>
-														<td>03.OCT.2013</td>
-														<td>ON GOING</td>
-														<td></td>
-														<td>User Name</td>
-													</tr>																
-												</tbody>
-											</table>
+										<div class="m10-top"></div>
+										<div class="row">
+											<div class="col-xs-6">
+												<label class="col-xs-4"><b>Deliverable :</b></label>
+												<span class="col-xs-7">
+													<select class="col-xs-12 chosen-select">
+														<option>Deliverable1</option>
+														<option>Deliverable2</option>
+														<option>Deliverable3</option>
+													</select>
+												</span>
+											</div>
+										</div>
+										<div class="m10-top"></div>
+										<div class="row">
+											<div class="col-xs-6">
+												<label class="col-xs-4"><b>Field :</b></label>
+												<span class="col-xs-7">
+													<select class="input100">
+														<option>All</option>
+														<option>Deliverable Name</option>
+														<option>Definition</option>
+														<option>Comment</option>
+													</select>
+												</span>
+											</div>
+										</div>
+										<div class="m10-top"></div>
+										<div class="row">
+											<div class="col-xs-6">
+												<label class="col-xs-4"><b>Find :</b></label>
+												<span class="col-xs-7">
+													<input type="text" class="input100">
+												</span>
+											</div>
+										</div>
+										<div class="m10-top"></div>
+										<div class="row">
+											<div class="col-xs-6">
+												<label class="col-xs-4"><b>Replace with :</b></label>
+												<span class="col-xs-7">
+													<input type="text" class="input100">
+												</span>
+											</div>
+										</div>
+										<div class="m10-top"></div>
+										<div class="row">
+											<div class="col-xs-7">
+												<label class="m10-right m10-left">
+													<input class="ace" type="radio" name="form-field-radio">
+													<span class="lbl"> Match whole word only</span>
+												</label>
+												<label>
+													<input class="ace" type="radio" name="form-field-radio">
+													<span class="lbl"> Case Sensitive</span>
+												</label>
+												<span class="pull-right">
+													<button class="btn btn-sm btn-primary">Preview Matches</button>
+												</span>
+												<span class="clear"></span>
+											</div>
+										</div>
+										<div class="m10-top"></div>
+										<div class="row">
+											<div class="col-xs-7 table-responsive">
+												<table class="table table-bordered">
+													<thead>
+														<tr>
+															<th style="text-align:center;">New Value with Replacements</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td style="text-align:center;">5 word(s) replaced</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -316,6 +322,7 @@
 				</div>
 			</div>
 			<!--End Main-container-->
+			
 		</div>
 		<script src="js/chosen.jquery.min.js"></script>
 		<script type="text/javascript">

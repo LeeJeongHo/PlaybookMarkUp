@@ -38,7 +38,9 @@
 					<div class="panel-default panel">
 						<div class="pull-right">
 							<ul class="nav ace-nav main_navbar">
-								<li><a href="#" class="navmenu"><i class="icon-plus-sign"></i> Playbook</a></li>
+								<li>
+									<a href="#" class="navmenu"><i class="icon-plus-sign"></i> Playbook</a>
+								</li>
 							</ul>
 						</div>
 						<div class="panel-head clearfix">
@@ -149,13 +151,27 @@
 				<div id="contents" class="col-xs-10 p0-all">
 					<div id="pb_nav_menu" class="pull-right">
 						<ul class="nav ace-nav main_navbar">
-							<li><a href="#" class="navmenu">Dashboard</a></li>
-							<li><a href="#" class="navmenu">Timeline</a></li>
-							<li><a href="#" class="navmenu">Table</a></li>
-							<li><a href="#" class="navmenu">Risk/Issues</a></li>
-							<li><a href="#" class="navmenu">Alerts</a></li>
-							<li><a href="#" class="navmenu">Logs</a></li>
-							<li><a href="#" class="navmenu active">Setting</a></li>
+							<li>
+								<a href="#" class="navmenu">Dashboard</a>
+							</li>
+							<li>
+								<a href="#" class="navmenu">Timeline</a>
+							</li>
+							<li>
+								<a href="#" class="navmenu">Table</a>
+							</li>
+							<li>
+								<a href="#" class="navmenu">Risk/Issues</a>
+							</li>
+							<li>
+								<a href="#" class="navmenu">Alerts</a>
+							</li>
+							<li>
+								<a href="#" class="navmenu">Logs</a>
+							</li>
+							<li>
+								<a href="#" class="navmenu active">Setting</a>
+							</li>
 						</ul>
 					</div>
 					<div id="nav" class="panel-head m10-left">
@@ -174,7 +190,9 @@
 								<form class="form-horizontal m10-top">
 									<!-- start from-group subteam_name -->
 									<div class="form-group">
-										<label class="col-sm-2 p45-left" for="form-field-1"> <b>Subteam Name*</b> </label>
+										<div class="row col-sm-2 p10-left">
+											<label class="p45-left m5-top" for="form-field-1"> <b>Subteam Name*</b> </label>
+										</div>
 
 										<!-- start input area -->
 										<div class="col-sm-6">
@@ -189,23 +207,6 @@
 
 									<div class="space-4"></div>
 
-									<!-- start from-group abbreviation -->
-									<div class="form-group">
-										<label class="col-sm-2 p45-left" for="form-field-2"> <b>Abbreviation*</b> </label>
-
-										<!-- start input area -->
-										<div class="col-sm-6">
-											<!-- start input abbreviation -->
-											<input type="text" id="form-field-2" placeholder="Abbreviation" class="col-xs-10 col-sm-6" />
-											<span id="msg_abbreviation" class="middle m10-left f-red"> *Error text </span>
-											<!-- end input abbreviation -->
-										</div>
-										<!-- end input area -->
-									</div>
-									<!-- end from-group abbreviation -->
-
-									<div class="space-4"></div>
-
 									<!-- start from-group subteam_lead -->
 									<div class="form-group">
 										<div class="row p10-left">
@@ -214,7 +215,7 @@
 										<!-- start input area -->
 										<div id="form-field-3" class="p40-left-right">
 											<div id="msg_leader" class="f-red f-12">
-												*Please select leader.
+												*Error text.
 											</div>
 											<div class="table-responsive">
 												<table class="table table-bordered table-hover datatable">
@@ -279,13 +280,10 @@
 									<!-- start from-group subteam_co_lead -->
 									<div class="form-group">
 										<div class="row p10-left">
-											<label class="col-sm-2 p45-left" for="form-field-4"> <b>Subteam Co-Lead*</b> </label>
+											<label class="col-sm-2 p45-left" for="form-field-4"> <b>Subteam Co-Lead</b> </label>
 										</div>
 										<!-- start input area -->
 										<div id="form-field-4" class="p40-left-right">
-											<div id="msg_co_leader" class="f-red f-12">
-												*Please select co-leader.
-											</div>
 											<div class="table-responsive">
 												<table class="table table-bordered table-hover datatable">
 													<thead>
@@ -353,13 +351,10 @@
 									<!-- start from-group subteam_member -->
 									<div class="form-group">
 										<div class="row p10-left">
-											<label class="col-sm-2 p45-left" for="form-field-5"> <b>Team Member*</b> </label>
+											<label class="col-sm-2 p45-left" for="form-field-5"> <b>Team Member</b> </label>
 										</div>
 										<!-- start input area -->
 										<div id="form-field-5" class="p40-left-right">
-											<div id="msg_leader" class="f-red f-12">
-												*Please select member.
-											</div>
 											<div class="table-responsive">
 												<table class="table table-bordered table-hover datatable">
 													<thead>
@@ -385,32 +380,6 @@
 													</thead>
 
 													<tbody>
-														<tr>
-															<td colspan="2">
-															<select class="col-xs-2 chosen-select" id="select_member_51">
-																<option value="">Select team member...</option>
-																<option value="Member1">member 1</option>
-																<option value="Member2">member 2</option>
-																<option value="Member3">member 3</option>
-															</select></td>
-
-															<td><label>
-																<input id="email_all_member_51" name="form-field-checkbox" type="checkbox" class="ace" />
-																<span class="lbl f-12"> E-Mail</span> </label></td>
-
-															<td><label>
-																<input id="create_member_51" name="form-field-checkbox" type="checkbox" class="ace" />
-																<span class="lbl f-12"> Create</span> </label></td>
-
-															<td><label>
-																<input id="delete_member_51" name="form-field-checkbox" type="checkbox" class="ace" />
-																<span class="lbl f-12"> Delete</span> </label></td>
-
-															<td><label>
-																<input id="modify_member_51" name="form-field-checkbox" type="checkbox" class="ace" />
-																<span class="lbl f-12"> Modify</span> </label></td>
-														</tr>
-
 														<tr>
 															<td colspan="2">
 															<select class="col-xs-2 chosen-select" id="select_member_52">
@@ -452,7 +421,9 @@
 
 									<!-- start from-group lock_original_dates -->
 									<div class="form-group">
-										<label class="col-sm-2 p45-left" for="form-field-6"> <b>Lock Original Dates?</b> </label>
+										<div class="row col-sm-3 p10-left">
+											<label class="p45-left m5-top" for="form-field-6"> <b>Lock Original Dates?</b> </label>
+										</div>
 
 										<!-- start input area -->
 										<div class="col-sm-6">
@@ -468,7 +439,9 @@
 
 									<!-- start from-group hide_original_dates -->
 									<div class="form-group">
-										<label class="col-sm-2 p45-left" for="form-field-7"> <b>Hide Original Dates?</b> </label>
+										<div class="row col-sm-3 p10-left">
+											<label class="p45-left m5-top" for="form-field-7"> <b>Hide Original Dates?</b> </label>
+										</div>
 
 										<!-- start input area -->
 										<div class="col-sm-6">
