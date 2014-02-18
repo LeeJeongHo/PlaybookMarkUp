@@ -27,8 +27,8 @@ Ext.define("MyApp.DemoGanttPanel", {
 
             // Define properties for the left 'locked' and scrollable tree grid
             lockedGridConfig : {
-                width       : 200//,
-//                collapsible : true
+                width       : 41,//,
+                collapsible : false
             },
 
             // Define properties for the left 'locked' and scrollable tree view
@@ -41,7 +41,7 @@ Ext.define("MyApp.DemoGanttPanel", {
                 // Enable node reordering in the locked grid
                 plugins     : {
                     ptype           : 'treeviewdragdrop',
-                    containerScroll : true
+                    containerScroll : false
                 }
             },
 
@@ -82,9 +82,6 @@ Ext.define("MyApp.DemoGanttPanel", {
             tooltipTpl     : new Ext.XTemplate(
                 '<strong class="tipHeader">{Name}</strong>',
                 '<table class="taskTip">',
-                    '<tr><td>Start:</td> <td align="right">{[values._record.getDisplayStartDate("y-m-d")]}</td></tr>',
-                    '<tr><td>End:</td> <td align="right">{[values._record.getDisplayEndDate("y-m-d")]}</td></tr>',
-                    '<tr><td>Progress:</td><td align="right">{[ Math.round(values.PercentDone)]}%</td></tr>',
                 '</table>'
             ),
 
@@ -109,6 +106,8 @@ Ext.define("MyApp.DemoGanttPanel", {
                     // This CSS class is added to each cell of this column
                     tdCls     : 'id'
                 },
+              /*  
+                // jh-csutom
                 {
                     xtype     : 'namecolumn',
                     width     : 200,
@@ -142,7 +141,8 @@ Ext.define("MyApp.DemoGanttPanel", {
                 {
                     xtype : 'addnewcolumn'
                 }
-            ],
+                // jh-custom
+*/            ],
 
             // Define the buttons that are available for user interaction
             tbar          : new MyApp.Toolbar({ gantt : this })

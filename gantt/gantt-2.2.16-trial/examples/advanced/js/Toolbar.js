@@ -104,7 +104,6 @@ Ext.define("MyApp.Toolbar", {
                                 title: 'Warning',
                                 msg: 'Are you sure you want to delete?',
                                 icon: Ext.MessageBox.WARNING,
-                                buttons: Ext.Msg.OK
                             });
                         })
                     }

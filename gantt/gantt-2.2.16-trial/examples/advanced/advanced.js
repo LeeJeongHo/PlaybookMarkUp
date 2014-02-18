@@ -82,7 +82,7 @@ App.Gantt = {
         });
 
         var g = Ext.create("MyApp.DemoGanttPanel", {
-            allowParentTaskMove : true,
+            allowParentTaskMove : false,
 
             region          : 'center',
             rowHeight       : 26,
